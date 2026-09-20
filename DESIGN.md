@@ -5,7 +5,8 @@ date. Choices the hardware does not force are ours. Make them on purpose.
 
 ## Requirements (Phase 1)
 
-- Boards supported:
+- Boards supported (see the board register in `MEASUREMENTS.md`):
+- One case for all boards, or one base per board:
 - Pico plugged or soldered:
 - Battery / switch / strap:
 - Must stay reachable:

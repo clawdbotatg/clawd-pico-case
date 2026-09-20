@@ -7,10 +7,28 @@ Sources: `cal` = caliper on the bench, three readings, photo in
 `measurements/` where useful. `ds` = datasheet or drawing, name the document
 and page. When cal and ds disagree, write both and say which we use.
 
-## P. Raspberry Pi Pico 2 W
+## Boards
+
+There are several Pico-footprint boards on the bench and they differ: micro-USB
+vs USB-C, connector overhang, component heights, sometimes hole positions. Each
+board gets its own scan, its own caliper rows and its own photo set. The case
+either fits all of them or has a base per board, decided in `DESIGN.md` once
+the numbers are in.
+
+Board register. Add a row when a new board shows up. The tag prefixes its rows
+and files (`P2W-P11`, `measurements/P2W-P11-usb-overhang.jpg`).
+
+| Tag | Board | USB | Marking / colour | Chip | Notes |
+|---|---|---|---|---|---|
+| P2W | Raspberry Pi Pico 2 W, official | micro-USB | green | RP2350 | official Pico 2 STEP applies |
+| PINK | USB-C clone, pink | USB-C | pink | RP2040 | no CAD exists, measure everything |
+| | | | | | add more here |
+
+## P. Pico-footprint board rows. One copy per board tag.
 
 Datasheet values below are from the Raspberry Pi Pico 2 W datasheet, mechanical
-drawing section. Confirm each with calipers before Phase 2.
+drawing section, and apply to P2W only. Confirm each with calipers. Copy this
+table once per tag; clones must not inherit the datasheet numbers.
 
 | ID | Dimension | Value | Source | Notes |
 |---|---|---|---|---|
@@ -33,18 +51,14 @@ drawing section. Confirm each with calipers before Phase 2.
 | P17 | BOOTSEL button position from long edge | | cal | |
 | P18 | Header pin length below PCB when plugged into LCD | | cal | how far the Pico sits from the LCD board |
 
-## C. USB-C clone board (pink), if we support it
+| P19 | USB connector type | | look | micro-USB or USB-C |
+| P20 | Mounting holes present and where | | cal / scan | clones sometimes move or drop them |
+| P21 | Flatbed scan of the bottom side, 1200 dpi | | scan | `measurements/<TAG>-scan-bottom.png` |
+| P22 | Flatbed scan of the top side, 1200 dpi | | scan | `measurements/<TAG>-scan-top.png` |
 
-| ID | Dimension | Value | Source | Notes |
-|---|---|---|---|---|
-| C1 | Board length | | cal | |
-| C2 | Board width | | cal | |
-| C3 | USB-C shell width | | cal | |
-| C4 | USB-C shell height | | cal | |
-| C5 | USB-C overhang past board edge | | cal | |
-| C6 | USB-C centre offset from board centreline | | cal | |
-| C7 | Mounting holes present and matching P4..P8 | | cal | yes/no |
-| C8 | Tallest part above PCB, bottom side | | cal | |
+### P2W rows: (table above, fill in)
+
+### PINK rows: (copy the table, all cal, none from datasheet)
 
 ## L. Waveshare Pico-LCD-1.3, board
 
@@ -112,10 +126,14 @@ the schematic and add its datasheet to `SOURCES.md`.
 
 | ID | Dimension | Value | Source | Notes |
 |---|---|---|---|---|
-| A1 | Total stack height, Pico bottom-most part to glass top | | cal | |
-| A2 | Gap between Pico PCB top and LCD PCB bottom | | cal | should match L7 + P18 |
-| A3 | Pico USB position relative to LCD board edges | | cal | |
-| A4 | Anything sticking out past the LCD board outline | | look | |
+One block per board tag. The hat is the same; the Pico under it changes.
+
+| ID | Dimension | Value | Source | Notes |
+|---|---|---|---|---|
+| A1 | Total stack height, Pico bottom-most part to glass top | | cal | per tag |
+| A2 | Gap between Pico PCB top and LCD PCB bottom | | cal | should match L7 + P18, per tag |
+| A3 | Pico USB position relative to LCD board edges | | cal | per tag |
+| A4 | Anything sticking out past the LCD board outline | | look | per tag |
 
 ## T. Print tolerances, filled in during Phase 3
 
