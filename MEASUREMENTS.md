@@ -1,6 +1,6 @@
 # Measurements
 
-Every number the design uses lives here first. Rows have an ID. `scad/` cites
+Every number the design uses lives here first. Rows have an ID. `cad/` cites
 the ID. Blank means not measured yet. Units are mm.
 
 Sources: `cal` = caliper on the bench, three readings, photo in
@@ -131,6 +131,6 @@ the schematic and add its datasheet to `SOURCES.md`.
 
 State here which corner of the LCD board is the origin for all x, y values,
 looking at the screen, and which direction is +x and +y. Use the same origin in
-`scad/params.scad`.
+`cad/params.py`.
 
 Origin: not chosen yet.
