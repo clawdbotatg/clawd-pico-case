@@ -13,10 +13,14 @@ directory.
 
 ## Phase 1. Measure.
 
-Austin measures both boards with calipers and fills `MEASUREMENTS.md`. Three
-readings per dimension, note the caliper, photograph anything not obvious.
-Cross-check against the Pico and Waveshare drawings and write both numbers
-when they disagree. Photos and drawing screenshots go in `measurements/`.
+Live sessions with the iPad camera on the bench, one row at a time: the agent
+names the row, Austin measures and shows the caliper, the agent reads it,
+saves the frame to `measurements/<ID>-<name>.jpg`, fills the row. Three
+readings where it matters. Plan-view positions on the LCD hat come from a
+1200 dpi flatbed scan of the bottom side, calibrated against a caliper
+reading, if a flatbed is around. The Pico 2 W comes from the official Pico 2
+STEP plus caliper rows for the wireless module and USB. Details and why in
+`research/scanning.md`.
 
 Also decide and write down in `DESIGN.md`:
 
@@ -30,28 +34,32 @@ Done when every row the design needs has a number and a source.
 
 ## Phase 2. Design.
 
-A fresh session, started in this directory, builds the case in OpenSCAD from
-`MEASUREMENTS.md` alone.
+A fresh session, started in this directory, builds the case in build123d
+(Python code CAD, imports and exports STEP) from `MEASUREMENTS.md` and the
+official Pico 2 STEP alone.
 
 Order of work:
 
-1. `scad/params.scad`. Every number, one line each, comment with the
+1. `cad/params.py`. Every number, one line each, comment with the
    measurement row. Nothing else.
-2. `scad/boards.scad`. A model of the two-board stack from the params. This
-   is the thing the case wraps. Print a test frame that only checks the stack
-   fits before drawing any case.
-3. `scad/base.scad`, `scad/lid.scad`. Our own closure. Decide it in
-   `DESIGN.md` before drawing: screws, snap, slide, magnets, friction. Give
-   the reason.
-4. `scad/caps.scad`. Button caps and joystick cap, from the switch and stick
+2. `cad/pico.py`, `cad/hat.py`, `cad/stack.py`. The Pico from the STEP plus
+   measured extras, the hat drawn from the rows, the two stacked at the
+   measured gap. This is the thing the case wraps.
+3. `cad/testframe.py`. A thin plate with the stack's outline, holes and
+   cutouts. Print it. If the boards drop in and the buttons and stick line up,
+   the model is right. No case until this passes.
+4. `cad/base.py`, `cad/lid.py`. Our own closure. Decide it in `DESIGN.md`
+   before drawing: screws, snap, slide, magnets, friction. Give the reason.
+5. `cad/caps.py`. Button caps and joystick cap, from the switch and stick
    measurements. Our own profile.
-5. `scad/plate.scad`. All parts laid out for one print bed.
-6. `tools/build.sh`. Exports every STL. STLs in `stl/` are always rebuilt from
+6. `cad/plate.py`. All parts laid out for one print bed.
+7. `tools/build.sh`. Exports every STL and STEP to `stl/` and renders a PNG of
+   each part and the assembly to `renders/`. Outputs are always rebuilt from
    source, never hand-edited.
 
 Rules during design:
 
-- No dimension enters `scad/` without a row in `MEASUREMENTS.md`.
+- No dimension enters `cad/` without a row in `MEASUREMENTS.md`.
 - Any choice the hardware does not force is ours to make. Make it on purpose
   and write it in `DESIGN.md`: corner radius, wall thickness, lip, screen
   bezel shape, cap top shape, texture, branding.

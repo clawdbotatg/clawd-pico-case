@@ -39,15 +39,17 @@ What we do not copy is their files and their styling choices.
 | `MEASUREMENTS.md` | The measurement sheet. Every number the design uses |
 | `PROVENANCE.md` | Dated log of every design input and who added it |
 | `DESIGN.md` | Design decisions, written during the design phase |
-| `scad/` | OpenSCAD source. The design is the source, not the STL |
+| `cad/` | build123d source. The design is the source, not the STL |
+| `renders/` | PNGs of every part and the assembly, rebuilt from source |
+| `research/` | Notes on method: how to get real hardware into 3D |
 | `stl/` | Built outputs |
 | `prints/` | Print log: what was printed, what fit, what did not |
 | `measurements/` | Caliper photos and datasheet drawings |
 
 ## Status
 
-Phase 0: repo and process set up on 2026-09-19. No geometry yet. Next is the
-measurement sheet.
+Phase 0 done 2026-09-19. Method research done 2026-09-20, see
+`research/scanning.md`. No geometry yet. Next is Phase 1, measuring on camera.
 
 ## License
 

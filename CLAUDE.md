@@ -16,7 +16,7 @@ This is a clean-room design. Read this whole file before doing anything.
 3. Do not start a session for this repo from inside `~/picowallet`. Start it
    from this directory. Do not load picowallet memory or notes.
 4. Do not use a dimension you "remember" or "know" about the LCD board or the
-   case. Every number in `scad/` must reference a row in `MEASUREMENTS.md`,
+   case. Every number in `cad/` must reference a row in `MEASUREMENTS.md`,
    and every row there must name its source: a caliper reading with a photo,
    or a datasheet page.
 5. Do not bring in third-party geometry of any license, including MIT and CC0
@@ -24,7 +24,7 @@ This is a clean-room design. Read this whole file before doing anything.
 
 ## Always do these
 
-- Design in OpenSCAD, parametric, in `scad/`. Every parameter has a comment
+- Design in build123d (Python), parametric, in `cad/`. Every parameter has a comment
   naming the measurement row it comes from.
 - Log every design input in `PROVENANCE.md` the moment you use it: what, from
   where, which license, who added it, date. That file is append-only.

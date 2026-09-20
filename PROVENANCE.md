@@ -24,3 +24,14 @@ touched geometry, and what that session had seen.
   position of anyone designing a product in a category that already has
   products. The rule for him is the same as for the agents: measure the
   hardware, do not open the other files, write choices down.
+
+## 2026-09-20. Method research.
+
+- By: the same Claude session as Phase 0 (still contaminated, still no geometry).
+- Read: Raspberry Pi Pico series documentation page and the Pico 2 STEP link;
+  the Waveshare Pico-LCD-1.3 wiki Resources list and schematic PDF (links and
+  part labels only, no case content); general 3D scanner and flatbed
+  reverse-engineering articles. Did not open any case design.
+- Wrote: `research/scanning.md`. Switched the plan from OpenSCAD to build123d
+  so the official Pico 2 STEP can be imported. Added the STEP and the
+  schematic to allowed sources. Nothing measured, nothing drawn.

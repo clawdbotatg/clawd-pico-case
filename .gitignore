@@ -1,3 +1,3 @@
 .DS_Store
 *.3mf.bak
-scad/*.stl
+cad/__pycache__/
