@@ -24,12 +24,13 @@ def find_scanner():
     host = os.environ.get("SCANNER_HOST")
     if host:
         return host
-    out = subprocess.run(["avahi-browse", "-t", "-r", "-p", "_uscan._tcp"],
-                         capture_output=True, text=True, timeout=15).stdout
-    for line in out.splitlines():
-        f = line.split(";")
-        if f[0] == "=" and f[2] == "IPv4" and re.match(r"\d+\.\d+\.\d+\.\d+$", f[7]):
-            return f[7]
+    for _ in range(3):  # mDNS answers are not always in on the first browse
+        out = subprocess.run(["avahi-browse", "-t", "-r", "-p", "_uscan._tcp"],
+                             capture_output=True, text=True, timeout=30).stdout
+        for line in out.splitlines():
+            f = line.split(";")
+            if f[0] == "=" and f[2] == "IPv4" and re.match(r"\d+\.\d+\.\d+\.\d+$", f[7]):
+                return f[7]
     sys.exit("no eSCL scanner found; set SCANNER_HOST")
 
 

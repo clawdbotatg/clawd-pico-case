@@ -74,6 +74,30 @@ table once per tag; clones must not inherit the datasheet numbers.
 | L8 | Female header position from edges | | cal / ds | |
 | L9 | Tallest part on the Pico side other than headers | | cal | |
 
+### Scan 01 results, LCD top side (2026-09-24). Source `scan01` = `measurements/2026-09-24-scan-01-all-boards-600dpi.jpg`, fit in `2026-09-24-scan-01-analysis.json`, overlay `2026-09-24-scan-01-lcd-top-fit.png`, code `tools/measure_scan.py`
+
+Scale 23.666 px/mm from 196 rule ticks over 196 mm, fit RMS 0.73 px (0.031 mm); nominal 600 dpi would be 23.622. Origin: see "Chosen corner" below. Outline edges are blurred where the board sits off the glass, so outline rows carry ±0.3 mm until calipers confirm; centres of features that touched the glass (plungers, stem, glass) are good to ~0.1 mm.
+
+| ID | Dimension | Value | Source | Notes |
+|---|---|---|---|---|
+| L1 | Board length (y) | 52.68 | scan01 | ±0.3, confirm cal |
+| L2 | Board width (x) | 26.58 | scan01 | ±0.3, confirm cal |
+| S1 | Glass outline length (y) | 26.48 | scan01 | black glass as visible; ±0.2 |
+| S2 | Glass outline width (x) | 25.19 | scan01 | ±0.2 |
+| S4 | Glass centre x | 13.15 | scan01 | glass spans x 0.56 to 25.75 |
+| S5 | Glass centre y | 26.05 | scan01 | glass spans y 12.81 to 39.29 |
+| B4 | Plunger diameter | 2.63 | scan01 | fitted disc of the bright top only; a blurred lower bound, confirm cal |
+| B8a | Button 1 centre (leftmost) x, y | 4.85, 4.14 | scan01 | |
+| B8b | Button 2 centre x, y | 10.58, 4.00 | scan01 | |
+| B8c | Button 3 centre x, y | 16.16, 4.02 | scan01 | |
+| B8d | Button 4 centre (rightmost) x, y | 21.87, 4.12 | scan01 | |
+| B8p | Button pitch | 5.67 | scan01 | mean of the three gaps |
+| J4 | Stem diameter at top | 2.41 | scan01 | dark cap only, confirm cal |
+| J10 | Joystick centre x, y | 13.24, 46.22 | scan01 | stem top; base centre agrees within 0.4 |
+| J1/J2 | Joystick base plan size | 8.81 × 7.22 | scan01 | fitted to the silver diamond, blurred; confirm cal |
+
+Not from this scan: every Z (L3, L7, L9, S3, B3, B5, B6, J3, J6-J9), hole rows L5/L6 (none visible from the top; back side scan was out of focus), and the switch bodies B1/B2 (blurred). The pink Pico and the two ATECC608 breakouts sat tilted on their connectors and only their outlines are usable: PINK 50.8 × 20.9 (under-reads, edge blur), ATECC608 about 27–28 × 18.5–19. Calipers for those.
+
 ## S. Screen
 
 | ID | Dimension | Value | Source | Notes |
@@ -151,4 +175,9 @@ State here which corner of the LCD board is the origin for all x, y values,
 looking at the screen, and which direction is +x and +y. Use the same origin in
 `cad/params.py`.
 
-Origin: not chosen yet.
+Origin (chosen 2026-09-24): looking at the screen with the joystick at the top
+and the four buttons at the bottom, the FPC tape is on the right. Origin is
+the bottom-left corner of the LCD PCB. +x to the right (26.58 wide), +y up
+toward the joystick (52.68 long). The 600 dpi scan is not mirrored (the
+rule's digits and the Pico's silkscreen read correctly), so scan x, y map
+straight onto this frame.

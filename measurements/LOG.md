@@ -31,3 +31,14 @@ outline's angle. Flatbed depth of field is a few mm: surfaces on the glass
 are sharp, anything lifted by a connector or the joystick is soft. Good for
 X/Y centres and outlines, useless for Z. Backs: rows P21, L-series plan
 view, S/B/J centres (pending analysis, see next entry).
+
+## 2026-09-24 scan 01 — analysis
+
+`tools/measure_scan.py` on the scan above → `2026-09-24-scan-01-analysis.json`
+and `2026-09-24-scan-01-lcd-top-fit.png` (red = fitted rectangles, green =
+fitted discs; look before trusting a number). Scale from the rule's mm ticks:
+196 ticks, RMS 0.03 mm. Filled: L1, L2, S1, S2, S4, S5, B4, B8a–d, J4, J10,
+J1/J2 — all tagged `scan01`, all "confirm cal". Pink Pico and ATECC608 rows
+not filled: those boards sat tilted on their connectors and scanned soft.
+Lesson for scan 02: put each board's FLAT side on the glass, or shim the
+connector end so the PCB lies parallel to the glass.
