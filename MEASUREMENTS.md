@@ -58,7 +58,32 @@ table once per tag; clones must not inherit the datasheet numbers.
 
 ### P2W rows: (table above, fill in)
 
-### PINK rows: (copy the table, all cal, none from datasheet)
+### PINK rows (USB-C clone, pink, RP2040, male headers soldered). All cal, none from a datasheet.
+
+| ID | Dimension | Value | Source | Notes |
+|---|---|---|---|---|
+| PINK-P1 | Board length | 51.04 | cal 2026-09-24 | scan01 read 50.75 (edge blur); matches the official Pico outline. `measurements/2026-09-24-cal-PINK-P1-board-length-1.jpg` |
+| PINK-P2 | Board width | 20.82 | cal 2026-09-24 | scan01 read 20.95 (edge blur). `measurements/2026-09-24-cal-PINK-P2-board-width-1.jpg` |
+| PINK-P3 | PCB thickness | 1.23 | cal 2026-09-24 | `measurements/2026-09-24-cal-PINK-P3-pcb-thickness-1.jpg` |
+| PINK-P11 | USB-C overhang past board edge | | cal | |
+| PINK-P12 | USB-C shell width | 8.87 | cal 2026-09-24 | metal shell, wide way. `measurements/2026-09-24-cal-PINK-P12-usbc-width-1.jpg` |
+| PINK-P13 | USB-C shell height | 3.08 | cal 2026-09-24 | metal shell, thin way. Shell top is ~2.4 above the PCB (A1), so ~0.7 of it sits in/below the board line. `measurements/2026-09-24-cal-PINK-P13-usbc-height-1.jpg` |
+| PINK-P15 | Tallest part above PCB, component side | | cal | |
+| PINK-P18 | Header pin length below PCB | ~10.0 | cal 2026-09-24 | Austin: 10.5 jaw to jaw including the solder tips on the top face; about 10.0 from the underside to the pin tips. The stack (A rows) is the number that matters. `measurements/2026-09-24-cal-PINK-P18-pin-length-1.jpg` |
+| PINK-P18b | Header plastic strip thickness | | cal | |
+| PINK-P19 | USB connector type | USB-C | look | |
+
+## C. ATECC608 breakout (the crypto chip)
+
+Two identical breakouts on the bench. Sits between the hat and the Pico, wired
+to the Pico's I2C pins; never touches the case (Austin, 2026-09-24). Rows here
+only so the stack model can check it clears the 12.29 gap (A2).
+
+| ID | Dimension | Value | Source | Notes |
+|---|---|---|---|---|
+| C1 | Board length | 25.3 | cal 2026-09-24 | `measurements/2026-09-24-cal-ATECC-length-1.jpg` |
+| C2 | Board width | ~18.5 | scan01 | soft, good enough for a part that touches nothing |
+| C3 | Total thickness with connectors | | cal | needed only to prove it fits the gap; take if cheap |
 
 ## L. Waveshare Pico-LCD-1.3, board
 
@@ -81,7 +106,7 @@ Scale 23.666 px/mm from 196 rule ticks over 196 mm, fit RMS 0.73 px (0.031 mm); 
 | ID | Dimension | Value | Source | Notes |
 |---|---|---|---|---|
 | L1 | Board length (y) | 52.68 | scan01 | ±0.3, confirm cal |
-| L2 | Board width (x) | 26.58 | scan01 | ±0.3, confirm cal |
+| L2 | Board width (x) | 26.44 | cal 2026-09-24 | scan01 read 26.58 (edge blur +0.14). `measurements/2026-09-24-cal-L2-lcd-board-width-1.jpg` |
 | S1 | Glass outline length (y) | 26.48 | scan01 | black glass as visible; ±0.2 |
 | S2 | Glass outline width (x) | 25.19 | scan01 | ±0.2 |
 | S4 | Glass centre x | 13.15 | scan01 | glass spans x 0.56 to 25.75 |
@@ -154,8 +179,8 @@ One block per board tag. The hat is the same; the Pico under it changes.
 
 | ID | Dimension | Value | Source | Notes |
 |---|---|---|---|---|
-| A1 | Total stack height, Pico bottom-most part to glass top | | cal | per tag |
-| A2 | Gap between Pico PCB top and LCD PCB bottom | | cal | should match L7 + P18, per tag |
+| A1 | Total stack height, Pico bottom-most part to glass top | PINK: 19.95 (glass to USB-C shell); 17.54 glass to the Pico PCB back face | cal 2026-09-24 | Austin: 19.95 is "very close" — jaws not exactly opposite because the plug and glass are at different spots; take as ±0.2. So the USB-C shell stands ~2.4 above the Pico PCB. `measurements/2026-09-24-cal-PINK-A1-stack-glass-to-usbc-1.jpg`, `...-pcb-back-{1,2}.jpg` |
+| A2 | Gap between Pico PCB top and LCD PCB bottom | PINK: 12.29 | derived 2026-09-24 | 17.54 − S3 2.05 − L3 1.97 − PINK-P3 1.23. Socket is 8.69 of that; the male header plastic + standoff is the other 3.6 |
 | A3 | Pico USB position relative to LCD board edges | | cal | per tag |
 | A4 | Anything sticking out past the LCD board outline | | look | per tag |
 
