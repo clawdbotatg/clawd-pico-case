@@ -1,0 +1,173 @@
+"""The stack (hat + Pico) and the case around it, in build123d.
+
+Returns plain Parts placed in the frame from params.py. build.py exports
+them. Run this file directly for a bounding-box sanity print.
+"""
+from build123d import (Axis, Box, Cylinder, Location, Part, Pos, Rot,
+                       fillet, Plane, Rectangle, extrude, Circle)
+import params as P
+
+
+def box(x0, x1, y0, y1, z0, z1):
+    """Axis-aligned box from corner to corner."""
+    return Pos((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2) * Box(x1 - x0, y1 - y0, z1 - z0)
+
+
+def rbox(x0, x1, y0, y1, z0, z1, r):
+    """Box with rounded vertical edges."""
+    b = box(x0, x1, y0, y1, z0, z1)
+    return fillet(b.edges().filter_by(Axis.Z), r)
+
+
+# ---------------------------------------------------------------- positions
+
+CX, CY = P.L2 / 2, P.L1 / 2                       # LCD board centre
+GLASS_C = (CX + P.S_DV, CY + P.S_DU)
+BUTTONS = [(CX + dv, CY + P.B_DU) for dv in P.B_DV]
+JOY_C = (CX + P.J_DV, CY + P.J_DU)
+
+Z_LCD_BACK = -P.L3
+Z_PICO_TOP = Z_LCD_BACK - P.A2                    # Pico PCB face toward the LCD
+Z_PICO_BOT = Z_PICO_TOP - P.P3
+Z_USB_BOT = Z_PICO_BOT - P.P15                    # lowest point of the stack
+
+PICO_CX = CX if P.PICO_CENTRED_X else CX
+PICO_CY = CY if P.PICO_CENTRED_Y else CY
+USB_SIGN = 1 if P.USB_END == "top" else -1
+PICO_Y0, PICO_Y1 = PICO_CY - P.P1 / 2, PICO_CY + P.P1 / 2
+USB_EDGE_Y = PICO_Y1 if USB_SIGN > 0 else PICO_Y0
+
+
+# ---------------------------------------------------------------- hardware
+
+def hat():
+    pcb = rbox(0, P.L2, 0, P.L1, Z_LCD_BACK, 0, P.L4)
+    gx, gy = GLASS_C
+    glass = box(gx - P.S2 / 2, gx + P.S2 / 2, gy - P.S1 / 2, gy + P.S1 / 2, 0, P.S3)
+    parts = pcb + glass
+    for bx, by in BUTTONS:
+        parts += box(bx - P.B2 / 2, bx + P.B2 / 2, by - P.B1 / 2, by + P.B1 / 2, 0, P.B3)
+        parts += Pos(bx, by, P.B3) * extrude(Plane.XY * Rectangle(P.B4X, P.B4Y), P.B5 - P.B3)
+    jx, jy = JOY_C
+    parts += Pos(jx, jy, 0) * Rot(0, 0, 45) * extrude(Plane.XY * Rectangle(P.J_BASE_X, P.J_BASE_Y), P.J3)
+    parts += box(jx - P.J4 / 2, jx + P.J4 / 2, jy - P.J4 / 2, jy + P.J4 / 2, P.J3, P.J6)
+    # two 20-way female sockets on the back, at the header pitch
+    for sx in (CX - P.P10 / 2, CX + P.P10 / 2):
+        parts += box(sx - 1.27, sx + 1.27, CY - 25.4, CY + 25.4, Z_LCD_BACK - P.L7, Z_LCD_BACK)
+    return parts
+
+
+def pico():
+    pcb = rbox(PICO_CX - P.P2 / 2, PICO_CX + P.P2 / 2, PICO_Y0, PICO_Y1, Z_PICO_BOT, Z_PICO_TOP, 1.0)
+    # USB-C shell: P12 wide, P13 tall, sits with its top P15 below the component face
+    # (P15 is the tallest point, so the shell spans P15-P13 .. P15 below the PCB)
+    y_in = USB_EDGE_Y - USB_SIGN * 7.0
+    y_out = USB_EDGE_Y + USB_SIGN * P.P11
+    shell = box(PICO_CX - P.P12 / 2, PICO_CX + P.P12 / 2, min(y_in, y_out), max(y_in, y_out),
+                Z_PICO_BOT - P.P15, Z_PICO_BOT - (P.P15 - P.P13))
+    return pcb + shell
+
+
+# ---------------------------------------------------------------- case
+
+X0, X1 = -P.CLEAR - P.WALL, P.L2 + P.CLEAR + P.WALL       # outer footprint
+Y0, Y1 = -P.CLEAR - P.WALL, P.L1 + P.CLEAR + P.WALL
+IX0, IX1 = -P.CLEAR, P.L2 + P.CLEAR                        # inner pocket
+IY0, IY1 = -P.CLEAR, P.L1 + P.CLEAR
+Z_FLOOR_TOP = Z_USB_BOT - P.CLEAR
+Z_BOTTOM = Z_FLOOR_TOP - P.FLOOR
+Z_SPLIT = 0.0                                              # lid meets base at the LCD front face
+Z_LID_TOP = P.S3 + P.GLASS_CLEAR + P.LID_TOP
+
+
+def base():
+    outer = rbox(X0, X1, Y0, Y1, Z_BOTTOM, Z_SPLIT, P.CORNER_R)
+    pocket = rbox(IX0, IX1, IY0, IY1, Z_FLOOR_TOP, Z_SPLIT + 1, max(P.CORNER_R - P.WALL, 0.5))
+    b = outer - pocket
+    # tongue: the top TONGUE_H of the wall steps in by SKIRT so the lid skirt sits flush outside
+    step = rbox(X0, X1, Y0, Y1, Z_SPLIT - P.TONGUE_H, Z_SPLIT + 1, P.CORNER_R) \
+        - rbox(X0 + P.SKIRT, X1 - P.SKIRT, Y0 + P.SKIRT, Y1 - P.SKIRT, Z_SPLIT - P.TONGUE_H - 1, Z_SPLIT + 2,
+               max(P.CORNER_R - P.SKIRT, 0.5))
+    b -= step
+    # snap bumps on the tongue's outer face, two per long side
+    zb = Z_SPLIT - P.TONGUE_H / 2
+    for yb in (CY - P.L1 / 4, CY + P.L1 / 4):
+        b += box(X0 + P.SKIRT - P.SNAP_H, X0 + P.SKIRT + 0.2, yb - P.SNAP_LEN / 2, yb + P.SNAP_LEN / 2, zb - 0.5, zb + 0.5)
+        b += box(X1 - P.SKIRT - 0.2, X1 - P.SKIRT + P.SNAP_H, yb - P.SNAP_LEN / 2, yb + P.SNAP_LEN / 2, zb - 0.5, zb + 0.5)
+    # ledge the LCD PCB rests on: the wall itself (pocket is the PCB outline + CLEAR), so the
+    # PCB sits on the socket-clearance shelf. Shelf: fill the pocket back in below the LCD PCB
+    # except where the sockets and the Pico live.
+    shelf = rbox(IX0, IX1, IY0, IY1, Z_LCD_BACK - 0.01 - 2.0, Z_LCD_BACK - 0.01, 0.5)
+    inner_keep = box(PICO_CX - P.P2 / 2 - P.CLEAR, PICO_CX + P.P2 / 2 + P.CLEAR,
+                     PICO_Y0 - P.CLEAR - P.P11 - 1, PICO_Y1 + P.CLEAR + P.P11 + 1, Z_BOTTOM - 1, Z_SPLIT + 1)
+    b += shelf - inner_keep
+    # USB-C cutout through the end wall
+    zc0 = Z_PICO_BOT - P.P15 - P.USB_CLEAR
+    zc1 = Z_PICO_BOT - (P.P15 - P.P13) + P.USB_CLEAR
+    ywall0, ywall1 = (IY1 - 1, Y1 + 1) if USB_SIGN > 0 else (Y0 - 1, IY0 + 1)
+    cut = box(PICO_CX - P.P12 / 2 - P.USB_CLEAR, PICO_CX + P.P12 / 2 + P.USB_CLEAR, ywall0, ywall1, zc0, zc1)
+    cut = fillet(cut.edges().filter_by(Axis.Y), min(1.5, (zc1 - zc0) / 2 - 0.05))
+    b -= cut
+    return b
+
+
+def lid():
+    outer = rbox(X0, X1, Y0, Y1, Z_SPLIT - P.TONGUE_H, Z_LID_TOP, P.CORNER_R)
+    # skirt cavity: over the tongue
+    cav = rbox(X0 + P.SKIRT, X1 - P.SKIRT, Y0 + P.SKIRT, Y1 - P.SKIRT, Z_SPLIT - P.TONGUE_H - 1, Z_SPLIT,
+               max(P.CORNER_R - P.SKIRT, 0.5))
+    # ceiling cavity: over the PCB, up to the glass clearance
+    cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - 1, P.S3 + P.GLASS_CLEAR, 0.5)
+    l = outer - cav - cav2
+    # snap notches inside the skirt to receive the bumps
+    zb = Z_SPLIT - P.TONGUE_H / 2
+    for yb in (CY - P.L1 / 4, CY + P.L1 / 4):
+        l -= box(X0 + P.SKIRT - 0.01, X0 + P.SKIRT + P.SNAP_H + 0.1, yb - P.SNAP_LEN / 2 - 0.3, yb + P.SNAP_LEN / 2 + 0.3, zb - 0.6, zb + 0.6)
+        l -= box(X1 - P.SKIRT - P.SNAP_H - 0.1, X1 - P.SKIRT + 0.01, yb - P.SNAP_LEN / 2 - 0.3, yb + P.SNAP_LEN / 2 + 0.3, zb - 0.6, zb + 0.6)
+    # screen window
+    gx, gy = GLASS_C
+    w = P.WINDOW_CLEAR
+    l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -1, Z_LID_TOP + 1, 0.8)
+    # button holes
+    for bx, by in BUTTONS:
+        l -= Pos(bx, by, Z_LID_TOP / 2) * Cylinder((P.CAP_D + 2 * P.CAP_HOLE_CLEAR) / 2, Z_LID_TOP + 2)
+    # joystick hole
+    jx, jy = JOY_C
+    l -= Pos(jx, jy, Z_LID_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_LID_TOP + 2)
+    return l
+
+
+def button_caps():
+    """A cap per button: a disc that sits proud of the lid, a stem down to the plunger."""
+    caps = None
+    stem_h = Z_LID_TOP - P.B5          # from the plunger top up to the lid top
+    for bx, by in BUTTONS:
+        c = Pos(bx, by, P.B5 + stem_h / 2) * Cylinder(P.CAP_D / 2, stem_h)          # body through the hole
+        c += Pos(bx, by, Z_LID_TOP + 0.6) * Cylinder(P.CAP_D / 2 + 0.6, 1.2)         # head, 0.6 over the hole edge
+        caps = c if caps is None else caps + c
+    return caps
+
+
+def joystick_cap():
+    jx, jy = JOY_C
+    top = Z_LID_TOP + 3.0
+    cap = Pos(jx, jy, (P.J3 + 1.0 + top) / 2) * Cylinder(P.JOY_HOLE_D / 2 - 0.6, top - P.J3 - 1.0)
+    cap += Pos(jx, jy, top + 0.75) * Cylinder(P.JOY_HOLE_D / 2 + 0.5, 1.5)
+    socket = box(jx - (P.J4 + 0.15) / 2, jx + (P.J4 + 0.15) / 2, jy - (P.J4 + 0.15) / 2, jy + (P.J4 + 0.15) / 2,
+                 P.J3 + 0.9, P.J6 + 0.3)
+    return cap - socket
+
+
+PARTS = {
+    "hat": (hat, "#1f5f7a"),
+    "pico": (pico, "#d4667a"),
+    "base": (base, "#c9c4b8"),
+    "lid": (lid, "#e8e3d6"),
+    "button_caps": (button_caps, "#f0a030"),
+    "joystick_cap": (joystick_cap, "#f0a030"),
+}
+
+if __name__ == "__main__":
+    for name, (fn, _) in PARTS.items():
+        bb = fn().bounding_box()
+        print(f"{name:13} x {bb.min.X:7.2f}..{bb.max.X:6.2f}  y {bb.min.Y:7.2f}..{bb.max.Y:6.2f}  z {bb.min.Z:7.2f}..{bb.max.Z:6.2f}")

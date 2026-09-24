@@ -1,11 +1,12 @@
-.DS_Store
 *.3mf.bak
-__pycache__/
-*.pyc
+cad/__pycache__/
+.claude/
+.DS_Store
 .env
 .env.*
-.venv/
-.claude/
 HANDOFF-*.md
+*.pyc
+__pycache__/
 REVIEW-*.md
 scratch/
+.venv/

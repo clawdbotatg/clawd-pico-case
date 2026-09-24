@@ -5,16 +5,24 @@ date. Choices the hardware does not force are ours. Make them on purpose.
 
 ## Requirements (Phase 1)
 
-- Boards supported (see the board register in `MEASUREMENTS.md`):
-- One case for all boards, or one base per board:
-- Pico plugged or soldered:
-- Battery / switch / strap:
-- Must stay reachable:
+- Boards supported: **PINK** (USB-C RP2040 clone) only, for now. Austin,
+  2026-09-24. The official micro-USB Pico 2 W is a later base if wanted.
+- One case for all boards, or one base per board: one case, one board (above).
+- Pico plugged or soldered: plugged into the hat's female headers, with
+  the ATECC608 breakout wedged in the 12.29 mm gap between them (A2). The
+  breakout touches nothing on the case (Austin, tested in the stack).
+- Battery / switch / strap: none.
+- Must stay reachable: USB-C, screen, four buttons, joystick. BOOTSEL: TBD
+  (a hole in the back, or open the case).
+- Printer: Bambu Lab P2S, 0.4 mm nozzle, textured PEI plate. Material TBD
+  (PLA for the test frame).
 
 ## Closure (Phase 2)
 
-- Method:
-- Reason:
+- Method: **snap fit**. Austin, 2026-09-24.
+- Reason: Austin's call. No hardware to buy or insert, prints in one go,
+  no screw heads. Cost: the lips wear; design them thick enough, add a
+  pry slot so opening it doesn't break them. Details when drawn.
 
 ## Walls, corners, bezel
 
