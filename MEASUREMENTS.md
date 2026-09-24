@@ -86,12 +86,12 @@ Scale 23.666 px/mm from 196 rule ticks over 196 mm, fit RMS 0.73 px (0.031 mm); 
 | S2 | Glass outline width (x) | 25.19 | scan01 | ±0.2 |
 | S4 | Glass centre x | 13.15 | scan01 | glass spans x 0.56 to 25.75 |
 | S5 | Glass centre y | 26.05 | scan01 | glass spans y 12.81 to 39.29 |
-| B4 | Plunger diameter | 2.63 | scan01 | fitted disc of the bright top only; a blurred lower bound, confirm cal |
-| B8a | Button 1 centre (leftmost) x, y | 4.85, 4.14 | scan01 | |
-| B8b | Button 2 centre x, y | 10.58, 4.00 | scan01 | |
-| B8c | Button 3 centre x, y | 16.16, 4.02 | scan01 | |
-| B8d | Button 4 centre (rightmost) x, y | 21.87, 4.12 | scan01 | |
-| B8p | Button pitch | 5.67 | scan01 | mean of the three gaps |
+| B4 | Plunger diameter | 2.38 × 3.00 | cal 2026-09-24 | oval: 2.38 across x, 3.00 along y. Cap bears on top; the casing (B1/B2) is what the cap must cover. `measurements/2026-09-24-cal-B4-lcd-plunger-long-1.jpg` |
+| B8a | Button Y centre (leftmost) x, y | 4.85, 4.14 | scan01 | |
+| B8b | Button X centre x, y | 10.58, 4.00 | scan01 | |
+| B8c | Button B centre x, y | 16.16, 4.02 | scan01 | |
+| B8d | Button A centre (rightmost) x, y | 21.87, 4.12 | scan01 | |
+| B8p | Button pitch (labels Y X B A left to right, from the silkscreen in `2026-09-24-cal-B2-lcd-button-body-1.jpg`) | 5.67 | scan01 | mean of the three gaps |
 | J4 | Stem diameter at top | 2.41 | scan01 | dark cap only, confirm cal |
 | J10 | Joystick centre x, y | 13.24, 46.22 | scan01 | stem top; base centre agrees within 0.4 |
 | J1/J2 | Joystick base plan size | 8.81 × 7.22 | scan01 | fitted to the silver diamond, blurred; confirm cal |
@@ -120,13 +120,13 @@ the schematic and add its datasheet to `SOURCES.md`.
 
 | ID | Dimension | Value | Source | Notes |
 |---|---|---|---|---|
-| B1 | Switch body length | | cal | |
-| B2 | Switch body width | | cal | |
-| B3 | Switch body height above PCB | | cal | |
+| B1 | Switch body length | 3.34 | cal 2026-09-24 | metal casing, measured in y (toward the glass). `measurements/2026-09-24-cal-B1-lcd-button-body-1.jpg` |
+| B2 | Switch body width | 4.42, 4.30 | cal 2026-09-24 | metal casing, two readings (feet may add to the first); the other plan axis from B1. `measurements/2026-09-24-cal-B2-lcd-button-body-{1,2}.jpg` |
+| B3 | Switch body height above PCB | 1.81 | cal 2026-09-24 | Austin read 12.47 socket top to metal casing top, minus 10.66. Oval top (B5 2.61) is 0.80 proud of the casing. `measurements/2026-09-24-cal-B3-lcd-button-casing-height-1.jpg` |
 | B4 | Plunger diameter | | cal | |
 | B5 | Plunger top height above PCB, at rest | 2.61 | cal 2026-09-24 | Austin read 13.27 socket top to button top, minus L3+L7 10.66. `measurements/2026-09-24-cal-B5-lcd-button-height-1.jpg` |
-| B6 | Plunger travel | | cal / ds | |
-| B7 | Plunger shape | | look | round, square, with a shoulder? |
+| B6 | Plunger travel | 0.38 | cal 2026-09-24 | Austin read 12.89 socket top to oval held pressed = 2.23 above PCB; rest is 2.61. `measurements/2026-09-24-cal-B6-lcd-button-pressed-1.jpg` |
+| B7 | Plunger shape | oval | look 2026-09-24 | light-coloured oval top; 2.38 across the narrow way (cal), about 2.6 long (scan01) |
 | B8 | Centre of each switch from chosen corner, x, y | | cal / ds | four rows, name them by silkscreen label |
 | B9 | Actuation force | | ds | for cap weight and return |
 
@@ -137,8 +137,8 @@ the schematic and add its datasheet to `SOURCES.md`.
 | J1 | Body length | | cal | |
 | J2 | Body width | | cal | |
 | J3 | Body height above PCB | | cal | |
-| J4 | Stem diameter at top | | cal | |
-| J5 | Stem shape | | look | round, D, cross, keyed? |
+| J4 | Stem diameter at top | 1.86 | cal 2026-09-24 | across the flats; square section. A cap grips this. A short lip at the very base is 2.94 wide (J4b, cal) — not part of the stick, the cap must clear it |
+| J5 | Stem shape | square | look 2026-09-24 | 1.86 square at the tip, wider at the base |
 | J6 | Stem top height above PCB, centred | 5.00 | cal 2026-09-24 | Austin read 15.66 socket top to stem tip, minus L3+L7 10.66. `measurements/2026-09-24-cal-J6-lcd-joystick-height-1.jpg` |
 | J7 | Stem tilt angle, full deflection | | cal / ds | |
 | J8 | Stem top travel at full deflection, horizontal | | cal | |
