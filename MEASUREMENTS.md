@@ -66,11 +66,11 @@ table once per tag; clones must not inherit the datasheet numbers.
 |---|---|---|---|---|
 | L1 | Board length | | cal / ds Waveshare drawing | |
 | L2 | Board width | | cal / ds | |
-| L3 | PCB thickness | | cal | |
+| L3 | PCB thickness | 1.97 | cal 2026-09-24 | one reading, `measurements/2026-09-24-cal-L3-lcd-pcb-thickness-1.jpg` |
 | L4 | Corner radius of PCB | | cal | |
 | L5 | Mounting hole diameter | | cal / ds | |
 | L6 | Mounting hole positions, each, from one chosen corner | | cal / ds | list all |
-| L7 | Female header socket height above PCB, Pico side | | cal | sets stack gap |
+| L7 | Female header socket height above PCB, Pico side | 8.69 | cal 2026-09-24 | sets stack gap. Read 10.66 socket top to PCB front face, minus L3 1.97. `measurements/2026-09-24-cal-L7-lcd-socket-height-1.jpg` |
 | L8 | Female header position from edges | | cal / ds | |
 | L9 | Tallest part on the Pico side other than headers | | cal | |
 
@@ -104,7 +104,7 @@ Not from this scan: every Z (L3, L7, L9, S3, B3, B5, B6, J3, J6-J9), hole rows L
 |---|---|---|---|---|
 | S1 | Glass outline length | | cal | |
 | S2 | Glass outline width | | cal | |
-| S3 | Glass top height above PCB | | cal | |
+| S3 | Glass top height above PCB | 2.05 | cal 2026-09-24 | read 12.71 socket top to glass top, minus L3+L7 10.66. Whole hat, socket top to glass top = 12.71. `measurements/2026-09-24-cal-S3-lcd-glass-height-1.jpg` |
 | S4 | Glass position from chosen corner, x | | cal | |
 | S5 | Glass position from chosen corner, y | | cal | |
 | S6 | Active area length | | cal / ds | |
@@ -124,7 +124,7 @@ the schematic and add its datasheet to `SOURCES.md`.
 | B2 | Switch body width | | cal | |
 | B3 | Switch body height above PCB | | cal | |
 | B4 | Plunger diameter | | cal | |
-| B5 | Plunger top height above PCB, at rest | | cal | |
+| B5 | Plunger top height above PCB, at rest | 2.61 | cal 2026-09-24 | Austin read 13.27 socket top to button top, minus L3+L7 10.66. `measurements/2026-09-24-cal-B5-lcd-button-height-1.jpg` |
 | B6 | Plunger travel | | cal / ds | |
 | B7 | Plunger shape | | look | round, square, with a shoulder? |
 | B8 | Centre of each switch from chosen corner, x, y | | cal / ds | four rows, name them by silkscreen label |
@@ -139,7 +139,7 @@ the schematic and add its datasheet to `SOURCES.md`.
 | J3 | Body height above PCB | | cal | |
 | J4 | Stem diameter at top | | cal | |
 | J5 | Stem shape | | look | round, D, cross, keyed? |
-| J6 | Stem top height above PCB, centred | | cal | |
+| J6 | Stem top height above PCB, centred | 5.00 | cal 2026-09-24 | Austin read 15.66 socket top to stem tip, minus L3+L7 10.66. `measurements/2026-09-24-cal-J6-lcd-joystick-height-1.jpg` |
 | J7 | Stem tilt angle, full deflection | | cal / ds | |
 | J8 | Stem top travel at full deflection, horizontal | | cal | |
 | J9 | Centre press travel | | cal / ds | |
