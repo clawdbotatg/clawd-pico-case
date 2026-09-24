@@ -42,3 +42,15 @@ J1/J2 — all tagged `scan01`, all "confirm cal". Pink Pico and ATECC608 rows
 not filled: those boards sat tilted on their connectors and scanned soft.
 Lesson for scan 02: put each board's FLAT side on the glass, or shim the
 connector end so the PCB lies parallel to the glass.
+
+## 2026-09-24 caliper session, on the iPad camera
+
+Files `2026-09-24-cal-<ROW>-<what>-<n>.jpg`, one per reading, frame grabbed
+the moment Austin read the number. Every row says "cal 2026-09-24". Filled:
+LCD L1 L2 L3 L7, S3, the whole button B1–B7, J4 J5 J6; PINK P1 P2 P3 P12 P13
+P15 P18; the stack A1 A2; ATECC608 C1 (fits the stack, no more rows by
+Austin's call). Method for heights: hat on its long edge, one jaw on the
+socket top, the other on the feature; 10.66 (socket top to PCB front) is
+the common offset. Scan-vs-caliper: the scan over-reads outlines by 0.14 to
+0.18 mm from edge blur; feature centres were not re-checked (no need, the
+scan was sharp there).

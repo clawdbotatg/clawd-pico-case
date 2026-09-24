@@ -65,10 +65,10 @@ table once per tag; clones must not inherit the datasheet numbers.
 | PINK-P1 | Board length | 51.04 | cal 2026-09-24 | scan01 read 50.75 (edge blur); matches the official Pico outline. `measurements/2026-09-24-cal-PINK-P1-board-length-1.jpg` |
 | PINK-P2 | Board width | 20.82 | cal 2026-09-24 | scan01 read 20.95 (edge blur). `measurements/2026-09-24-cal-PINK-P2-board-width-1.jpg` |
 | PINK-P3 | PCB thickness | 1.23 | cal 2026-09-24 | `measurements/2026-09-24-cal-PINK-P3-pcb-thickness-1.jpg` |
-| PINK-P11 | USB-C overhang past board edge | | cal | |
+| PINK-P11 | USB-C overhang past board edge | 2.47 | scan01 | shell past the short edge; the scan edge was sharp here (shell sits on the glass). ±0.2 |
 | PINK-P12 | USB-C shell width | 8.87 | cal 2026-09-24 | metal shell, wide way. `measurements/2026-09-24-cal-PINK-P12-usbc-width-1.jpg` |
 | PINK-P13 | USB-C shell height | 3.08 | cal 2026-09-24 | metal shell, thin way. Shell top is ~2.4 above the PCB (A1), so ~0.7 of it sits in/below the board line. `measurements/2026-09-24-cal-PINK-P13-usbc-height-1.jpg` |
-| PINK-P15 | Tallest part above PCB, component side | | cal | |
+| PINK-P15 | Tallest part above PCB, component side | 3.25 | cal 2026-09-24 | Austin read 4.48 PCB back face to USB-C shell top = the board's full thickness; minus PINK-P3 1.23. Stack check: A1 19.95 − 17.54 = 2.4 (jaws not exactly opposite there); use 3.25. `measurements/2026-09-24-cal-PINK-P15-board-plus-usbc-height-1.jpg` |
 | PINK-P18 | Header pin length below PCB | ~10.0 | cal 2026-09-24 | Austin: 10.5 jaw to jaw including the solder tips on the top face; about 10.0 from the underside to the pin tips. The stack (A rows) is the number that matters. `measurements/2026-09-24-cal-PINK-P18-pin-length-1.jpg` |
 | PINK-P18b | Header plastic strip thickness | | cal | |
 | PINK-P19 | USB connector type | USB-C | look | |
@@ -83,7 +83,7 @@ only so the stack model can check it clears the 12.29 gap (A2).
 |---|---|---|---|---|
 | C1 | Board length | 25.3 | cal 2026-09-24 | `measurements/2026-09-24-cal-ATECC-length-1.jpg` |
 | C2 | Board width | ~18.5 | scan01 | soft, good enough for a part that touches nothing |
-| C3 | Total thickness with connectors | | cal | needed only to prove it fits the gap; take if cheap |
+| C3 | Total thickness with connectors | fits | Austin 2026-09-24 | tested in the assembled stack, fits fine. No further rows for this board |
 
 ## L. Waveshare Pico-LCD-1.3, board
 
@@ -105,7 +105,7 @@ Scale 23.666 px/mm from 196 rule ticks over 196 mm, fit RMS 0.73 px (0.031 mm); 
 
 | ID | Dimension | Value | Source | Notes |
 |---|---|---|---|---|
-| L1 | Board length (y) | 52.68 | scan01 | ±0.3, confirm cal |
+| L1 | Board length (y) | 52.5 | cal 2026-09-24 | scan01 read 52.68 (edge blur +0.18). `measurements/2026-09-24-cal-L1-lcd-board-length-1.jpg` |
 | L2 | Board width (x) | 26.44 | cal 2026-09-24 | scan01 read 26.58 (edge blur +0.14). `measurements/2026-09-24-cal-L2-lcd-board-width-1.jpg` |
 | S1 | Glass outline length (y) | 26.48 | scan01 | black glass as visible; ±0.2 |
 | S2 | Glass outline width (x) | 25.19 | scan01 | ±0.2 |
