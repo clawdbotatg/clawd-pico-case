@@ -1,0 +1,78 @@
+{
+  "revision": "v1.0",
+  "checks": {
+    "lid_valid_single_solid": true,
+    "base_valid_single_solid": true,
+    "lid_changes_only_at_joystick_throat": true,
+    "lid_really_changed": true,
+    "joystick_throat_open_at_new_centre": true,
+    "joystick_cap_clear_at_rest": true,
+    "joystick_cap_retained_on_pull": true,
+    "base_changes_only_at_usb_and_reset": true,
+    "base_really_changed": true,
+    "old_openings_refilled_in_wall_only": true,
+    "usb_aperture_open_at_new_height": true,
+    "usb_aperture_below_seam": true,
+    "reset_access_open_at_new_position": true,
+    "hardware_clear": true,
+    "fully_closed_no_shell_overlap": true,
+    "catches_hold_after_0_06mm_lift": true,
+    "buttons_clear_lid": true,
+    "button_retained_0": true,
+    "button_retained_1": true,
+    "button_retained_2": true,
+    "button_retained_3": true,
+    "button_travel_0": true,
+    "button_travel_2": true,
+    "button_travel_4": true,
+    "button_travel_6": true,
+    "button_travel_8": true,
+    "joystick_identical_to_tested_J2": true,
+    "button_1_identical_to_tested_S2": true,
+    "button_2_identical_to_tested_S2": true,
+    "button_3_identical_to_tested_S2": true,
+    "button_4_identical_to_tested_S2": true,
+    "plate_seven_parts": true,
+    "plate_parts_separate": true,
+    "plate_all_on_bed": true,
+    "plate_fits_256_bed": true
+  },
+  "passed": true,
+  "joystick_hole_centre": [
+    13.467100000000002,
+    45.8792
+  ],
+  "joystick_hole_from_S1": [
+    0,
+    0.25
+  ],
+  "usb_aperture_z": [
+    -18.0,
+    -14.219999999999999
+  ],
+  "usb_from_S1": 0.25,
+  "reset_centre": [
+    16.506800000000002,
+    39.437
+  ],
+  "reset_from_S1": [
+    0,
+    -0.25
+  ],
+  "case_mm": [
+    33.04,
+    59.099999999999994,
+    24.840000000000003
+  ],
+  "plate_mm": [
+    71.08000000000001,
+    74.5,
+    18.670000000000005
+  ],
+  "physical_fit_confirmed": false,
+  "notes": [
+    "S2 fit confirmed by Austin; v1.0 = S2 plus three 0.25 mm nudges, not printed.",
+    "Nudges are from hand feel and photos, not caliper readings.",
+    "PETG fit untested; first PETG set is the check."
+  ]
+}

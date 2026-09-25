@@ -401,3 +401,13 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | S2-BUTTON | Top z6.90 vs6.40, top-edge rounding radius1.20; unchanged4.2×5.4 post and4.85×6.3 flange | Original trial tactile profile, +0.50 mm height, narrower top contact surface |
 | S2-KEEP | Same S1 lid, shell body, rails, USB/reset/pry, J2 joystick, button centres/flanges/contact planes | Minimize reprints; no hardware datum changes |
 | S2-PLATE | 5mm spacing; base plus four buttons, floor/flanges down | Original plate arrangement; PLA0.16,4walls, no supports/raft |
+### V1.0 production nudges — Austin's final physical test of S2
+
+| ID | Value | Source |
+|---|---|---|
+| V1-FEEDBACK | S2 base + S2 buttons on S1 lid with J2: "This works." Snap and buttons accepted | Austin, 2026-09-25, hands-on test of printed parts |
+| V1-NUDGE | 0.25 mm per nudge | Austin's estimate ("just a hair ... quarter millimeter"), not a caliper reading |
+| V1-JOY | Joystick throat +0.25 y (toward USB-C end, away from LCD); x unchanged. Centre now (13.4671, 45.8792) | Austin's feedback + photo IMG_0848 (direction only, no dimension taken) |
+| V1-USB | USB-C aperture and outer plug recess +0.25 z (toward lid); size unchanged. Aperture z -18.00 to -14.22 | Austin's feedback + photo IMG_0844: receptacle touches top edge. Bottom clearance to modelled shell drops 0.35 → 0.10 |
+| V1-RESET | Base reset hole -0.25 y (away from USB-C end, toward centre). Centre now (16.5068, 39.4370) | Austin's feedback |
+| V1-PLATE | 5 mm gap; 7 parts: lid face down, base floor down, J2 + four S2 caps flange down | Same arrangement as S1-PLATE |

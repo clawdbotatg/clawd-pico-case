@@ -1,15 +1,10 @@
 # clawd-pico-case
 
-Latest correction: **V3-FLAT lid only, FACE DOWN**, no supports/raft.
-Whole outer face raised toz5.1 for testing, as requested. Build with
-`cad/v3_flat.py`, file `stl/v3-flat/v3-flat-lid-face-down.stl`.
-Details and status: [single review document](JOYSTICK-REVIEW.md).
-The upright V3 plan below is superseded.
-
-Current print candidate: **V3 fitted base and lid only**, reusing V2 buttons
-and J1 joystick. See [complete review](JOYSTICK-REVIEW.md). Build with
-`cad/v3_fit.py`; current files in `stl/v3-fit/`, preview in `renders/v3-fit/`.
-Older drafts below and `stl/print/` are historical, not this print request.
+**Current: [v1.0, the first production version](RELEASE-v1.0.md).** Print
+`stl/v1.0/`, and see the [3D model](renders/v1.0/viewer.html) and the
+[photos](prints/v1.0-photos/README.md). Everything else in `stl/`, `renders/`
+and `prints/` is development history (0.x prototypes), kept on purpose as
+the design record.
 
 An MIT-licensed 3D-printed case for a USB-C RP2040 Pico clone (the pink board) plugged into a
 Waveshare Pico-LCD-1.3 (240x240 screen, joystick, four buttons). Buttons and
@@ -58,7 +53,7 @@ What we do not copy is their files and their styling choices.
 | `prints/` | Print log: what was printed, what fit, what did not |
 | `measurements/` | Caliper photos and datasheet drawings |
 
-## Status
+## Development history (superseded by v1.0)
 
 **Latest: low-lid V3 review, with the lid 1 mm above the glass.**
 [Interactive model](renders/v3-low/viewer.html) · [Low-lid design and limitations](reports/2026-09-25-low-lid-experiments.md).
@@ -101,12 +96,12 @@ With Python 3.12 and dependencies in requirements.txt:
 ```sh
 python -m venv .venv
 .venv/bin/pip install -r requirements.txt
-.venv/bin/python cad/build.py
+.venv/bin/python cad/v1_production.py
 ```
 
-The build audits geometry before exporting STL/STEP, print orientations,
-joystick fit samples, viewer, preview and source/output hashes. Print only
-the enclosure parts in `stl/print/`; hardware proxies in `stl/` are for inspection.
+This checks the v1.0 geometry, then writes `stl/v1.0/` and `renders/v1.0/`
+(STEP, viewer, validation and hashes). `cad/build.py` and `stl/print/` belong
+to the old R4/R5 prototype. Do not print them.
 
 ## License
 

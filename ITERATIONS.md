@@ -179,3 +179,12 @@ Four button caps have tops0.50mm taller, rounded radius1.20, same interfaces.
 Original isolated cad/s2_tight_base.py, stl/renders/s2-tight-base. 36 checks
 pass. Reuse S1 lid and J2; physical force and tactile test pending. IMG_0840
 archives assembled S1 baseline, duplicate uploads stored once with hashes.
+## V1.0 — first production release
+
+The earlier V1/V2/V3, R, J, L and S rounds were development prototypes (0.x).
+S2 passed Austin's test. V1.0 = S1 lid + S2 base + S2 buttons + J2, plus three
+0.25 mm nudges: the joystick hole moves toward USB-C, the USB-C opening moves
+up, and the reset hole moves toward the centre. Source: cad/v1_production.py.
+Outputs: stl/v1.0 and renders/v1.0, with 35 checks passing and the browser
+viewer tested. Not printed in PLA, at Austin's request; the next prints are in
+PETG. Photos: prints/v1.0-photos. Tag: v1.0.

@@ -111,3 +111,17 @@ slice review. Keep existing lid/pry notch; no new exterior slots.
 Caps retain V2 interface, gain0.50mm height and1.20mm rolled top edges to
 separate finger contact areas. No change to button spacing or flange height.
 Print five parts in PLA; defer PETG/colors until fit iterations finish.
+## V1.0 production — final nudges
+
+S2 passed Austin's hands-on test, so the design is frozen apart from three
+0.25 mm nudges. Each one moves an opening and keeps its size, so nothing else
+in the fit changes. Joystick throat: +y, away from the LCD. It uses L4's
+method: fill the old throat through the roof, then cut the new one. The pocket
+underneath does not move. USB-C aperture and plug recess: +z. Both stay under
+the seam, so the lid needs no change there. The bottom clearance to the
+modelled shell drops to 0.10 mm, which is fine because the photo shows the
+real receptacle sitting high. Reset hole: -y. Each opening is refilled only
+inside the original wall or floor before it is recut, and a check shows
+nothing else changed. The buttons and J2 are byte-identical to the tested
+parts. PETG shrinks differently from PLA, so the first PETG set is also a
+fit check.

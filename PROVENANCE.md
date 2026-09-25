@@ -344,3 +344,27 @@ SHA256 confirms identical originals. Save one metadata-stripped public copy
 in prints/s1-photos with original/public hashes and unchanged pixel check.
 Image shows assembled case; no dimension derived. Records S1 physical
 baseline before tighter-base/rounded-button S2, not an S2 test result.
+## 2026-09-25 — v1.0 production release
+
+Austin tested the printed S2 base and buttons with the S1 lid and J2 joystick
+and said "This works." He asked for three final nudges of about 0.25 mm each
+and said not to print them in PLA. He asked to save the result as version 1.0,
+the first production version, under MIT, before printing sets in PETG.
+- Joystick hole: 0.25 mm toward the USB-C end, away from the LCD.
+- Reset hole in the base: 0.25 mm away from the USB-C end, toward the centre.
+- USB-C opening: 0.25 mm toward the top (the lid).
+These numbers are his hand estimates, not caliper readings (rows V1-*).
+
+Austin sent five of his own photos: IMG_0844 (USB-C end), IMG_0848 (joystick
+hole close-up), IMG_0849 and IMG_0852 (assembled case), and IMG_0854 (the
+final case on top of the discarded prototypes). They are saved without
+metadata in prints/v1.0-photos. They show direction only; no dimension was
+taken from them.
+
+The work was done by Claude (Anthropic) in a new session started in this
+repository. Codex had stopped partway with a login error. Austin pasted
+Codex's session log from this repo, and Claude read only that log, this
+repository's files and his photos. Claude did not open any forbidden source,
+any other case design, or anything in ~/picowallet. There is no new
+third-party geometry. cad/v1_production.py builds on the S2 and S1 sources
+in this repository.

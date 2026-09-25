@@ -1,6 +1,18 @@
 # V3 shell and joystick review
 
-## CURRENT: S2 tighter base + rounded buttons; KEEP S1 lid/J2
+## CURRENT: V1.0 production — S2 + three 0.25 mm nudges. NOT printed.
+
+S2 works (Austin, 2026-09-25). V1.0 = S1 lid + S2 base + S2 buttons + J2
+with three nudges: the joystick hole moves 0.25 toward USB-C (away from the
+LCD), the USB-C opening moves 0.25 up toward the lid, and the reset hole moves
+0.25 away from USB-C. Opening sizes are unchanged. 35 checks pass, including
+"only these openings changed" and "the geometry really changed".
+Source cad/v1_production.py. Print set stl/v1.0/v1.0-full-set-seven-parts.stl
+(lid face down, base floor down, caps flange down, no supports or raft).
+Viewer port 8793 /v1.0/viewer.html. Austin: no PLA print; the next prints
+are PETG. Details in RELEASE-v1.0.md.
+
+## Historical: S2 tighter base + rounded buttons; KEEP S1 lid/J2
 
 Austin reports S1 base hangs roughly 0.25 mm when held by top, opens too
 easily, and buttons lack tactile separation. S2 prints only replacement base

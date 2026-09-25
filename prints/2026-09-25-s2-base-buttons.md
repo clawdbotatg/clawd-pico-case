@@ -25,3 +25,10 @@ Server confirms34.40×70.40×18.67mm, fits bed, matching SHA256:
 `044036e3313a87cc659227e269e47603cd21a9ca204dde046f40b6c65acd14ca`.
 Explicit GO accepted; initial status new, actual start unconfirmed.
 Austin notified by inbox. Browser render/controls test also passed.
+
+## Result
+
+Printed and assembled with the S1 lid and J2. Austin: "This works. This is
+good." The snap and the button feel are accepted. Three 0.25 mm nudges
+remain (joystick hole, USB-C height, reset hole); they went into
+[V1.0](../RELEASE-v1.0.md) and were not reprinted in PLA.
