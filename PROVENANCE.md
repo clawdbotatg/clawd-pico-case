@@ -132,3 +132,29 @@ touched geometry, and what that session had seen.
   notices only. No geometry changes, external case references, new hardware
   dimensions or printer actions. Specific socket failure cause and actual
   slicer support construction remain unverified.
+
+## 2026-09-25. V3 browser-review design, Codex.
+
+- Austin reports V2 USB opening aligns but rejects the lid fin/tab and its
+  gaps. Restore closed base port style with V2 alignment. Keep working pry
+  notches, bottom access and rectangular caps.
+- Requests earlier joystick bottom/interface and V2 ball, captured inside a
+  flat lid; permits uniform extra lid height and correspondingly taller caps.
+  No support layer or raised local collar. Requests interactive browser
+  rendering and approval before printing; no printer action authorized now.
+- Inspected only this repository's original commits6469436 and4010773.
+  Both sockets2.01 and roof5.30 versus V2 socket1.91 and roof5.00. Select
+  full-case4010773 lower geometry as explicit provisional V1 baseline;
+  exact physical cap source not independently confirmed. No external models.
+- Original tapered flange and small ball-top print flat added for support-
+  avoiding inverted cap printing; choices logged D6, not hardware readings.
+
+- Final V3 review: flat top4.0 mm higher, original full-case lower shape
+  matched by CAD difference checks. Smaller pocket and screen-side web keep
+  the joystick relief from opening into the display well. Closed-port
+  USB-first assembly checked at19 separate-Pico poses; physical test pending.
+- Required geometry checks206 passed;48 intersections with guessed joystick
+  body retained as unresolved sensitivity diagnostics rather than changing
+  the reported-working earlier neck to satisfy an unmeasured proxy.
+- Browser controls tested in local Chromium. Served only renders/ on LAN
+  port8765 for user review. No printer interaction. V3 approval remains pending.

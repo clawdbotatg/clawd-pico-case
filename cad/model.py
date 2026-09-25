@@ -3,7 +3,7 @@
 Returns plain Parts placed in the frame from params.py. build.py exports
 them. Run this file directly for a bounding-box sanity print.
 """
-from build123d import (Axis, Box, Cylinder, Sphere, Location, Part, Pos, Rot,
+from build123d import (Axis, Box, Cylinder, Cone, Sphere, Location, Part, Pos, Rot,
                        fillet, Plane, Rectangle, extrude, Circle, Polygon)
 import params as P
 
@@ -92,7 +92,7 @@ Z_FLOOR_TOP = Z_USB_BOT - P.CLEAR
 Z_BOTTOM = Z_FLOOR_TOP - P.FLOOR
 Z_SPLIT = 0.0                                              # lid meets base at the LCD front face
 Z_LID_TOP = P.S3 + P.GLASS_CLEAR + P.LID_TOP
-Z_COLLAR_TOP = P.JOY_POCKET_TOP + P.JOY_ROOF_T
+Z_COLLAR_TOP = Z_LID_TOP  # compatibility name: V3 has NO collar
 TONGUE_INSET = P.SKIRT + P.MATE_CLEAR
 USB_Z0 = Z_USB_SHELL_BOT - P.USB_CLEAR
 USB_Z1 = Z_USB_SHELL_BOT + P.P13 + P.USB_CLEAR
@@ -151,9 +151,9 @@ def base():
                   (right, top - P.SHELF_T)], IY0, IY1)
     # D5-USB aperture selects A1's higher position after V1 photo feedback.
     ywall0, ywall1 = (IY1 - P.TOOL_EXT, Y1 + P.TOOL_EXT) if USB_SIGN > 0 else (Y0 - P.TOOL_EXT, IY0 + P.TOOL_EXT)
-    # Open to the rim for straight-down insertion of the already connected stack.
+    # V3 closed port; USB-first assembly, not connected-stack vertical insertion.
     b -= box(PICO_CX - USB_HALF_W, PICO_CX + USB_HALF_W,
-             ywall0, ywall1, USB_Z0, Z_SPLIT + P.TOOL_EXT)
+             ywall0, ywall1, USB_Z0, USB_Z1)
     b -= plug_recess()
     access = Pos(*ACCESS_C, (Z_BOTTOM + Z_FLOOR_TOP) / 2) * Cylinder(
         P.ACCESS_D / 2, P.FLOOR + 2 * P.TOOL_EXT)
@@ -168,20 +168,11 @@ def lid():
     # ceiling cavity: over the PCB, up to the glass clearance
     cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - P.TOOL_EXT, P.S3 + P.GLASS_CLEAR, P.CAVITY_R)
     l = outer - cav - cav2
-    # Raised retaining roof: the ball passes through, the wider lip cannot.
-    jx, jy = JOY_C
-    l += Pos(jx, jy, (Z_LID_TOP - P.EPS + Z_COLLAR_TOP) / 2) * Cylinder(
-        P.JOY_COLLAR_D / 2, Z_COLLAR_TOP - Z_LID_TOP + P.EPS)
     # Four contacts above the supporting side shelves. Bare PCB needs bench confirmation.
     for px in (P.LID_PAD_INSET, P.L2 - P.LID_PAD_INSET - P.LID_PAD):
         for py in (P.LID_PAD_INSET, P.L1 - P.LID_PAD_INSET - P.LID_PAD):
             l += box(px, px + P.LID_PAD, py, py + P.LID_PAD, P.LID_PAD_GAP, P.S3 + P.GLASS_CLEAR + P.EPS)
-    # Lid fin fills the assembly channel, leaving USB clearance below it.
-    fy0, fy1 = (IY1, Y1) if USB_SIGN > 0 else (Y0, IY0)
-    l += box(PICO_CX - USB_HALF_W + P.USB_FIN_CLEAR,
-             PICO_CX + USB_HALF_W - P.USB_FIN_CLEAR, fy0, fy1,
-             USB_Z1, P.S3 + P.GLASS_CLEAR)
-    l -= plug_recess()
+    # No USB fin: the complete port belongs to the base again.
     # snap windows: through the skirt where the bumps are (the old blind notches were cut on
     # the cavity side and removed nothing). A window also lets a fingernail push a bump in to open.
     zlo = P.SNAP_Z - P.SNAP_BUMP_T / 2 - P.SNAP_WIN_CLEAR
@@ -217,8 +208,11 @@ def lid():
     # Large underside pocket clears silver body and moving flange. Smaller
     # throat above it admits the ball during assembly and captures the lip.
     jx, jy = JOY_C
-    l -= Pos(jx, jy, (P.JOY_POCKET_TOP - P.TOOL_EXT) / 2) * Cylinder(
+    joy_pocket = Pos(jx, jy, (P.JOY_POCKET_TOP - P.TOOL_EXT) / 2) * Cylinder(
         P.JOY_POCKET_D / 2, P.JOY_POCKET_TOP + P.TOOL_EXT)
+    joy_pocket &= box(X0, X1, gy + P.S1 / 2 + w + P.JOY_SCREEN_WEB,
+                      Y1, -P.TOOL_EXT, Z_LID_TOP)
+    l -= joy_pocket
     l -= Pos(jx, jy, Z_COLLAR_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_COLLAR_TOP + 2 * P.TOOL_EXT)
     return l - pry_notches()
 
@@ -243,7 +237,13 @@ def joystick_cap(socket_clear=None):
         P.JOY_NECK_D / 2, P.JOY_BALL_Z - bot)
     cap += Pos(jx, jy, P.JOY_FLANGE_Z + P.JOY_FLANGE_T / 2) * Cylinder(
         P.JOY_FLANGE_D / 2, P.JOY_FLANGE_T)
+    taper_h = (P.JOY_FLANGE_D - P.JOY_NECK_D) / 2
+    cap += Pos(jx, jy, P.JOY_FLANGE_Z + P.JOY_FLANGE_T + taper_h / 2) * Cone(
+        P.JOY_FLANGE_D / 2, P.JOY_NECK_D / 2, taper_h)
     cap += Pos(jx, jy, P.JOY_BALL_Z) * Sphere(P.JOY_BALL_D / 2)
+    top = P.JOY_BALL_Z + P.JOY_BALL_D / 2 - P.JOY_BALL_FLAT
+    cap -= box(jx-P.JOY_BALL_D, jx+P.JOY_BALL_D,
+               jy-P.JOY_BALL_D, jy+P.JOY_BALL_D, top, top+P.JOY_BALL_D)
     s = (P.J4 + (P.JOY_SOCKET_CLEAR if socket_clear is None else socket_clear)) / 2
     socket = box(jx - s, jx + s, jy - s, jy + s, bot - P.TOOL_EXT, P.J6 + P.JOY_SOCKET_TIP_CLEAR)
     return cap - socket

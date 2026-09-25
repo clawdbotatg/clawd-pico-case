@@ -1,10 +1,10 @@
 {
   "source_sha256": {
-    "cad/build.py": "147b9b57e0c09d2ac52842b4de94d5be06a57d7df6f3696f7b22670d9f686824",
-    "cad/model.py": "3bac555198723692d31fcd034a846436d26f8e68a6213d6b0247569f1f6f8a0b",
-    "cad/params.py": "8450b2ff1f41b34e46218b8cc61be262f1edb5e523d2eb885271856f1a5e84e2",
-    "cad/render.py": "c05fef6693979579f3a95671a18b30ac5f8ddeb5b4acfe7eb1bd7dece6547f9f",
-    "cad/validate.py": "d0d8808448771464a2a67c47e625bdef8bba00ef3ad2e5802ddb006e78a6708e"
+    "cad/build.py": "df9d71747bf8f86ef5dbb504b157206a1d1f28a36f67132a4ae236cc5b244d9d",
+    "cad/model.py": "b1020f6c4129d0606cb97d3c444970cc3623fd3eccdc5807e7171aa39d10cb81",
+    "cad/params.py": "59c524d0b7d2c44292c92ee2258345784ff58a65dae227ae8a2c81dab1a947b0",
+    "cad/render.py": "f778255ad37ea295ec9e436f023aca7675b65d79dafaa86fe1069a10d5d2e029",
+    "cad/validate.py": "65435f3ff01c63d0e3083e3e40cc15ec0e1f4bcceea2e4b7bef17e4b4aa51e69"
   },
   "checks": [
     {
@@ -25,7 +25,12 @@
     {
       "name": "lid[0] bed contact",
       "passed": true,
-      "value": 126.969
+      "value": 912.1
+    },
+    {
+      "name": "lid broad flat face directly on bed",
+      "passed": true,
+      "value": 912.1
     },
     {
       "name": "button_caps valid solid count",
@@ -60,7 +65,42 @@
     {
       "name": "joystick_cap[0] bed contact",
       "passed": true,
-      "value": 10.206
+      "value": 15.582
+    },
+    {
+      "name": "lid has no raised collar",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "lid has no USB fin",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier socket width restored",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier socket roof restored",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier socket bottom restored",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier lower joystick shape: no added material",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier lower joystick shape: no missing material",
+      "passed": true,
+      "value": null
     },
     {
       "name": "assembled hat/pico",
@@ -323,7 +363,97 @@
       "value": 0
     },
     {
-      "name": "continuous USB insertion",
+      "name": "USB-first separate Pico path 0,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -2,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -4,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -6,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -8,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -10,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-0.3,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-0.6,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-0.9,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.2,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.5,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,12",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,20",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,30",
       "passed": true,
       "value": 0
     },
@@ -403,7 +533,7 @@
       "value": null
     },
     {
-      "name": "joystick upward retention",
+      "name": "joystick upward retention before socket disengagement",
       "passed": true,
       "value": null
     },
@@ -433,17 +563,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=0, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=45, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -453,17 +573,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=90, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=135, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -473,17 +583,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=180, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=225, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -493,17 +593,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=270, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=315, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -513,17 +603,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=0, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=45, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -533,17 +613,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=90, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=135, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -553,17 +623,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=180, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=225, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -573,17 +633,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=270, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=315, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -593,17 +643,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=0, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=45, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -613,17 +653,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=90, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=135, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -633,17 +663,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=180, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=225, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -653,17 +673,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=270, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=315, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -673,17 +683,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=0, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=45, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=45, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -693,17 +693,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=90, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=135, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -713,17 +703,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=180, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=225, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -733,17 +713,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=270, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=0, az=315, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=0, az=315, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -753,17 +723,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=0, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=45, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=45, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -773,17 +733,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=90, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=135, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -793,17 +743,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=180, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=225, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -813,17 +753,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=270, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=5, az=315, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=5, az=315, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -833,17 +763,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=0, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=45, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=45, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -853,17 +773,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=90, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=135, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -873,17 +783,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=180, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=225, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -893,17 +793,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=270, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=0, tilt=10, az=315, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=0, tilt=10, az=315, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -913,17 +803,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=0, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=45, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -933,17 +813,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=90, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=135, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -953,17 +823,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=180, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=225, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -973,17 +833,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=270, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=315, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -993,17 +843,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=0, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=45, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -1013,17 +853,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=90, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=135, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -1033,17 +863,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=180, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=225, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -1053,17 +873,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=270, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=315, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -1073,17 +883,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=0, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=45, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -1093,17 +893,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=90, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=135, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -1113,17 +903,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=180, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=225, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -1133,17 +913,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=270, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=315, press=0",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -1153,17 +923,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=0, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=45, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=45, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1173,17 +933,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=90, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=135, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1193,17 +943,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=180, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=225, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1213,17 +953,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=270, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=0, az=315, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=0, az=315, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1233,17 +963,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=0, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=45, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=45, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1253,17 +973,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=90, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=135, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1273,17 +983,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=180, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=225, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1293,17 +993,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=270, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=5, az=315, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=5, az=315, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1313,17 +1003,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=0, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=45, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=45, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1333,17 +1013,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=90, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=135, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1353,17 +1023,7 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=180, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=225, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1373,22 +1033,351 @@
       "value": 0
     },
     {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=270, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
       "name": "joystick scenario pivot=3, tilt=10, az=315, press=0.3",
-      "passed": true,
-      "value": 0
-    },
-    {
-      "name": "joystick fixed hardware pivot=3, tilt=10, az=315, press=0.3",
       "passed": true,
       "value": 0
     }
   ],
   "unresolved": {
+    "joystick_guessed_body_scenario_intersections": [
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 0,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 45,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 90,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 135,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 180,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 225,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 270,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 315,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 1.29536
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 1.301175
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 1.29536
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 1.301175
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 1.29536
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 1.301175
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 1.29536
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 1.301175
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 0,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 45,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 90,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 135,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 180,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 225,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 270,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 315,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 0.990712
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 0.988775
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 0.990712
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 0.988775
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 0.990712
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 0.988775
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 0.990712
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 0.988775
+      }
+    ],
+    "closed_port_requires_USB_first_assembly": true,
     "blue_flag_lid_intersection_mm3": 5.28,
     "not_verified": [
       "actual joystick travel/pivot/body/lip/press fit",

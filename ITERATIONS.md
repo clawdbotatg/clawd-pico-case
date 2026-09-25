@@ -48,6 +48,17 @@ physical-fit certification. Older WIP remains saved under its own tag.
 
 ## Hash records
 
+## V3 browser review — 2026-09-25
+
+Tag `v3-review-1`: original4010773 lower joystick interface, V2-sized ball
+with printing flat, tapered inside lip, uniformly flat lid4 mm higher, longer
+button stems, closed USB base port without fin. V2 USB alignment retained.
+Browser viewer includes orbit, explode, part toggles and shell transparency.
+See `reports/2026-09-25-v3-review.md`; requires Austin's approval before print.
+No printer submission. Geometry/tag are a review checkpoint, not print success.
+
+## Hash records (all revisions)
+
 2026-09-25 physical result: Austin reports V2 joystick socket failure and
 support-related button-hole problems. Pry access, bottom access alignment
 and rectangular cap shape worked. `reports/2026-09-25-v2-review.md` records

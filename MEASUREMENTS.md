@@ -252,6 +252,22 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### V2 print candidate / R5 completed choices
 
+### V3 review choices — 2026-09-25
+
+Austin reports V2 USB alignment good but rejects the tall lid fin/tab and
+gaps. Requests V1-style closed port, earlier joystick interface plus V2 ball,
+internal retaining lip, flat support-free lid. Uniform extra case height is
+allowed if needed; buttons must maintain protrusion. Browser approval before
+printing. No new physical measurement supplied.
+
+| ID | Choice | Source / limitation |
+|---|---|---|
+| D6-SOCKET | square2.01, roof z5.30, bottom z3.40, neck Ø5 | repository's original full-case test2 commit4010773; both earlier submitted caps used2.01 square and roof5.30, but first lid-only cap had bottom4.00 and neck7.8. Exact physical V1 cap source still unconfirmed; select full-case baseline explicitly, not a proven identification |
+| D6-JOY | ball Ø7, centre11.4 retained; flatten top .8 for inverted bed contact; flange Ø10.4, bottom5.0, thickness.6; upper flange 45-degree taper from radius5.2 at5.6 to radius2.5 at8.3 | original support-avoiding construction; lower socket unchanged from selected earlier CAD |
+| D6-LID | whole flat lid top8.6; joystick pocket Ø13, ceiling7.4; throat Ø9.6; roof1.2; buttons protrude1.8; screen-side pocket wall .4 | uniform lid4.0 higher than V1/V2 flat face, no local boss; clipped pocket keeps a thin wall to screen; inspect wall in slicing |
+| D6-USB | closed rectangular base port at V2 bounds, existing cable recess, no lid fin | user reports alignment works; restores closed-port topology, assembly now USB-first rather than straight drop of connected stack |
+| V6 | cap pull-up1.55; tilt scenarios inherited; USB-first separate Pico path: rotate0 to -12 degrees around shell-front centre, retreat1.8 in y, lift30; steps2degrees/.3mm/selected lift heights; full lid bed area >300 square mm; flat top tolerance .001 | diagnostics not physical validation; actual USB-first assembly and support-free slicing require review |
+
 Austin authorizes scan-based estimates and iteration (2026-09-24).
 
 | ID | Value | Source / rationale |

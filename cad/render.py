@@ -21,10 +21,10 @@ def render():
         mesh[name] = (np.array([tuple(v) for v in verts]), triangles,
                       np.array([int(color[i:i+2], 16) for i in (1, 3, 5)]))
     panels = [
-        ('V2 / R5 assembled', dict.fromkeys(mesh, 0), (1, -1.6, 1.7)),
+        ('V3 / review only', dict.fromkeys(mesh, 0), (1, -1.6, 1.7)),
         ('Assembly / exploded', {'base': -12, 'pico': -3, 'hat': 9,
                                  'lid': 23, 'button_caps': 32, 'joystick_cap': 32}, (1, -1.6, 1.2)),
-        ('Lid / inside and USB fin', {'lid': 0}, (-1, -1.6, -1.7)),
+        ('Lid / inside, no USB fin', {'lid': 0}, (-1, -1.6, -1.7)),
         ('Base / sloped supports', {'base': 0}, (1, -1.6, 1.7)),
     ]
     canvas = Image.new('RGB', (1600, 1600), '#eeece5')
@@ -85,7 +85,7 @@ def render():
         draw.text((ox + 35, oy + 20), title, font=font, fill='#252b31')
     draw.text((35, 1530), 'Original measured-board prototype / MIT / unverified physical fit', font=font, fill='#252b31')
     draw.text((35, 1570), 'Illustrative hardware; blue flag omitted pending identification. No other case geometry used.', font=small, fill='#4d535a')
-    canvas.save(ROOT / 'renders' / 'r5-preview.png')
+    canvas.save(ROOT / 'renders' / 'v3-preview.png')
 
 
 if __name__ == '__main__':

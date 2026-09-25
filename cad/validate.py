@@ -38,7 +38,7 @@ def run():
     for name in ('base', 'lid', 'button_caps', 'joystick_cap'):
         p = parts[name]
         check(name + ' valid solid count', p.is_valid and len(p.solids()) == (4 if name == 'button_caps' else 1), len(p.solids()))
-        oriented = Rot(180, 0, 0) * p if name == 'lid' else p
+        oriented = Rot(180, 0, 0) * p if name in ('lid', 'joystick_cap') else p
         zmin = oriented.bounding_box().min.Z
         # Every independent solid must have a real planar bed contact.
         for i, solid in enumerate(oriented.solids()):
@@ -46,6 +46,21 @@ def run():
                       if abs(f.bounding_box().min.Z - zmin) < TOL
                       and abs(f.bounding_box().max.Z - zmin) < TOL)
             check(f'{name}[{i}] bed contact', bed > 1, round(bed, 3))
+            if name == 'lid':
+                check('lid broad flat face directly on bed', bed > 300, round(bed, 3))
+    check('lid has no raised collar', abs(parts['lid'].bounding_box().max.Z - M.Z_LID_TOP) < .001)
+    check('lid has no USB fin', abs(parts['lid'].bounding_box().min.Z + P.TONGUE_H) < .001)
+    check('earlier socket width restored', abs(P.J4 + P.JOY_SOCKET_CLEAR - 2.01) < TOL)
+    check('earlier socket roof restored', abs(P.J6 + P.JOY_SOCKET_TIP_CLEAR - 5.3) < TOL)
+    check('earlier socket bottom restored', abs(P.J6 - P.JOY_ENGAGE - 3.4) < TOL)
+    # D6-SOCKET: reproduce the earlier 4010773 lower shape below the new lip.
+    jx, jy = M.JOY_C
+    lower_zone = M.box(jx-5, jx+5, jy-5, jy+5, 3.4, 5.0)
+    old_lower = Pos(jx, jy, 4.2) * Cylinder(2.5, 1.6)
+    old_lower -= M.box(jx-2.01/2, jx+2.01/2, jy-2.01/2, jy+2.01/2, 3.3, 5.3)
+    new_lower = parts['joystick_cap'] & lower_zone
+    check('earlier lower joystick shape: no added material', abs((new_lower - old_lower).volume) < TOL)
+    check('earlier lower joystick shape: no missing material', abs((old_lower - new_lower).volume) < TOL)
 
     # Flag is intentionally unresolved and reported separately, not hidden as a pass.
     for a, b in itertools.combinations([n for n in parts if n != 'fpc_tape'], 2):
@@ -82,7 +97,17 @@ def run():
                      min(M.USB_EDGE_Y, M.USB_EDGE_Y + M.USB_SIGN * P.P11),
                      max(M.USB_EDGE_Y, M.USB_EDGE_Y + M.USB_SIGN * P.P11), M.Z_USB_SHELL_BOT, P.L1)
     clear('continuous Pico insertion', pcb_sweep, parts['base'])
-    clear('continuous USB insertion', usb_sweep, parts['base'])
+    # Closed V1-style port deliberately prevents vertical USB insertion.
+    # Do not present this rejected assembly path as a valid one.
+    # V6: reverse USB-first insertion with Pico separate from the hat.
+    py = M.USB_EDGE_Y + P.P11
+    pz = M.Z_USB_SHELL_BOT + P.P13 / 2
+    poses = [(a, 0, 0) for a in (0, -2, -4, -6, -8, -10, -12)]
+    poses += [(-12, y, 0) for y in (-.3, -.6, -.9, -1.2, -1.5, -1.8)]
+    poses += [(-12, -1.8, z) for z in (1, 3, 6, 12, 20, 30)]
+    for angle, dy, dz in poses:
+        pose = Pos(0, dy, dz) * Pos(0, py, pz) * Rot(angle, 0, 0) * Pos(0, -py, -pz) * parts['pico']
+        clear(f'USB-first separate Pico path {angle},{dy},{dz}', pose, parts['base'])
     clear('continuous hat insertion', M.box(0, P.L2, 0, P.L1, -P.L3, P.L1), parts['base'])
     # Fin translates down with lid; check sampled path against seated hardware.
     for dz in (0, 1, 3, 6, 12, 20):
@@ -104,13 +129,14 @@ def run():
     # Sensitivity only: actual joystick pivot, angular travel and click unknown.
     jx, jy = M.JOY_C
     check('ball passes throat; flange retained', P.JOY_BALL_D < P.JOY_HOLE_D < P.JOY_FLANGE_D)
-    check('joystick upward retention', (Pos(0, 0, 1.05) * parts['joystick_cap'] & parts['lid']).volume > TOL)
+    check('joystick upward retention before socket disengagement', (Pos(0, 0, 1.55) * parts['joystick_cap'] & parts['lid']).volume > TOL)
     # Conservative continuous downward sweeps relative to the descending lid.
     sweep_bottom = M.Z_BOTTOM
     flange_top = P.JOY_FLANGE_Z + P.JOY_FLANGE_T
     ball_top = P.JOY_BALL_Z + P.JOY_BALL_D / 2
     sweep = Pos(jx, jy, (sweep_bottom + flange_top) / 2) * Cylinder(P.JOY_FLANGE_D / 2, flange_top - sweep_bottom)
     sweep += Pos(jx, jy, (sweep_bottom + ball_top) / 2) * Cylinder(P.JOY_BALL_D / 2, ball_top - sweep_bottom)
+    sweep += parts['joystick_cap']  # includes downward-widening flange taper
     clear('continuous lid installation over mounted joystick', sweep, parts['lid'])
     for side, x0, x1 in [('left', M.X0 - .2, M.X0 + .7), ('right', M.X1 - .7, M.X1 + .2)]:
         tool = M.box(x0, x1, M.CY - 2, M.CY + 2, -P.TONGUE_H - .3, -P.TONGUE_H + .3)
@@ -118,6 +144,7 @@ def run():
     check('pry notch leaves 1.2mm wall', P.WALL - P.PRY_DEPTH >= 1.2 - TOL, P.WALL - P.PRY_DEPTH)
     fixed_joy_hat = parts['hat'] - M.box(jx - P.J4 / 2, jx + P.J4 / 2,
                                         jy - P.J4 / 2, jy + P.J4 / 2, P.J3, P.J6 + P.EPS)
+    hardware_sensitivity = []
     for pivot, press in itertools.product((0, 3), (0, .3)):  # V5 scenarios, not measured
         for angle in (0, 5, 10):
             for direction in range(0, 360, 45):
@@ -125,9 +152,17 @@ def run():
                        * Rot(angle, 0, 0) * Rot(0, 0, -direction)
                        * Pos(-jx, -jy, -pivot) * parts['joystick_cap'])
                 clear(f'joystick scenario pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, parts['lid'])
-                clear(f'joystick fixed hardware pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, fixed_joy_hat)
+                # Restore user's working earlier interface, not geometry changed to
+                # clear an unmeasured guessed body in an assumed pivot scenario.
+                intersection = cap & fixed_joy_hat
+                volume = abs(intersection.volume) if intersection is not None else 0
+                if volume > TOL:
+                    hardware_sensitivity.append(dict(pivot=pivot, press=press,
+                                                     angle=angle, direction=direction, mm3=round(volume, 6)))
 
     unresolved = {
+        'joystick_guessed_body_scenario_intersections': hardware_sensitivity,
+        'closed_port_requires_USB_first_assembly': True,
         'blue_flag_lid_intersection_mm3': round((parts['fpc_tape'] & parts['lid']).volume, 6),
         'not_verified': ['actual joystick travel/pivot/body/lip/press fit',
                          'bottom button identity, scan registration and assumed height',

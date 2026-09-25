@@ -1,4 +1,7 @@
-<title>Pico Case Bench</title>
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V3 Case Review — Not Approved for Print</title>
 <style>
 :root{
   --bg:#ecebe6; --panel:#f7f6f2; --ink:#1d1f22; --muted:#6b6f75; --line:#d6d3cb;
@@ -44,7 +47,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono&display=swap">
 <header>
-  <h1>Pico Case Bench</h1>
+  <h1>V3 review · NOT APPROVED FOR PRINT</h1>
   <span class="dims" id="dims"></span>
 </header>
 <main>
@@ -56,6 +59,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
       <button data-v="iso">Iso</button><button data-v="top">Screen</button><button data-v="bottom">Back</button>
       <button data-v="front">Buttons</button><button data-v="side">Side</button><button data-v="usb">USB end</button>
     </div></section>
+    <section><label class="range">Shell transparency<input type="range" id="opacity" min="0.15" max="1" value="1" step="0.05"></label></section>
     <section class="note"><h2>Assumptions in this build</h2><ul id="assume"></ul></section>
   </aside>
 </main>
@@ -117,6 +121,7 @@ function setGridColor(){const dark=matchMedia('(prefers-color-scheme: dark)').ma
 setGridColor();matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{setGridColor();draw();});
 
 $('#explode').addEventListener('input',e=>{const d=+e.target.value;for(const n in meshes)meshes[n].position.z=(EXPLODE[n]||0)*d;draw();});
+$('#opacity').addEventListener('input',e=>{for(const n of ['base','lid']){meshes[n].material.opacity=+e.target.value;meshes[n].material.depthWrite=+e.target.value===1;}draw();});
 
 // orbit: spherical camera about a target
 const target=new THREE.Vector3(0,(zmin+Math.max(...PARTS.map(p=>p.bbox[5])))/2,0);

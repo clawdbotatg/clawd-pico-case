@@ -49,6 +49,13 @@ What we do not copy is their files and their styling choices.
 
 ## Status
 
+**V3 is ready for browser review only; not approved for printing.**
+[Interactive model](renders/viewer.html) · [V3 changes and limitations](reports/2026-09-25-v3-review.md).
+Flat lid (+4 mm uniformly), restored earlier joystick interface, internal lip,
+closed USB port without the lid tab. No V3 print request has been sent.
+
+### Earlier V2 result
+
 **V2 failed its physical fit test. Do not reprint unchanged.**
 [What worked, what failed, and correction goals](reports/2026-09-25-v2-review.md).
 The V2 description below records the submitted design, not a ready replacement.
