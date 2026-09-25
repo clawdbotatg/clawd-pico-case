@@ -105,7 +105,7 @@ PARTS={'hat':(M.hat,'#1f5f7a'),'pico':(M.pico,'#d4667a'),
        'base':(base,'#c9c4b8'),'lid':(lid,'#e8e3d6'),
        'button_caps':(buttons,'#f0a030'),'joystick_cap':(joystick,'#f0a030')}
 
-def validate(parts):
+def validate(parts, flat_face=False):
     checks=[]
     def check(name,passed,value=None):
         checks.append(dict(name=name,passed=bool(passed),value=value))
@@ -115,11 +115,16 @@ def validate(parts):
     b,l,c=parts['base'],parts['lid'],parts['joystick_cap']
     for name in ('base','lid'):
         shape=parts[name];check(name+' valid single solid',shape.is_valid and len(shape.solids())==1)
-        z=shape.bounding_box().min.Z
-        area=sum(f.area for f in shape.faces() if abs(f.bounding_box().min.Z-z)<1e-5 and abs(f.bounding_box().max.Z-z)<1e-5)
-        check(name+' upright bed contact',area>50,area)
+        oriented=Rot(180,0,0)*shape if flat_face and name=='lid' else shape
+        z=oriented.bounding_box().min.Z
+        area=sum(f.area for f in oriented.faces() if abs(f.bounding_box().min.Z-z)<1e-5 and abs(f.bounding_box().max.Z-z)<1e-5)
+        check(name+' face-down bed contact' if flat_face and name=='lid' else name+' upright bed contact',area>(300 if flat_face and name=='lid' else 50),area)
     for a,z in itertools.combinations(parts,2):clear(a+'/'+z,parts[a],parts[z])
-    check('screen rim 1mm',abs(SCREEN_TOP-P.S3-1)<1e-5)
+    if flat_face:
+        check('uniform raised face maximum',abs(l.bounding_box().max.Z-JOY_TOP)<1e-5)
+        check('existing buttons protrude after full press',BUTTON_TOP+P.CAP_PROUD-P.B6>JOY_TOP,BUTTON_TOP+P.CAP_PROUD-P.B6-JOY_TOP)
+    else:
+        check('screen rim 1mm',abs(SCREEN_TOP-P.S3-1)<1e-5)
     check('lid no USB fin',abs(l.bounding_box().min.Z+P.TONGUE_H)<1e-5)
     check('snap catches on lift',J.overlap(b,Pos(0,0,P.SNAP_WIN_CLEAR+.1)*l)>1e-5)
     # Lid first passes ball; lip remains below roof and stops upward removal.
@@ -170,7 +175,7 @@ def validate(parts):
     for z in (1,3,6,12,20,30):clear('USB-first lift '+str(z),Pos(0,-1.8,z)*tilted,b)
     return dict(passed=all(x['passed'] for x in checks),checks=checks,motion=motion,
                 unresolved={'blue_flag_lid_mm3':J.overlap(M.fpc_tape(),l),
-                            'limitations':['Actual seated height and travel unknown; J1 hand-held free motion is encouraging but not a rigid-lid test.','Inherited J1 10-degree lip contacts and guessed-body contacts remain diagnostics, not passes.','Slice review mandatory: upright lid bridges/overhangs and narrow bed footprint.','USB-first assembly and snaps require bench test.']})
+                            'limitations':['Actual seated height and travel unknown; J1 hand-held free motion is encouraging but not a rigid-lid test.','Inherited J1 10-degree lip contacts and guessed-body contacts remain diagnostics, not passes.','Slice review mandatory: face-down lid snap bridges.' if flat_face else 'Slice review mandatory: upright lid bridges/overhangs and narrow bed footprint.','USB-first assembly and snaps require bench test.']})
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True);STL.mkdir(parents=True,exist_ok=True)

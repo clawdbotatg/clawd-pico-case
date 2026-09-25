@@ -262,6 +262,14 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### V3-FIT fitted shell — 2026-09-25
 
+### V3-FLAT correction — 2026-09-25
+
+| ID | Choice | Basis |
+|---|---|---|
+| V3-FLAT | uniform outer facez5.1; underside joystick roof4.4 unchanged; face-down print, rotate180degrees aroundX then translate bedz0; no supports/raft | Austin explicitly approves whole-face raise to fix print orientation. Existing J1 clearance, not new hardware measurement. Screen depth3.05 mm accepted provisionally; unchanged V2 button protrusion1.3 mm, .92 at full press |
+
+### V3-FIT parameters (historical upright print)
+
 | ID | Original design choice | Basis / limitation |
 |---|---|---|
 | V3-FIT-LID | screen side rails z3.05, local joystick roof4.4..5.1, holeØ8, pocketØ13, outer local bossØ15.8 clipped at screen window; inner pocket clipped window+.4, continuous .4 front wall; button-end top4.6, region ends pocketYmax+.8 | Retain J1's hand-held tested hole/height and V2 buttons; no universal lid-height raise. Local joystick front wall meets upper screen edge, so that small edge segment is higher than side rails. Boss shell dimensions inherited D5/D6; upright print to avoid floating skirt under face-down boss |

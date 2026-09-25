@@ -223,3 +223,13 @@ touched geometry, and what that session had seen.
   button region copies V2 z4.6. Upright lid printing proposed to avoid the
   previous raised-top/support-layer failure; operator must review bridges
   and overhangs, and hold rather than add supports or a raft.
+
+## 2026-09-25. V3 flat-face correction, Codex.
+
+- Austin explicitly rejects upright lid printing. Authorizes raising the
+  entire face to the joystick's required height for this fit trial, face-down
+  with NO supports. Requests immediate print after confirming instructions.
+- Keep underside retention at J1 z4.4; entire outer face z5.1. Reuse existing
+  base, buttons and joystick. No new hardware measurements or outside inputs.
+- This explicitly supersedes the prior1 mm screen-depth constraint for this
+  iteration. Button protrusion reduces .5 mm to1.3 mm with unchanged caps.

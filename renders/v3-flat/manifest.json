@@ -1,0 +1,24 @@
+{
+  "revision": "v3-flat",
+  "print_parts": [
+    "lid"
+  ],
+  "orientation": "face down",
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
+    "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/viewer_template.html": "edf39c69677f2c58774853a292bf2de0de264832af4c6d573fad53200edeb75a"
+  },
+  "files": {
+    "stl/v3-flat/v3-flat-lid-face-down.stl": "b159a9e3d0240a77e1e7594c756f781f342fc97a2b4f45b0cac01550dccc3801",
+    "renders/v3-flat/viewer.html": "a0c9fc39beb98bf94493ff1484303d36d14fc54f3ab0f4814f6313ebb37bef0d",
+    "renders/v3-flat/validation.json": "78dfb7c32a173e74b3c9f734eda4f02503706eb19407301d04d013b3cc926171",
+    "renders/v3-flat/lid.step": "542daa91c3a8b1dda9505fce6b59319785e1e1b7a3cb6f2996e9e40a93dffa31"
+  }
+}

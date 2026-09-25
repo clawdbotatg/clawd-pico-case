@@ -1,5 +1,10 @@
 # Current: V3 fitted shells
 
+SUPERSEDED by V3-FLAT: whole outer face atz5.1, print FACE DOWN, no supports
+or raft. Austin explicitly allows greater screen depth for this trial.
+Builder cad/v3_flat.py; reuse button/joystick geometry; lid-only correction.
+See JOYSTICK-REVIEW.md for current status; upright plan below is historical.
+
 Complete review and evidence: JOYSTICK-REVIEW.md. Builder cad/v3_fit.py.
 Reuse V2 button caps and unchanged J1 joystick; only base/lid print.
 Closed V2-aligned USB aperture, no fin; retain pry/reset. Low screen side

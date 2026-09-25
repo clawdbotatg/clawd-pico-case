@@ -1,5 +1,13 @@
 # Design and print iteration register
 
+## V3-FLAT — 2026-09-25
+
+Correct upright-print failure: uniform outer lid facez5.1, face-down STL,
+supports/raft OFF,699 checks. Existing buttons still1.3 mm proud. Lid only;
+no cap/base reprint. Sources cad/v3_flat.py, artifacts stl/v3-flat and
+renders/v3-flat; print log prints/2026-09-25-v3-flat.md. Austin explicitly
+allows whole-face height increase for fitting. Upright revision preserved.
+
 Every saved design revision belongs in git with its original CAD, generated
 STL/STEP files, rationale, evidence and validation results. Print jobs must
 reference an immutable commit/tag and record slicer settings, artifact hashes,

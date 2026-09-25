@@ -1,5 +1,30 @@
 # V3 shell and joystick review
 
+## CURRENT: V3-FLAT — face-down correction, 2026-09-25
+
+Austin explicitly authorizes raising the WHOLE lid face for this trial.
+All outer face material is now atz5.1; print FACE DOWN with supports/raft OFF.
+No local raised boss. Joystick holeØ8 and under-roofz4.4 remain unchanged.
+Screen depth3.05 mm is knowingly accepted for this iteration; reduce later
+after the rigid fit test. Existing V2 buttons protrude1.3 mm, .92 at full
+press. Buttons, J1 joystick and base geometry are unchanged; send LID ONLY.
+
+699 required CAD checks pass, including coplanar outer faces and broad
+face-down bed contact. Known J1 ten-degree motion hypotheses remain16
+contacts, not falsely claimed resolved. Printed fit and slicing still need
+verification. Preserve export orientation; do not auto-orient or add supports.
+
+Files: `cad/v3_flat.py`, `stl/v3-flat/v3-flat-lid-face-down.stl`,
+`renders/v3-flat/viewer.html`, `renders/v3-flat/validation.json`,
+`renders/v3-flat/manifest.json`. Main viewer updated as well. Build with
+`.venv/bin/python cad/v3_flat.py`. Prior upright files remain historical.
+
+Print server reports the previous job printed LID ONLY, not the base, and
+was stopped by Austin at layer34/50. It is on hold. A message explicitly
+supersedes that old lid; no restart/reprint requested. The unchanged V3 base
+is not assumed physically printed. Current dispatch log:
+`prints/2026-09-25-v3-flat.md`.
+
 ## Current revision — V3 fitted shells, 2026-09-25
 
 Submitted sourceb4548b3 through HTTP inbox as

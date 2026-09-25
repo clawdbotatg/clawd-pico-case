@@ -1,0 +1,5430 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "base valid single solid",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "base upright bed contact",
+      "passed": true,
+      "value": 1787.507963267949
+    },
+    {
+      "name": "lid valid single solid",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "lid face-down bed contact",
+      "passed": true,
+      "value": 934.2166085242432
+    },
+    {
+      "name": "hat/pico",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "hat/base",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "hat/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "hat/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "hat/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "pico/base",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "pico/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "pico/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "pico/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "base/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "base/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "base/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button_caps/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "uniform raised face maximum",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "existing buttons protrude after full press",
+      "passed": true,
+      "value": 0.919999999999999
+    },
+    {
+      "name": "lid no USB fin",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "snap catches on lift",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "lid installation lift 0.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 0.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 0.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 0.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 1.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 1.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 1.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 1.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 2.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 2.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 2.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 2.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 3.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 3.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 3.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 3.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 4.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 4.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 4.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 4.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 5.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 5.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 5.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 5.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 6.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 6.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 6.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 6.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 7.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 7.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 7.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 7.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 8.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 8.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 8.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 8.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 9.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 9.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 9.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 9.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 10.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 10.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 10.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 10.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 11.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 11.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 11.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 11.5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid installation lift 12.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach hardware 12.0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick lip retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "V2 buttons press/lid 0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 2",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 2",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 4",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 4",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 7",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 7",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/lid 8",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons press/hardware 8",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "V2 buttons retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "individual button retained 0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "individual button retained 1",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "individual button retained 2",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "individual button retained 3",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 0.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 0.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 0.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (0.0, 3.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (0.0, 3.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (0.0, 3.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 0.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 0.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 0.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 0, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 5, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 0, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 0, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 45, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 45, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 90, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 90, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 135, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 135, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 180, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 180, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 225, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 225, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 270, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 270, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 315, 0.0)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "no new motion interference (-0.3, 3.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base (-0.3, 3.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB (-0.3, 3.0, 10, 315, 0.3)",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB opening remains clear",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB channel closed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "bottom access open",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "left pry access",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "right pry access",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle 0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle -2",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle -4",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle -6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle -8",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle -10",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first angle -12",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 2",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 4",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 5",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first retreat 6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first lift 1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first lift 3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first lift 6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first lift 12",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first lift 20",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first lift 30",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "all outer positive-Z horizontal faces coplanar",
+      "passed": true
+    }
+  ],
+  "motion": [
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.033901
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.977302
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.007659
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 3.850177
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.030992
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.885714
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 1.90284
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.00516
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 1.853027
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.150023
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.006987
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 1.937447
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.038235
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 2.331542
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.614619
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 3.327595
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 8.219179
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 2.234868
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.435433
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 0.739126
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.323554
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 1.173301
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 4.417289
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 1.136021
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.441735
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 1.250604
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 4.577104
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0.48146,
+      "J1_gauge_mm3": 0.48146,
+      "guessed_fixed_hardware_mm3": 0.865219
+    },
+    {
+      "seating": 0.0,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.602251
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.02588
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 3.068044
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.018014
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 3.918872
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.023828
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.981588
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.095257
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.009403
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.040377
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.368348
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0.011454
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.126833
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.231739
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 2.54921
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 7.199822
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 3.599259
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 8.513803
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 2.463446
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 7.031546
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 1.13379
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.13732
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 1.533039
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.195164
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 1.621253
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.252723
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 1.618803
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.36344
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0.966939,
+      "J1_gauge_mm3": 0.966939,
+      "guessed_fixed_hardware_mm3": 1.280651
+    },
+    {
+      "seating": 0.0,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.397267
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.988691
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.371977
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 3.860881
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.555908
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.897601
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.165927
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 1.922166
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.018309
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 1.871338
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 9.940469
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.171874
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.042951
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 1.956308
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.139604
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.05795
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.28583
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.685679
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.666054
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 8.268176
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 13.010863
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.507495
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.421404
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.409866
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.24395
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 4.493831
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 9.892396
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.524612
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.267299
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 4.654918
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.119949
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.687244
+    },
+    {
+      "seating": -0.3,
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.521327
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 0
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.537812
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 3.074157
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.643399
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 3.920348
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.651744
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.988234
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.448973
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.114007
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.417056
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.058589
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.440328
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.389277
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.453576
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.144512
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.634754
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 2.250307
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.671614
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 7.240929
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 13.244089
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 8.51454
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 13.163628
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 7.073863
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 13.021419
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.210599
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.941315
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.271093
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.853256
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.326773
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 10.975861
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 5.438159
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 11.075926
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 6.467089
+    },
+    {
+      "seating": -0.3,
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_mm3": 0,
+      "J1_gauge_mm3": 0,
+      "guessed_fixed_hardware_mm3": 12.197805
+    }
+  ],
+  "unresolved": {
+    "blue_flag_lid_mm3": 5.279999999999997,
+    "limitations": [
+      "Actual seated height and travel unknown; J1 hand-held free motion is encouraging but not a rigid-lid test.",
+      "Inherited J1 10-degree lip contacts and guessed-body contacts remain diagnostics, not passes.",
+      "Slice review mandatory: face-down lid snap bridges.",
+      "USB-first assembly and snaps require bench test."
+    ]
+  }
+}

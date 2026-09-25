@@ -1,5 +1,11 @@
 # clawd-pico-case
 
+Latest correction: **V3-FLAT lid only, FACE DOWN**, no supports/raft.
+Whole outer face raised toz5.1 for testing, as requested. Build with
+`cad/v3_flat.py`, file `stl/v3-flat/v3-flat-lid-face-down.stl`.
+Details and status: [single review document](JOYSTICK-REVIEW.md).
+The upright V3 plan below is superseded.
+
 Current print candidate: **V3 fitted base and lid only**, reusing V2 buttons
 and J1 joystick. See [complete review](JOYSTICK-REVIEW.md). Build with
 `cad/v3_fit.py`; current files in `stl/v3-fit/`, preview in `renders/v3-fit/`.
