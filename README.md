@@ -1,6 +1,6 @@
 # clawd-pico-case
 
-An MIT-licensed 3D-printed case for a Raspberry Pi Pico 2 W plugged into a
+An MIT-licensed 3D-printed case for a USB-C RP2040 Pico clone (the pink board) plugged into a
 Waveshare Pico-LCD-1.3 (240x240 screen, joystick, four buttons). Buttons and
 joystick get caps. Made to be printed and sold.
 
@@ -39,8 +39,9 @@ What we do not copy is their files and their styling choices.
 | `MEASUREMENTS.md` | The measurement sheet. Every number the design uses |
 | `PROVENANCE.md` | Dated log of every design input and who added it |
 | `DESIGN.md` | Design decisions, written during the design phase |
+| `REPORT.md` | Current state: measurements, design, confidence, open questions |
 | `cad/` | build123d source. The design is the source, not the STL |
-| `renders/` | PNGs of every part and the assembly, rebuilt from source |
+| `renders/` | `viewer.html`: every part in 3D in a browser, rebuilt from source |
 | `research/` | Notes on method: how to get real hardware into 3D |
 | `stl/` | Built outputs |
 | `prints/` | Print log: what was printed, what fit, what did not |
@@ -48,8 +49,9 @@ What we do not copy is their files and their styling choices.
 
 ## Status
 
-Phase 0 done 2026-09-19. Method research done 2026-09-20, see
-`research/scanning.md`. No geometry yet. Next is Phase 1, measuring on camera.
+Phase 0 done 2026-09-19. Method research done 2026-09-20. Measuring and a
+first model done 2026-09-24; not yet printed or fitted. Where it stands, every
+number and what is still unknown: `REPORT.md`.
 
 ## License
 

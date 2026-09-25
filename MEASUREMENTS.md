@@ -125,6 +125,7 @@ Not from this scan: every Z (L3, L7, L9, S3, B3, B5, B6, J3, J6-J9), hole rows L
 | S8 | Active area offset within glass, x | | cal | |
 | S9 | Active area offset within glass, y | | cal | |
 | S10 | Flex cable location and width | | cal | so the lid does not pinch it |
+| F1 | Blue tape past the right PCB edge | ~4.0 out, y 22 to 30, at glass level | scan01 | soft edges. In the scan it lies on top of the glass and runs off the edge: probably the screen protector's pull tab, not part of the board. Ask Austin |
 
 ## B. Buttons, four tact switches
 
@@ -151,6 +152,7 @@ the schematic and add its datasheet to `SOURCES.md`.
 | J2 | Body width | | cal | |
 | J3 | Body height above PCB | | cal | |
 | J4 | Stem diameter at top | 1.86 | cal 2026-09-24 | across the flats; square section. A cap grips this. A short lip at the very base is 2.94 wide (J4b, cal) — not part of the stick, the cap must clear it |
+| J4b | Lip at the stem base, width | 2.94 | cal 2026-09-24 | no photo saved |
 | J5 | Stem shape | square | look 2026-09-24 | 1.86 square at the tip, wider at the base |
 | J6 | Stem top height above PCB, centred | 5.00 | cal 2026-09-24 | Austin read 15.66 socket top to stem tip, minus L3+L7 10.66. `measurements/2026-09-24-cal-J6-lcd-joystick-height-1.jpg` |
 | J7 | Stem tilt angle, full deflection | | cal / ds | |

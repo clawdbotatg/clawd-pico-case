@@ -4,13 +4,18 @@ Returns plain Parts placed in the frame from params.py. build.py exports
 them. Run this file directly for a bounding-box sanity print.
 """
 from build123d import (Axis, Box, Cylinder, Location, Part, Pos, Rot,
-                       fillet, Plane, Rectangle, extrude, Circle)
+                       fillet, Plane, Rectangle, extrude, Circle, Polygon)
 import params as P
 
 
 def box(x0, x1, y0, y1, z0, z1):
     """Axis-aligned box from corner to corner."""
     return Pos((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2) * Box(x1 - x0, y1 - y0, z1 - z0)
+
+
+def wedge_x(pts_xz, y0, y1):
+    """Prism: a polygon in the XZ plane (list of (x, z)), extruded from y0 to y1."""
+    return extrude(Plane.XZ.offset(-y0) * Polygon(*pts_xz, align=None), y1 - y0, dir=(0, 1, 0))
 
 
 def rbox(x0, x1, y0, y1, z0, z1, r):
@@ -87,22 +92,25 @@ Z_LID_TOP = P.S3 + P.GLASS_CLEAR + P.LID_TOP
 
 def base():
     outer = rbox(X0, X1, Y0, Y1, Z_BOTTOM, Z_SPLIT, P.CORNER_R)
-    pocket = rbox(IX0, IX1, IY0, IY1, Z_FLOOR_TOP, Z_SPLIT + 1, max(P.CORNER_R - P.WALL, 0.5))
+    pocket = rbox(IX0, IX1, IY0, IY1, Z_FLOOR_TOP, Z_SPLIT + 1, P.POCKET_R)
     b = outer - pocket
     # tongue: the top TONGUE_H of the wall steps in by SKIRT so the lid skirt sits flush outside
     step = rbox(X0, X1, Y0, Y1, Z_SPLIT - P.TONGUE_H, Z_SPLIT + 1, P.CORNER_R) \
         - rbox(X0 + P.SKIRT, X1 - P.SKIRT, Y0 + P.SKIRT, Y1 - P.SKIRT, Z_SPLIT - P.TONGUE_H - 1, Z_SPLIT + 2,
                max(P.CORNER_R - P.SKIRT, 0.5))
     b -= step
-    # snap bumps on the tongue's outer face, two per long side
-    zb = Z_SPLIT - P.TONGUE_H / 2
+    # snap bumps on the tongue's outer face, two per long side. Wedge: flat catch face
+    # at the bottom, ramp on top so the lid skirt rides over it going down.
+    zlo, zhi = P.SNAP_Z - P.SNAP_BUMP_T / 2, P.SNAP_Z + P.SNAP_BUMP_T / 2
+    xl, xr = X0 + P.SKIRT, X1 - P.SKIRT                    # tongue outer faces
     for yb in (CY - P.L1 / 4, CY + P.L1 / 4):
-        b += box(X0 + P.SKIRT - P.SNAP_H, X0 + P.SKIRT + 0.2, yb - P.SNAP_LEN / 2, yb + P.SNAP_LEN / 2, zb - 0.5, zb + 0.5)
-        b += box(X1 - P.SKIRT - 0.2, X1 - P.SKIRT + P.SNAP_H, yb - P.SNAP_LEN / 2, yb + P.SNAP_LEN / 2, zb - 0.5, zb + 0.5)
+        y0, y1 = yb - P.SNAP_LEN / 2, yb + P.SNAP_LEN / 2
+        b += wedge_x([(xl + 0.2, zlo), (xl - P.SNAP_H, zlo), (xl, zhi), (xl + 0.2, zhi)], y0, y1)
+        b += wedge_x([(xr - 0.2, zlo), (xr + P.SNAP_H, zlo), (xr, zhi), (xr - 0.2, zhi)], y0, y1)
     # ledge the LCD PCB rests on: the wall itself (pocket is the PCB outline + CLEAR), so the
     # PCB sits on the socket-clearance shelf. Shelf: fill the pocket back in below the LCD PCB
     # except where the sockets and the Pico live.
-    shelf = rbox(IX0, IX1, IY0, IY1, Z_LCD_BACK - 0.01 - 2.0, Z_LCD_BACK - 0.01, 0.5)
+    shelf = rbox(IX0, IX1, IY0, IY1, Z_LCD_BACK - 0.01 - P.SHELF_T, Z_LCD_BACK - 0.01, P.POCKET_R)
     inner_keep = box(PICO_CX - P.P2 / 2 - P.CLEAR, PICO_CX + P.P2 / 2 + P.CLEAR,
                      PICO_Y0 - P.CLEAR - P.P11 - 1, PICO_Y1 + P.CLEAR + P.P11 + 1, Z_BOTTOM - 1, Z_SPLIT + 1)
     b += shelf - inner_keep
@@ -124,11 +132,14 @@ def lid():
     # ceiling cavity: over the PCB, up to the glass clearance
     cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - 1, P.S3 + P.GLASS_CLEAR, 0.5)
     l = outer - cav - cav2
-    # snap notches inside the skirt to receive the bumps
-    zb = Z_SPLIT - P.TONGUE_H / 2
+    # snap windows: through the skirt where the bumps are (the old blind notches were cut on
+    # the cavity side and removed nothing). A window also lets a fingernail push a bump in to open.
+    zlo = P.SNAP_Z - P.SNAP_BUMP_T / 2 - P.SNAP_WIN_CLEAR
+    zhi = P.SNAP_Z + P.SNAP_BUMP_T / 2 + P.SNAP_WIN_CLEAR
     for yb in (CY - P.L1 / 4, CY + P.L1 / 4):
-        l -= box(X0 + P.SKIRT - 0.01, X0 + P.SKIRT + P.SNAP_H + 0.1, yb - P.SNAP_LEN / 2 - 0.3, yb + P.SNAP_LEN / 2 + 0.3, zb - 0.6, zb + 0.6)
-        l -= box(X1 - P.SKIRT - P.SNAP_H - 0.1, X1 - P.SKIRT + 0.01, yb - P.SNAP_LEN / 2 - 0.3, yb + P.SNAP_LEN / 2 + 0.3, zb - 0.6, zb + 0.6)
+        y0, y1 = yb - P.SNAP_LEN / 2 - 0.3, yb + P.SNAP_LEN / 2 + 0.3
+        l -= box(X0 - 1, X0 + P.SKIRT + 0.01, y0, y1, zlo, zhi)
+        l -= box(X1 - P.SKIRT - 0.01, X1 + 1, y0, y1, zlo, zhi)
     # screen window
     gx, gy = GLASS_C
     w = P.WINDOW_CLEAR
@@ -165,11 +176,12 @@ def button_caps():
 
 def joystick_cap():
     jx, jy = JOY_C
-    top = Z_LID_TOP + 3.0
-    cap = Pos(jx, jy, (P.J3 + 1.0 + top) / 2) * Cylinder(P.JOY_HOLE_D / 2 - 0.6, top - P.J3 - 1.0)
-    cap += Pos(jx, jy, top + 0.75) * Cylinder(P.JOY_HOLE_D / 2 + 0.5, 1.5)
-    socket = box(jx - (P.J4 + 0.15) / 2, jx + (P.J4 + 0.15) / 2, jy - (P.J4 + 0.15) / 2, jy + (P.J4 + 0.15) / 2,
-                 P.J3 + 0.9, P.J6 + 0.3)
+    bot = P.J3 + P.JOY_CAP_LIFT
+    top = Z_LID_TOP + P.JOY_CAP_TOP
+    cap = Pos(jx, jy, (bot + top) / 2) * Cylinder(P.JOY_HOLE_D / 2 - P.JOY_CAP_SIDE_CLEAR, top - bot)
+    cap += Pos(jx, jy, top + P.JOY_CAP_FLANGE_T / 2) * Cylinder(P.JOY_HOLE_D / 2 + P.JOY_CAP_FLANGE_OVER, P.JOY_CAP_FLANGE_T)
+    s = (P.J4 + P.JOY_SOCKET_CLEAR) / 2
+    socket = box(jx - s, jx + s, jy - s, jy + s, bot - 0.1, P.J6 + P.JOY_SOCKET_TIP_CLEAR)
     return cap - socket
 
 

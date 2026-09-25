@@ -9,3 +9,5 @@
 - Sent: 18:43 to the print inbox as drops `20260924-184357-lid`,
   `-button_caps`, `-joystick_cap`, one message asking for one plate.
 - Result: (fill in) what fit, what did not, photos.
+- Note (audit, same evening): the lid in this drop has snap notches cut on the
+  wrong side of the skirt. It still tests the window, holes and caps; not the snap.
