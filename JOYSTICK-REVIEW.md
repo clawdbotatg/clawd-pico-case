@@ -2,6 +2,10 @@
 
 ## CURRENT: V3-FLAT — face-down correction, 2026-09-25
 
+Sent source145e386 as `20260925-111549-v3-flat-lid-face-down`, lid only,
+31.44 ×57.50 ×8.10 mm. Server hash verified; GO request accepted, initial
+status `new`. Printing not yet confirmed. Face-down contact934.22 square mm.
+
 Austin explicitly authorizes raising the WHOLE lid face for this trial.
 All outer face material is now atz5.1; print FACE DOWN with supports/raft OFF.
 No local raised boss. Joystick holeØ8 and under-roofz4.4 remain unchanged.
