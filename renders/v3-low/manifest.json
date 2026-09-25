@@ -1,0 +1,100 @@
+{
+  "revision": "v3-low-lid-experiment",
+  "print_ready": false,
+  "source_sha256": {
+    "cad/build.py": "df9d71747bf8f86ef5dbb504b157206a1d1f28a36f67132a4ae236cc5b244d9d",
+    "cad/model.py": "71306ff47a7d92435097a00e053cfd98bb1cbfb1d29bb0974d41213433694eb0",
+    "cad/params.py": "ff2b2fdeb8300f37ed75bd91b380d072d4f09eeabc7579bce22cf03a9c7eb085",
+    "cad/render.py": "5e67f958b411b4dc6518ee7ee71d0e7643618b81941c930e69c538ac91af3493",
+    "cad/review.py": "6bcc85d34ec36416210cbaac0d2125d777f0a04ea7c1f6bb397e3a673d6fec1e",
+    "cad/validate.py": "f066e02a06a2316cb963945aedd4f39fe22512e9e099bdd5f3b6f1b4160f2496"
+  },
+  "passed_checks": 191,
+  "failed_checks": [
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=45, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=90, press=0",
+      "passed": false,
+      "value": 0.25470668
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=135, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=225, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=270, press=0",
+      "passed": false,
+      "value": 0.25470668
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=315, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=90, press=0.3",
+      "passed": false,
+      "value": 0.12522183
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=270, press=0.3",
+      "passed": false,
+      "value": 0.12522183
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=45, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=90, press=0",
+      "passed": false,
+      "value": 0.74973212
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=135, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=225, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=270, press=0",
+      "passed": false,
+      "value": 0.74973212
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=315, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=90, press=0.3",
+      "passed": false,
+      "value": 0.3660624
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=270, press=0.3",
+      "passed": false,
+      "value": 0.3660624
+    }
+  ],
+  "files": {
+    "validation.json": "e8d2a8c78b4dc90301fe878fbeccdbfeba913ddf1ef2a78d5f66561f8875cb64",
+    "viewer.html": "b82667c4671fcfe78e494cf032a42cbd5d9ea614bd8a27bdebe63b3a352553d9",
+    "preview.png": "2bfcd0fc6c567cfe81fd0cc6910d1c40773e9613d90373ac7d06d757372bf5aa"
+  }
+}

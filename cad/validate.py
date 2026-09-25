@@ -22,7 +22,7 @@ def source_hashes():
             for p in sorted((ROOT / 'cad').glob('*.py'))}
 
 
-def run():
+def run(output_path=None):
     parts = {n: f() for n, (f, _) in M.PARTS.items()}
     checks = []
 
@@ -49,6 +49,7 @@ def run():
             if name == 'lid':
                 check('lid broad flat face directly on bed', bed > 300, round(bed, 3))
     check('lid has no raised collar', abs(parts['lid'].bounding_box().max.Z - M.Z_LID_TOP) < .001)
+    check('screen recess at most 1mm', M.Z_LID_TOP - P.S3 <= 1 + TOL, M.Z_LID_TOP-P.S3)
     check('lid has no USB fin', abs(parts['lid'].bounding_box().min.Z + P.TONGUE_H) < .001)
     check('earlier socket width restored', abs(P.J4 + P.JOY_SOCKET_CLEAR - 2.01) < TOL)
     check('earlier socket roof restored', abs(P.J6 + P.JOY_SOCKET_TIP_CLEAR - 5.3) < TOL)
@@ -128,15 +129,15 @@ def run():
 
     # Sensitivity only: actual joystick pivot, angular travel and click unknown.
     jx, jy = M.JOY_C
-    check('ball passes throat; flange retained', P.JOY_BALL_D < P.JOY_HOLE_D < P.JOY_FLANGE_D)
-    check('joystick upward retention before socket disengagement', (Pos(0, 0, 1.55) * parts['joystick_cap'] & parts['lid']).volume > TOL)
+    check('ball passes opening; side tabs retained', P.JOY_BALL_D < min(P.JOY_OPEN_X, P.JOY_OPEN_Y) and 2*P.JOY_TAB_OUT > P.JOY_OPEN_X)
+    check('joystick upward retention before socket disengagement', (Pos(0, 0, .95) * parts['joystick_cap'] & parts['lid']).volume > TOL)
     # Conservative continuous downward sweeps relative to the descending lid.
     sweep_bottom = M.Z_BOTTOM
     flange_top = P.JOY_FLANGE_Z + P.JOY_FLANGE_T
     ball_top = P.JOY_BALL_Z + P.JOY_BALL_D / 2
-    sweep = Pos(jx, jy, (sweep_bottom + flange_top) / 2) * Cylinder(P.JOY_FLANGE_D / 2, flange_top - sweep_bottom)
-    sweep += Pos(jx, jy, (sweep_bottom + ball_top) / 2) * Cylinder(P.JOY_BALL_D / 2, ball_top - sweep_bottom)
-    sweep += parts['joystick_cap']  # includes downward-widening flange taper
+    arm_x = max(x for x,z in P.JOY_ARM_PROFILE)
+    sweep = M.box(jx-arm_x, jx+arm_x, jy-P.JOY_BALL_D/2, jy+P.JOY_BALL_D/2, sweep_bottom, ball_top)
+    sweep += M.box(jx-P.JOY_TAB_OUT, jx+P.JOY_TAB_OUT, jy-P.JOY_ARM_HALF_Y, jy+P.JOY_ARM_HALF_Y, sweep_bottom, flange_top)
     clear('continuous lid installation over mounted joystick', sweep, parts['lid'])
     for side, x0, x1 in [('left', M.X0 - .2, M.X0 + .7), ('right', M.X1 - .7, M.X1 + .2)]:
         tool = M.box(x0, x1, M.CY - 2, M.CY + 2, -P.TONGUE_H - .3, -P.TONGUE_H + .3)
@@ -174,7 +175,8 @@ def run():
     }
     result = dict(source_sha256=source_hashes(), checks=checks, unresolved=unresolved,
                   passed=all(c['passed'] for c in checks))
-    (ROOT / 'renders' / 'validation.json').write_text(json.dumps(result, indent=2) + '\n')
+    target = Path(output_path) if output_path else ROOT / 'renders' / 'validation.json'
+    target.write_text(json.dumps(result, indent=2) + '\n')
     return result
 
 

@@ -194,7 +194,7 @@ def lid():
     w = P.WINDOW_CLEAR
     l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -P.TOOL_EXT, Z_COLLAR_TOP + P.TOOL_EXT, P.WINDOW_R)
     # button pocket: the caps' flanges live under the plate, above the plungers
-    pocket_top = P.B5 + P.CAP_FLANGE_T + P.CAP_POCKET_CLEAR
+    pocket_top = P.CAP_FLANGE_Z + P.CAP_FLANGE_T + P.CAP_POCKET_CLEAR
     bx0 = min(b[0] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - P.POCKET_MARGIN
     bx1 = max(b[0] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + P.POCKET_MARGIN
     by0 = min(b[1] for b in BUTTONS) - P.CAP_FLANGE_D / 2 - P.POCKET_MARGIN
@@ -208,12 +208,12 @@ def lid():
     # Large underside pocket clears silver body and moving flange. Smaller
     # throat above it admits the ball during assembly and captures the lip.
     jx, jy = JOY_C
-    joy_pocket = Pos(jx, jy, (P.JOY_POCKET_TOP - P.TOOL_EXT) / 2) * Cylinder(
-        P.JOY_POCKET_D / 2, P.JOY_POCKET_TOP + P.TOOL_EXT)
-    joy_pocket &= box(X0, X1, gy + P.S1 / 2 + w + P.JOY_SCREEN_WEB,
-                      Y1, -P.TOOL_EXT, Z_LID_TOP)
-    l -= joy_pocket
-    l -= Pos(jx, jy, Z_COLLAR_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_COLLAR_TOP + 2 * P.TOOL_EXT)
+    l -= box(jx-P.JOY_TAB_POCKET_X, jx+P.JOY_TAB_POCKET_X,
+             jy-P.JOY_TAB_POCKET_Y, jy+P.JOY_TAB_POCKET_Y,
+             -P.TOOL_EXT, P.JOY_POCKET_TOP)
+    l -= rbox(jx-P.JOY_OPEN_X/2, jx+P.JOY_OPEN_X/2,
+              jy-P.JOY_OPEN_Y/2, jy+P.JOY_OPEN_Y/2,
+              -P.TOOL_EXT, Z_LID_TOP+P.TOOL_EXT, P.WINDOW_R)
     return l - pry_notches()
 
 
@@ -223,9 +223,12 @@ def button_caps():
     caps = None
     for bx, by in BUTTONS:
         c = rbox(bx - P.CAP_FLANGE_W / 2, bx + P.CAP_FLANGE_W / 2, by - P.CAP_FLANGE_D / 2, by + P.CAP_FLANGE_D / 2,
-                 P.B5, P.B5 + P.CAP_FLANGE_T, P.CAP_R)
+                 P.CAP_FLANGE_Z, P.CAP_FLANGE_Z + P.CAP_FLANGE_T, P.CAP_R)
         c += rbox(bx - P.CAP_W / 2, bx + P.CAP_W / 2, by - P.CAP_D / 2, by + P.CAP_D / 2,
-                  P.B5 + P.CAP_FLANGE_T - P.EPS, Z_LID_TOP + P.CAP_PROUD, P.CAP_R)
+                  P.CAP_FLANGE_Z + P.CAP_FLANGE_T - P.EPS, Z_LID_TOP + P.CAP_PROUD, P.CAP_R)
+        c -= box(bx-P.B2/2-P.CAP_BODY_CLEAR, bx+P.B2/2+P.CAP_BODY_CLEAR,
+                 by-P.B1/2-P.CAP_BODY_CLEAR, by+P.B1/2+P.CAP_BODY_CLEAR,
+                 P.CAP_FLANGE_Z-P.TOOL_EXT, P.B5)
         caps = c if caps is None else caps + c
     return caps
 
@@ -235,11 +238,12 @@ def joystick_cap(socket_clear=None):
     bot = P.J6 - P.JOY_ENGAGE
     cap = Pos(jx, jy, (bot + P.JOY_BALL_Z) / 2) * Cylinder(
         P.JOY_NECK_D / 2, P.JOY_BALL_Z - bot)
-    cap += Pos(jx, jy, P.JOY_FLANGE_Z + P.JOY_FLANGE_T / 2) * Cylinder(
-        P.JOY_FLANGE_D / 2, P.JOY_FLANGE_T)
-    taper_h = (P.JOY_FLANGE_D - P.JOY_NECK_D) / 2
-    cap += Pos(jx, jy, P.JOY_FLANGE_Z + P.JOY_FLANGE_T + taper_h / 2) * Cone(
-        P.JOY_FLANGE_D / 2, P.JOY_NECK_D / 2, taper_h)
+    for sign in (-1, 1):
+        cap += wedge_x([(jx+sign*x, z) for x,z in P.JOY_ARM_PROFILE],
+                       jy-P.JOY_ARM_HALF_Y, jy+P.JOY_ARM_HALF_Y)
+        xa, xb = sorted((jx+sign*P.JOY_TAB_IN, jx+sign*P.JOY_TAB_OUT))
+        cap += box(xa, xb, jy-P.JOY_ARM_HALF_Y, jy+P.JOY_ARM_HALF_Y,
+                   P.JOY_FLANGE_Z, P.JOY_FLANGE_Z+P.JOY_FLANGE_T)
     cap += Pos(jx, jy, P.JOY_BALL_Z) * Sphere(P.JOY_BALL_D / 2)
     top = P.JOY_BALL_Z + P.JOY_BALL_D / 2 - P.JOY_BALL_FLAT
     cap -= box(jx-P.JOY_BALL_D, jx+P.JOY_BALL_D,

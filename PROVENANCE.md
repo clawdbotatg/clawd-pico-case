@@ -158,3 +158,13 @@ touched geometry, and what that session had seen.
   the reported-working earlier neck to satisfy an unmeasured proxy.
 - Browser controls tested in local Chromium. Served only renders/ on LAN
   port8765 for user review. No printer interaction. V3 approval remains pending.
+
+## 2026-09-25. Low-lid V3 revision in progress, Codex.
+
+- Austin rejects deep screen recess and requires top at most1 mm above glass.
+  Explicitly asks to proceed now. No additional outside geometry consulted.
+- D7 tests original side-arm retention around joystick body, retaining earlier
+  socket. Button underside relief allows retaining wings below plunger top.
+  Measurements unchanged; these are trial constructions requiring checks.
+- Five-degree motion is a chosen trial, not established hardware travel;
+  retain larger-angle failures explicitly. No print authorized or requested.

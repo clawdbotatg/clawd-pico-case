@@ -1,0 +1,1399 @@
+{
+  "source_sha256": {
+    "cad/build.py": "df9d71747bf8f86ef5dbb504b157206a1d1f28a36f67132a4ae236cc5b244d9d",
+    "cad/model.py": "71306ff47a7d92435097a00e053cfd98bb1cbfb1d29bb0974d41213433694eb0",
+    "cad/params.py": "ff2b2fdeb8300f37ed75bd91b380d072d4f09eeabc7579bce22cf03a9c7eb085",
+    "cad/render.py": "5e67f958b411b4dc6518ee7ee71d0e7643618b81941c930e69c538ac91af3493",
+    "cad/review.py": "6bcc85d34ec36416210cbaac0d2125d777f0a04ea7c1f6bb397e3a673d6fec1e",
+    "cad/validate.py": "f066e02a06a2316cb963945aedd4f39fe22512e9e099bdd5f3b6f1b4160f2496"
+  },
+  "checks": [
+    {
+      "name": "base valid solid count",
+      "passed": true,
+      "value": 1
+    },
+    {
+      "name": "base[0] bed contact",
+      "passed": true,
+      "value": 1787.508
+    },
+    {
+      "name": "lid valid solid count",
+      "passed": true,
+      "value": 1
+    },
+    {
+      "name": "lid[0] bed contact",
+      "passed": true,
+      "value": 797.151
+    },
+    {
+      "name": "lid broad flat face directly on bed",
+      "passed": true,
+      "value": 797.151
+    },
+    {
+      "name": "button_caps valid solid count",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "name": "button_caps[0] bed contact",
+      "passed": true,
+      "value": 11.382
+    },
+    {
+      "name": "button_caps[1] bed contact",
+      "passed": true,
+      "value": 11.382
+    },
+    {
+      "name": "button_caps[2] bed contact",
+      "passed": true,
+      "value": 11.382
+    },
+    {
+      "name": "button_caps[3] bed contact",
+      "passed": true,
+      "value": 11.382
+    },
+    {
+      "name": "joystick_cap valid solid count",
+      "passed": true,
+      "value": 1
+    },
+    {
+      "name": "joystick_cap[0] bed contact",
+      "passed": true,
+      "value": 15.582
+    },
+    {
+      "name": "lid has no raised collar",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "screen recess at most 1mm",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "name": "lid has no USB fin",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier socket width restored",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier socket roof restored",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier socket bottom restored",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier lower joystick shape: no added material",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "earlier lower joystick shape: no missing material",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "assembled hat/pico",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled hat/base",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled hat/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled hat/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled hat/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled pico/base",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled pico/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled pico/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled pico/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled base/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled base/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled base/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled lid/button_caps",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled lid/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "assembled button_caps/joystick_cap",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "sharp PCB/base",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "sharp PCB/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity -0.1,-0.1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity -0.1,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity -0.1,0.1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity 0,-0.1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity 0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity 0,0.1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity 0.1,-0.1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity 0.1,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "PCB XY sensitivity 0.1,0.1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.0000/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.0000/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.0475/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.0475/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.0950/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.0950/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.1425/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.1425/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.1900/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.1900/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.2375/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.2375/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.2850/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.2850/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.3325/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.3325/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.3800/lid",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "button travel 0.3800/fixed hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "neighbour caps at lateral limits 0",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "neighbour caps at lateral limits 1",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "neighbour caps at lateral limits 2",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "button 0 retained upward",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "button 1 retained upward",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "button 2 retained upward",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "button 3 retained upward",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "continuous Pico insertion",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path 0,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -2,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -4,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -6,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -8,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -10,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,0,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-0.3,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-0.6,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-0.9,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.2,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.5,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,1",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,6",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,12",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,20",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB-first separate Pico path -12,-1.8,30",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "continuous hat insertion",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach 0/hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach 1/hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach 3/hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach 6/hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach 12/hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "lid approach 20/hardware",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "USB stand-off 2.41",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "snap positive overlap",
+      "passed": true,
+      "value": 0.25
+    },
+    {
+      "name": "rectangular button rejects 90-degree insertion",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "bottom button tool path/base",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "bottom button tool path/hardware before contact",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "bottom access larger than scanned button proxy",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "snap catches on lift",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "ball passes opening; side tabs retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "joystick upward retention before socket disengagement",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "continuous lid installation over mounted joystick",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "left pry tool access",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "right pry tool access",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "pry notch leaves 1.2mm wall",
+      "passed": true,
+      "value": 1.2000000000000002
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=45, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=90, press=0",
+      "passed": false,
+      "value": 0.25470668
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=135, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=225, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=270, press=0",
+      "passed": false,
+      "value": 0.25470668
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=315, press=0",
+      "passed": false,
+      "value": 0.07313263
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=90, press=0.3",
+      "passed": false,
+      "value": 0.12522183
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=270, press=0.3",
+      "passed": false,
+      "value": 0.12522183
+    },
+    {
+      "name": "joystick scenario pivot=0, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=45, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=90, press=0",
+      "passed": false,
+      "value": 0.74973212
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=135, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=225, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=270, press=0",
+      "passed": false,
+      "value": 0.74973212
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=315, press=0",
+      "passed": false,
+      "value": 0.18239017
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=90, press=0.3",
+      "passed": false,
+      "value": 0.3660624
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=270, press=0.3",
+      "passed": false,
+      "value": 0.3660624
+    },
+    {
+      "name": "joystick scenario pivot=3, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    }
+  ],
+  "unresolved": {
+    "joystick_guessed_body_scenario_intersections": [
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 0.041749
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 0.933783
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 0.041749
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 0.035285
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 0.041749
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 0.937488
+      },
+      {
+        "pivot": 0,
+        "press": 0,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 0.041784
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 0,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 45,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 90,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 135,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 180,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 225,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 270,
+        "mm3": 0.268642
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 315,
+        "mm3": 0.266448
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 1.29536
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 1.895745
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 3.188516
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 1.895745
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 1.29536
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 1.895745
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 3.199187
+      },
+      {
+        "pivot": 0,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 1.896347
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 0.005965
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 0.693545
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 0.005965
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 0.005367
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 0.005965
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 0.69026
+      },
+      {
+        "pivot": 3,
+        "press": 0,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 0.005965
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 0,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 45,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 90,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 135,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 180,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 225,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 270,
+        "mm3": 0.215226
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 5,
+        "direction": 315,
+        "mm3": 0.214505
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 0,
+        "mm3": 0.990712
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 45,
+        "mm3": 1.411117
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 90,
+        "mm3": 2.795724
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 135,
+        "mm3": 1.411117
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 180,
+        "mm3": 0.990712
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 225,
+        "mm3": 1.411117
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 270,
+        "mm3": 2.795011
+      },
+      {
+        "pivot": 3,
+        "press": 0.3,
+        "angle": 10,
+        "direction": 315,
+        "mm3": 1.411117
+      }
+    ],
+    "closed_port_requires_USB_first_assembly": true,
+    "blue_flag_lid_intersection_mm3": 5.28,
+    "not_verified": [
+      "actual joystick travel/pivot/body/lip/press fit",
+      "bottom button identity, scan registration and assumed height",
+      "USB uses higher A1 placement; lower P15 placement no longer fits aperture",
+      "snap force, fatigue, layer adhesion and release",
+      "PCB corner landing areas and underside solder clearance",
+      "A1 datum, USB position and actual cable overmould",
+      "slicer bridges, dimensional accuracy and physical fit"
+    ]
+  },
+  "passed": false
+}

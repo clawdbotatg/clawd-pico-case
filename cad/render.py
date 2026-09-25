@@ -12,7 +12,7 @@ import model
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def render():
+def render(output_path=None):
     mesh = {}
     for name, (fn, color) in model.PARTS.items():
         if name == 'fpc_tape':
@@ -85,7 +85,7 @@ def render():
         draw.text((ox + 35, oy + 20), title, font=font, fill='#252b31')
     draw.text((35, 1530), 'Original measured-board prototype / MIT / unverified physical fit', font=font, fill='#252b31')
     draw.text((35, 1570), 'Illustrative hardware; blue flag omitted pending identification. No other case geometry used.', font=small, fill='#4d535a')
-    canvas.save(ROOT / 'renders' / 'v3-preview.png')
+    canvas.save(output_path or ROOT / 'renders' / 'v3-preview.png')
 
 
 if __name__ == '__main__':

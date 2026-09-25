@@ -254,6 +254,19 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### V3 review choices — 2026-09-25
 
+### V3 low-lid experiment — D7, 2026-09-25
+
+User requires lid no more than1 mm above glass. Previous uniform raise is
+rejected. These are original design trials, NOT new hardware measurements.
+
+| ID | Choice | Reason / limitation |
+|---|---|---|
+| D7-LID | top=S3+1.0=3.05; plate above glass-clearance plane .70 | screen-depth hard limit; no boss |
+| D7-JOY | retain previous socket/neck/ball; two side arms, y thickness2.4; right x/z polygon relative to stem [(1.8,8.7),(2.7,8.7),(7.1,4.3),(7.1,1.1),(6.3,1.1),(6.3,4.0),(1.8,8.5)], mirror left; lip tabs x6.3..8.3, y±1.2, z1.1..1.5 | bypass guessed metal body; upper arms expand gradually in inverted printing; test motion, not assumed adequate |
+| D7-POCKET | joystick opening15.4×12.2, R.8; underside tab pockets span x±8.8, y±2, ceiling2.4 | ball and upper arms pass opening; side tabs retained; front edge .43 from screen window |
+| D7-BUTTON | flange bottom1.8, thickness.4; plunger contact roof2.61; underside switch relief width B2+.5, depth B1+.5; footprint and protrusion inherited | hidden side wings pass beside switch, rather than flange above plunger; flat top printing planned |
+| V7 | required trial5-degree tilt, .3 press, pivots0/3; retain10-degree scenarios as diagnostics; cap upward .95 | actual joystick travel is unmeasured; larger-angle clearance must not be falsely claimed |
+
 Austin reports V2 USB alignment good but rejects the tall lid fin/tab and
 gaps. Requests V1-style closed port, earlier joystick interface plus V2 ball,
 internal retaining lip, flat support-free lid. Uniform extra case height is
