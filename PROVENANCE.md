@@ -233,3 +233,9 @@ touched geometry, and what that session had seen.
   base, buttons and joystick. No new hardware measurements or outside inputs.
 - This explicitly supersedes the prior1 mm screen-depth constraint for this
   iteration. Button protrusion reduces .5 mm to1.3 mm with unchanged caps.
+
+## 2026-09-25. Matching V3 base print request, Codex.
+
+- Austin reports flat lid looks great and requests matching V3 base.
+  Reused unchanged existing base mesh; no new measurements or geometry.
+  User report confirms lid print, not yet assembled snap/joystick fit.

@@ -1,5 +1,13 @@
 # V3 shell and joystick review
 
+## Latest physical feedback and base request — 2026-09-25
+
+Austin reports the flat lid looks great. Assembled fit is not yet confirmed;
+he now requests its matching V3 base. Sent unchanged base fromb4548b3 as
+`20260925-113816-base`, base only,31.44 ×57.50 ×20.64 mm, hash verified.
+Bottom-down/cavity-up, supports/raft OFF. GO accepted; initial status `new`,
+not confirmed printing. See `prints/2026-09-25-v3-base.md`.
+
 ## CURRENT: V3-FLAT — face-down correction, 2026-09-25
 
 Sent source145e386 as `20260925-111549-v3-flat-lid-face-down`, lid only,
