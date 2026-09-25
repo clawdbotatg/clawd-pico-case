@@ -2,6 +2,12 @@
 
 ## Current revision — V3 fitted shells, 2026-09-25
 
+Submitted sourceb4548b3 through HTTP inbox as
+`20260925-103637-v3-shells-only`. Exactly two shell parts,67.88 ×57.50 ×20.64 mm
+combined plate bounds. Hash verified. GO request accepted subject to slice
+checks below; initial status `new`, NOT confirmed printing. Dispatch log:
+`prints/2026-09-25-v3-fit.md`.
+
 Austin authorized a NEW base and complete lid, reusing the existing V2
 rectangular buttons and J1 joystick. Print exactly two shell parts, not caps.
 This resolves the old-base ambiguity below. Historical J1 review is preserved.
