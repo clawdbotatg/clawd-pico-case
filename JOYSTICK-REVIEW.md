@@ -2,6 +2,10 @@
 
 ## CURRENT: J2 socket-first fit trial — 2026-09-25
 
+Sent source53632f9 as `20260925-124312-joystick-j2-stepped-socket`, cap only.
+10.4 ×10.4 ×8.6 mm; server hash verified. GO accepted, initial status `new`;
+print start unconfirmed. Dispatch log: `prints/2026-09-25-joystick-j2.md`.
+
 Austin requests deeper seating: roundØ3.00 opening for1.00 mm, followed by
 the existing2.01 square for another2.00 mm. Total cavity depth3.00 mm.
 Outer ball, shaft and lip remain exactly J1. Only the internal cavity changes.
