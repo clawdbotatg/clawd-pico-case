@@ -289,3 +289,11 @@ unsuccessful physical fit: keep roof thickness, move it down, print it.
 Reuse unchanged J2 joystick, same base/buttons. Source: own printed hardware
 feedback in this conversation. Codex uses only original repository geometry;
 no external cases. CAD interference is reported, not treated as fit success.
+## 2026-09-25 — L3 hole alignment / restore L1 height
+
+Austin reports L2 cannot close with joystick/buttons installed. Requests
+previous L1 height restored and hole moved at least 1 mm toward LCD; print
+lid only. Own photos IMG_0831/0830/0829 (upload prefixes f4ab2501, 428b66fa,
+f0156714) inspected directly. Stem appears LCD-ward of opening centre.
+Use explicitly requested 1.00 mm, not a calibrated measurement from photos.
+Codex uses original repository CAD only; no third-party case access.

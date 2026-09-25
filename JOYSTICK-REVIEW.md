@@ -1,6 +1,23 @@
 # V3 shell and joystick review
 
-## CURRENT: L2 roof 1.00 mm lower + exact J2 — authorized physical trial
+## CURRENT: L3 restores L1 height, opening 1 mm toward LCD
+
+Physical result: Austin reports L2 does not close with buttons/joystick.
+Restore immediate previous L1 lid, face z4.20, joystick underside z3.50.
+Shift ONLY the circular 8 mm opening from (13.1671,46.1292) to
+(13.1671,45.1292): exactly 1.00 mm toward the LCD, not CAD X-left.
+His IMG_0831/0830/0829 show the stem LCD-ward of the current opening centre.
+The offset is user-specified, not a precision photo measurement.
+
+Lip pocket, buttons, skirt, snaps and height match L1. Reuse J2 cap/base/buttons.
+Print ONLY lid FACE DOWN, no supports/raft. Source cad/l3_shifted_hole.py;
+STL stl/l3-shifted-hole/l3-lid-face-down.stl; STEP/validation/viewer in
+renders/l3-shifted-hole. Viewer port8793 /l3-shifted-hole/viewer.html.
+Hardware model datum remains unchanged; only opening is corrected, avoiding
+invented board measurements. Test alignment, movement and closure physically.
+Dispatch log: prints/2026-09-25-l3-shifted-hole.md.
+
+## Historical: L2 roof 1.00 mm lower + exact J2 — authorized physical trial
 
 Austin explicitly says to proceed despite uncertain fit. The final requested
 reduction is 1.00 mm from L1, not 1.50 mm. Roof AND underside move down:

@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "valid_single_solid": true,
+    "restored_L1_height": true,
+    "same_full_skirt_height": true,
+    "pocket_and_lower_geometry_unchanged": true,
+    "new_8mm_hole_clear": true,
+    "old_hole_crescent_filled": true,
+    "hole_closer_to_glass": true,
+    "only_hole_changed": true,
+    "existing_buttons_clear": true
+  },
+  "old_hole_center": [
+    13.167100000000001,
+    46.1292
+  ],
+  "new_hole_center": [
+    13.167100000000001,
+    45.1292
+  ],
+  "diameter": 8.0,
+  "face_z": 4.2,
+  "joystick_underside": 3.5,
+  "physical_fit_confirmed": false,
+  "limitations": [
+    "Hardware joystick datum is NOT changed from photos; only the lid aperture is corrected by user request.",
+    "Physical alignment, movement and closure need test.",
+    "Lip pocket unchanged; no hardware or button redesign."
+  ]
+}

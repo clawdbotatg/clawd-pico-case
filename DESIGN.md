@@ -67,3 +67,9 @@ geometry; preserve contacts, mating skirt and snaps. Face z3.20, joystick
 underside z2.50, button underside z2.56. Same base/buttons; exact J2 socket.
 User accepts possibly unsuccessful fit; predicted overlaps remain in report,
 not suppressed or counted as passes. Print face down with no supports/raft.
+## L3 opening correction — 2026-09-25
+
+L2 failed physical closure. Restore L1 thickness/height/pockets and shift only
+round opening 1.00 mm toward LCD (CAD negative Y). Fill old throat crescent,
+recut at new centre; retain 8 mm diameter and existing lip cavity. No base,
+button or joystick changes. Print lid only, face down, supports/raft off.

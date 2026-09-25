@@ -145,3 +145,9 @@ despite fit uncertainty. Roof translated, not shaved. J2 byte-identical.
 Seven structural checks pass; hat/button overlaps remain diagnostic warnings.
 Files: cad/l2_j2_trial.py, stl/l2-j2/, renders/l2-j2/. Full handoff in
 JOYSTICK-REVIEW.md; dispatch in prints/2026-09-25-l2-j2.md.
+## L3 — restore L1 height and shift round hole toward LCD
+
+Austin confirms L2 cannot close with caps installed. Revert height to L1 and
+move 8 mm opening 1.00 mm toward LCD using his new photos/direction. Pocket
+and all other L1 geometry unchanged. Lid only print. Isolated original source
+cad/l3_shifted_hole.py and stl/renders/l3-shifted-hole artifacts.

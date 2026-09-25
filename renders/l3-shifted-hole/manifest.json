@@ -1,0 +1,25 @@
+{
+  "revision": "L3",
+  "print_parts": [
+    "lid"
+  ],
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/l3_shifted_hole.py": "cf029a21615aff6a0884b80379a8497dbcf7e8af55246fbc98bc1dbba61cd600",
+    "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
+    "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
+    "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/l3-shifted-hole/l3-lid-face-down.stl": "36425a396bdc524a374d7511813842214572617c2d0387cb5ad942edbf78c358",
+    "renders/l3-shifted-hole/lid.step": "25c3014766281f81f2020be3c5dca20894aba000893f3fc0314a555db82ba354",
+    "renders/l3-shifted-hole/validation.json": "19ce69be02061d1055972d74b36d823000212cde914175d8fe0ae8ebeee93361",
+    "renders/l3-shifted-hole/viewer.html": "4d830e05cb68d8891523eb30d714d321fd4d874007fb4bdeff4b45d7b7331b05"
+  }
+}

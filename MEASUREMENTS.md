@@ -367,3 +367,9 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | L2-JOIN | Preserve original lower geometry through S3 + GLASS_CLEAR; translate upper geometry down, union | Original construction choice preserves base mating and PCB contacts, shortens walls |
 | L2-RESULT | Face z3.20, joystick underside z2.50, button underside z2.56 | Derived from L1 minus L2-DROP; roofs remain 0.70 and 0.64 mm |
 | L2-CAP | Exact J2, circle 3.00 × 1.00 then square 2.01 × 2.00 | Austin selects prior joystick unchanged |
+### L3 alignment — 2026-09-25
+
+| ID | Value | Source |
+|---|---|---|
+| L3-HOLE | Shift opening 1.00 mm toward LCD (CAD Y minus 1.00); diameter remains 8.00 | Austin's physical fit instruction and own IMG_0831/0830/0829; direction confirmed, amount chosen from his request |
+| L3-KEEP | Restore L1 face z4.20, joystick underside z3.50; keep original pocket, button geometry and mating skirt | Austin requests previous height and hole-only correction; original construction choice leaves lip pocket unchanged |
