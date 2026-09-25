@@ -59,3 +59,11 @@ to z3.50. Existing buttons limit further lowering: 0.64 mm roof now remains.
 No local boss, supports, USB fin, new base or new buttons. Lip height z2.45
 is Austin's estimate for visualization, not proven seating. Iteratively find
 motion limit then back off. Full details in JOYSTICK-REVIEW.md.
+## L2 / J2 authorized physical trial — 2026-09-25
+
+Move L1 upper roof down 1.00 mm, retaining roof thickness. Keep lower wall
+geometry through original glass-clearance height and union translated upper
+geometry; preserve contacts, mating skirt and snaps. Face z3.20, joystick
+underside z2.50, button underside z2.56. Same base/buttons; exact J2 socket.
+User accepts possibly unsuccessful fit; predicted overlaps remain in report,
+not suppressed or counted as passes. Print face down with no supports/raft.

@@ -359,3 +359,11 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | L1-FACE | Outer face z4.20; joystick underside z3.50 | Original trial choice: 0.90 lower than V3 flat; 0.70 joystick roof; 0.64 roof over retained button pockets |
 | L1-KEEP | Base, snaps, holes and button pockets unchanged; joystick outside unchanged | Original design choice, isolate height and socket changes |
 | L1-PLATE | 5 mm separation between print parts | Original plate layout choice |
+### L2 roof translation — 2026-09-25
+
+| ID | Value | Source |
+|---|---|---|
+| L2-DROP | 1.00 mm below L1, entire roof thickness retained | Austin explicit fit-trial instruction, supersedes 1.50 mm request |
+| L2-JOIN | Preserve original lower geometry through S3 + GLASS_CLEAR; translate upper geometry down, union | Original construction choice preserves base mating and PCB contacts, shortens walls |
+| L2-RESULT | Face z3.20, joystick underside z2.50, button underside z2.56 | Derived from L1 minus L2-DROP; roofs remain 0.70 and 0.64 mm |
+| L2-CAP | Exact J2, circle 3.00 × 1.00 then square 2.01 × 2.00 | Austin selects prior joystick unchanged |

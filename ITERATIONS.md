@@ -138,3 +138,10 @@ User rejects J3 socket, selects J2 unchanged. Requested face z2.70 conflicts
 with existing button pocket roof z3.56. No geometry or print produced; details
 and required scope decision recorded in JOYSTICK-REVIEW.md. Prior print files
 unchanged. Await choice on retention redesign versus height target.
+## L2 / exact J2 — one-millimeter physical trial
+
+Austin supersedes 1.50 mm with 1.00 mm and explicitly authorizes printing
+despite fit uncertainty. Roof translated, not shaved. J2 byte-identical.
+Seven structural checks pass; hat/button overlaps remain diagnostic warnings.
+Files: cad/l2_j2_trial.py, stl/l2-j2/, renders/l2-j2/. Full handoff in
+JOYSTICK-REVIEW.md; dispatch in prints/2026-09-25-l2-j2.md.

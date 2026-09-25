@@ -282,3 +282,10 @@ latest lid by 1.5 mm and printing lid plus J2. Input is his own physical fit
 feedback. Codex inspected only original repository sources. No third-party
 geometry. Preflight finds existing button retention incompatible with requested
 uniform height; no geometry modified or print submitted pending direction.
+## 2026-09-25 — L2 one-millimeter roof translation, authorized fit trial
+
+Austin changes the reduction to 1.00 mm and explicitly accepts a possibly
+unsuccessful physical fit: keep roof thickness, move it down, print it.
+Reuse unchanged J2 joystick, same base/buttons. Source: own printed hardware
+feedback in this conversation. Codex uses only original repository geometry;
+no external cases. CAD interference is reported, not treated as fit success.

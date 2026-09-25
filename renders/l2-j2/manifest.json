@@ -1,0 +1,24 @@
+{
+  "revision": "L2-J2",
+  "slice_verified": false,
+  "supports": false,
+  "raft": false,
+  "source_sha256": {
+    "cad/l2_j2_trial.py": "6e8109f2891d6cc5e7ba71eacde7b1155e885258f9e2b2f359b9c3b161b73ef9",
+    "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
+    "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
+    "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/l2-j2/joystick-j2.stl": "929c112efd3c55259868da8d52115902e15ce6fe5bad6dea9e933d9ce5ba0c19",
+    "stl/l2-j2/lid-face-down.stl": "9b31116bc7e369c154d56769fa8ca2e008428348ae610022a7564c2f352b4387",
+    "stl/l2-j2/l2-lid-and-j2.stl": "7777ba5cc1b18bc5eb67cdedb275aa89db74edf8472d4698a71c1621fcf4f692",
+    "renders/l2-j2/validation.json": "f90995c09e286a1876f4a56240b7a92e9e36ca11c24334523627b1f389a1f55d",
+    "renders/l2-j2/lid.step": "8c73ff05340350f9aace63f766c87656d7770e110622be86e20851b92b16ecbd",
+    "renders/l2-j2/viewer.html": "1603c514fb16289b3ef08ccae9b9451a5bc26ccfba36a87a1f59d5a45279e6b3"
+  }
+}

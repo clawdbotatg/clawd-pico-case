@@ -1,6 +1,28 @@
 # V3 shell and joystick review
 
-## CURRENT: J2 restore, further lowering blocked by button retention
+## CURRENT: L2 roof 1.00 mm lower + exact J2 — authorized physical trial
+
+Austin explicitly says to proceed despite uncertain fit. The final requested
+reduction is 1.00 mm from L1, not 1.50 mm. Roof AND underside move down:
+face z3.20 (screen recess 1.15), joystick underside z2.50, button underside
+z2.56. Roof thicknesses remain 0.70 and 0.64 mm respectively. Original lower
+walls, PCB contacts, skirt and mating snaps retained; same base and buttons.
+No thinning, raised boss, supports, new buttons or J3 socket.
+
+J2 STL is byte-identical to the original: 3.00 diameter × 1.00 deep round
+entry then 2.01 square × 2.00 deep. Reprint with flange down.
+
+Seven structural checks pass. CAD overlaps remain: hat 7.638 mm³, buttons
+7.604 mm³; these are diagnostics, NOT successful fit checks. User authorizes
+the trial despite the model warning. Gently test; do not force closure or
+joystick movement. No claim that actual hardware will fit.
+
+Source cad/l2_j2_trial.py. Print pair stl/l2-j2/l2-lid-and-j2.stl. Individual
+STLs alongside. Viewer port8793 /l2-j2/viewer.html; STEP, manifest and
+validation in renders/l2-j2/. Print record prints/2026-09-25-l2-j2.md.
+Lid FACE DOWN, joystick flange DOWN, supports/raft OFF.
+
+## Historical: J2 restore, further lowering blocked by button retention
 
 Austin rejects J3 socket and explicitly selects unchanged J2. Requests latest
 lid 1.50 mm lower: outer face z4.20 -> z2.70. His observed joystick clearance

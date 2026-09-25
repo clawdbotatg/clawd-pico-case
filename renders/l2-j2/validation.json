@@ -1,0 +1,31 @@
+{
+  "structural_checks": {
+    "lid_valid_single_solid": true,
+    "face_exactly_1mm_lower": true,
+    "full_skirt_unchanged": true,
+    "upper_roof_translated_not_thinned": true,
+    "joystick_valid_single_solid": true,
+    "j2_byte_identical": true,
+    "flat_outer_face": true
+  },
+  "physical_fit_confirmed": false,
+  "user_authorized_interference_trial": true,
+  "face_z": 3.2,
+  "screen_recess": 1.1500000000000004,
+  "button_underside": 2.56,
+  "button_roof": 0.6400000000000001,
+  "joystick_underside": 2.5,
+  "joystick_roof": 0.7000000000000002,
+  "diagnostic_overlap_mm3": {
+    "hat": 7.63777610401916,
+    "pico": 0,
+    "base": 0,
+    "button_caps": 7.603951618606725,
+    "joystick_cap": 0
+  },
+  "limitations": [
+    "Predicted button overlap accepted by user for physical test. Do not force assembly.",
+    "Joystick seated height in viewer remains earlier estimate, not new measurement.",
+    "Actual full motion and slicing require physical/operator checks."
+  ]
+}
