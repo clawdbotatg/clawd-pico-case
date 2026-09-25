@@ -24,7 +24,6 @@ CROPS = {
     "rule": (100, 0, 900, 4694),
     "lcd_top": (1750, 450, 2600, 1850),
     "pico_top": (1000, 450, 1700, 1850),
-    "crypto": (950, 3750, 2550, 4500),
 }
 
 
@@ -308,29 +307,6 @@ def measure_pico_top(img, crop, ppm, outdir):
     return res
 
 
-def measure_crypto(img, crop, ppm, outdir):
-    """Two ATECC608 breakouts. Outline and the four mounting holes of each;
-    a hole shows the grey backing through it."""
-    rgb, V, sat = channels(img, crop)
-    nb = ndi.binary_fill_holes(ndi.binary_closing(not_background(V, sat), iterations=8))
-    lab, n = ndi.label(ndi.binary_opening(nb, iterations=6))
-    sizes = ndi.sum(lab > 0, lab, range(1, n + 1))
-    out, rects, allholes = [], [], []
-    for i in np.argsort(sizes)[::-1][:2]:
-        board = ndi.binary_fill_holes(lab == (i + 1))
-        rect = min_rect(board)
-        inner = ndi.binary_erosion(board, iterations=int(0.7 * ppm))
-        holes = corner_picks(round_blobs(ndi.binary_opening((V > 85) & (V < 145) & (sat < 16) & inner, iterations=2),
-                                         ppm, 1.4, 4.0, tol=0.3), rect)
-        out.append({"board_long_mm": rect["long"] / ppm, "board_short_mm": rect["short"] / ppm,
-                    "holes_uv_mm": [uv_mm(b, rect, ppm) for b in holes],
-                    "hole_diam_mm": [diam_mm(b, ppm) for b in holes]})
-        rects.append(rect)
-        allholes += holes
-    draw_overlay(img.crop(crop), rects, allholes, f"{outdir}/crypto.png")
-    return out
-
-
 def draw_overlay(im, rects, blobs, path):
     im = im.convert("RGB")
     d = ImageDraw.Draw(im)
@@ -352,8 +328,7 @@ def main():
     ppm = sc["px_per_mm"]
     res = {"scale": sc,
            "lcd_top": measure_lcd_top(img, CROPS["lcd_top"], ppm, outdir),
-           "pico_top": measure_pico_top(img, CROPS["pico_top"], ppm, outdir),
-           "crypto": measure_crypto(img, CROPS["crypto"], ppm, outdir)}
+           "pico_top": measure_pico_top(img, CROPS["pico_top"], ppm, outdir)}
     print(json.dumps(res, indent=1, default=lambda o: round(float(o), 3)))
     json.dump(res, open(f"{outdir}/measure.json", "w"), indent=1, default=lambda o: round(float(o), 3))
 

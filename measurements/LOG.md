@@ -23,8 +23,6 @@ calibrated against the steel rule in frame, never trusted from the dpi.
   switches, blue FPC tape at the right edge). Then back side down (two
   20-pin female headers, so the PCB sits ~8 mm off the glass and is out of
   focus — heights come from calipers, not this).
-- Two ATECC608 breakout boards (the crypto chip). One component side down,
-  one connector side down. Not yet in the board register.
 
 Boards were laid loose, not squared to the platen; the analysis fits each
 outline's angle. Flatbed depth of field is a few mm: surfaces on the glass
@@ -38,8 +36,8 @@ view, S/B/J centres (pending analysis, see next entry).
 and `2026-09-24-scan-01-lcd-top-fit.png` (red = fitted rectangles, green =
 fitted discs; look before trusting a number). Scale from the rule's mm ticks:
 196 ticks, RMS 0.03 mm. Filled: L1, L2, S1, S2, S4, S5, B4, B8a–d, J4, J10,
-J1/J2 — all tagged `scan01`, all "confirm cal". Pink Pico and ATECC608 rows
-not filled: those boards sat tilted on their connectors and scanned soft.
+J1/J2 — all tagged `scan01`, all "confirm cal". Pink Pico rows
+not filled: that board sat tilted on their connectors and scanned soft.
 Lesson for scan 02: put each board's FLAT side on the glass, or shim the
 connector end so the PCB lies parallel to the glass.
 
@@ -48,8 +46,7 @@ connector end so the PCB lies parallel to the glass.
 Files `2026-09-24-cal-<ROW>-<what>-<n>.jpg`, one per reading, frame grabbed
 the moment Austin read the number. Every row says "cal 2026-09-24". Filled:
 LCD L1 L2 L3 L7, S3, the whole button B1–B7, J4 J5 J6; PINK P1 P2 P3 P12 P13
-P15 P18; the stack A1 A2; ATECC608 C1 (fits the stack, no more rows by
-Austin's call). Method for heights: hat on its long edge, one jaw on the
+P15 P18; the stack A1 A2. Method for heights: hat on its long edge, one jaw on the
 socket top, the other on the feature; 10.66 (socket top to PCB front) is
 the common offset. Scan-vs-caliper: the scan over-reads outlines by 0.14 to
 0.18 mm from edge blur; feature centres were not re-checked (no need, the

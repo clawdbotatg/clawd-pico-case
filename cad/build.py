@@ -47,7 +47,7 @@ from build123d import Rot, Pos
 PRINT_FLIP = {"lid", "joystick_cap"}
 os.makedirs(os.path.join(STL, "print"), exist_ok=True)
 for name, (fn, _) in model.PARTS.items():
-    if name in ("hat", "pico"):
+    if name in ("hat", "pico", "fpc_tape"):
         continue
     part = fn()
     if name in PRINT_FLIP:
@@ -57,6 +57,11 @@ for name, (fn, _) in model.PARTS.items():
     export_stl(part, os.path.join(STL, "print", f"{name}.stl"), tolerance=0.02, angular_tolerance=0.1)
     bb = part.bounding_box()
     print(f"print/{name:13} {bb.max.X:6.2f} x {bb.max.Y:6.2f} x {bb.max.Z:5.2f} mm, flat face down{' (flipped)' if name in PRINT_FLIP else ''}")
+
+from build123d import export_step, Compound
+asm = Compound(children=[model.PARTS[n][0]() for n in model.PARTS])
+export_step(asm, os.path.join(STL, "assembly.step"))
+print("assembly.step", os.path.getsize(os.path.join(STL, "assembly.step")) // 1024, "KB")
 
 import params as P
 info = {

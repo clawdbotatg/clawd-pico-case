@@ -52,6 +52,10 @@ P13 = 3.08    # PINK-P13 USB-C shell height, cal
 P15 = 3.25    # PINK-P15 tallest part above the PCB, component side (the shell), cal
 P10 = 17.78   # P10 header row spacing (ds, 7 x 2.54), the clone matches the hat's sockets by construction
 
+# ---- F. FPC tape at the LCD's right edge (seen in scan01; the case pocket must not pinch it)
+F_OUT = 4.0   # how far the blue tape protrudes past the PCB edge, scan01 (soft) — UNRESOLVED, see report
+F_Y0, F_Y1 = 22.0, 30.0   # its span along y, scan01 (soft)
+
 # ---- A. Stack
 A2 = 12.29    # A2 gap, LCD PCB back to Pico PCB top (the face toward the LCD), derived from cal
 

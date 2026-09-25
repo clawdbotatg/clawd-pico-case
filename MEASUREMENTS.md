@@ -73,18 +73,6 @@ table once per tag; clones must not inherit the datasheet numbers.
 | PINK-P18b | Header plastic strip thickness | | cal | |
 | PINK-P19 | USB connector type | USB-C | look | |
 
-## C. ATECC608 breakout (the crypto chip)
-
-Two identical breakouts on the bench. Sits between the hat and the Pico, wired
-to the Pico's I2C pins; never touches the case (Austin, 2026-09-24). Rows here
-only so the stack model can check it clears the 12.29 gap (A2).
-
-| ID | Dimension | Value | Source | Notes |
-|---|---|---|---|---|
-| C1 | Board length | 25.3 | cal 2026-09-24 | `measurements/2026-09-24-cal-ATECC-length-1.jpg` |
-| C2 | Board width | ~18.5 | scan01 | soft, good enough for a part that touches nothing |
-| C3 | Total thickness with connectors | fits | Austin 2026-09-24 | tested in the assembled stack, fits fine. No further rows for this board |
-
 ## L. Waveshare Pico-LCD-1.3, board
 
 | ID | Dimension | Value | Source | Notes |
@@ -121,7 +109,7 @@ Scale 23.666 px/mm from 196 rule ticks over 196 mm, fit RMS 0.73 px (0.031 mm); 
 | J10 | Joystick centre x, y | 13.24, 46.22 | scan01 | stem top; base centre agrees within 0.4 |
 | J1/J2 | Joystick base plan size | 8.81 × 7.22 | scan01 | fitted to the silver diamond, blurred; confirm cal |
 
-Not from this scan: every Z (L3, L7, L9, S3, B3, B5, B6, J3, J6-J9), hole rows L5/L6 (none visible from the top; back side scan was out of focus), and the switch bodies B1/B2 (blurred). The pink Pico and the two ATECC608 breakouts sat tilted on their connectors and only their outlines are usable: PINK 50.8 × 20.9 (under-reads, edge blur), ATECC608 about 27–28 × 18.5–19. Calipers for those.
+Not from this scan: every Z (L3, L7, L9, S3, B3, B5, B6, J3, J6-J9), hole rows L5/L6 (none visible from the top; back side scan was out of focus), and the switch bodies B1/B2 (blurred).
 
 ## S. Screen
 

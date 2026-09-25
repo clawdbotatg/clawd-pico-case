@@ -8,9 +8,7 @@ date. Choices the hardware does not force are ours. Make them on purpose.
 - Boards supported: **PINK** (USB-C RP2040 clone) only, for now. Austin,
   2026-09-24. The official micro-USB Pico 2 W is a later base if wanted.
 - One case for all boards, or one base per board: one case, one board (above).
-- Pico plugged or soldered: plugged into the hat's female headers, with
-  the ATECC608 breakout wedged in the 12.29 mm gap between them (A2). The
-  breakout touches nothing on the case (Austin, tested in the stack).
+- Pico plugged or soldered: plugged into the hat's female headers.
 - Battery / switch / strap: none.
 - Must stay reachable: USB-C, screen, four buttons, joystick. BOOTSEL: TBD
   (a hole in the back, or open the case).

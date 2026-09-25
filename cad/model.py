@@ -68,6 +68,11 @@ def pico():
     return pcb + shell
 
 
+def fpc_tape():
+    """The blue tape as scanned: a thin flag past the right edge, level with the glass."""
+    return box(P.L2 - 1.0, P.L2 + P.F_OUT, P.F_Y0, P.F_Y1, P.S3 - 0.3, P.S3)
+
+
 # ---------------------------------------------------------------- case
 
 X0, X1 = -P.CLEAR - P.WALL, P.L2 + P.CLEAR + P.WALL       # outer footprint
@@ -171,6 +176,7 @@ def joystick_cap():
 PARTS = {
     "hat": (hat, "#1f5f7a"),
     "pico": (pico, "#d4667a"),
+    "fpc_tape": (fpc_tape, "#2255cc"),
     "base": (base, "#c9c4b8"),
     "lid": (lid, "#e8e3d6"),
     "button_caps": (button_caps, "#f0a030"),
