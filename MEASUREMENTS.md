@@ -192,7 +192,47 @@ looking at the screen, and which direction is +x and +y. Use the same origin in
 
 Origin (chosen 2026-09-24): looking at the screen with the joystick at the top
 and the four buttons at the bottom, the FPC tape is on the right. Origin is
-the bottom-left corner of the LCD PCB. +x to the right (26.58 wide), +y up
-toward the joystick (52.68 long). The 600 dpi scan is not mirrored (the
+the bottom-left corner of the LCD PCB. +x to the right (26.44 wide), +y up
+toward the joystick (52.50 long, after calipers). The 600 dpi scan is not mirrored (the
 rule's digits and the Pico's silkscreen read correctly), so scan x, y map
 straight onto this frame.
+
+## R4 audit: derived coordinates and evidence limits
+
+The scan's absolute corner coordinates above used its blurred 26.5835 ×
+52.6773 outline. CAD preserves offsets from the fitted board centre and
+uses the caliper outline. These are a registration assumption, not new
+caliper readings. Do not scale feature spacing to fit the caliper outline.
+
+| ID | Dimension | Value | Source / limitation |
+|---|---|---|---|
+| SC1 | Glass centre offset x, y | -0.1393, -0.2905 | scan01 JSON glass_centre_uv, reordered v,u |
+| BC1 | Button centre offsets x, y, Y/X/B/A | (-8.4400,-22.1949), (-2.7159,-22.3382), (2.8723,-22.3153), (8.5746,-22.2187) | scan01 plungers_uv, reordered v,u; retain individual y values |
+| JC1 | Stem centre offset x, y | -0.0529, 19.8792 | scan01 joystick_stem_uv |
+| JC2 | Silver base centre offset x, y | 0.2730, 19.4936 | scan01 joystick_base_centre_uv; blurred; differs from stem by 0.505 mm |
+| H1 | Header body width/length | 2.54 / 50.8 | provisional render envelope from P9 × 1 / 20; actual plastic and solder envelope unmeasured |
+| H2 | Pico corner radius / USB inward depth | 1.0 / 7.0 | inherited render assumptions, not measurements |
+| H3 | Silver base orientation / height | 45 degrees / 3.0 | inherited render assumptions, not measurements |
+| H4 | PCB corner radius | 1.5 | inherited render only; collision checks also use a sharp rectangle |
+| H5 | Blue flag thickness / inboard overlap | 0.3 / 1.0 | inherited illustrative envelope; identity unresolved |
+
+Photo audit: L3's frame shows no board or caliper; S3 and B6 miss the
+measurement contact; L7's frame is not a reliable picture of the recorded
+10.66 datum. B4's display appears 3.06 rather than recorded 3.00; B2's second
+display appears 4.31 rather than 4.30. A1 photos do not unambiguously show
+glass contact, so A2 inherits a datum uncertainty as well as the known USB
+0.84 discrepancy. PINK-P11 comes from a segmentation that also reports a
+20.95-mm USB width (inconsistent with P12 8.87); its ±0.2 claim is not
+independently established. Retain all original readings pending recheck.
+
+### R4 design choices (not hardware measurements)
+
+| ID | Choices in mm unless stated | Rationale |
+|---|---|---|
+| D4-FIT | mating gap 0.20; skirt 0.80; wall 2.20; bump 0.45 × 4 × 1; flexible band span 14; slot 0.60; band roof z=-0.30 | maintain 1.20 tongue; outward flex/release access; bands anchored at both ends to bridge when printed inverted |
+| D4-SUPPORT | shelf bearing thickness 0.80, 45-degree underside; pad 1.60, inset 0.50, gap 0.05; shelf gap 0; pocket radius 0.50 | slope from wall to shelf tip; four pads land above side shelves outside switches; sharp corner sensitivity |
+| D4-BUTTON | flange 5.00; pocket margin 0.30 | avoid neighbouring flanges colliding when each cap slides sideways by 0.25; no overtravel stop until casing and PCB landing areas are confirmed |
+| D4-USB | channel clearance 0.25 for lid fin; shell opening square corners; inherited plug trial 12.5 × 7, recess 1.0 | square envelope contains both rectangular shell bounds; insertion straight down |
+| D4-JOY | socket total clearance 0.05 (samples 0, 0.10, 0.20); tip clearance 0; engagement 1.20; disc gap 1.80; hole 12.80; disc 14.0 | seat cap on stem, improve tilt/press room over assumed body and base offset clearance; fit samples are provisional |
+| D4-CAD | boolean overlap 0.01; cutter extension 1; bump overlap 0.20; window end clearance 0.30; cavity radius 0.50; window/pocket radius 0.80; plug recess radius 1.0 | construction choices, not hardware facts |
+| V4 | joystick sensitivity 10 degrees tilt, 0.30 press, pivot z=0 and 3; XY placement sensitivity 0.10; cap travel sampling 9 positions; insertion sampling 1 mm | diagnostic scenarios only; J7/J9 remain unmeasured |

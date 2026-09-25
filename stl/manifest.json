@@ -1,0 +1,29 @@
+{
+  "revision": "R4",
+  "git": "28f6932-modified",
+  "source_sha256": {
+    "cad/build.py": "af601c323c0b32ec33f91cd55d2dc9eea8c206d3aaef1eb5292d73e258423212",
+    "cad/model.py": "4f2d1006b51c5e2ab819af63fffa8f93cf18c63c75973b80ec24c5bc99f13abb",
+    "cad/params.py": "7ffee5457d7b2f1c1461012d667f7e0a8d09f03ca29cbd6efbba25911ae52b1e",
+    "cad/render.py": "e4cf86ea136373e8af34bad103f9964f2b5a110cca1a3c9a2be9622281ebc1c5",
+    "cad/validate.py": "f09e12af4e0f3ef102dc0752cdd821ef5a96e22115a603c6af38f718398f7f07"
+  },
+  "build123d": "0.13.0",
+  "files": {
+    "stl/assembly.step": "8ac5b7fefe0583feba190c6b321489afb5764ee14cf7330b1830f0c1d5feb5fb",
+    "stl/base.stl": "599102711f781d90b9975d1719e60096e08117e77aa386eb6cc4e393508feb20",
+    "stl/button_caps.stl": "2af2fa67222a0b576b29299e03d5db1a2dc879dbc3226d3bec16e21bb52bc450",
+    "stl/fit_samples/joystick_socket_1.86.stl": "d0d88ed50aae252a9718e792d35bde90f6824ea03b929a9c34643c10fa7258a2",
+    "stl/fit_samples/joystick_socket_1.96.stl": "b592a64d53721a88231f82d55ef5494fb3b952fe835ecf5420be32b25669aa79",
+    "stl/fit_samples/joystick_socket_2.06.stl": "125ac194dd6832b501cda29f1c43082092d78f74dbd4e2fc9f9c7e6683f931b5",
+    "stl/fpc_tape.stl": "f066197cd5cc46aa1f4edc879b3dc40c440a4fbda2347f094658726f206bbc5f",
+    "stl/hat.stl": "23ed9d91e82b98b9de1252e26f172b1a9b30d4b1b069720318962f9e34c4783c",
+    "stl/joystick_cap.stl": "a0d8c16d634d540d2b1701e59e112a5458ebc757a72dafb9cbc7411e411d4a32",
+    "stl/lid.stl": "244929d2a1f067676566965437db022b739c7718e8e5096c36fe190b9ad9dc97",
+    "stl/pico.stl": "07f3c74ddcfa0bbea078f49b9dfe835485336647ea54a1d9919f9b2ec2644ee3",
+    "stl/print/base.stl": "b9b05b9878a54d6907ba48c50defc81e31a6a763a8746761f2dd5482327a7ce9",
+    "stl/print/button_caps.stl": "3e7b59822cee43d5d86bc47bf9bafa4ae61ddce8e9ef8685931e9f8f84b932dc",
+    "stl/print/joystick_cap.stl": "ad8c7659be4ff7798590ad7f77fce06d647f5c17d8cb98c4326d55336030fbe1",
+    "stl/print/lid.stl": "74c00061de58b31191f0dd01ab28aacbaf535f7e9116b224c4e282099668c4a0"
+  }
+}

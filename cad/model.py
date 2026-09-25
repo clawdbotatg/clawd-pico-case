@@ -28,16 +28,17 @@ def rbox(x0, x1, y0, y1, z0, z1, r):
 
 CX, CY = P.L2 / 2, P.L1 / 2                       # LCD board centre
 GLASS_C = (CX + P.S_DV, CY + P.S_DU)
-BUTTONS = [(CX + dv, CY + P.B_DU) for dv in P.B_DV]
+BUTTONS = [(CX + dx, CY + dy) for dx, dy in P.B_OFFSETS]
 JOY_C = (CX + P.J_DV, CY + P.J_DU)
+JOY_BASE_C = (CX + P.J_BASE_DV, CY + P.J_BASE_DU)
 
 Z_LCD_BACK = -P.L3
 Z_PICO_TOP = Z_LCD_BACK - P.A2                    # Pico PCB face toward the LCD
 Z_PICO_BOT = Z_PICO_TOP - P.P3
 Z_USB_BOT = Z_PICO_BOT - P.P15                    # lowest point of the stack
 
-PICO_CX = CX if P.PICO_CENTRED_X else CX
-PICO_CY = CY if P.PICO_CENTRED_Y else CY
+PICO_CX = CX + P.PICO_OFFSET_X
+PICO_CY = CY + P.PICO_OFFSET_Y
 USB_SIGN = 1 if P.USB_END == "top" else -1
 PICO_Y0, PICO_Y1 = PICO_CY - P.P1 / 2, PICO_CY + P.P1 / 2
 USB_EDGE_Y = PICO_Y1 if USB_SIGN > 0 else PICO_Y0
@@ -54,19 +55,20 @@ def hat():
         parts += box(bx - P.B2 / 2, bx + P.B2 / 2, by - P.B1 / 2, by + P.B1 / 2, 0, P.B3)
         parts += Pos(bx, by, P.B3) * extrude(Plane.XY * Rectangle(P.B4X, P.B4Y), P.B5 - P.B3)
     jx, jy = JOY_C
-    parts += Pos(jx, jy, 0) * Rot(0, 0, 45) * extrude(Plane.XY * Rectangle(P.J_BASE_X, P.J_BASE_Y), P.J3)
+    parts += Pos(*JOY_BASE_C, 0) * Rot(0, 0, P.J_BASE_ANGLE) * extrude(Plane.XY * Rectangle(P.J_BASE_X, P.J_BASE_Y), P.J3)
     parts += box(jx - P.J4 / 2, jx + P.J4 / 2, jy - P.J4 / 2, jy + P.J4 / 2, P.J3, P.J6)
     # two 20-way female sockets on the back, at the header pitch
     for sx in (CX - P.P10 / 2, CX + P.P10 / 2):
-        parts += box(sx - 1.27, sx + 1.27, CY - 25.4, CY + 25.4, Z_LCD_BACK - P.L7, Z_LCD_BACK)
+        parts += box(sx - P.HEADER_W / 2, sx + P.HEADER_W / 2,
+                     CY - P.HEADER_L / 2, CY + P.HEADER_L / 2, Z_LCD_BACK - P.L7, Z_LCD_BACK)
     return parts
 
 
 def pico():
-    pcb = rbox(PICO_CX - P.P2 / 2, PICO_CX + P.P2 / 2, PICO_Y0, PICO_Y1, Z_PICO_BOT, Z_PICO_TOP, 1.0)
+    pcb = rbox(PICO_CX - P.P2 / 2, PICO_CX + P.P2 / 2, PICO_Y0, PICO_Y1, Z_PICO_BOT, Z_PICO_TOP, P.PICO_R)
     # USB-C shell: P12 wide, P13 tall, sits with its top P15 below the component face
     # (P15 is the tallest point, so the shell spans P15-P13 .. P15 below the PCB)
-    y_in = USB_EDGE_Y - USB_SIGN * 7.0
+    y_in = USB_EDGE_Y - USB_SIGN * P.USB_IN
     y_out = USB_EDGE_Y + USB_SIGN * P.P11
     shell = box(PICO_CX - P.P12 / 2, PICO_CX + P.P12 / 2, min(y_in, y_out), max(y_in, y_out),
                 Z_PICO_BOT - P.P15, Z_PICO_BOT - (P.P15 - P.P13))
@@ -75,7 +77,7 @@ def pico():
 
 def fpc_tape():
     """The blue tape as scanned: a thin flag past the right edge, level with the glass."""
-    return box(P.L2 - 1.0, P.L2 + P.F_OUT, P.F_Y0, P.F_Y1, P.S3 - 0.3, P.S3)
+    return box(P.L2 - P.FLAG_IN, P.L2 + P.F_OUT, P.F_Y0, P.F_Y1, P.S3 - P.FLAG_T, P.S3)
 
 
 # ---------------------------------------------------------------- case
@@ -88,88 +90,113 @@ Z_FLOOR_TOP = Z_USB_BOT - P.CLEAR
 Z_BOTTOM = Z_FLOOR_TOP - P.FLOOR
 Z_SPLIT = 0.0                                              # lid meets base at the LCD front face
 Z_LID_TOP = P.S3 + P.GLASS_CLEAR + P.LID_TOP
+TONGUE_INSET = P.SKIRT + P.MATE_CLEAR
+USB_Z0 = Z_PICO_BOT - max(P.P15, P.A1_USB - P.A1_PCB) - P.USB_CLEAR
+USB_Z1 = Z_PICO_BOT - min(P.P15, P.A1_USB - P.A1_PCB) + P.P13 + P.USB_CLEAR
+USB_HALF_W = P.P12 / 2 + P.USB_CLEAR
+
+
+def plug_recess():
+    zm = (USB_Z0 + USB_Z1) / 2
+    yr0, yr1 = ((Y1 - P.PLUG_RECESS, Y1 + P.TOOL_EXT) if USB_SIGN > 0
+                else (Y0 - P.TOOL_EXT, Y0 + P.PLUG_RECESS))
+    rec = box(PICO_CX - P.PLUG_W / 2, PICO_CX + P.PLUG_W / 2,
+              yr0, yr1, zm - P.PLUG_H / 2, zm + P.PLUG_H / 2)
+    return fillet(rec.edges().filter_by(Axis.Y), P.PLUG_R)
 
 
 def base():
     outer = rbox(X0, X1, Y0, Y1, Z_BOTTOM, Z_SPLIT, P.CORNER_R)
-    pocket = rbox(IX0, IX1, IY0, IY1, Z_FLOOR_TOP, Z_SPLIT + 1, P.POCKET_R)
+    pocket = rbox(IX0, IX1, IY0, IY1, Z_FLOOR_TOP, Z_SPLIT + P.TOOL_EXT, P.POCKET_R)
     b = outer - pocket
     # tongue: the top TONGUE_H of the wall steps in by SKIRT so the lid skirt sits flush outside
-    step = rbox(X0, X1, Y0, Y1, Z_SPLIT - P.TONGUE_H, Z_SPLIT + 1, P.CORNER_R) \
-        - rbox(X0 + P.SKIRT, X1 - P.SKIRT, Y0 + P.SKIRT, Y1 - P.SKIRT, Z_SPLIT - P.TONGUE_H - 1, Z_SPLIT + 2,
-               max(P.CORNER_R - P.SKIRT, 0.5))
+    step = rbox(X0, X1, Y0, Y1, Z_SPLIT - P.TONGUE_H, Z_SPLIT + P.TOOL_EXT, P.CORNER_R) \
+        - rbox(X0 + TONGUE_INSET, X1 - TONGUE_INSET, Y0 + TONGUE_INSET, Y1 - TONGUE_INSET, Z_SPLIT - P.TONGUE_H - P.TOOL_EXT, Z_SPLIT + 2 * P.TOOL_EXT,
+               P.CORNER_R - TONGUE_INSET)
     b -= step
     # snap bumps on the tongue's outer face, two per long side. Wedge: flat catch face
     # at the bottom, ramp on top so the lid skirt rides over it going down.
     zlo, zhi = P.SNAP_Z - P.SNAP_BUMP_T / 2, P.SNAP_Z + P.SNAP_BUMP_T / 2
-    xl, xr = X0 + P.SKIRT, X1 - P.SKIRT                    # tongue outer faces
+    xl, xr = X0 + TONGUE_INSET, X1 - TONGUE_INSET
     for yb in (CY - P.L1 / 4, CY + P.L1 / 4):
         y0, y1 = yb - P.SNAP_LEN / 2, yb + P.SNAP_LEN / 2
-        b += wedge_x([(xl + 0.2, zlo), (xl - P.SNAP_H, zlo), (xl, zhi), (xl + 0.2, zhi)], y0, y1)
-        b += wedge_x([(xr - 0.2, zlo), (xr + P.SNAP_H, zlo), (xr, zhi), (xr - 0.2, zhi)], y0, y1)
+        b += wedge_x([(xl + P.SNAP_ROOT_OVERLAP, zlo), (xl - P.SNAP_H, zlo), (xl, zhi), (xl + P.SNAP_ROOT_OVERLAP, zhi)], y0, y1)
+        b += wedge_x([(xr - P.SNAP_ROOT_OVERLAP, zlo), (xr + P.SNAP_H, zlo), (xr, zhi), (xr - P.SNAP_ROOT_OVERLAP, zhi)], y0, y1)
     # ledge the LCD PCB rests on: the wall itself (pocket is the PCB outline + CLEAR), so the
     # PCB sits on the socket-clearance shelf. Shelf: fill the pocket back in below the LCD PCB
     # except where the sockets and the Pico live.
-    shelf = rbox(IX0, IX1, IY0, IY1, Z_LCD_BACK - 0.01 - P.SHELF_T, Z_LCD_BACK - 0.01, P.POCKET_R)
-    inner_keep = box(PICO_CX - P.P2 / 2 - P.CLEAR, PICO_CX + P.P2 / 2 + P.CLEAR,
-                     PICO_Y0 - P.CLEAR - P.P11 - 1, PICO_Y1 + P.CLEAR + P.P11 + 1, Z_BOTTOM - 1, Z_SPLIT + 1)
-    b += shelf - inner_keep
+    # 45-degree underside grows inward gradually as the base prints upright.
+    top = Z_LCD_BACK - P.SHELF_GAP
+    left = PICO_CX - P.P2 / 2 - P.CLEAR
+    right = PICO_CX + P.P2 / 2 + P.CLEAR
+    b += wedge_x([(IX0 - P.EPS, top), (left, top),
+                  (left, top - P.SHELF_T),
+                  (IX0 - P.EPS, top - P.SHELF_T - (left - IX0))], IY0, IY1)
+    b += wedge_x([(right, top), (IX1 + P.EPS, top),
+                  (IX1 + P.EPS, top - P.SHELF_T - (IX1 - right)),
+                  (right, top - P.SHELF_T)], IY0, IY1)
     # USB-C cutout through the end wall. Its height covers both stand-off readings:
     # P15 (far face 3.25 below the Pico) and A1 (2.41). Shell is P13 tall either way.
-    far = max(P.P15, P.A1_USB - P.A1_PCB)
-    near = min(P.P15, P.A1_USB - P.A1_PCB) - P.P13          # negative = shell top inside the board line
-    zc0 = Z_PICO_BOT - far - P.USB_CLEAR
-    zc1 = Z_PICO_BOT - near + P.USB_CLEAR
-    ywall0, ywall1 = (IY1 - 1, Y1 + 1) if USB_SIGN > 0 else (Y0 - 1, IY0 + 1)
-    cut = box(PICO_CX - P.P12 / 2 - P.USB_CLEAR, PICO_CX + P.P12 / 2 + P.USB_CLEAR, ywall0, ywall1, zc0, zc1)
-    cut = fillet(cut.edges().filter_by(Axis.Y), min(1.5, (zc1 - zc0) / 2 - 0.05))
-    b -= cut
-    # recess in the outer face for the cable's plastic overmould
-    zm = (zc0 + zc1) / 2
-    yr0, yr1 = (Y1 - P.PLUG_RECESS, Y1 + 1) if USB_SIGN > 0 else (Y0 - 1, Y0 + P.PLUG_RECESS)
-    rec = box(PICO_CX - P.PLUG_W / 2, PICO_CX + P.PLUG_W / 2, yr0, yr1, zm - P.PLUG_H / 2, zm + P.PLUG_H / 2)
-    b -= fillet(rec.edges().filter_by(Axis.Y), 1.0)
+    ywall0, ywall1 = (IY1 - P.TOOL_EXT, Y1 + P.TOOL_EXT) if USB_SIGN > 0 else (Y0 - P.TOOL_EXT, IY0 + P.TOOL_EXT)
+    # Open to the rim for straight-down insertion of the already connected stack.
+    b -= box(PICO_CX - USB_HALF_W, PICO_CX + USB_HALF_W,
+             ywall0, ywall1, USB_Z0, Z_SPLIT + P.TOOL_EXT)
+    b -= plug_recess()
     return b
 
 
 def lid():
     outer = rbox(X0, X1, Y0, Y1, Z_SPLIT - P.TONGUE_H, Z_LID_TOP, P.CORNER_R)
     # skirt cavity: over the tongue
-    cav = rbox(X0 + P.SKIRT, X1 - P.SKIRT, Y0 + P.SKIRT, Y1 - P.SKIRT, Z_SPLIT - P.TONGUE_H - 1, Z_SPLIT,
-               max(P.CORNER_R - P.SKIRT, 0.5))
+    cav = rbox(X0 + P.SKIRT, X1 - P.SKIRT, Y0 + P.SKIRT, Y1 - P.SKIRT, Z_SPLIT - P.TONGUE_H - P.TOOL_EXT, Z_SPLIT,
+               P.CORNER_R - P.SKIRT)
     # ceiling cavity: over the PCB, up to the glass clearance
-    cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - 1, P.S3 + P.GLASS_CLEAR, 0.5)
+    cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - P.TOOL_EXT, P.S3 + P.GLASS_CLEAR, P.CAVITY_R)
     l = outer - cav - cav2
-    # pads that hold the LCD PCB down, in the two bare top corners
+    # Four contacts above the supporting side shelves. Bare PCB needs bench confirmation.
     for px in (P.LID_PAD_INSET, P.L2 - P.LID_PAD_INSET - P.LID_PAD):
-        py = P.L1 - P.LID_PAD_INSET - P.LID_PAD
-        l += box(px, px + P.LID_PAD, py, py + P.LID_PAD, P.LID_PAD_GAP, P.S3 + P.GLASS_CLEAR + 0.01)
+        for py in (P.LID_PAD_INSET, P.L1 - P.LID_PAD_INSET - P.LID_PAD):
+            l += box(px, px + P.LID_PAD, py, py + P.LID_PAD, P.LID_PAD_GAP, P.S3 + P.GLASS_CLEAR + P.EPS)
+    # Lid fin fills the assembly channel, leaving USB clearance below it.
+    fy0, fy1 = (IY1, Y1) if USB_SIGN > 0 else (Y0, IY0)
+    l += box(PICO_CX - USB_HALF_W + P.USB_FIN_CLEAR,
+             PICO_CX + USB_HALF_W - P.USB_FIN_CLEAR, fy0, fy1,
+             USB_Z1, P.S3 + P.GLASS_CLEAR)
+    l -= plug_recess()
     # snap windows: through the skirt where the bumps are (the old blind notches were cut on
     # the cavity side and removed nothing). A window also lets a fingernail push a bump in to open.
     zlo = P.SNAP_Z - P.SNAP_BUMP_T / 2 - P.SNAP_WIN_CLEAR
     zhi = P.SNAP_Z + P.SNAP_BUMP_T / 2 + P.SNAP_WIN_CLEAR
     for yb in (CY - P.L1 / 4, CY + P.L1 / 4):
-        y0, y1 = yb - P.SNAP_LEN / 2 - 0.3, yb + P.SNAP_LEN / 2 + 0.3
-        l -= box(X0 - 1, X0 + P.SKIRT + 0.01, y0, y1, zlo, zhi)
-        l -= box(X1 - P.SKIRT - 0.01, X1 + 1, y0, y1, zlo, zhi)
+        y0, y1 = yb - P.SNAP_LEN / 2 - P.SNAP_END_CLEAR, yb + P.SNAP_LEN / 2 + P.SNAP_END_CLEAR
+        l -= box(X0 - P.TOOL_EXT, X0 + P.SKIRT + P.EPS, y0, y1, zlo, zhi)
+        l -= box(X1 - P.SKIRT - P.EPS, X1 + P.TOOL_EXT, y0, y1, zlo, zhi)
+        # Flexible bands anchored at both ends. Inverted printing bridges the
+        # slit; a free-ended horizontal cantilever would begin in mid-air.
+        end = yb + P.ARM_LEN / 2
+        start = yb - P.ARM_LEN / 2
+        for xa, xb in ((X0 - P.TOOL_EXT, X0 + P.SKIRT + P.EPS),
+                       (X1 - P.SKIRT - P.EPS, X1 + P.TOOL_EXT)):
+            l -= box(xa, xb, start, end,
+                     P.ARM_ROOF, P.ARM_ROOF + P.ARM_SLOT)
     # screen window
     gx, gy = GLASS_C
     w = P.WINDOW_CLEAR
-    l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -1, Z_LID_TOP + 1, 0.8)
+    l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -P.TOOL_EXT, Z_LID_TOP + P.TOOL_EXT, P.WINDOW_R)
     # button pocket: the caps' flanges live under the plate, above the plungers
     pocket_top = P.B5 + P.CAP_FLANGE_T + P.CAP_POCKET_CLEAR
-    bx0 = min(b[0] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - 0.3
-    bx1 = max(b[0] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + 0.3
-    by0 = BUTTONS[0][1] - P.CAP_FLANGE_W / 2 - 0.3
-    by1 = BUTTONS[0][1] + P.CAP_FLANGE_W / 2 + 0.3
-    l -= rbox(bx0, bx1, by0, by1, -1, pocket_top, 0.8)
+    bx0 = min(b[0] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - P.POCKET_MARGIN
+    bx1 = max(b[0] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + P.POCKET_MARGIN
+    by0 = min(b[1] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - P.POCKET_MARGIN
+    by1 = max(b[1] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + P.POCKET_MARGIN
+    l -= rbox(bx0, bx1, by0, by1, -P.TOOL_EXT, pocket_top, P.WINDOW_R)
     # button holes: square, a web of lid between each
     hw = P.CAP_W + 2 * P.CAP_HOLE_CLEAR
     for bx, by in BUTTONS:
-        l -= rbox(bx - hw / 2, bx + hw / 2, by - hw / 2, by + hw / 2, pocket_top - 1, Z_LID_TOP + 1, P.CAP_R + P.CAP_HOLE_CLEAR)
+        l -= rbox(bx - hw / 2, bx + hw / 2, by - hw / 2, by + hw / 2, pocket_top - P.TOOL_EXT, Z_LID_TOP + P.TOOL_EXT, P.CAP_R + P.CAP_HOLE_CLEAR)
     # joystick hole
     jx, jy = JOY_C
-    l -= Pos(jx, jy, Z_LID_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_LID_TOP + 2)
+    l -= Pos(jx, jy, Z_LID_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_LID_TOP + 2 * P.TOOL_EXT)
     return l
 
 
@@ -181,19 +208,19 @@ def button_caps():
         c = rbox(bx - P.CAP_FLANGE_W / 2, bx + P.CAP_FLANGE_W / 2, by - P.CAP_FLANGE_W / 2, by + P.CAP_FLANGE_W / 2,
                  P.B5, P.B5 + P.CAP_FLANGE_T, P.CAP_R)
         c += rbox(bx - P.CAP_W / 2, bx + P.CAP_W / 2, by - P.CAP_W / 2, by + P.CAP_W / 2,
-                  P.B5 + P.CAP_FLANGE_T - 0.01, Z_LID_TOP + P.CAP_PROUD, P.CAP_R)
+                  P.B5 + P.CAP_FLANGE_T - P.EPS, Z_LID_TOP + P.CAP_PROUD, P.CAP_R)
         caps = c if caps is None else caps + c
     return caps
 
 
-def joystick_cap():
+def joystick_cap(socket_clear=None):
     jx, jy = JOY_C
     bot = P.J6 - P.JOY_ENGAGE
     d0 = Z_LID_TOP + P.JOY_DISC_GAP
-    cap = Pos(jx, jy, (bot + d0) / 2) * Cylinder(P.JOY_NECK_D / 2, d0 - bot + 0.01)
+    cap = Pos(jx, jy, (bot + d0) / 2) * Cylinder(P.JOY_NECK_D / 2, d0 - bot + P.EPS)
     cap += Pos(jx, jy, d0 + P.JOY_DISC_T / 2) * Cylinder(P.JOY_DISC_D / 2, P.JOY_DISC_T)
-    s = (P.J4 + P.JOY_SOCKET_CLEAR) / 2
-    socket = box(jx - s, jx + s, jy - s, jy + s, bot - 0.1, P.J6 + P.JOY_SOCKET_TIP_CLEAR)
+    s = (P.J4 + (P.JOY_SOCKET_CLEAR if socket_clear is None else socket_clear)) / 2
+    socket = box(jx - s, jx + s, jy - s, jy + s, bot - P.TOOL_EXT, P.J6 + P.JOY_SOCKET_TIP_CLEAR)
     return cap - socket
 
 

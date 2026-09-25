@@ -1,0 +1,5 @@
+build123d==0.13.0
+# Measurement tools; no third-party geometry is distributed.
+numpy==2.5.3
+scipy==1.18.1
+Pillow==12.2.0

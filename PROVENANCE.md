@@ -56,3 +56,19 @@ touched geometry, and what that session had seen.
   shapes; three.js (MIT) is loaded from cdnjs by the viewer and not copied in.
 - Wrote: `cad/params.py`, `cad/model.py`, `cad/build.py`, `stl/`,
   `renders/viewer.html`, `REPORT.md`, first test print drops.
+
+## 2026-09-24. Independent revision R4, Codex.
+
+- Session started in this repository at Austin's request to critically review
+  all measurements and correct or redesign the case. Read this repository's
+  documents, code, scan analysis, overlay and caliper photographs. No other
+  case listings, geometry, picowallet files or memory were opened. No imported
+  third-party geometry. Existing MIT license retained.
+- Inputs: the recorded caliper values and scan01 already listed above.
+  Photo review identifies evidence limitations; it does not silently replace
+  Austin's readings with uncertain image readings. New derived coordinate
+  rows and explicit design/verification assumptions are in MEASUREMENTS.md.
+- Original engineering changes: clearance between halves, slotted lid snap
+  arms, sloped shelf undersides, USB insertion channel with lid closure,
+  four PCB hold-down pads, narrower button flanges, and joystick fit samples.
+  Choices and remaining physical tests are documented in DESIGN.md/REPORT.md.

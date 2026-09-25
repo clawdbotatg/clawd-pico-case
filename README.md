@@ -49,9 +49,31 @@ What we do not copy is their files and their styling choices.
 
 ## Status
 
-Phase 0 done 2026-09-19. Method research done 2026-09-20. Measuring and a
-first model done 2026-09-24; not yet printed or fitted. Where it stands, every
-number and what is still unknown: `REPORT.md`.
+Saved designs and print history: [iteration register](ITERATIONS.md).
+
+R4 (2026-09-24) corrects assembly access, mating clearance, snaps, board
+supports, button flange collisions and joystick clearance. Original geometry;
+no third-party case models used. The current target is the measured pink
+USB-C board, not an official Pico W/Pico 2 W.
+
+See [preview](renders/r4-preview.png), [interactive assembly](renders/viewer.html),
+and [critical review / assembly instructions](REPORT.md). R4 has not been
+printed. Earlier test 2 was sent to print but has no recorded fit result.
+CAD validation is not physical validation; remaining measurements are in the report.
+
+## Build
+
+With Python 3.12 and dependencies in requirements.txt:
+
+```sh
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python cad/build.py
+```
+
+The build audits geometry before exporting STL/STEP, print orientations,
+joystick fit samples, viewer, preview and source/output hashes. Print only
+the enclosure parts in `stl/print/`; hardware proxies in `stl/` are for inspection.
 
 ## License
 

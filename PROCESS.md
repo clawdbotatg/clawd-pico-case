@@ -53,7 +53,7 @@ Order of work:
 5. `cad/caps.py`. Button caps and joystick cap, from the switch and stick
    measurements. Our own profile.
 6. `cad/plate.py`. All parts laid out for one print bed.
-7. `tools/build.sh`. Exports every STL and STEP to `stl/` and renders a PNG of
+7. `cad/build.py`. Exports every STL and STEP to `stl/` and renders a PNG of
    each part and the assembly to `renders/`. Outputs are always rebuilt from
    source, never hand-edited.
 
@@ -77,7 +77,7 @@ profile.
 ## Phase 4. Release.
 
 - Tag v1.0.0.
-- Publish the STLs and the SCAD on Printables and MakerWorld under MIT, with a
+- Publish the STLs and build123d Python source under MIT, with a
   link back here and a copy of `PROVENANCE.md` in the listing.
 - Product listing says "case for Raspberry Pi Pico 2 W + Waveshare
   Pico-LCD-1.3". Descriptive use of their names only. No Raspberry Pi or
@@ -91,3 +91,12 @@ If anyone ever asks, the answer is this repo: dated commits, every number
 traced to a caliper photo or a datasheet page, the design in readable source,
 and a log showing which sessions touched it and what they had seen. Keep that
 true at every step.
+
+## R4 status correction, 2026-09-24
+
+The actual implementation is params.py/model.py/build.py, with validate.py
+and render.py. No official STEP was imported; all hardware proxies were
+constructed locally. Current target is PINK, not P2W. Phase 1 and the physical
+fit gate remain incomplete. R4 CAD corrections were explicitly requested by
+Austin before those tests; preparing outputs does not close that gate or
+authorize a production release. Use REPORT.md for the current test sequence.

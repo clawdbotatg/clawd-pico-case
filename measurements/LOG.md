@@ -51,3 +51,12 @@ socket top, the other on the feature; 10.66 (socket top to PCB front) is
 the common offset. Scan-vs-caliper: the scan over-reads outlines by 0.14 to
 0.18 mm from edge blur; feature centres were not re-checked (no need, the
 scan was sharp there).
+
+## 2026-09-24 R4 evidence audit
+
+Codex inspected all 23 existing caliper frames, full scan and overlay.
+No new measurement was taken. See MEASUREMENTS.md R4 section for missed
+contact frames, ambiguous shared height datum, slight digit differences,
+and the suspect USB segmentation. Recorded values were preserved rather
+than silently replaced from ambiguous photographs. Derived centre-offset
+rows SC1/BC1/JC1/JC2 come from the existing analysis JSON.

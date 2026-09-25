@@ -1,2 +1,6 @@
-One file per print: `YYYY-MM-DD-what.md`. Date, printer, material, profile,
-which params.py commit, what fit, what did not, photos. Nothing here yet.
+One file per print: date, material, profile, source revision/hash, results,
+and photos. A planned test is not evidence of a successful print.
+
+- Test 1: historical lid/caps request, superseded; no fit result.
+- Test 2: historical full-case request, sent; no fit result.
+- Test 3 / R4: prepared locally, not sent or printed; see its checklist.

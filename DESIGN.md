@@ -1,59 +1,62 @@
-# Design decisions
+# Design decisions — current R4
 
-Filled in during Phase 1 and Phase 2. Each entry: the choice, the reason, the
-date. Choices the hardware does not force are ours. Make them on purpose.
+2026-09-24. Original enclosure for the measured PINK USB-C RP2040 board,
+plugged into the Waveshare Pico-LCD-1.3. No battery, switch, strap or logo.
+Official Pico W/Pico 2 W compatibility is not established. Earlier decisions
+are retained in git history. R4 values cite D4 rows in MEASUREMENTS.md.
 
-## Requirements (Phase 1)
+## Construction
 
-- Boards supported: **PINK** (USB-C RP2040 clone) only, for now. Austin,
-  2026-09-24. The official micro-USB Pico 2 W is a later base if wanted.
-- One case for all boards, or one base per board: one case, one board (above).
-- Pico plugged or soldered: plugged into the hat's female headers.
-- Battery / switch / strap: none.
-- Must stay reachable: USB-C, screen, four buttons, joystick. BOOTSEL: TBD
-  (a hole in the back, or open the case).
-- Printer: Bambu Lab P2S, 0.4 mm nozzle, textured PEI plate. Material TBD
-  (PLA for the test frame).
+Keep the rounded rectangle, user-requested snap closure, four individual
+square caps, and capped joystick. Split at the LCD front plane, z=0.
+Floor 1.60, clearance under deepest recorded component 0.30. Lid outside
+z=4.60. Glass clearance 0.30; window follows full glass plus 0.40 per side
+because active-area dimensions are unmeasured.
 
-## Closure (Phase 2)
+Body 31.44 × 57.50 × 25.24; cap-inclusive height 28.54 mm. Wall 2.20,
+skirt 0.80, mating clearance 0.20, tongue 1.20. Outside R3; pocket R0.50.
+Sharp rectangular PCB also tested at ±0.10 XY displacement.
 
-- Method: **snap fit**. Austin, 2026-09-24.
-- Reason: Austin's call. No hardware to buy or insert, prints in one go,
-  no screw heads. Cost: the lips wear; design them thick enough, add a
-  pry slot so opening it doesn't break them. Details when drawn.
+## Closure and insertion
 
-- Snaps (2026-09-24): four wedge bumps on the base tongue, two per long side,
-  0.5 out, 8 long, flat catch face below and a ramp above. They catch windows
-  cut through the lid skirt. Windows, not blind notches, because a 0.5 notch
-  in a 0.8 skirt leaves 0.3 of skin; and a window lets a fingernail push the
-  bump in to open the case. (First build cut the notches on the wrong side
-  and they removed nothing; found in the 2026-09-24 audit.)
+Four 4 mm ramped bumps engage lid windows. Projection 0.45 minus mating gap
+0.20 gives 0.25 engagement. Slits define four 14 mm skirt bands attached at
+both ends, allowing outward flex and plastic-tool release. Bridging, force
+and fatigue require a print. Free-ended horizontal arms were rejected
+because they would begin in air with the lid printed inverted.
 
-## Walls, corners, bezel
+USB channel extends to the base rim for vertical insertion of the connected
+stack. A lid fin closes it above the socket with 0.25 side clearance.
+Square aperture contains both recorded shell heights. Inherited 12.5 × 7.0
+plug recess, depth 1.0, remains provisional.
 
-- Split at the LCD PCB front face: the lid carries every opening, the base
-  only the USB-C. Both print flat with no supports.
-- Wall 2.0, lid skirt 0.8, so the tongue is 1.2 (3 perimeters at 0.4).
-- Floor 1.6. Lid plate 2.25 over the glass, 0.3 air above the glass.
-- Outside corners R3.0. Pocket inside corners R0.8, which clears even a
-  sharp PCB corner (L4 is unmeasured).
-- Screen window = glass + 0.4 each side.
+## Support and controls
 
-## Caps
+Side shelves carry LCD PCB with 45-degree undersides and 0.80 bearing
+strips. Four 1.60 corner pads, inset 0.50, limit lift to nominal 0.05.
+They sit over the shelves, outside modelled switches. Verify bare PCB
+landing areas and underside solder clearance physically.
 
-- Buttons: square 4.2 post, R0.8 corners, 1.0 proud of the lid, in a 4.7
-  hole. 5.3 flange 0.8 thick under the lid rests on the plunger, so the cap
-  cannot fall out; 0.15 air above the flange. 1.0 web between holes.
-- Joystick: round cap, square blind socket 1.86 + 0.15 on the stem, top disc
-  0.5 past the hole. Hole 10.5. Height and tilt clearance depend on J3/J7,
-  both unmeasured.
+Button posts 4.20, R0.80, holes 4.70. Flanges 5.00 × 0.80 avoid collision
+at opposite lateral limits. Contact at measured plunger z=2.61; tops 1.00
+above lid. Pocket allows 0.15 upward motion. Measured press travel 0.38
+checked. Short guides, retention overlap and absence of an overtravel stop
+require tactile testing. Individual scan y offsets retained.
 
-## Branding
+Joystick: Ø12.80 opening at stem centre; silver body uses its separate scan
+centre. Ø14 disc, 1.50 thick, gap 1.80 above lid. Ø5 neck engages 1.20 of
+the square stem; socket roof seats on tip. Default socket 1.91; trials
+1.86/1.96/2.06. These are printer fit samples, not a proven press fit.
+Shorter engagement avoids assumed body in tilt/press scenarios but increases
+the importance of retention testing. No glue specified.
 
-None yet.
+## Printing and acceptance
 
-## Tolerances
+Base upright; lid/joystick inverted; buttons flange-down and separated on
+the bed. Existing P2S / 0.4 nozzle / PLA / 0.16 layer trial profile.
+Inspect bridge toolpaths and first-layer expansion. Final material undecided.
+BOOTSEL accessed by opening the case until its location is measured.
 
-- 0.3 PCB to wall. 0.25 per side cap to hole. 0.5 around the USB-C shell.
-  First guesses for a P2S in PLA; the T rows in `MEASUREMENTS.md` get the
-  real numbers from test prints.
+Release requires no board preload, independent return of all controls,
+retained caps, full cable insertion, repeated snap release without damage,
+and physical tests in the selected final material/profile. See REPORT.md.
