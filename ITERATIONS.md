@@ -156,3 +156,11 @@ cad/l3_shifted_hole.py and stl/renders/l3-shifted-hole artifacts.
 L3 feedback/photos show overshoot. Aperture moves +0.50 Y and +0.30 X from
 L3, leaving centre (13.4671,45.6292). Isolated source cad/l4_alignment.py,
 STL and viewer under l4-alignment. All prior versions preserved. No dispatch.
+## S1 — stronger matching shells with 2:1 visible height split
+
+User requests seam lower, smooth stronger sides, one pry notch, L4 alignment,
+and interactive rendering before print. Original cad/s1_strong_shell.py.
+Artifacts stl/s1-strong-shell and renders/s1-strong-shell. 21 geometry checks
+and browser smoke test pass. Joint force/strength/physical assembly untested.
+New pair required; reuse J2/buttons. No printing until review. Full handoff in
+JOYSTICK-REVIEW.md, including internal rails and exact wall/joint dimensions.

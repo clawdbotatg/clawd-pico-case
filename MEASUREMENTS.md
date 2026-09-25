@@ -379,3 +379,15 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 |---|---|---|
 | L4-OFFSET | From original centre: X +0.30, Y -0.50 mm | Austin requests halfway back from L3 and slightly photo-up; +0.30 trial choice. Photo LCD-right maps up to positive CAD X |
 | L4-KEEP | L1 height, 8 mm aperture, existing pocket/skirt/buttons | User hole-only refinement; retain L3 non-aperture geometry |
+### S1 lower-seam strong shell — original design choices
+
+| ID | Value | Source |
+|---|---|---|
+| S1-SPLIT | Z_BOTTOM + (L1.TOP - Z_BOTTOM)/3 = -12.36 | Austin requests visible top 2/3, base 1/3; existing total shell height retained |
+| S1-WALL | 3.00 mm, extra 0.80 outward per side; outer radius 3.80 | Original strengthening choice; preserves internal board clearance |
+| S1-JOINT | Overlap 3.00, socket wall 1.40, radial gap 0.20, axial gap 0.20, male wall 1.40 mm | Original hidden overlapping joint; no exterior flex slots |
+| S1-SNAP | Four ramped bumps, width 6.00, height 1.20, radial projection 0.35; centre seam+1.50 | Original trial internal detents; 0.15 nominal flex after mating clearance, not strength-tested |
+| S1-RECESS | Blind recess depth 0.35, end clearance 0.30, height clearance 0.15 | Original hidden catch pockets; minimum outer skin 1.05 mm |
+| S1-SUPPORT | Side support rails floor to LCD-back, 0.25 gap from upper inner walls | Original base-carried rails replace old wall-supported shelves, retain PCB height and permit lid installation |
+| S1-PRY | One left long-side notch at seam, 6 wide, 1.6 high, 1 deep | Austin requests one opening notch; prior notch dimensions reused |
+| S1-FACE | L4/L1 z4.20, all control pockets unchanged; extend solid perimeter outward | Preserve fitted roof/controls; strengthen with continuous 3mm perimeter/deep walls, no local boss |

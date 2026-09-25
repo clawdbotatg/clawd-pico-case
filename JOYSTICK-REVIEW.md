@@ -1,6 +1,47 @@
 # V3 shell and joystick review
 
-## CURRENT: L4 halfway back, slightly photo-up — prepared, not sent
+## CURRENT: S1 stronger matching shells, lower seam — REVIEW ONLY
+
+Austin requests stronger walls/joint after print-plate removal bent the lid,
+no exterior clip slots/windows, one pry notch, top 2/3 and base 1/3. He asks
+to review the interactive rendering BEFORE printing. No print authorized yet
+for this redesigned pair. Both top and base must be replaced together.
+
+Visible top height 16.56 mm; visible base 8.28 mm; total 24.84 mm. Seam at
+z-12.36. Outer footprint now 33.04 × 59.10 mm (0.80 mm added per side),
+continuous main walls 3.00 mm. Control roof height/pockets remain L1/L4.
+Latest L4 opening retained: centre (13.4671,45.6292), diameter 8 mm.
+Reuse printed J2 joystick and V2 buttons.
+
+Joint: 3 mm overlap, 1.40 mm outer socket skirt, 1.40 mm male tongue,
+0.20 mm radial gap. Four small symmetric ramped detents enter BLIND internal
+pockets. Nominal 0.15 mm assembly flex; minimum exterior skin 1.05 mm.
+No slits/windows through the sides. These values are original trial choices;
+retention force, fatigue and opening effort are NOT physically validated.
+One shallow pry notch on the left long side at the new seam.
+
+Base carries two internal support rails rising to the original LCD-back
+height. These project above the seam, so base bounding-box height is 18.67 mm
+although its VISIBLE outside portion is only 8.28 mm. Rails preserve the
+stack datum and leave 0.25 mm clearance to the removable upper shell.
+USB aperture and reset access keep original positions. Outside USB recess
+extends through added wall thickness, retaining original plug seating plane.
+USB-first separate-Pico assembly and full cap motion still need testing.
+
+21 geometry checks pass: single solids, non-overlap, ratio, unchanged controls,
+hardware/buttons, USB/reset, continuous skin, snap catch and sampled lid
+approach. No claim of tested strength. Blue tape proxy remains unresolved.
+Browser render/orbit/explode/transparency/toggles tested.
+
+Build: `.venv/bin/python cad/s1_strong_shell.py`.
+STLs: `stl/s1-strong-shell/lid-face-down.stl` and `base-floor-down.stl`.
+STEP, validation and manifest: `renders/s1-strong-shell/`.
+Viewer: port8793 `/s1-strong-shell/viewer.html`. Drag to rotate; use Explode
+and shell transparency to inspect the joint and internal rails. Top prints
+face down, base floor down; no supports planned, slicer review still required.
+Nothing sent to printer. Wait for Austin's review.
+
+## Historical: L4 halfway back, slightly photo-up — prepared, not sent
 
 Austin reports L3 overshot. IMG_0832 is previous; IMG_0833 is latest.
 From L3, move hole 0.50 mm away from LCD and 0.30 mm photo-up (LCD on right).

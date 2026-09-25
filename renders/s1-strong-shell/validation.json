@@ -1,0 +1,77 @@
+{
+  "checks": {
+    "lid_valid_single_solid": true,
+    "base_valid_single_solid": true,
+    "no_shell_overlap": true,
+    "two_thirds_visible_top": true,
+    "one_third_visible_base": true,
+    "controls_unchanged_from_L4": true,
+    "buttons_clear": true,
+    "hat_clear": true,
+    "pico_clear": true,
+    "detents_resist_lifting": true,
+    "USB_aperture_clear": true,
+    "reset_access_clear": true,
+    "single_pry_open": true,
+    "exterior_skin_continuous_except_pry": true,
+    "lid_hardware_approach_0": true,
+    "lid_hardware_approach_1": true,
+    "lid_hardware_approach_3": true,
+    "lid_hardware_approach_6": true,
+    "lid_hardware_approach_12": true,
+    "lid_hardware_approach_20": true,
+    "lid_hardware_approach_30": true
+  },
+  "passed": true,
+  "seam_z": -12.360000000000003,
+  "visible_top_height": 16.560000000000002,
+  "visible_base_height": 8.280000000000001,
+  "outer_size": [
+    33.04,
+    59.099999999999994,
+    24.840000000000003
+  ],
+  "wall_mm": 3.0,
+  "joint_overlap": 3.0,
+  "socket_skin": 1.4,
+  "minimum_skin_at_catches": 1.0499999999999998,
+  "nominal_detent_flex": 0.14999999999999997,
+  "assembly_motion": [
+    {
+      "lid_lift": 0,
+      "hardware_overlap_mm3": 0
+    },
+    {
+      "lid_lift": 1,
+      "hardware_overlap_mm3": 0
+    },
+    {
+      "lid_lift": 3,
+      "hardware_overlap_mm3": 0
+    },
+    {
+      "lid_lift": 6,
+      "hardware_overlap_mm3": 0
+    },
+    {
+      "lid_lift": 12,
+      "hardware_overlap_mm3": 0
+    },
+    {
+      "lid_lift": 20,
+      "hardware_overlap_mm3": 0
+    },
+    {
+      "lid_lift": 30,
+      "hardware_overlap_mm3": 0
+    }
+  ],
+  "physical_fit_confirmed": false,
+  "limitations": [
+    "New joint retention, removal force and wall strength need physical tests.",
+    "L4 opening adjustment not yet physically verified.",
+    "USB-first separate-Pico insertion still needs a physical assembly test.",
+    "Tall base support rails and no-support slicing need operator review.",
+    "Blue tape proxy remains unverified, not included in clearance passes."
+  ]
+}

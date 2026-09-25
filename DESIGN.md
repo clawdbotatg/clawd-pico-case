@@ -79,3 +79,22 @@ L3 physically overshot. New aperture centre is original X+0.30, Y-0.50:
 halfway back from L3 and slightly photo-up with LCD on right. Keep diameter,
 height and lip pocket unchanged. Photo-up magnitude is explicitly a trial
 choice, not a calibrated measurement. Prepared lid only, not dispatched.
+## S1 stronger walls / lower seam — review before printing
+
+Austin's IMG_0834 shows exterior flexible bands and catch windows; he reports
+bending during print removal. Replace these with continuous walls and blind
+internal detents. Move visible seam to one-third of total height from bottom.
+Make walls 3 mm by growing outward, preserving internal board clearances and
+fitted control roof heights. A continuous thick perimeter/deeper walls are
+intended to improve stiffness without lowering the control pockets again.
+
+Joint uses 3 mm overlap, 1.4 mm socket wall, 0.2 mm gap, 1.4 mm tongue;
+small bidirectional ramp catches allow removal without exposed flexible slots.
+Minimum exterior skin at blind catches is 1.05 mm. One pry notch remains.
+Actual strength, release force and cycle life require testing.
+
+Transfer board support to two base-carried internal rails because the original
+wall shelf would otherwise belong to the upper shell and obstruct assembly.
+Retain USB port/reset location; extend outside cable recess to compensate for
+added wall thickness. L4 opening offset retained. New matching shell pair;
+does not fit old base. Interactive review requested; no printer dispatch.

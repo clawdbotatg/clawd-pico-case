@@ -304,3 +304,11 @@ latest opening overshoots, asks halfway back and slightly up. Photos inspected
 directly (upload prefixes d7fdddb0, f938ec3c). Choose +0.50 CAD Y from L3,
 and +0.30 CAD X (photo up with LCD on right). Lateral amount is an original
 trial choice, not a calibrated photo measurement. No third-party geometry.
+## 2026-09-25 — S1 strong shell / lower seam
+
+Austin reports lid bends during removal from print plate; own IMG_0834 shows
+side clip slots/windows and pry cutout. Requests stronger case/joint, no side
+slots, exactly one pry notch, visible upper shell about two-thirds and base
+one-third. Retain latest L4 joystick alignment. Codex inspected own photo and
+original repository CAD only. New wall/joint dimensions are original design
+choices, not hardware measurements. No third-party geometry introduced.
