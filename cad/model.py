@@ -114,13 +114,21 @@ def base():
     inner_keep = box(PICO_CX - P.P2 / 2 - P.CLEAR, PICO_CX + P.P2 / 2 + P.CLEAR,
                      PICO_Y0 - P.CLEAR - P.P11 - 1, PICO_Y1 + P.CLEAR + P.P11 + 1, Z_BOTTOM - 1, Z_SPLIT + 1)
     b += shelf - inner_keep
-    # USB-C cutout through the end wall
-    zc0 = Z_PICO_BOT - P.P15 - P.USB_CLEAR
-    zc1 = Z_PICO_BOT - (P.P15 - P.P13) + P.USB_CLEAR
+    # USB-C cutout through the end wall. Its height covers both stand-off readings:
+    # P15 (far face 3.25 below the Pico) and A1 (2.41). Shell is P13 tall either way.
+    far = max(P.P15, P.A1_USB - P.A1_PCB)
+    near = min(P.P15, P.A1_USB - P.A1_PCB) - P.P13          # negative = shell top inside the board line
+    zc0 = Z_PICO_BOT - far - P.USB_CLEAR
+    zc1 = Z_PICO_BOT - near + P.USB_CLEAR
     ywall0, ywall1 = (IY1 - 1, Y1 + 1) if USB_SIGN > 0 else (Y0 - 1, IY0 + 1)
     cut = box(PICO_CX - P.P12 / 2 - P.USB_CLEAR, PICO_CX + P.P12 / 2 + P.USB_CLEAR, ywall0, ywall1, zc0, zc1)
     cut = fillet(cut.edges().filter_by(Axis.Y), min(1.5, (zc1 - zc0) / 2 - 0.05))
     b -= cut
+    # recess in the outer face for the cable's plastic overmould
+    zm = (zc0 + zc1) / 2
+    yr0, yr1 = (Y1 - P.PLUG_RECESS, Y1 + 1) if USB_SIGN > 0 else (Y0 - 1, Y0 + P.PLUG_RECESS)
+    rec = box(PICO_CX - P.PLUG_W / 2, PICO_CX + P.PLUG_W / 2, yr0, yr1, zm - P.PLUG_H / 2, zm + P.PLUG_H / 2)
+    b -= fillet(rec.edges().filter_by(Axis.Y), 1.0)
     return b
 
 
@@ -132,6 +140,10 @@ def lid():
     # ceiling cavity: over the PCB, up to the glass clearance
     cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - 1, P.S3 + P.GLASS_CLEAR, 0.5)
     l = outer - cav - cav2
+    # pads that hold the LCD PCB down, in the two bare top corners
+    for px in (P.LID_PAD_INSET, P.L2 - P.LID_PAD_INSET - P.LID_PAD):
+        py = P.L1 - P.LID_PAD_INSET - P.LID_PAD
+        l += box(px, px + P.LID_PAD, py, py + P.LID_PAD, P.LID_PAD_GAP, P.S3 + P.GLASS_CLEAR + 0.01)
     # snap windows: through the skirt where the bumps are (the old blind notches were cut on
     # the cavity side and removed nothing). A window also lets a fingernail push a bump in to open.
     zlo = P.SNAP_Z - P.SNAP_BUMP_T / 2 - P.SNAP_WIN_CLEAR
@@ -176,10 +188,10 @@ def button_caps():
 
 def joystick_cap():
     jx, jy = JOY_C
-    bot = P.J3 + P.JOY_CAP_LIFT
-    top = Z_LID_TOP + P.JOY_CAP_TOP
-    cap = Pos(jx, jy, (bot + top) / 2) * Cylinder(P.JOY_HOLE_D / 2 - P.JOY_CAP_SIDE_CLEAR, top - bot)
-    cap += Pos(jx, jy, top + P.JOY_CAP_FLANGE_T / 2) * Cylinder(P.JOY_HOLE_D / 2 + P.JOY_CAP_FLANGE_OVER, P.JOY_CAP_FLANGE_T)
+    bot = P.J6 - P.JOY_ENGAGE
+    d0 = Z_LID_TOP + P.JOY_DISC_GAP
+    cap = Pos(jx, jy, (bot + d0) / 2) * Cylinder(P.JOY_NECK_D / 2, d0 - bot + 0.01)
+    cap += Pos(jx, jy, d0 + P.JOY_DISC_T / 2) * Cylinder(P.JOY_DISC_D / 2, P.JOY_DISC_T)
     s = (P.J4 + P.JOY_SOCKET_CLEAR) / 2
     socket = box(jx - s, jx + s, jy - s, jy + s, bot - 0.1, P.J6 + P.JOY_SOCKET_TIP_CLEAR)
     return cap - socket

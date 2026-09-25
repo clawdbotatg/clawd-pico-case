@@ -8,6 +8,18 @@ what I need. For Austin and for Codex's double-check.
 - Outputs: `stl/*.stl` (assembled position), `stl/print/*.stl` (print orientation), `stl/assembly.step`
 - Evidence: `MEASUREMENTS.md` (row IDs), `measurements/` (scan + one photo per caliper reading)
 
+## Test 2 (best guess, sent to print 2026-09-24)
+
+Built to work even if the unknowns go the bad way:
+- Joystick hole 12.0: clears the silver base whatever its height.
+- New joystick cap: thin neck on the stem through the hole, 12.8 disc 1.2 above the lid so the stick can tilt ~10°.
+- USB-C slot tall enough for both disagreeing readings (4.9 mm).
+- 1 mm recess in the end wall for a 12.5 × 7.0 plug (guess).
+- Two pads in the lid's top corners hold the LCD board down (0.05 air).
+- Assumes the blue tab is peeled off.
+
+Checked: nothing overlaps except the blue tab; snap catches.
+
 ## Audit, 2026-09-24 evening (trust nothing, re-check everything)
 
 Method: every part intersected with every other part in the assembled
