@@ -258,6 +258,16 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### D8 rear-tab experiment
 
+### J1 isolated round-lip test — 2026-09-25
+
+| ID | Choice (mm) | Source / limitation |
+|---|---|---|
+| J1-CAP | socket 2.01 square, roof5.30, neck Ø5, bottom3.40; flange Ø10.4 × .4 at3.40; ball Ø7 centre8.5 | Original D6-SOCKET baseline; flange and shorter ball are original trial choices, not measurements |
+| J1-LID | round hole Ø8, outer disk Ø20, underside4.4, thickness.7; two feet x=±9, width2, y length6, PCB contactz0 | Original hand-held test gauge, not production lid. Local top5.1 =3.05 above glass; surrounding production lid remains undecided. Feet establish height on bare PCB beside joystick; fit needs checking |
+| J1-CHECK | tilt0/5/10 degrees; pivotsz0/3; press0/.3; eight compass directions | Stress scenarios only, not measured travel. Preserve failures in report. Print mesh tolerance .02, angular .1; separation5 on plate |
+
+### D8 rear-tab experiment (historical, rejected)
+
 Original follow-up after side tabs failed10-degree tilt. No hardware values changed.
 
 | ID | Choice | Rationale |

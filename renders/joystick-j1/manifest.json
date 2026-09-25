@@ -1,0 +1,17 @@
+{
+  "revision": "joystick-j1",
+  "submitted": false,
+  "source_sha256": {
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/model.py": "82ace867a4164d53ef50c94c8ccb591ac3ce2597973c994bd0706beca583f3f1",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a",
+    "cad/viewer_template.html": "edf39c69677f2c58774853a292bf2de0de264832af4c6d573fad53200edeb75a"
+  },
+  "files": {
+    "stl/joystick-j1/joystick-cap.stl": "c9decfc384be8865995432b4f30473d9959fe0d7375a0278040fb1724a332731",
+    "stl/joystick-j1/lid-gauge.stl": "33b1c7eba0a1d8823e3561d4ef8ec1cb46eeb7fd4bf55e4ba30bcca465c4d1aa",
+    "stl/joystick-j1/two-part-test.stl": "67aefeda6ba8ab3cb511a0a668318bb95e532de43e1d31005674da7ab3e38f43",
+    "renders/joystick-j1/viewer.html": "9f1ea133fb2777718b88f8bfca5a2b0952afecdbb40a897a81b4ba1c970e5715",
+    "renders/joystick-j1/validation.json": "ce747a698c6e2bc771ba8634bd957d8bfb014479a6d3279e73d915f77fd3c35d"
+  }
+}

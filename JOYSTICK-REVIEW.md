@@ -1,0 +1,165 @@
+# J1 joystick test: review before printing
+
+## Conclusion and confidence
+
+The simple round-hole mechanism is worth testing. This draft is **not yet
+validated for full movement or ready for production**. Nothing was sent to
+the printer. Only two small test parts were exported; no full case changed.
+
+Confidence is moderate in the selected old socket dimensions, low in the new
+lip clearance and printed fit. Austin reports V1 worked, but the exact printed
+V1 commit is not confirmed. Do not mistake a CAD match for a successful fit.
+
+The current test clears at rest and in all sampled 5-degree poses. It hits
+the lid gauge in 16 of 96 motion scenarios: every unpressed 10-degree direction
+at both assumed pivots. Maximum intersection is 0.966939 cubic millimetres.
+Actual required angle is unknown. Claude Code should review this before slicing.
+
+## What Austin wants
+
+- Keep V1's working stem socket and movement.
+- Ball through a round lid hole; wider circular lip retained underneath.
+- Install the cap on the PCB first, then lower the lid over it.
+- No rear arm, rectangular opening, removable support layer or full-case raise.
+- Keep the screen surround about 1 mm above the glass; a local height increase
+  near the joystick is acceptable if necessary, subject to review.
+- Test only the cap and a small lid section before another full case.
+
+Keep the previously successful pry notches, bottom button access, rectangular
+buttons and USB alignment. Restore a closed V1-style USB opening without V2's
+lid tab. Those whole-case changes are outside this isolated test.
+
+## Evidence and limits
+
+Original hardware dimensions are in MEASUREMENTS.md. This is independent MIT
+geometry; no third-party case was consulted. Source inputs are in PROVENANCE.md.
+
+Austin's side photos IMG_0810, IMG_0811 and IMG_0812 show the bare joystick and
+screen. Their tops look roughly level. Perspective and lack of a scale prevent
+reliable height measurements; no dimensions were extracted from these photos.
+Original uploads have suffixes paste-0d95cf02-IMG_0810.jpg,
+paste-962bb905-IMG_0811.jpg and paste-141c541d-IMG_0812.jpg.
+
+Known glass top: z2.05 mm above LCD PCB front. Recorded stem tip: z5.00.
+Joystick metal body height3.0, pivot location, click travel and tilt are guesses.
+Do not adjust the proven-old interface simply to satisfy that guessed body.
+
+V1 reference selected: original repository commit4010773. It used a2.01 mm
+square socket, roofz5.30, lower edgez3.40 and neckØ5. Earlier lid-only commit6469436
+had the same socket width/roof but different neck/bottom. V2 narrowed the socket
+to1.91; Austin reported failure. The identification uncertainty matters.
+
+## Exactly what J1 contains
+
+All heights below are from the LCD PCB front, not the print bed.
+
+| Feature | Trial dimension |
+|---|---|
+| Square socket | 2.01 mm, open below; roofz5.30 |
+| Neck | Ø5 mm; bottomz3.40 |
+| Circular retaining lip | Ø10.4 mm; z3.40–3.80; thickness0.40 |
+| Ball | Ø7 mm; centrez8.50; topz12.00 |
+| Round lid hole | Ø8 mm |
+| Lid test disk | Ø20 mm; undersidez4.40; topz5.10 |
+| Two test feet | centresx±9 mm; 2×6 mm; contact PCB atz0 |
+
+The gauge is a hand-held height reference, NOT a new case attachment mechanism.
+Its feet are test fixtures, not proposed production supports. Hold it down on
+clear PCB areas while moving the joystick. The hardware shown in the viewer
+is an illustrative cropped proxy and is not included in the print files.
+
+Ball/hole clearance is0.5 mm per side. Lip overlap is1.2 mm per side when
+centred. Vertical lip clearance is0.6 mm. The intended seated position itself
+is uncertain: the old socket roof is0.3 mm above the nominal stem tip.
+Pressing it fully onto the stem may lower the whole cap; model checks should
+consider that and insertion force, not just the displayed nominal position.
+
+**Height tradeoff not resolved:** gauge top is3.05 mm above glass, locally.
+That is2.05 mm higher than the desired surrounding screen rim. This test does
+NOT meet a universal1 mm lid-height requirement. Keeping an old cap bottom
+atz3.40 puts its lip above a z3.05 lid before any movement clearance is added.
+The test isolates that conflict; it does not prove this local height necessary
+or optimal. The local feature's final shape and connection to the lid are not
+designed here. The earlier oversized D8 rear-arm design remains rejected.
+
+The ball is shorter than V2's centrez11.4, but retains itsØ7 round shape.
+This is an explicit trial change, not an exact copy of V2's upper geometry.
+
+## Files and preview
+
+Paths here are relative to this document's repository directory.
+
+- Parametric build: `cad/joystick_test.py`
+- One plate containing only both test parts: `stl/joystick-j1/two-part-test.stl`
+- Separate files: `stl/joystick-j1/joystick-cap.stl`, `stl/joystick-j1/lid-gauge.stl`
+- Rotatable browser preview: `renders/joystick-j1/viewer.html`
+- Screenshot: `renders/joystick-j1/preview.png`
+- Full numerical checks: `renders/joystick-j1/validation.json`
+- Source/artifact hashes: `renders/joystick-j1/manifest.json`
+
+The existing LAN preview server serves this viewer on port8793 at
+`/joystick-j1/viewer.html`. Use the same host as the previous working preview.
+The viewer needs its existing Three.js CDN connection. Browser checks passed:
+three parts rendered, no JavaScript errors, orbit, views, transparency,
+exploded view and hiding parts. Whole-case preview URLs still show old work.
+
+Rebuild from the repository root:
+
+```sh
+.venv/bin/python cad/joystick_test.py
+```
+
+Do not use `cad/build.py` or old `stl/print/` files for this test. They refer to
+whole-case iterations. This isolated builder does not replace those artifacts.
+
+## Checks performed
+
+- Each test part is one valid CAD solid; exported STL edges are closed.
+- Export welds seam noise at0.00001 mm, much smaller than0.02 mm mesh tolerance.
+- No static cap/gauge, cap/hardware-proxy or gauge/hardware-proxy overlap.
+- Old lower socket cross-section volume agrees with the reconstructed baseline.
+  This is not yet an independent BRep difference against the historical commit.
+- Ball smaller than hole; flange larger than hole; upward pull meets gauge.
+- 96 cap/gauge poses:0/5/10 degrees,8 directions, pivotsz0/3, press0/.3.
+  16 failures retained in JSON, not hidden. A pressed pose clearing does not
+  establish that the unpressed joystick can safely move through that pose.
+
+Not checked: measured full travel, full swept motion, tilted hardware contact,
+printed shrinkage, actual socket seating, lip strength, pull-out under tilt,
+slicer layer preview, or integration into the final lid. The 0.4 mm lip may
+be fragile. The foot contact locations require actual PCB inspection.
+
+## Claude Code review request
+
+Read CLAUDE.md first and respect the clean-room exclusions. Review our own
+measurements/history only; do not search existing Pico cases.
+
+1. Independently compare socket geometry to4010773 and distinguish6469436.
+2. Check actual seated height, lip contact and full movement. Determine whether
+   the10-degree failures matter before recommending a print.
+3. Decide whether lower local height is feasible without changing the working
+   socket or adding arms. Do not raise the whole screen rim.
+4. Check lip strength, circular retention when tilted, ball assembly clearance,
+   the gauge feet, and hardware contact through motion.
+5. Verify STL dimensions/orientation and slice preview. Never solve this by
+   silently enabling supports, a raft or an extra peel-off layer.
+6. State the smallest next change or measurement needed. Keep this a two-part
+   experiment; preserve previous iterations and commit any revision separately.
+
+## Proposed printing and bench test — not executed
+
+Cap prints upright, flat flange down, socket opening against bed. Gauge prints
+inverted on its flat top with the feet upward. Combined STL already positions
+both onz0 with5 mm between bounding boxes. Do not auto-orient.
+
+Intent: no supports, no raft. The2.01 mm socket roof needs a short bridge;
+ball overhang and thin lip need slicer review. No material/process chosen or
+slicing performed in this turn. Do not call this support-free verified.
+
+After review: fit the cap gently; never force the switch. Check all directions
+and click without the gauge, then lower the gauge over the ball, rest its feet
+on clear PCB and hold it down. Check movement/click again and gentle retention.
+Stop if it binds. Record cap seating, rubbing direction, lip damage and photos.
+If height remains uncertain, measure PCB-to-metal-body top and installed-lip
+top before redesigning the whole lid. Submit through the established HTTP print
+server only after review; no SSH and no printer action has occurred here.

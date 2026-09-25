@@ -1,0 +1,685 @@
+{
+  "static_cap_gauge_clear": true,
+  "mesh_closed": true,
+  "cap_hardware_static_overlap_mm3": 0,
+  "gauge_hardware_static_overlap_mm3": 0,
+  "motion": [
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.48146
+    },
+    {
+      "pivot": 0.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 0,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 5,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 0,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 45,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 90,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 135,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 180,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 225,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 270,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.0,
+      "lid_overlap_mm3": 0.966939
+    },
+    {
+      "pivot": 3.0,
+      "angle": 10,
+      "azimuth": 315,
+      "press": 0.3,
+      "lid_overlap_mm3": 0
+    }
+  ],
+  "limitations": [
+    "Hardware body height and pivot are guesses.",
+    "No slicer or physical tests yet.",
+    "Foot seating on actual PCB requires inspection."
+  ]
+}

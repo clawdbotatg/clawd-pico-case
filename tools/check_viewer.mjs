@@ -32,7 +32,8 @@ for(let attempt=0;attempt<30;attempt++) {
   await new Promise(resolve=>setTimeout(resolve,500));
 }
 console.log(await evaluate('JSON.stringify({errors:viewerErrors,parts:Object.keys(meshes),triangles:renderer.info.render.triangles,title:document.title})'));
-if(!await evaluate('viewerErrors.length===0 && Object.keys(meshes).length===7 && renderer.info.render.triangles>0')) throw Error('Viewer failed to render');
+const expectedParts=Number(process.env.EXPECTED_PARTS || 7);
+if(!await evaluate(`viewerErrors.length===0 && Object.keys(meshes).length===${expectedParts} && renderer.info.render.triangles>0`)) throw Error('Viewer failed to render');
 let shot=await call('Page.captureScreenshot',{format:'png'});
 await writeFile(process.env.SCREENSHOT_PATH || 'renders/v3-browser.png',Buffer.from(shot.data,'base64'));
 await evaluate('document.querySelector("[data-v=usb]").click();document.querySelector("#explode").value=12;document.querySelector("#explode").dispatchEvent(new Event("input"));document.querySelector("#opacity").value=.4;document.querySelector("#opacity").dispatchEvent(new Event("input"));');

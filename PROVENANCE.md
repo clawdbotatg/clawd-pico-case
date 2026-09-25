@@ -190,3 +190,14 @@ touched geometry, and what that session had seen.
   interactions tested; source and listed output hashes verified. No print
   artifacts generated, no printer action. Slicing, thin-junction strength
   and actual hardware movement still need verification after review.
+
+## 2026-09-25. J1 isolated round-lip fit test, Codex.
+
+- Austin supplied IMG_0810, IMG_0811 and IMG_0812 as side photos of his
+  hardware in this ongoing fit discussion. Used qualitatively only: body
+  and screen tops look similar; perspective photos are not caliper readings.
+- Austin rejected D8 rear arm and rectangular opening. Requests ball through
+  round hole, wider circular lip underneath, original socket, small test only.
+- Latest instruction: prepare CAD viewer, STL and review note for Claude Code.
+  No printing in this turn. No outside geometry used; original MIT design.
+- J1 dimensions below are explicit design trials, not new measurements.

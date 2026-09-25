@@ -89,3 +89,8 @@ that label. Future geometry changes get a new commit and a new iteration tag.
 Printer-profile or status changes get separate commits so the geometry tag
 stays fixed. Keep printer credentials and machine-local configuration out of
 this public repository.
+# J1 isolated round-lip review — 2026-09-25
+
+Source cad/joystick_test.py; outputs stl/joystick-j1 and renders/joystick-j1.
+Complete handoff: JOYSTICK-REVIEW.md. Two test parts, known motion failures,
+review before printing. Historical whole-case files remain unchanged.

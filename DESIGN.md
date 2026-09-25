@@ -27,3 +27,9 @@ socket/neck versus guessed metal-body collisions remain disclosed.
 
 See reports/2026-09-25-low-lid-experiments.md. Browser review comes before
 printing, and no new print artifacts have been produced for this revision.
+# J1 isolated joystick test — 2026-09-25
+
+See JOYSTICK-REVIEW.md for the complete current review packet. Original
+round-lip cap plus hand-held lid gauge only; D8 rear arm rejected. J1 preserves
+the selected V1 socket, has known10-degree motion failures, and is not sent
+to the printer. Full-case geometry is unchanged.
