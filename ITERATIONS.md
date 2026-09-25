@@ -8,6 +8,16 @@ version's history with a corrected version or describe a queued job as printed.
 
 ## Historical designs (2026-09-24)
 
+## Current: V3 fitted shells — 2026-09-25
+
+Builder cad/v3_fit.py; files stl/v3-fit and renders/v3-fit. Only two shells.
+V2 buttons and J1 cap reused without change.697 required checks, inherited
+J1 motion uncertainty retained. JOYSTICK-REVIEW.md is the single review
+handoff. Dispatch recorded in prints/2026-09-25-v3-fit.md. Upright lid needs
+operator slice review before start; no supports/raft authorized.
+
+## Historical designs (2026-09-24, continued)
+
 | Commit | Iteration / change | Print evidence |
 |---|---|---|
 | `30ecec9` | First original board proxies, snap case, caps and viewer | No recorded result |

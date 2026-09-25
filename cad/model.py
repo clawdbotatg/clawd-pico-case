@@ -119,7 +119,7 @@ def pry_notches():
     return cutters[0] + cutters[1]
 
 
-def base():
+def base(rear_pocket=True):
     outer = rbox(X0, X1, Y0, Y1, Z_BOTTOM, Z_SPLIT, P.CORNER_R)
     pocket = rbox(IX0, IX1, IY0, IY1, Z_FLOOR_TOP, Z_SPLIT + P.TOOL_EXT, P.POCKET_R)
     b = outer - pocket
@@ -157,7 +157,8 @@ def base():
     b -= plug_recess()
     access = Pos(*ACCESS_C, (Z_BOTTOM + Z_FLOOR_TOP) / 2) * Cylinder(
         P.ACCESS_D / 2, P.FLOOR + 2 * P.TOOL_EXT)
-    return b - pry_notches() - access - joystick_rear_pocket()
+    b = b - pry_notches() - access
+    return b - joystick_rear_pocket() if rear_pocket else b
 
 
 def joystick_rear_pocket():

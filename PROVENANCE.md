@@ -209,3 +209,17 @@ touched geometry, and what that session had seen.
   No numerical measurement inferred from photo. Original user fit evidence.
 - Requests actual lid for existing printed base, retaining unchanged J1 cap.
   Base revision unresolved; no outside designs consulted or geometry changed.
+
+## 2026-09-25. V3 fitted shell, Codex.
+
+- Austin resolves scope: new base with closed V1-style USB aperture at V2's
+  working USB position/size, no USB lid fin; new complete lid using existing
+  V2 buttons and unchanged physically tested J1 joystick. Explicitly asks
+  to send only these two shell parts. Retain pry and bottom access features.
+- Inputs: own prototype-v2 source and parameters, current own base/snap
+  geometry, J1 cap/gauge, and Austin's reported free hand-held movement.
+  No third-party geometry, no new measured dimensions. Original MIT work.
+- Lid screen rim remains z3.05; local joystick roof copies J1 z4.4..5.1,
+  button region copies V2 z4.6. Upright lid printing proposed to avoid the
+  previous raised-top/support-layer failure; operator must review bridges
+  and overhangs, and hold rather than add supports or a raft.

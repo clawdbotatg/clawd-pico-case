@@ -1,0 +1,27 @@
+{
+  "revision": "v3-fit-shells",
+  "print_parts": [
+    "base",
+    "lid"
+  ],
+  "reuse": [
+    "prototype-v2 button caps",
+    "joystick-j1 cap"
+  ],
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/v3_fit.py": "5eb8543e9ab8586436ab84a83e69f2eee93ed9a9a5a8d63704a3d1ceb35a96e3",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/viewer_template.html": "edf39c69677f2c58774853a292bf2de0de264832af4c6d573fad53200edeb75a"
+  },
+  "files": {
+    "stl/v3-fit/base.stl": "aa332d86b061bd1323c2ae3ca81942a583ab0b8826c398b58744be395370f4db",
+    "stl/v3-fit/lid.stl": "36311059c1fd51f708d5590309d9490ced9b3fa0fba46420b1b2ef6dc98f32d9",
+    "stl/v3-fit/v3-shells-only.stl": "6e2ccf73749eb8d4e11a80c02acddf9d81427033e541a0764dd93d77d432abc3",
+    "renders/v3-fit/viewer.html": "71dd3ccaa00d8738f88eae3f505cfe70708261d61f2cf51800d6f19ee4bc6cf0",
+    "renders/v3-fit/validation.json": "57c465e7d86071ab14c77350ca3780952b32e44bed3c8832fdd9adf4cece60ab",
+    "renders/v3-fit/assembly.step": "f6f5e0b6ecb849eb8f90f0677a0ad90abdf90ca8751938a3611a4b6a5c9d21f8"
+  }
+}

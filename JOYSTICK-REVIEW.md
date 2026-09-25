@@ -1,4 +1,79 @@
-# J1 joystick test: review before printing
+# V3 shell and joystick review
+
+## Current revision — V3 fitted shells, 2026-09-25
+
+Austin authorized a NEW base and complete lid, reusing the existing V2
+rectangular buttons and J1 joystick. Print exactly two shell parts, not caps.
+This resolves the old-base ambiguity below. Historical J1 review is preserved.
+
+### What changed
+
+- Base: closed V1-style USB port at V2's exact working bounds. No lid fin,
+  no rim-open USB channel. Existing reset hole, pry notches and snaps retained.
+- Lid: actual complete snapping shell. RoundØ8 joystick hole, under-roofz4.4,
+  topz5.1, reproducing J1's nominal retaining height around the unchanged cap.
+- Screen side rails atz3.05,1 mm above glass. Only joystick and button regions
+  are higher. Joystick front wall meets a short central segment of the upper
+  screen edge; that segment is3.05 mm above glass, NOT1 mm. No uniform raise.
+- Button region remains at V2'sz4.6, with flange pocket ceiling3.56, so the
+  existing printed caps retain their original1.8 mm protrusion and travel.
+- Both shells print upright, base floor and lid skirt on bed. The lid is NOT
+  face-down on its raised boss. No supports/raft are authorized.
+
+### Verification and remaining risks
+
+697 required checks pass. These include static assembly, each button's
+retention and measured travel, lid installation, snaps catching on lift,
+pry/reset access, closed USB channel and sampled USB-first Pico assembly.
+Comparison with our own prototype-v2 source proves identical button geometry
+(zero added/removed volume), identical USB aperture bounds, and base changes
+only adding265.31868 cubic mm to close the former USB channel. J1 cap re-export
+is byte-for-byte identical to the printed file. No joystick/button reprints.
+
+The inherited16 ten-degree cap/lid contacts remain, out of192 poses including
+two seating assumptions. There are no new lid contacts beyond the J1 gauge
+in these scenarios. Austin reports free hand-held movement, but the rigid lid
+still needs a physical test. Guessed-body contacts and a5.28 cubic mm blue
+tape proxy conflict remain disclosed; tape identity is not established.
+
+Each shell is a single valid solid with closed-edge STL. Base bed contact
+1787.51 square mm; upright lid skirt contact126.57 square mm. Browser render,
+orbit, views, exploded view, transparency and part visibility pass.
+
+**Slicing is not verified locally.** Operator must inspect upright lid
+button/joystick ceilings, .4 mm front wall, corner pad overhangs,14 mm snap
+slot bridges, skirt adhesion and USB bridge. Hold if these need supports or
+a raft; do not add them or silently flip the lid. Actual settings/finish/fit
+are pending. A geometrically valid STL does not establish printability.
+
+During this build, visual review caught an open slot at the boss front; a
+subsequent export caught a zero-thickness edge. The final boss has a continuous
+front wall and passes mesh checks. Earlier intermediate files were not sent.
+
+### Current files and reproduction
+
+- Source: `cad/v3_fit.py`; shared helper `cad/model.py` adds an optional switch
+  to omit the rejected D8 rear-arm pocket. Historical default is unchanged.
+- Send only `stl/v3-fit/v3-shells-only.stl` (base + lid, spaced5 mm, at bedz0).
+- Separate shell files: `stl/v3-fit/base.stl`, `stl/v3-fit/lid.stl`.
+- Viewer: `renders/v3-fit/viewer.html`, also updated `renders/viewer.html`.
+  Existing LAN server port8793, path `/v3-fit/viewer.html`.
+- Screenshot and STEP: `renders/v3-fit/preview.png`, `renders/v3-fit/assembly.step`.
+- Evidence: `renders/v3-fit/validation.json`, `history-check.json`, `manifest.json`.
+- Print dispatch/current status: `prints/2026-09-25-v3-fit.md`.
+
+```sh
+.venv/bin/python cad/v3_fit.py
+.venv/bin/python tools/check_v3_history.py
+```
+
+Do not send old `stl/print/`, J1 gauge, buttons or joystick. Seat the Pico USB
+through the closed port first, then connect the LCD board; do not force the
+connected stack vertically through the closed opening. Install existing
+buttons and J1 cap, lower lid over ball, latch gently, test every direction
+and click. Stop if parts bind, press the glass, or load the connector.
+
+## Historical J1 test review
 
 ## Physical feedback — 2026-09-25, after printing
 

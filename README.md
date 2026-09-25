@@ -1,5 +1,10 @@
 # clawd-pico-case
 
+Current print candidate: **V3 fitted base and lid only**, reusing V2 buttons
+and J1 joystick. See [complete review](JOYSTICK-REVIEW.md). Build with
+`cad/v3_fit.py`; current files in `stl/v3-fit/`, preview in `renders/v3-fit/`.
+Older drafts below and `stl/print/` are historical, not this print request.
+
 An MIT-licensed 3D-printed case for a USB-C RP2040 Pico clone (the pink board) plugged into a
 Waveshare Pico-LCD-1.3 (240x240 screen, joystick, four buttons). Buttons and
 joystick get caps. Made to be printed and sold.

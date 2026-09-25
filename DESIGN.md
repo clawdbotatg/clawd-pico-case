@@ -1,4 +1,13 @@
-# V3 low-lid revision — D7/D8
+# Current: V3 fitted shells
+
+Complete review and evidence: JOYSTICK-REVIEW.md. Builder cad/v3_fit.py.
+Reuse V2 button caps and unchanged J1 joystick; only base/lid print.
+Closed V2-aligned USB aperture, no fin; retain pry/reset. Low screen side
+rails, local J1-height joystick roof and V2-height button deck. Upright lid
+print intent, no supports/raft; mandatory slice review. Historical D7/D8
+below are rejected designs, not the current print candidate.
+
+# Historical V3 low-lid revision — D7/D8
 
 Original MIT geometry from this repository's hardware measurements and
 Austin's feedback. No external case geometry. Review only, no print approval.

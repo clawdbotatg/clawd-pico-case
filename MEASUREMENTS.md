@@ -260,6 +260,18 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### J1 isolated round-lip test — 2026-09-25
 
+### V3-FIT fitted shell — 2026-09-25
+
+| ID | Original design choice | Basis / limitation |
+|---|---|---|
+| V3-FIT-LID | screen side rails z3.05, local joystick roof4.4..5.1, holeØ8, pocketØ13, outer local bossØ15.8 clipped at screen window; inner pocket clipped window+.4, continuous .4 front wall; button-end top4.6, region ends pocketYmax+.8 | Retain J1's hand-held tested hole/height and V2 buttons; no universal lid-height raise. Local joystick front wall meets upper screen edge, so that small edge segment is higher than side rails. Boss shell dimensions inherited D5/D6; upright print to avoid floating skirt under face-down boss |
+| V3-FIT-BUTTON | existing flange z2.61..3.41, pocket ceiling3.56, tops6.4, original4.2×5.4 posts | Exact V2 printed cap parameters; no new caps. V3 low D7 side-wing caps were never printed and must NOT be used |
+| V3-FIT-PADS | extend original1.6 square corner pads outward to inner walls, top2.36, bottom.05 | Join pads to shell from first printed pad layer; small corner overhangs still require slicer review |
+| V3-FIT-PRINT | both shells upright, bedz0, separation5; PLA .16,3 walls, no supports/raft | Original print plan; actual slice must be checked before start. Lid bottom skirt supplies bed contact, not the raised joystick face |
+| V3-FIT-CHECK | inherited0/5/10degree, pivots0/3, press0/.3,8directions; lid-install lifts0..12 in .5 increments; seating shifts0/-.3; mesh tolerance.02/angular.1 | Hypotheses not hardware measurements; compare against J1 to prevent hiding new interference. Additional guessed-body contact reported separately |
+
+### J1 isolated round-lip test parameters
+
 | ID | Choice (mm) | Source / limitation |
 |---|---|---|
 | J1-CAP | socket 2.01 square, roof5.30, neck Ø5, bottom3.40; flange Ø10.4 × .4 at3.40; ball Ø7 centre8.5 | Original D6-SOCKET baseline; flange and shorter ball are original trial choices, not measurements |
