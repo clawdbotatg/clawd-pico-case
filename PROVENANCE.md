@@ -274,3 +274,11 @@ Authorized printing a new lid and joystick together and progressively lowering
 the lid until motion restricts, then backing off. Photos inspected directly;
 not calibrated measurements. Codex input; user-owned hardware/photos, no
 third-party case geometry. Original design choices below are trial values.
+## 2026-09-25 — J2 restore / further 1.5 mm lowering request
+
+Austin reports J3 socket failed; selects immediately preceding J2 unchanged.
+Reports roughly 1.5 mm available joystick clearance and authorizes lowering
+latest lid by 1.5 mm and printing lid plus J2. Input is his own physical fit
+feedback. Codex inspected only original repository sources. No third-party
+geometry. Preflight finds existing button retention incompatible with requested
+uniform height; no geometry modified or print submitted pending direction.

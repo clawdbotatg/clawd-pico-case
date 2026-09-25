@@ -132,3 +132,9 @@ Review caught the initial top-trimming box also truncating the skirt.
 Corrected its lower bound to preserve the full skirt; strengthened validation
 to compare both material differences and minimum Z. Initial 8b0fc03 artifacts
 were never dispatched. Only the corrected full-skirt revision is printable.
+## J2 restore / lower another 1.50 mm — preflight only
+
+User rejects J3 socket, selects J2 unchanged. Requested face z2.70 conflicts
+with existing button pocket roof z3.56. No geometry or print produced; details
+and required scope decision recorded in JOYSTICK-REVIEW.md. Prior print files
+unchanged. Await choice on retention redesign versus height target.

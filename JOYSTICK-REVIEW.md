@@ -1,6 +1,24 @@
 # V3 shell and joystick review
 
-## CURRENT: J3 joystick + L1 lowered flat lid — 2026-09-25
+## CURRENT: J2 restore, further lowering blocked by button retention
+
+Austin rejects J3 socket and explicitly selects unchanged J2. Requests latest
+lid 1.50 mm lower: outer face z4.20 -> z2.70. His observed joystick clearance
+motivates this trial; do not substitute guessed joystick travel for that report.
+
+Independent button issue: current plunger top z2.61, flange thickness 0.80,
+pocket clearance 0.15 => pocket roof z3.56. Requested outer face z2.70 is
+0.86 mm BELOW that pocket roof, removing button-retaining material entirely.
+Current 0.64 mm roof cannot survive a 1.50 mm reduction. Simply moving the
+pocket down would collide with existing flanges. Even zero-thickness flange
+would leave only 0.09 mm above the resting plunger at the requested face.
+
+Need user choice: redesign button retention/layout to pursue this height,
+or revise the height target. Do not silently add a raised boss, change base,
+print replacement buttons, or submit a known non-retaining lid. No print sent.
+J2 remains available at stl/joystick-j2/joystick-j2-stepped-socket.stl.
+
+## Historical: J3 joystick + L1 lowered flat lid — 2026-09-25
 
 J2 feedback: round socket too tight. J3 enlarges only the round cavity to
 3.50 mm diameter by 1.10 mm deep; next section remains 2.01 mm square by
