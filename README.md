@@ -51,15 +51,18 @@ What we do not copy is their files and their styling choices.
 
 Saved designs and print history: [iteration register](ITERATIONS.md).
 
-R4 (2026-09-24) corrects assembly access, mating clearance, snaps, board
-supports, button flange collisions and joystick clearance. Original geometry;
+V1 feedback is [saved with photos](prints/2026-09-24-v1-feedback.md).
+Current R5 CAD is unfinished: captive ball joystick and pry notches are
+implemented; USB-C, rectangular/taller buttons and bottom button access
+remain pending.
+**Do not print this draft.** Original geometry;
 no third-party case models used. The current target is the measured pink
 USB-C board, not an official Pico W/Pico 2 W.
 
-See [preview](renders/r4-preview.png), [interactive assembly](renders/viewer.html),
+See [draft preview](renders/r5-preview.png), [interactive assembly](renders/viewer.html),
 and [critical review / assembly instructions](REPORT.md). R4 was submitted
-to the print inbox; start and physical result are unconfirmed. Earlier test 2
-was sent to print but has no recorded fit result.
+to the print inbox; a hold/superseded request was subsequently posted.
+Operator acknowledgment and V1's exact printed commit remain unconfirmed.
 CAD validation is not physical validation; remaining measurements are in the report.
 
 ## Build

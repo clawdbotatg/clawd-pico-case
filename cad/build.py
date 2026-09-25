@@ -52,11 +52,10 @@ for name, (fn, color) in model.PARTS.items():
                   "bbox": [round(v, 2) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)]})
     print(f"{name:13} {os.path.getsize(path)//1024:5d} KB")
 
-# Print orientation: flat face on the plate, no supports. The lid and the
-# joystick cap print upside down (top face on the plate); everything else as
-# modelled. Written to stl/print/ with z-min at 0.
+# R5: lid inverted, cap upright. Lid face and cap flange need slicer support
+# review; block supports inside the stem socket. All files have z-min at 0.
 from build123d import Rot, Pos
-PRINT_FLIP = {"lid", "joystick_cap"}
+PRINT_FLIP = {"lid"}
 os.makedirs(os.path.join(STL, "print"), exist_ok=True)
 for name, (fn, _) in model.PARTS.items():
     if name in ("hat", "pico", "fpc_tape"):
@@ -75,7 +74,7 @@ sample_dir = Path(STL) / 'fit_samples'
 sample_dir.mkdir(exist_ok=True)
 import params as P
 for clearance in P.JOY_SOCKET_SAMPLES:
-    sample = Rot(180, 0, 0) * model.joystick_cap(clearance)
+    sample = model.joystick_cap(clearance)
     bb = sample.bounding_box()
     sample = Pos(-bb.min.X, -bb.min.Y, -bb.min.Z) * sample
     export_stl(sample, str(sample_dir / f'joystick_socket_{P.J4 + clearance:.2f}.stl'),
@@ -89,9 +88,9 @@ print("assembly.step", os.path.getsize(os.path.join(STL, "assembly.step")) // 10
 import params as P
 info = {
     "commit": git_short(),
-    "case_mm": [round(model.X1 - model.X0, 2), round(model.Y1 - model.Y0, 2), round(model.Z_LID_TOP - model.Z_BOTTOM, 2)],
+    "case_mm": [round(model.X1 - model.X0, 2), round(model.Y1 - model.Y0, 2), round(model.Z_COLLAR_TOP - model.Z_BOTTOM, 2)],
     "split_z": model.Z_SPLIT,
-    "assumptions": ["R4 prototype for the measured PINK USB-C board; physical fit unverified",
+    "assumptions": ["R5 prototype: captive joystick and two seam pry notches; physical fit unverified",
                     "Pico centring, stack datum and USB projection need confirmation",
                     "Joystick body 3.0 mm assumed; tilt/click and cap retention unmeasured",
                     "Plug recess trial: 12.5 x 7 mm; both USB height readings accommodated",
@@ -108,7 +107,7 @@ with open(out, "w") as f:
     f.write(html)
 print("viewer", out, os.path.getsize(out) // 1024, "KB")
 
-manifest = {'revision': 'R4', 'git': git_short(), 'source_sha256': audit['source_sha256'],
+manifest = {'revision': 'R5', 'git': git_short(), 'source_sha256': audit['source_sha256'],
             'build123d': version('build123d'), 'files': {}}
 for path in sorted(Path(STL).rglob('*')):
     if path.suffix in ('.stl', '.step'):
@@ -117,4 +116,4 @@ for path in sorted(Path(STL).rglob('*')):
 
 import render
 render.render()
-print('preview renders/r4-preview.png')
+print('preview renders/r5-preview.png')

@@ -98,17 +98,22 @@ SHELF_GAP = 0.0    # D4-SUPPORT: board rests at its modelled z datum
 ARM_LEN = 14.0    # D4-FIT
 ARM_ROOF = -0.30  # D4-FIT
 ARM_SLOT = 0.60   # D4-FIT
-# Joystick cap, v3: a thin neck on the stem through the hole, a disc above the lid.
-# The neck stays clear of the silver base; the disc sits high enough to tilt.
-JOY_NECK_D = 5.0   # neck diameter
+# R5: cap installs on the board FIRST; lid passes over ball and retains lip.
+JOY_NECK_D = 4.2   # D5-JOY, shaft around the stem socket
 JOY_ENGAGE = 1.2   # D4-JOY: clear guessed J3 body during V4 tilt+press scenario
-JOY_DISC_D = 14.0  # D4-JOY
-JOY_DISC_T = 1.5   # top disc thickness
-JOY_DISC_GAP = 1.80  # D4-JOY; validate actual tilt/click before release
+JOY_FLANGE_D = 10.4  # D5-JOY, captive lower lip
+JOY_FLANGE_Z = 5.0   # D5-JOY
+JOY_FLANGE_T = 0.8   # D5-JOY
+JOY_BALL_D = 7.0     # D5-JOY, smaller than throat for lid installation
+JOY_BALL_Z = 11.4    # D5-JOY, centre height
+JOY_POCKET_D = 13.0  # D5-JOY, motion cavity under retaining roof
+JOY_POCKET_TOP = 6.8 # D5-JOY
+JOY_COLLAR_D = 15.8 # D5-JOY
+JOY_ROOF_T = 1.2     # D5-JOY
 JOY_SOCKET_CLEAR = 0.05  # D4-JOY; fit trial, no proven press fit
 JOY_SOCKET_SAMPLES = (0.0, 0.10, 0.20)  # D4-JOY, labelled by print filenames
 JOY_SOCKET_TIP_CLEAR = 0.0  # D4-JOY: roof seats on tip; no axial dead travel
-JOY_HOLE_D = 12.80  # D4-JOY: include JC2 offset, not only rectangle circumradius
+JOY_HOLE_D = 8.8    # D5-JOY: ball < throat < flange
 USB_CLEAR = 0.50   # USB-C cutout past the shell, each side
 A1_USB, A1_PCB = 19.95, 17.54  # A1 glass to USB-C shell / to Pico PCB back. Disagrees with P15 by 0.84; the slot covers both
 PLUG_W = 12.5      # cable plug overmould width  — GUESS until measured (report ask 4)
@@ -126,3 +131,7 @@ POCKET_MARGIN = 0.30     # D4-CAD
 CAVITY_R = 0.50          # D4-CAD
 WINDOW_R = 0.80          # D4-CAD
 PLUG_R = 1.0             # D4-CAD
+PRY_W = 6.0              # D5-PRY
+PRY_H = 1.6              # D5-PRY
+PRY_DEPTH = 1.0          # D5-PRY
+PRY_R = 0.5              # D5-PRY

@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 import numpy as np
-from build123d import Pos, Rot
+from build123d import Pos, Rot, Cylinder
 import model as M
 import params as P
 
@@ -38,7 +38,7 @@ def run():
     for name in ('base', 'lid', 'button_caps', 'joystick_cap'):
         p = parts[name]
         check(name + ' valid solid count', p.is_valid and len(p.solids()) == (4 if name == 'button_caps' else 1), len(p.solids()))
-        oriented = Rot(180, 0, 0) * p if name in ('lid', 'joystick_cap') else p
+        oriented = Rot(180, 0, 0) * p if name == 'lid' else p
         zmin = oriented.bounding_box().min.Z
         # Every independent solid must have a real planar bed contact.
         for i, solid in enumerate(oriented.solids()):
@@ -96,16 +96,29 @@ def run():
 
     # Sensitivity only: actual joystick pivot, angular travel and click unknown.
     jx, jy = M.JOY_C
+    check('ball passes throat; flange retained', P.JOY_BALL_D < P.JOY_HOLE_D < P.JOY_FLANGE_D)
+    check('joystick upward retention', (Pos(0, 0, 1.05) * parts['joystick_cap'] & parts['lid']).volume > TOL)
+    # Conservative continuous downward sweeps relative to the descending lid.
+    sweep_bottom = M.Z_BOTTOM
+    flange_top = P.JOY_FLANGE_Z + P.JOY_FLANGE_T
+    ball_top = P.JOY_BALL_Z + P.JOY_BALL_D / 2
+    sweep = Pos(jx, jy, (sweep_bottom + flange_top) / 2) * Cylinder(P.JOY_FLANGE_D / 2, flange_top - sweep_bottom)
+    sweep += Pos(jx, jy, (sweep_bottom + ball_top) / 2) * Cylinder(P.JOY_BALL_D / 2, ball_top - sweep_bottom)
+    clear('continuous lid installation over mounted joystick', sweep, parts['lid'])
+    for side, x0, x1 in [('left', M.X0 - .2, M.X0 + .7), ('right', M.X1 - .7, M.X1 + .2)]:
+        tool = M.box(x0, x1, M.CY - 2, M.CY + 2, -P.TONGUE_H - .3, -P.TONGUE_H + .3)
+        clear(f'{side} pry tool access', tool, parts['base'] + parts['lid'])
+    check('pry notch leaves 1.2mm wall', P.WALL - P.PRY_DEPTH >= 1.2 - TOL, P.WALL - P.PRY_DEPTH)
     fixed_joy_hat = parts['hat'] - M.box(jx - P.J4 / 2, jx + P.J4 / 2,
                                         jy - P.J4 / 2, jy + P.J4 / 2, P.J3, P.J6 + P.EPS)
-    for pivot in (0, 3):  # V4
+    for pivot, press in itertools.product((0, 3), (0, .3)):  # V5 scenarios, not measured
         for angle in (0, 5, 10):
             for direction in range(0, 360, 45):
-                cap = (Pos(jx, jy, pivot - 0.3) * Rot(0, 0, direction)
+                cap = (Pos(jx, jy, pivot - press) * Rot(0, 0, direction)
                        * Rot(angle, 0, 0) * Rot(0, 0, -direction)
                        * Pos(-jx, -jy, -pivot) * parts['joystick_cap'])
-                clear(f'joystick scenario pivot={pivot}, tilt={angle}, az={direction}, press=.3', cap, parts['lid'])
-                clear(f'joystick fixed hardware pivot={pivot}, tilt={angle}, az={direction}', cap, fixed_joy_hat)
+                clear(f'joystick scenario pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, parts['lid'])
+                clear(f'joystick fixed hardware pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, fixed_joy_hat)
 
     unresolved = {
         'blue_flag_lid_intersection_mm3': round((parts['fpc_tape'] & parts['lid']).volume, 6),

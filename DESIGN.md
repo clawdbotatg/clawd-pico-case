@@ -1,4 +1,25 @@
-# Design decisions — current R4
+# Design decisions — R5 draft, inherited R4 rationale below
+
+R5 work-in-progress implements D5-JOY and D5-PRY in MEASUREMENTS.md.
+The old joystick and print-orientation instructions below describe R4,
+not this draft. Current assembly and printing caveats are in REPORT.md.
+
+New cap: Ø7 ball on Ø4.2 shaft, Ø10.4 × 0.8 internal flange, Ø8.8 throat.
+Fits onto board first; lid passes over ball and captures flange. Raised
+collar clears tilt scenarios, at cost of height and required lid supports.
+Collar top z=8; ball top z=14.9; body height 28.64, overall 35.54 mm.
+Socket engagement 1.2 with only 0.2 remaining at upward stop needs a fit test.
+Cap now prints upright; review supports under flange/ball and block socket.
+
+Two seam pry notches between catches: 6 × 1.6 × 1, R0.5; 1.2 wall remains.
+Thin plastic tool access is checked; release force is not established.
+
+V1 feedback additionally requests USB-C alignment and wider/taller rectangular
+buttons. Those changes are pending, not implemented in this checkpoint.
+Also pending: bottom access hole over the pink board button. Measure its
+position/size and confirm button identity before cutting; use a plastic tool.
+
+## Historical R4 decisions
 
 2026-09-24. Original enclosure for the measured PINK USB-C RP2040 board,
 plugged into the Waveshare Pico-LCD-1.3. No battery, switch, strap or logo.

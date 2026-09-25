@@ -72,3 +72,35 @@ touched geometry, and what that session had seen.
   arms, sloped shelf undersides, USB insertion channel with lid closure,
   four PCB hold-down pads, narrower button flanges, and joystick fit samples.
   Choices and remaining physical tests are documented in DESIGN.md/REPORT.md.
+
+## 2026-09-24. R5 captive joystick, Codex.
+
+- Input: Austin's direct feedback from the first physical print. The joystick
+  cap must attach to the board before the lid; a lower lip retains it inside
+  the case, with a shaft and ball outside. R4's post-lid cap is rejected.
+- No external case geometry, photographs, or measurements consulted. Existing
+  hardware rows retained; new flange/ball/collar dimensions are original design
+  choices D5-JOY. Joystick motion is still an assumed verification envelope.
+- Sent a hold request for R4 via the already authorized print inbox workflow.
+  Preserve R4 tag/history. R5 changes joystick cap and lid only, with assembly,
+  retention and motion checks, matching documentation and rebuilt outputs.
+- Additional direct feedback: the first printed case is difficult to open;
+  Austin requests a tool notch. Add two original shallow seam notches
+  (D5-PRY), preserving the flexible latch bands and underlying wall.
+
+## 2026-09-24. V1 physical feedback and photos, Codex.
+
+- Austin explicitly identifies the photographed case as V1, made from first
+  principles without another licensed case. Input is his own printed case,
+  not an external enclosure reference. Repo MIT license is unchanged.
+- Viewed his uploads paste-f2819d95-IMG_0801.jpg (joystick),
+  paste-f925a63a-IMG_0800.jpg (buttons), paste-42cd1b6f-IMG_0799.jpg (USB).
+  Saved unchanged in prints/v1-feedback/. No dimensions inferred from the
+  perspective photos; no other case sources consulted.
+- Additional requested changes: taller/wider rectangular buttons with
+  smaller top/bottom lips; smaller USB opening shifted toward lid; bottom
+  tool-access hole over pink board button. Button identity, coordinates and
+  pad size are not established. These three changes remain pending.
+- Saved feedback separately from the R5 joystick/pry CAD checkpoint.
+  Physical V1's exact source commit is not established. Preserve all earlier
+  commits and tags; do not label the partial draft as ready to print.

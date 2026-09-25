@@ -3,7 +3,7 @@
 Returns plain Parts placed in the frame from params.py. build.py exports
 them. Run this file directly for a bounding-box sanity print.
 """
-from build123d import (Axis, Box, Cylinder, Location, Part, Pos, Rot,
+from build123d import (Axis, Box, Cylinder, Sphere, Location, Part, Pos, Rot,
                        fillet, Plane, Rectangle, extrude, Circle, Polygon)
 import params as P
 
@@ -90,6 +90,7 @@ Z_FLOOR_TOP = Z_USB_BOT - P.CLEAR
 Z_BOTTOM = Z_FLOOR_TOP - P.FLOOR
 Z_SPLIT = 0.0                                              # lid meets base at the LCD front face
 Z_LID_TOP = P.S3 + P.GLASS_CLEAR + P.LID_TOP
+Z_COLLAR_TOP = P.JOY_POCKET_TOP + P.JOY_ROOF_T
 TONGUE_INSET = P.SKIRT + P.MATE_CLEAR
 USB_Z0 = Z_PICO_BOT - max(P.P15, P.A1_USB - P.A1_PCB) - P.USB_CLEAR
 USB_Z1 = Z_PICO_BOT - min(P.P15, P.A1_USB - P.A1_PCB) + P.P13 + P.USB_CLEAR
@@ -103,6 +104,17 @@ def plug_recess():
     rec = box(PICO_CX - P.PLUG_W / 2, PICO_CX + P.PLUG_W / 2,
               yr0, yr1, zm - P.PLUG_H / 2, zm + P.PLUG_H / 2)
     return fillet(rec.edges().filter_by(Axis.Y), P.PLUG_R)
+
+
+def pry_notches():
+    """Shared shallow recess across the skirt/base seam; wall remains behind."""
+    cutters = []
+    for x0, x1 in ((X0 - P.TOOL_EXT, X0 + P.PRY_DEPTH),
+                   (X1 - P.PRY_DEPTH, X1 + P.TOOL_EXT)):
+        cut = box(x0, x1, CY - P.PRY_W / 2, CY + P.PRY_W / 2,
+                  -P.TONGUE_H - P.PRY_H / 2, -P.TONGUE_H + P.PRY_H / 2)
+        cutters.append(fillet(cut.edges().filter_by(Axis.X), P.PRY_R))
+    return cutters[0] + cutters[1]
 
 
 def base():
@@ -142,7 +154,7 @@ def base():
     b -= box(PICO_CX - USB_HALF_W, PICO_CX + USB_HALF_W,
              ywall0, ywall1, USB_Z0, Z_SPLIT + P.TOOL_EXT)
     b -= plug_recess()
-    return b
+    return b - pry_notches()
 
 
 def lid():
@@ -153,6 +165,10 @@ def lid():
     # ceiling cavity: over the PCB, up to the glass clearance
     cav2 = rbox(IX0, IX1, IY0, IY1, Z_SPLIT - P.TOOL_EXT, P.S3 + P.GLASS_CLEAR, P.CAVITY_R)
     l = outer - cav - cav2
+    # Raised retaining roof: the ball passes through, the wider lip cannot.
+    jx, jy = JOY_C
+    l += Pos(jx, jy, (Z_LID_TOP - P.EPS + Z_COLLAR_TOP) / 2) * Cylinder(
+        P.JOY_COLLAR_D / 2, Z_COLLAR_TOP - Z_LID_TOP + P.EPS)
     # Four contacts above the supporting side shelves. Bare PCB needs bench confirmation.
     for px in (P.LID_PAD_INSET, P.L2 - P.LID_PAD_INSET - P.LID_PAD):
         for py in (P.LID_PAD_INSET, P.L1 - P.LID_PAD_INSET - P.LID_PAD):
@@ -182,7 +198,7 @@ def lid():
     # screen window
     gx, gy = GLASS_C
     w = P.WINDOW_CLEAR
-    l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -P.TOOL_EXT, Z_LID_TOP + P.TOOL_EXT, P.WINDOW_R)
+    l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -P.TOOL_EXT, Z_COLLAR_TOP + P.TOOL_EXT, P.WINDOW_R)
     # button pocket: the caps' flanges live under the plate, above the plungers
     pocket_top = P.B5 + P.CAP_FLANGE_T + P.CAP_POCKET_CLEAR
     bx0 = min(b[0] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - P.POCKET_MARGIN
@@ -194,10 +210,13 @@ def lid():
     hw = P.CAP_W + 2 * P.CAP_HOLE_CLEAR
     for bx, by in BUTTONS:
         l -= rbox(bx - hw / 2, bx + hw / 2, by - hw / 2, by + hw / 2, pocket_top - P.TOOL_EXT, Z_LID_TOP + P.TOOL_EXT, P.CAP_R + P.CAP_HOLE_CLEAR)
-    # joystick hole
+    # Large underside pocket clears silver body and moving flange. Smaller
+    # throat above it admits the ball during assembly and captures the lip.
     jx, jy = JOY_C
-    l -= Pos(jx, jy, Z_LID_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_LID_TOP + 2 * P.TOOL_EXT)
-    return l
+    l -= Pos(jx, jy, (P.JOY_POCKET_TOP - P.TOOL_EXT) / 2) * Cylinder(
+        P.JOY_POCKET_D / 2, P.JOY_POCKET_TOP + P.TOOL_EXT)
+    l -= Pos(jx, jy, Z_COLLAR_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_COLLAR_TOP + 2 * P.TOOL_EXT)
+    return l - pry_notches()
 
 
 def button_caps():
@@ -216,9 +235,11 @@ def button_caps():
 def joystick_cap(socket_clear=None):
     jx, jy = JOY_C
     bot = P.J6 - P.JOY_ENGAGE
-    d0 = Z_LID_TOP + P.JOY_DISC_GAP
-    cap = Pos(jx, jy, (bot + d0) / 2) * Cylinder(P.JOY_NECK_D / 2, d0 - bot + P.EPS)
-    cap += Pos(jx, jy, d0 + P.JOY_DISC_T / 2) * Cylinder(P.JOY_DISC_D / 2, P.JOY_DISC_T)
+    cap = Pos(jx, jy, (bot + P.JOY_BALL_Z) / 2) * Cylinder(
+        P.JOY_NECK_D / 2, P.JOY_BALL_Z - bot)
+    cap += Pos(jx, jy, P.JOY_FLANGE_Z + P.JOY_FLANGE_T / 2) * Cylinder(
+        P.JOY_FLANGE_D / 2, P.JOY_FLANGE_T)
+    cap += Pos(jx, jy, P.JOY_BALL_Z) * Sphere(P.JOY_BALL_D / 2)
     s = (P.J4 + (P.JOY_SOCKET_CLEAR if socket_clear is None else socket_clear)) / 2
     socket = box(jx - s, jx + s, jy - s, jy + s, bot - P.TOOL_EXT, P.J6 + P.JOY_SOCKET_TIP_CLEAR)
     return cap - socket

@@ -236,3 +236,16 @@ independently established. Retain all original readings pending recheck.
 | D4-JOY | socket total clearance 0.05 (samples 0, 0.10, 0.20); tip clearance 0; engagement 1.20; disc gap 1.80; hole 12.80; disc 14.0 | seat cap on stem, improve tilt/press room over assumed body and base offset clearance; fit samples are provisional |
 | D4-CAD | boolean overlap 0.01; cutter extension 1; bump overlap 0.20; window end clearance 0.30; cavity radius 0.50; window/pocket radius 0.80; plug recess radius 1.0 | construction choices, not hardware facts |
 | V4 | joystick sensitivity 10 degrees tilt, 0.30 press, pivot z=0 and 3; XY placement sensitivity 0.10; cap travel sampling 9 positions; insertion sampling 1 mm | diagnostic scenarios only; J7/J9 remain unmeasured |
+
+## R5 user feedback and original choices
+
+Austin reports from the first physical print: joystick must be installed on
+the board before the lid and retained by a lower lip; upper control should
+be shaft and ball. Also requests a pry notch because the case is hard to
+open. No new hardware dimensions supplied. Existing J rows still apply.
+
+| ID | Choices in mm unless stated | Rationale |
+|---|---|---|
+| D5-JOY | shaft Ø4.20; retaining flange Ø10.40, bottom z=5.00, thickness 0.80; ball Ø7.00, centre z=11.40; throat Ø8.80; flange pocket Ø13.00, ceiling z=6.80; collar outside Ø15.80, roof 1.20 | ball passes opening from inside while wider lip is retained; raised collar clears lip's assumed tilt; socket and engagement inherited from R4 |
+| D5-PRY | two side notches centred at y=L1/2, width 6.0 along y, height 1.60, depth 1.0 from exterior, radius 0.50; z centre=-TONGUE_H | gives tool access across skirt/base seam; retains 1.20 of wall behind notch, away from boards |
+| V5 | sample press 0 and 0.30, pivots 0 and 3, tilt 0/5/10 degrees; cap pull-up 1.05; assembly clearance with vertical swept envelopes; tool tip 4.0 × 0.60, depth 0.70 | test scenarios, not measured joystick specs or opening-force guarantees |

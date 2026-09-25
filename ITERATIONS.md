@@ -24,7 +24,18 @@ history. This register identifies meaningful design states; it does not imply
 that every intermediate state was physically printed. Earlier unsaved edits
 cannot be reconstructed as separate revisions.
 
-## R4 reproducibility
+## V1 feedback / R5 checkpoint
+
+Austin identifies the photographed first-principles case as V1; its exact
+print commit is not established. Three photos and five requested changes
+are saved in `prints/2026-09-24-v1-feedback.md`.
+
+Tag `r5-wip-joystick-pry`: captive ball joystick and two pry notches;
+273 CAD checks pass. Not submitted; not ready to print. USB-C and
+rectangular/taller buttons and bottom button access remain pending.
+Earlier history is preserved.
+
+## Artifact reproducibility
 
 - Source and output SHA-256 hashes: `stl/manifest.json`.
 - Geometric checks and source hashes: `renders/validation.json`.
