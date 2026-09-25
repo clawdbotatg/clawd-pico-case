@@ -318,3 +318,13 @@ Austin approves interactive S1 review and explicitly requests immediate full
 case print including joystick/buttons. Package unchanged S1 shells, exact J2
 joystick and existing V2 buttons: seven parts total. No geometry changes.
 Codex uses HTTP inbox skill; no credentials or private endpoints in repo.
+## 2026-09-25 — S1 history photograph and evidence audit
+
+Austin supplies his own IMG_0839 as a historical photo and requests saving to
+GitHub, then auditing the development/licensing record. Saved public copy in
+prints/s1-photos with EXIF/Photoshop metadata removed losslessly; decoded
+pixels identical, original/public hashes recorded, original upload untouched.
+Shows shells and five caps on printer bed; not a measurement or fit result.
+Codex consulted this repository and official general copyright/MIT/patent
+references only, not forbidden case sources or other case designs. Audit is
+an evidence assessment, not a comparative design review or legal clearance.
