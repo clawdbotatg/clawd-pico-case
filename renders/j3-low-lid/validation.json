@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "lid_valid_single_solid": true,
+    "cap_valid_single_solid": true,
+    "socket_volume": true,
+    "button_roof_at_least_0_6": true,
+    "ball_passes_hole_lip_does_not": true,
+    "estimated_resting_cap_clear": true,
+    "lip_retained_on_pull": true,
+    "same_skirt_and_snaps": true,
+    "flat_exterior": true,
+    "buttons_press_0": true,
+    "buttons_press_1": true,
+    "buttons_press_2": true,
+    "buttons_press_3": true,
+    "buttons_press_4": true,
+    "buttons_press_5": true,
+    "buttons_press_6": true,
+    "buttons_press_7": true,
+    "buttons_press_8": true
+  },
+  "face_z": 4.2,
+  "screen_recess": 2.1500000000000004,
+  "joystick_roof_z": 3.5,
+  "estimated_lip_z": 2.4499999999999997,
+  "estimated_rest_gap": 1.0500000000000003,
+  "button_roof": 0.6400000000000001,
+  "socket": {
+    "diameter": 3.5,
+    "round_depth": 1.1,
+    "square_width": 2.01,
+    "square_depth": 2.0
+  },
+  "limitations": [
+    "Lip height is user visual estimate; new seating and full motion need physical testing.",
+    "Hardware body height/pivot guesses are not evidence against observed seating.",
+    "Hole centre unchanged: prior photo direction lacks measured offset.",
+    "Existing blue tape proxy clearance remains unresolved.",
+    "Operator must preview support-free slicing before start."
+  ]
+}

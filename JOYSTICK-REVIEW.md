@@ -1,6 +1,34 @@
 # V3 shell and joystick review
 
-## CURRENT: J2 socket-first fit trial — 2026-09-25
+## CURRENT: J3 joystick + L1 lowered flat lid — 2026-09-25
+
+J2 feedback: round socket too tight. J3 enlarges only the round cavity to
+3.50 mm diameter by 1.10 mm deep; next section remains 2.01 mm square by
+2.00 mm deep. Exterior unchanged.
+
+L1 lowers the entire flat exterior 0.90 mm, from z5.10 to z4.20. Screen
+recess drops from 3.05 to 2.15 mm. Pocket roof drops to z3.50, with 0.70 mm
+material above it. Existing button pockets have 0.64 mm roof remaining;
+further substantial lowering will need attention to these pockets/buttons.
+Base, snaps, rectangular holes and joystick hole centre stay unchanged.
+
+Austin estimates lip top at 0.40 mm above glass. The viewer uses that estimate
+(z2.45), leaving 1.05 mm under the joystick roof at rest. This is NOT a
+confirmed seated position or full-motion guarantee. Goal: progressively
+lower until motion restricts, then raise enough to restore free travel.
+
+Print ONLY lid face down and joystick flange down, no supports/raft. Reuse
+base/buttons. Test seating, full movement and pressing before lowering again.
+Do not force anything. Inspect thin button roof and snap bridges in slicing.
+
+Source: `cad/j3_low_lid.py`. Build: `.venv/bin/python cad/j3_low_lid.py`.
+STLs: `stl/j3-low-lid/{lid-face-down,joystick-j3,lid-and-joystick}.stl`.
+Viewer: port8793 `/j3-low-lid/viewer.html`. STEP and validation are beside it
+in `renders/j3-low-lid/`. 18 geometry checks pass; not a physical fit claim.
+Dispatch record: `prints/2026-09-25-j3-low-lid.md`.
+Original independent geometry, MIT repository; no external case consulted.
+
+## Historical: J2 socket-first fit trial — 2026-09-25
 
 Sent source53632f9 as `20260925-124312-joystick-j2-stepped-socket`, cap only.
 10.4 ×10.4 ×8.6 mm; server hash verified. GO accepted, initial status `new`;

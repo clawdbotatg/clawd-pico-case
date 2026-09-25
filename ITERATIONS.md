@@ -118,3 +118,11 @@ this public repository.
 Source cad/joystick_test.py; outputs stl/joystick-j1 and renders/joystick-j1.
 Complete handoff: JOYSTICK-REVIEW.md. Two test parts, known motion failures,
 review before printing. Historical whole-case files remain unchanged.
+## J3 / L1 — 2026-09-25
+
+J2 round hole too tight per Austin. J3: round 3.50 × 1.10 mm, deeper square
+unchanged. L1: flat lid face 0.90 mm lower, existing base/buttons retained.
+Original source cad/j3_low_lid.py; isolated artifacts stl/j3-low-lid and
+renders/j3-low-lid. 18 checks pass. Physical travel and fit pending.
+Only lid and joystick authorized; supports/raft off. See JOYSTICK-REVIEW.md
+and prints/2026-09-25-j3-low-lid.md for full handoff and dispatch.

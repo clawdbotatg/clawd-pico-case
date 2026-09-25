@@ -265,3 +265,12 @@ touched geometry, and what that session had seen.
   boards; MIT with the repo. No third-party design in any frame.
 - Record only: no dimension taken from these photos; nothing in `cad/`
   changed. This session opened no forbidden source and no picowallet file.
+### 2026-09-25 — J3 / lowered flat lid trial
+
+Austin's own J2 print feedback and two IMG_0828 photos (upload prefixes
+961919fc and 583f9050): round socket too tight; request diameter 3.5 mm,
+depth 1.1 mm, retain deeper square. Lip estimated 0.4 mm above glass.
+Authorized printing a new lid and joystick together and progressively lowering
+the lid until motion restricts, then backing off. Photos inspected directly;
+not calibrated measurements. Codex input; user-owned hardware/photos, no
+third-party case geometry. Original design choices below are trial values.

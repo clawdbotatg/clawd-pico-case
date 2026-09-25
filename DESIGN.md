@@ -51,3 +51,11 @@ See JOYSTICK-REVIEW.md for the complete current review packet. Original
 round-lip cap plus hand-held lid gauge only; D8 rear arm rejected. J1 preserves
 the selected V1 socket, has known10-degree motion failures, and is not sent
 to the printer. Full-case geometry is unchanged.
+## J3 / L1 trial — 2026-09-25
+
+Widen round socket to Austin's 3.50 × 1.10 mm; keep square 2.01 × 2.00 mm
+and exterior unchanged. Lower whole flat face 0.90 mm to z4.20, pocket roof
+to z3.50. Existing buttons limit further lowering: 0.64 mm roof now remains.
+No local boss, supports, USB fin, new base or new buttons. Lip height z2.45
+is Austin's estimate for visualization, not proven seating. Iteratively find
+motion limit then back off. Full details in JOYSTICK-REVIEW.md.

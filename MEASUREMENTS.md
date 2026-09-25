@@ -350,3 +350,12 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | D5-ACCESS | hole Ø4.0; button proxy Ø2.4, height 1.8 below component face | hole around scan pad, tool clearance; proxy height is a GUESS, not measured; no reset-function claim |
 | D5-BUTTON | post x=4.2, y=5.4; flange x=4.85, y=6.3; proud=1.8; clearances/radii inherited | widen perpendicular to button row, avoid neighbour collision; reduce row-axis lip from .4 to .325; rectangular post cannot enter turned 90 degrees |
 | D5-USB | selected shell stand-off=2.41 (A1_USB-A1_PCB); clearance .35 each side; outer cable recess height6.0, width12.5 unchanged | V1 photo shows socket above hole; choose higher of conflicting recorded placements, not a fabricated caliper update. Centre .42 higher than R4, .84 higher than P15-only model; shell aperture now 9.57×3.71. P15 still governs conservative floor depth. Actual cable fit needs print test. |
+### J3 / L1 lowered flat trial — 2026-09-25
+
+| ID | Value | Source |
+|---|---|---|
+| J3-SOCKET | Round diameter 3.50, depth 1.10; square 2.01 wide, next 2.00 deep | Austin's explicit J2 fit feedback; square retained from J2 |
+| J3-LIP | Lip top approximately S3 + 0.40 | Austin's visual estimate, own IMG_0828; not calibrated |
+| L1-FACE | Outer face z4.20; joystick underside z3.50 | Original trial choice: 0.90 lower than V3 flat; 0.70 joystick roof; 0.64 roof over retained button pockets |
+| L1-KEEP | Base, snaps, holes and button pockets unchanged; joystick outside unchanged | Original design choice, isolate height and socket changes |
+| L1-PLATE | 5 mm separation between print parts | Original plate layout choice |
