@@ -4,7 +4,7 @@
   "raft": false,
   "slice_verified": false,
   "source_sha256": {
-    "cad/j3_low_lid.py": "135e6b031dbaec5d5770156578394fbd947a479ed32cf0bd7472d37405253745",
+    "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
     "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
     "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
     "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
@@ -12,11 +12,11 @@
     "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
   },
   "files": {
-    "stl/j3-low-lid/lid-face-down.stl": "81ef428f1cd4c5279784f307013ec844af75e6a26a56dddd6730761927bb9399",
+    "stl/j3-low-lid/lid-face-down.stl": "fc7c48c8b93c4a23dbeb5490ff0821a5cdb87c7c1b8953a136b05ff30e73cfca",
     "stl/j3-low-lid/joystick-j3.stl": "145875030e1c99ee97942689205b4b7e3c39ad2d288d427046a519bee045c577",
-    "stl/j3-low-lid/lid-and-joystick.stl": "cf3a1db0549885b9597274690cf6204265122399130077862eca8ab700054853",
+    "stl/j3-low-lid/lid-and-joystick.stl": "48fbb2ea6573a903808038da437028feda14a8ace97b4a049d66f5b4a0569405",
     "renders/j3-low-lid/validation.json": "514649236ea870279cba21f0163810738a87a81d64de060372cdd635f5dd12ae",
-    "renders/j3-low-lid/assembly.step": "7edc65bd3d176463e1f34142090ef3d1f9ae326efffec12df0397b4683031e9d",
-    "renders/j3-low-lid/viewer.html": "75aa465083c8a46be97e517eec1e0116830a53b2bafc01bd3634a76666a9a9f8"
+    "renders/j3-low-lid/assembly.step": "eae2ea582dc13adada3f7cb03c815d85e70dd3503934fd75c44ee6d4d8d4dd69",
+    "renders/j3-low-lid/viewer.html": "cb3bdf6b6de98fa33d81936d474218695b094adc15b0a39d4185036609e23a66"
   }
 }

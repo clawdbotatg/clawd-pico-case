@@ -26,7 +26,7 @@ def cap():
 
 def lid():
     old=F.lid()
-    shape=old & M.box(M.X0-1,M.X1+1,M.Y0-1,M.Y1+1,-P.TOOL_EXT,TOP)
+    shape=old & M.box(M.X0-1,M.X1+1,M.Y0-1,M.Y1+1,-P.TONGUE_H-P.TOOL_EXT,TOP)
     # Lower the pocket roof without changing the opening, skirt or snap datum.
     x,y=M.JOY_C;gx,gy=M.GLASS_C
     fill=Pos(x,y,(UNDER+TOP)/2)*Cylinder(V.JOY_POCKET/2,TOP-UNDER)
@@ -49,8 +49,8 @@ def main():
         'lip_retained_on_pull':J.overlap(Pos(0,0,UNDER-LIP_TOP+.1)*placed,l)>1e-5,
         'same_skirt_and_snaps':True,
     }
-    region=M.box(M.X0-1,M.X1+1,M.Y0-1,M.Y1+1,-P.TOOL_EXT,0)
-    checks['same_skirt_and_snaps']=abs((l & region).volume-(old & region).volume)<1e-5 and J.overlap(l & region,old & region)>0
+    region=M.box(M.X0-1,M.X1+1,M.Y0-1,M.Y1+1,-P.TONGUE_H-P.TOOL_EXT,0)
+    checks['same_skirt_and_snaps']=sum(s.volume for s in ((l & region)-(old & region)).solids())<1e-5 and sum(s.volume for s in ((old & region)-(l & region)).solids())<1e-5 and abs(l.bounding_box().min.Z-old.bounding_box().min.Z)<1e-5
     faces=[f for f in l.faces() if abs(f.bounding_box().size.Z)<1e-6 and f.normal_at().Z>.99 and f.center().Z>0]
     checks['flat_exterior']=all(abs(f.center().Z-TOP)<1e-5 for f in faces)
     for i in range(9):

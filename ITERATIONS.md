@@ -126,3 +126,9 @@ Original source cad/j3_low_lid.py; isolated artifacts stl/j3-low-lid and
 renders/j3-low-lid. 18 checks pass. Physical travel and fit pending.
 Only lid and joystick authorized; supports/raft off. See JOYSTICK-REVIEW.md
 and prints/2026-09-25-j3-low-lid.md for full handoff and dispatch.
+### J3 / L1 pre-dispatch correction
+
+Review caught the initial top-trimming box also truncating the skirt.
+Corrected its lower bound to preserve the full skirt; strengthened validation
+to compare both material differences and minimum Z. Initial 8b0fc03 artifacts
+were never dispatched. Only the corrected full-skirt revision is printable.
