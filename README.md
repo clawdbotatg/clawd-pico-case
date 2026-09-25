@@ -52,17 +52,17 @@ What we do not copy is their files and their styling choices.
 Saved designs and print history: [iteration register](ITERATIONS.md).
 
 V1 feedback is [saved with photos](prints/2026-09-24-v1-feedback.md).
-Current R5 CAD is unfinished: captive ball joystick and pry notches are
-implemented; USB-C, rectangular/taller buttons and bottom button access
-remain pending.
-**Do not print this draft.** Original geometry;
+V2 / R5 implements all five changes: captive ball joystick, pry notches,
+higher/tighter USB-C, wider/taller rectangular buttons and scan-positioned
+bottom button access. Fit-test candidate; physical fit unverified. Original geometry;
 no third-party case models used. The current target is the measured pink
 USB-C board, not an official Pico W/Pico 2 W.
 
-See [draft preview](renders/r5-preview.png), [interactive assembly](renders/viewer.html),
+See [V2 preview](renders/r5-preview.png), [interactive assembly](renders/viewer.html),
 and [critical review / assembly instructions](REPORT.md). R4 was submitted
 to the print inbox; a hold/superseded request was subsequently posted.
 Operator acknowledgment and V1's exact printed commit remain unconfirmed.
+V2 dispatch and eventual result are recorded in [its print log](prints/2026-09-24-v2.md).
 CAD validation is not physical validation; remaining measurements are in the report.
 
 ## Build

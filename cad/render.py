@@ -21,7 +21,7 @@ def render():
         mesh[name] = (np.array([tuple(v) for v in verts]), triangles,
                       np.array([int(color[i:i+2], 16) for i in (1, 3, 5)]))
     panels = [
-        ('R5 / assembled', dict.fromkeys(mesh, 0), (1, -1.6, 1.7)),
+        ('V2 / R5 assembled', dict.fromkeys(mesh, 0), (1, -1.6, 1.7)),
         ('Assembly / exploded', {'base': -12, 'pico': -3, 'hat': 9,
                                  'lid': 23, 'button_caps': 32, 'joystick_cap': 32}, (1, -1.6, 1.2)),
         ('Lid / inside and USB fin', {'lid': 0}, (-1, -1.6, -1.7)),

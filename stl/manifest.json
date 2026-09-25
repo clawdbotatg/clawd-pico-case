@@ -1,29 +1,30 @@
 {
   "revision": "R5",
-  "git": "5597919-modified",
+  "print_version": "V2",
+  "git": "904556b-modified",
   "source_sha256": {
-    "cad/build.py": "8d156aec76a61e59217ade156b90b6fff49ac9a2d288a1726b7ef4b83937b5d9",
-    "cad/model.py": "9953111fa791a8157d12f322fed76f3bb215ce4e596021d42d23727639988474",
-    "cad/params.py": "90540550ce206b36303a62823be6bc547876d5b7995858d38e5c280a956a011e",
-    "cad/render.py": "efb8f7ca3d6692a807dc691b010a5edbbabf2258a45446d85b17523d6a93b096",
-    "cad/validate.py": "fb45aa7362a5ac77a758746bcece6eb2283834a91eb307a08b061a0c8ef4a5ac"
+    "cad/build.py": "147b9b57e0c09d2ac52842b4de94d5be06a57d7df6f3696f7b22670d9f686824",
+    "cad/model.py": "3bac555198723692d31fcd034a846436d26f8e68a6213d6b0247569f1f6f8a0b",
+    "cad/params.py": "8450b2ff1f41b34e46218b8cc61be262f1edb5e523d2eb885271856f1a5e84e2",
+    "cad/render.py": "c05fef6693979579f3a95671a18b30ac5f8ddeb5b4acfe7eb1bd7dece6547f9f",
+    "cad/validate.py": "d0d8808448771464a2a67c47e625bdef8bba00ef3ad2e5802ddb006e78a6708e"
   },
   "build123d": "0.13.0",
   "files": {
-    "stl/assembly.step": "dbb1f0cd1b9165b3e425b16f2f9db3dffc5749d77cf5bca890eadf7a72a3f339",
-    "stl/base.stl": "50fb8483b9b25303d5a092f6959ee380e76784fd1af1f134733320a05570eff8",
-    "stl/button_caps.stl": "2af2fa67222a0b576b29299e03d5db1a2dc879dbc3226d3bec16e21bb52bc450",
-    "stl/fit_samples/joystick_socket_1.86.stl": "43000746a782553e66190cf112e818d053855e1d8e4bb6a132c952e58e7ed326",
-    "stl/fit_samples/joystick_socket_1.96.stl": "4edaecb865474524b9f9a68dcb9d19423916934c2ab7b451f598ae383bc38a40",
-    "stl/fit_samples/joystick_socket_2.06.stl": "60f633577619cd624b7381b172ee9feb601c4ff5360d8815faeecc1f8ccbf6e4",
+    "stl/assembly.step": "9f3c9690a1f8a9b4bec914bfc9182f8de51fd10bea69c42bb63e39c40f33d528",
+    "stl/base.stl": "d02f351fada371cc2c0519877e82e13aa1f25f2735382954817b0fab734f3b27",
+    "stl/button_caps.stl": "dbdda26edc7d4fae3dfd7f45ed3ac617cde123d95a7a48345969e33a02e2c6ab",
+    "stl/fit_samples/joystick_socket_1.86.stl": "f879cf955b978a8cd218a0061565d1ab42b2f4c3bef6bd626aac6b02b69a7883",
+    "stl/fit_samples/joystick_socket_1.96.stl": "e0643c2ba76b47747a45d50dbc0fe71cf04666f3e72dcaea7eb9d4a4ef33a3f4",
+    "stl/fit_samples/joystick_socket_2.06.stl": "706c9540b13b58f907eb85339e94a57a1d04cd002a43bb4fe8626d434d53c760",
     "stl/fpc_tape.stl": "f066197cd5cc46aa1f4edc879b3dc40c440a4fbda2347f094658726f206bbc5f",
     "stl/hat.stl": "23ed9d91e82b98b9de1252e26f172b1a9b30d4b1b069720318962f9e34c4783c",
-    "stl/joystick_cap.stl": "c187491648a53274a323a7445d4a22ec281071680a0a196681f16706257764d0",
-    "stl/lid.stl": "821a3ca1407bf644c6cdb0e05ff64a4a422ae703a2d63fc061e35ae73eaee4da",
-    "stl/pico.stl": "07f3c74ddcfa0bbea078f49b9dfe835485336647ea54a1d9919f9b2ec2644ee3",
-    "stl/print/base.stl": "9fedbcf3480fcdc4d2795bd2c8cf155cb5ad9a4d4ea15660bf61a703150fad82",
-    "stl/print/button_caps.stl": "3e7b59822cee43d5d86bc47bf9bafa4ae61ddce8e9ef8685931e9f8f84b932dc",
-    "stl/print/joystick_cap.stl": "50768c490bc4baebe73d248f790dc5e6607309c1d18546e5598b62b3949013ce",
-    "stl/print/lid.stl": "a6ba791bc9933e75fa0f19f496aa2ad6bc851fc642b440b7438e5666ac15a095"
+    "stl/joystick_cap.stl": "c30843b0bfaab83a342b38cad1299b71f84b154dfb201615dd3d60eaa112ae83",
+    "stl/lid.stl": "fdac7f4a51fb52a1c6f0398f666eea1cb8bfca99e9f3172920e6fd1b3058da96",
+    "stl/pico.stl": "8826e0f61008b768c88bf19b1d572e28f1566f4052d04bb25dc1edec0b5d8baf",
+    "stl/print/base.stl": "c5323202cb799232d58f8dd2d748c174cb9ab4595e717888c039f04c93744c7d",
+    "stl/print/button_caps.stl": "eddd8851f76464792617cc2507e38900152abb0eca94ae870dc7e12ced72c1fa",
+    "stl/print/joystick_cap.stl": "04513f67bb3f3dcdfad140e2c0f176f729c1e3c79b9f8609b7fd618531655110",
+    "stl/print/lid.stl": "84bc1748ae2f8b5e0330dd4a3c3035bad73612e4e0d23cd9d014a1ab816672d7"
   }
 }

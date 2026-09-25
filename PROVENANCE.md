@@ -104,3 +104,17 @@ touched geometry, and what that session had seen.
 - Saved feedback separately from the R5 joystick/pry CAD checkpoint.
   Physical V1's exact source commit is not established. Preserve all earlier
   commits and tags; do not label the partial draft as ready to print.
+
+## 2026-09-24. V2 candidate from existing scan, Codex.
+
+- Austin explicitly authorizes making a good estimate from the existing pink
+  board scan, iterating, completing the next version and sending to printer.
+- Revisited scan01 and its original measurement script. Detected the pale
+  board button at crop-local (294.0667,409.7847), centre-relative u=13.4370,
+  v=-3.2868 mm. Opposite-facing component side requires lateral reflection
+  into the LCD-front coordinate frame. Recorded PINK-BTN-SCAN and D5-ACCESS.
+- V1 USB photo supports the higher existing A1 placement rather than P15's
+  lower placement; selected A1 for shell/aperture but kept conservative
+  floor depth. Recorded original button/access/USB trial choices before CAD.
+- No third-party case geometry viewed or imported. V2 is the next physical
+  print candidate; internal CAD revision remains R5 after its saved checkpoint.

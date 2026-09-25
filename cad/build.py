@@ -10,10 +10,12 @@ import json
 import os
 import subprocess
 import hashlib
+import struct
+from collections import Counter
 from pathlib import Path
 from importlib.metadata import version
 
-from build123d import export_stl
+from build123d import export_stl as occt_export_stl
 import model
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,6 +23,26 @@ STL = os.path.join(ROOT, "stl")
 RENDERS = os.path.join(ROOT, "renders")
 os.makedirs(STL, exist_ok=True)
 os.makedirs(RENDERS, exist_ok=True)
+
+
+def export_stl(part, path, **kwargs):
+    """Remove float32-degenerate sphere pole facets; enforce closed edges."""
+    occt_export_stl(part, path, **kwargs)
+    data = Path(path).read_bytes()
+    count = struct.unpack_from('<I', data, 80)[0]
+    assert len(data) == 84 + 50 * count, 'Expected binary STL'
+    records, edges = [], Counter()
+    for index in range(count):
+        record = data[84 + 50 * index:134 + 50 * index]
+        values = struct.unpack('<12fH', record)
+        vertices = [tuple(values[j:j + 3]) for j in (3, 6, 9)]
+        if len(set(vertices)) < 3:
+            continue
+        records.append(record)
+        for j in range(3):
+            edges[tuple(sorted((vertices[j], vertices[(j + 1) % 3])))]+=1
+    assert all(n == 2 for n in edges.values()), f'Nonclosed STL: {path}'
+    Path(path).write_bytes(data[:80] + struct.pack('<I', len(records)) + b''.join(records))
 
 # Never export a new print set after a failed geometric audit.
 import validate
@@ -90,10 +112,11 @@ info = {
     "commit": git_short(),
     "case_mm": [round(model.X1 - model.X0, 2), round(model.Y1 - model.Y0, 2), round(model.Z_COLLAR_TOP - model.Z_BOTTOM, 2)],
     "split_z": model.Z_SPLIT,
-    "assumptions": ["R5 prototype: captive joystick and two seam pry notches; physical fit unverified",
+    "assumptions": ["V2 print / R5 CAD: captive joystick, pry notches, rectangular caps, USB correction, bottom button access",
                     "Pico centring, stack datum and USB projection need confirmation",
                     "Joystick body 3.0 mm assumed; tilt/click and cap retention unmeasured",
-                    "Plug recess trial: 12.5 x 7 mm; both USB height readings accommodated",
+                    "USB selects higher A1 placement; cable recess trial 12.5 x 6 mm",
+                    "Bottom button position estimated from pink-board scan, function unconfirmed",
                     "Blue flag conflicts with lid: remove only if confirmed protector tab",
                     "Bare corner pads, underside shelf clearance and snap flex need bench tests"],
 }
@@ -107,7 +130,7 @@ with open(out, "w") as f:
     f.write(html)
 print("viewer", out, os.path.getsize(out) // 1024, "KB")
 
-manifest = {'revision': 'R5', 'git': git_short(), 'source_sha256': audit['source_sha256'],
+manifest = {'revision': 'R5', 'print_version': 'V2', 'git': git_short(), 'source_sha256': audit['source_sha256'],
             'build123d': version('build123d'), 'files': {}}
 for path in sorted(Path(STL).rglob('*')):
     if path.suffix in ('.stl', '.step'):

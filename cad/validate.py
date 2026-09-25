@@ -80,18 +80,25 @@ def run():
                      M.PICO_Y0, M.PICO_Y1, M.Z_PICO_BOT, P.L1)
     usb_sweep = M.box(M.PICO_CX - P.P12 / 2, M.PICO_CX + P.P12 / 2,
                      min(M.USB_EDGE_Y, M.USB_EDGE_Y + M.USB_SIGN * P.P11),
-                     max(M.USB_EDGE_Y, M.USB_EDGE_Y + M.USB_SIGN * P.P11), M.Z_USB_BOT, P.L1)
+                     max(M.USB_EDGE_Y, M.USB_EDGE_Y + M.USB_SIGN * P.P11), M.Z_USB_SHELL_BOT, P.L1)
     clear('continuous Pico insertion', pcb_sweep, parts['base'])
     clear('continuous USB insertion', usb_sweep, parts['base'])
     clear('continuous hat insertion', M.box(0, P.L2, 0, P.L1, -P.L3, P.L1), parts['base'])
     # Fin translates down with lid; check sampled path against seated hardware.
     for dz in (0, 1, 3, 6, 12, 20):
         clear(f'lid approach {dz}/hardware', Pos(0, 0, dz) * parts['lid'], parts['hat'] + parts['pico'])
-    for stand in (P.P15, P.A1_USB - P.A1_PCB):
+    for stand in (P.USB_STAND,):  # D5-USB chooses higher A1 placement; old P15 is unresolved
         shell = M.box(M.PICO_CX - P.P12 / 2, M.PICO_CX + P.P12 / 2,
                       M.IY1, M.Y1, M.Z_PICO_BOT - stand, M.Z_PICO_BOT - stand + P.P13)
         clear(f'USB stand-off {stand:.2f}', shell, parts['base'] + parts['lid'])
     check('snap positive overlap', P.SNAP_H > P.MATE_CLEAR, P.SNAP_H - P.MATE_CLEAR)
+    check('rectangular button rejects 90-degree insertion', P.CAP_D > P.CAP_W + 2 * P.CAP_HOLE_CLEAR)
+    ax, ay = M.ACCESS_C
+    tool = Pos(ax, ay, (M.Z_BOTTOM + M.Z_PICO_BOT - P.BOARD_BUTTON_H) / 2) * Cylinder(
+        P.BOARD_BUTTON_D / 2, M.Z_PICO_BOT - P.BOARD_BUTTON_H - M.Z_BOTTOM)
+    clear('bottom button tool path/base', tool, parts['base'])
+    clear('bottom button tool path/hardware before contact', tool, parts['pico'])
+    check('bottom access larger than scanned button proxy', P.ACCESS_D > P.BOARD_BUTTON_D)
     check('snap catches on lift', (parts['base'] & (Pos(0, 0, P.SNAP_WIN_CLEAR + 0.1) * parts['lid'])).volume > TOL)
 
     # Sensitivity only: actual joystick pivot, angular travel and click unknown.
@@ -123,6 +130,8 @@ def run():
     unresolved = {
         'blue_flag_lid_intersection_mm3': round((parts['fpc_tape'] & parts['lid']).volume, 6),
         'not_verified': ['actual joystick travel/pivot/body/lip/press fit',
+                         'bottom button identity, scan registration and assumed height',
+                         'USB uses higher A1 placement; lower P15 placement no longer fits aperture',
                          'snap force, fatigue, layer adhesion and release',
                          'PCB corner landing areas and underside solder clearance',
                          'A1 datum, USB position and actual cable overmould',

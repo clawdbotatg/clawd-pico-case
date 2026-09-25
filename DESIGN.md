@@ -1,83 +1,60 @@
-# Design decisions — R5 draft, inherited R4 rationale below
+# Design decisions — V2 print / R5 CAD
 
-R5 work-in-progress implements D5-JOY and D5-PRY in MEASUREMENTS.md.
-The old joystick and print-orientation instructions below describe R4,
-not this draft. Current assembly and printing caveats are in REPORT.md.
+2026-09-24. Original MIT geometry from our own hardware measurements and V1
+feedback. No third-party enclosure geometry. D4/D5 rows in MEASUREMENTS.md
+distinguish our choices from hardware measurements.
 
-New cap: Ø7 ball on Ø4.2 shaft, Ø10.4 × 0.8 internal flange, Ø8.8 throat.
-Fits onto board first; lid passes over ball and captures flange. Raised
-collar clears tilt scenarios, at cost of height and required lid supports.
-Collar top z=8; ball top z=14.9; body height 28.64, overall 35.54 mm.
-Socket engagement 1.2 with only 0.2 remaining at upward stop needs a fit test.
-Cap now prints upright; review supports under flange/ball and block socket.
+Keep the existing footprint, stack height below the lid, USB insertion
+channel/fin, four flexible snap bands, sloped shelves and four corner pads.
+Austin says most of V1 is good; change only his five requested features.
 
-Two seam pry notches between catches: 6 × 1.6 × 1, R0.5; 1.2 wall remains.
-Thin plastic tool access is checked; release force is not established.
+## Captive joystick
 
-V1 feedback additionally requests USB-C alignment and wider/taller rectangular
-buttons. Those changes are pending, not implemented in this checkpoint.
-Also pending: bottom access hole over the pink board button. Measure its
-position/size and confirm button identity before cutting; use a plastic tool.
+Fit cap onto board before lid. Ø7 ball passes Ø8.8 throat; Ø10.4 flange
+cannot, so it stays inside. Ø4.2 shaft, flange bottom z5 and thickness .8.
+Motion pocket Ø13, ceiling z6.8, collar Ø15.8, roof1.2. Ball centre z11.4.
+Raised collar clears chosen movement scenarios, but increases height and
+requires support below the inverted lid face. Cap upright needs flange/
+ball support review. Do not fill the socket with support material.
 
-## Historical R4 decisions
+Socket1.91, engagement1.2, roof seated on tip. Only .2 nominal engagement
+remains at the retaining stop; actual movement and retention need testing.
+Fit samples1.86/1.96/2.06 remain available but are not part of the main print.
 
-2026-09-24. Original enclosure for the measured PINK USB-C RP2040 board,
-plugged into the Waveshare Pico-LCD-1.3. No battery, switch, strap or logo.
-Official Pico W/Pico 2 W compatibility is not established. Earlier decisions
-are retained in git history. R4 values cite D4 rows in MEASUREMENTS.md.
+## Pry access
 
-## Construction
+Two rounded 6 × 1.6 × 1-deep notches across the skirt/base seam, centred
+on each long side between catches. R.5 and 1.2 nominal wall behind.
+Clearance checked for a 4 × .6 plastic tip inserted .7. This establishes
+tool access, not opening force or durability.
 
-Keep the rounded rectangle, user-requested snap closure, four individual
-square caps, and capped joystick. Split at the LCD front plane, z=0.
-Floor 1.60, clearance under deepest recorded component 0.30. Lid outside
-z=4.60. Glass clearance 0.30; window follows full glass plus 0.40 per side
-because active-area dimensions are unmeasured.
+## Rectangular buttons
 
-Body 31.44 × 57.50 × 25.24; cap-inclusive height 28.54 mm. Wall 2.20,
-skirt 0.80, mating clearance 0.20, tongue 1.20. Outside R3; pocket R0.50.
-Sharp rectangular PCB also tested at ±0.10 XY displacement.
+Posts4.2 along row ×5.4 perpendicular, flanges4.85×6.3, protrusion1.8.
+Pitch limits row-axis widening, so broaden perpendicular to row. Smaller
+row-axis lips (.325) and matching4.7×5.9 holes make the orientation clear:
+rotating90 degrees cannot fit. Inherit .25 sliding gap and .8 flange
+thickness; verify neighbouring clearance, measured .38 travel and retention.
+Thin overlap, short guide and no overtravel stop still need tactile testing.
 
-## Closure and insertion
+## USB-C correction
 
-Four 4 mm ramped bumps engage lid windows. Projection 0.45 minus mating gap
-0.20 gives 0.25 engagement. Slits define four 14 mm skirt bands attached at
-both ends, allowing outward flex and plastic-tool release. Bridging, force
-and fatigue require a print. Free-ended horizontal arms were rejected
-because they would begin in air with the lid printed inverted.
+Select higher A1 stand-off2.41 instead of P15's3.25, consistent with the V1
+photo's extra space below the connector. Keep P15 for conservative floor.
+Aperture clearance .35 per side; outer cable recess height6 instead of7.
+Opening centre .42 higher than R4 and .84 above P15-only placement.
+This intentionally drops compatibility with the conflicting lower shell
+position. Test actual cable/stack before further shrinking.
 
-USB channel extends to the base rim for vertical insertion of the connected
-stack. A lid fin closes it above the socket with 0.25 side clearance.
-Square aperture contains both recorded shell heights. Inherited 12.5 × 7.0
-plug recess, depth 1.0, remains provisional.
+## Bottom button access
 
-## Support and controls
+Use the existing pink-board scan, not a new guessed board layout.
+Detected plunger at u13.4370,v-3.2868 relative to PCB centre. Component side
+faces opposite LCD front; mirror lateral coordinate, retain USB-ward axis.
+Ø4 floor hole at installed x16.5068,y39.6870. Scan is blurred and board
+centering assumed; Austin explicitly authorized a fit-test estimate.
+Proxy button height1.8 is unmeasured. Hole accesses this button without
+asserting it is RESET rather than BOOTSEL. Use a nonconductive tool.
 
-Side shelves carry LCD PCB with 45-degree undersides and 0.80 bearing
-strips. Four 1.60 corner pads, inset 0.50, limit lift to nominal 0.05.
-They sit over the shelves, outside modelled switches. Verify bare PCB
-landing areas and underside solder clearance physically.
-
-Button posts 4.20, R0.80, holes 4.70. Flanges 5.00 × 0.80 avoid collision
-at opposite lateral limits. Contact at measured plunger z=2.61; tops 1.00
-above lid. Pocket allows 0.15 upward motion. Measured press travel 0.38
-checked. Short guides, retention overlap and absence of an overtravel stop
-require tactile testing. Individual scan y offsets retained.
-
-Joystick: Ø12.80 opening at stem centre; silver body uses its separate scan
-centre. Ø14 disc, 1.50 thick, gap 1.80 above lid. Ø5 neck engages 1.20 of
-the square stem; socket roof seats on tip. Default socket 1.91; trials
-1.86/1.96/2.06. These are printer fit samples, not a proven press fit.
-Shorter engagement avoids assumed body in tilt/press scenarios but increases
-the importance of retention testing. No glue specified.
-
-## Printing and acceptance
-
-Base upright; lid/joystick inverted; buttons flange-down and separated on
-the bed. Existing P2S / 0.4 nozzle / PLA / 0.16 layer trial profile.
-Inspect bridge toolpaths and first-layer expansion. Final material undecided.
-BOOTSEL accessed by opening the case until its location is measured.
-
-Release requires no board preload, independent return of all controls,
-retained caps, full cable insertion, repeated snap release without damage,
-and physical tests in the selected final material/profile. See REPORT.md.
+Physical print naming: photographed V1, next candidate V2. Internal CAD
+revision R5 follows R4 and the saved r5-wip-joystick-pry checkpoint.

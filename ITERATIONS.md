@@ -37,6 +37,17 @@ Earlier history is preserved.
 
 ## Artifact reproducibility
 
+## V2 print candidate / completed R5
+
+Tag `prototype-v2`: completes all five V1 requests. Adds scan-derived bottom
+button hole, rectangular/taller buttons, higher/tighter USB-C; retains
+checkpoint joystick and notches. Includes measurement script/overlay,
+mesh degenerate-facet removal, geometry checks, STL/STEP, preview and hashes.
+Print status and eventual results: `prints/2026-09-24-v2.md`. V2 is not a
+physical-fit certification. Older WIP remains saved under its own tag.
+
+## Hash records
+
 - Source and output SHA-256 hashes: `stl/manifest.json`.
 - Geometric checks and source hashes: `renders/validation.json`.
 - Reasoning and limitations: `DESIGN.md`, `REPORT.md`, `MEASUREMENTS.md`.

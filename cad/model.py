@@ -42,6 +42,8 @@ PICO_CY = CY + P.PICO_OFFSET_Y
 USB_SIGN = 1 if P.USB_END == "top" else -1
 PICO_Y0, PICO_Y1 = PICO_CY - P.P1 / 2, PICO_CY + P.P1 / 2
 USB_EDGE_Y = PICO_Y1 if USB_SIGN > 0 else PICO_Y0
+ACCESS_C = (PICO_CX + P.ACCESS_DX, PICO_CY + P.ACCESS_DY)
+Z_USB_SHELL_BOT = Z_PICO_BOT - P.USB_STAND
 
 
 # ---------------------------------------------------------------- hardware
@@ -66,13 +68,13 @@ def hat():
 
 def pico():
     pcb = rbox(PICO_CX - P.P2 / 2, PICO_CX + P.P2 / 2, PICO_Y0, PICO_Y1, Z_PICO_BOT, Z_PICO_TOP, P.PICO_R)
-    # USB-C shell: P12 wide, P13 tall, sits with its top P15 below the component face
-    # (P15 is the tallest point, so the shell spans P15-P13 .. P15 below the PCB)
+    # D5-USB selects the higher A1 placement, retaining P15 for floor depth.
     y_in = USB_EDGE_Y - USB_SIGN * P.USB_IN
     y_out = USB_EDGE_Y + USB_SIGN * P.P11
     shell = box(PICO_CX - P.P12 / 2, PICO_CX + P.P12 / 2, min(y_in, y_out), max(y_in, y_out),
-                Z_PICO_BOT - P.P15, Z_PICO_BOT - (P.P15 - P.P13))
-    return pcb + shell
+                Z_USB_SHELL_BOT, Z_USB_SHELL_BOT + P.P13)
+    button = Pos(*ACCESS_C, Z_PICO_BOT - P.BOARD_BUTTON_H / 2) * Cylinder(P.BOARD_BUTTON_D / 2, P.BOARD_BUTTON_H)
+    return pcb + shell + button
 
 
 def fpc_tape():
@@ -92,8 +94,8 @@ Z_SPLIT = 0.0                                              # lid meets base at t
 Z_LID_TOP = P.S3 + P.GLASS_CLEAR + P.LID_TOP
 Z_COLLAR_TOP = P.JOY_POCKET_TOP + P.JOY_ROOF_T
 TONGUE_INSET = P.SKIRT + P.MATE_CLEAR
-USB_Z0 = Z_PICO_BOT - max(P.P15, P.A1_USB - P.A1_PCB) - P.USB_CLEAR
-USB_Z1 = Z_PICO_BOT - min(P.P15, P.A1_USB - P.A1_PCB) + P.P13 + P.USB_CLEAR
+USB_Z0 = Z_USB_SHELL_BOT - P.USB_CLEAR
+USB_Z1 = Z_USB_SHELL_BOT + P.P13 + P.USB_CLEAR
 USB_HALF_W = P.P12 / 2 + P.USB_CLEAR
 
 
@@ -147,14 +149,15 @@ def base():
     b += wedge_x([(right, top), (IX1 + P.EPS, top),
                   (IX1 + P.EPS, top - P.SHELF_T - (IX1 - right)),
                   (right, top - P.SHELF_T)], IY0, IY1)
-    # USB-C cutout through the end wall. Its height covers both stand-off readings:
-    # P15 (far face 3.25 below the Pico) and A1 (2.41). Shell is P13 tall either way.
+    # D5-USB aperture selects A1's higher position after V1 photo feedback.
     ywall0, ywall1 = (IY1 - P.TOOL_EXT, Y1 + P.TOOL_EXT) if USB_SIGN > 0 else (Y0 - P.TOOL_EXT, IY0 + P.TOOL_EXT)
     # Open to the rim for straight-down insertion of the already connected stack.
     b -= box(PICO_CX - USB_HALF_W, PICO_CX + USB_HALF_W,
              ywall0, ywall1, USB_Z0, Z_SPLIT + P.TOOL_EXT)
     b -= plug_recess()
-    return b - pry_notches()
+    access = Pos(*ACCESS_C, (Z_BOTTOM + Z_FLOOR_TOP) / 2) * Cylinder(
+        P.ACCESS_D / 2, P.FLOOR + 2 * P.TOOL_EXT)
+    return b - pry_notches() - access
 
 
 def lid():
@@ -203,13 +206,14 @@ def lid():
     pocket_top = P.B5 + P.CAP_FLANGE_T + P.CAP_POCKET_CLEAR
     bx0 = min(b[0] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - P.POCKET_MARGIN
     bx1 = max(b[0] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + P.POCKET_MARGIN
-    by0 = min(b[1] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - P.POCKET_MARGIN
-    by1 = max(b[1] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + P.POCKET_MARGIN
+    by0 = min(b[1] for b in BUTTONS) - P.CAP_FLANGE_D / 2 - P.POCKET_MARGIN
+    by1 = max(b[1] for b in BUTTONS) + P.CAP_FLANGE_D / 2 + P.POCKET_MARGIN
     l -= rbox(bx0, bx1, by0, by1, -P.TOOL_EXT, pocket_top, P.WINDOW_R)
-    # button holes: square, a web of lid between each
+    # Rectangular button holes key the caps against 90-degree insertion.
     hw = P.CAP_W + 2 * P.CAP_HOLE_CLEAR
+    hd = P.CAP_D + 2 * P.CAP_HOLE_CLEAR
     for bx, by in BUTTONS:
-        l -= rbox(bx - hw / 2, bx + hw / 2, by - hw / 2, by + hw / 2, pocket_top - P.TOOL_EXT, Z_LID_TOP + P.TOOL_EXT, P.CAP_R + P.CAP_HOLE_CLEAR)
+        l -= rbox(bx - hw / 2, bx + hw / 2, by - hd / 2, by + hd / 2, pocket_top - P.TOOL_EXT, Z_LID_TOP + P.TOOL_EXT, P.CAP_R + P.CAP_HOLE_CLEAR)
     # Large underside pocket clears silver body and moving flange. Smaller
     # throat above it admits the ball during assembly and captures the lip.
     jx, jy = JOY_C
@@ -220,13 +224,13 @@ def lid():
 
 
 def button_caps():
-    """A cap per button: a square post through the lid hole, a flange underneath
+    """A cap per button: a rectangular post through the lid hole, a flange underneath
     that rests on the plunger and stops the cap coming out the top."""
     caps = None
     for bx, by in BUTTONS:
-        c = rbox(bx - P.CAP_FLANGE_W / 2, bx + P.CAP_FLANGE_W / 2, by - P.CAP_FLANGE_W / 2, by + P.CAP_FLANGE_W / 2,
+        c = rbox(bx - P.CAP_FLANGE_W / 2, bx + P.CAP_FLANGE_W / 2, by - P.CAP_FLANGE_D / 2, by + P.CAP_FLANGE_D / 2,
                  P.B5, P.B5 + P.CAP_FLANGE_T, P.CAP_R)
-        c += rbox(bx - P.CAP_W / 2, bx + P.CAP_W / 2, by - P.CAP_W / 2, by + P.CAP_W / 2,
+        c += rbox(bx - P.CAP_W / 2, bx + P.CAP_W / 2, by - P.CAP_D / 2, by + P.CAP_D / 2,
                   P.B5 + P.CAP_FLANGE_T - P.EPS, Z_LID_TOP + P.CAP_PROUD, P.CAP_R)
         caps = c if caps is None else caps + c
     return caps

@@ -1,0 +1,24 @@
+{
+  "source": "scan01 pink component face",
+  "px_per_mm": 23.665753243961248,
+  "crop": [
+    1000,
+    450,
+    1700,
+    1850
+  ],
+  "centroid_crop_px": [
+    294.0666887856669,
+    409.7846715328467
+  ],
+  "component_face_uv_mm": [
+    13.436951990341814,
+    -3.286812215735732
+  ],
+  "installed_xy_offset_mm": [
+    3.286812215735732,
+    13.436951990341814
+  ],
+  "reflection": "Opposite face from LCD front; USB end remains +y",
+  "limitations": "Blurred scan and assumed board centring; fit-test estimate, not caliper measurement"
+}

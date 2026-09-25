@@ -249,3 +249,14 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 | D5-JOY | shaft Ø4.20; retaining flange Ø10.40, bottom z=5.00, thickness 0.80; ball Ø7.00, centre z=11.40; throat Ø8.80; flange pocket Ø13.00, ceiling z=6.80; collar outside Ø15.80, roof 1.20 | ball passes opening from inside while wider lip is retained; raised collar clears lip's assumed tilt; socket and engagement inherited from R4 |
 | D5-PRY | two side notches centred at y=L1/2, width 6.0 along y, height 1.60, depth 1.0 from exterior, radius 0.50; z centre=-TONGUE_H | gives tool access across skirt/base seam; retains 1.20 of wall behind notch, away from boards |
 | V5 | sample press 0 and 0.30, pivots 0 and 3, tilt 0/5/10 degrees; cap pull-up 1.05; assembly clearance with vertical swept envelopes; tool tip 4.0 × 0.60, depth 0.70 | test scenarios, not measured joystick specs or opening-force guarantees |
+
+### V2 print candidate / R5 completed choices
+
+Austin authorizes scan-based estimates and iteration (2026-09-24).
+
+| ID | Value | Source / rationale |
+|---|---|---|
+| PINK-BTN-SCAN | component-face button centre offsets: lateral v=-3.2868, USB-ward u=13.4370 mm from PCB centre; detected light pad bbox 51×70 pixels | scan01 at 23.665753 px/mm; tools/measure_scan.py pink board fit; plunger centroid crop-local (294.0667,409.7847), full scan (1294.0667,859.7847). Scan is readable, not itself mirrored. Component face is opposite LCD front, so installed CAD x=-v, y=u. Registration remains a fit-test estimate. |
+| D5-ACCESS | hole Ø4.0; button proxy Ø2.4, height 1.8 below component face | hole around scan pad, tool clearance; proxy height is a GUESS, not measured; no reset-function claim |
+| D5-BUTTON | post x=4.2, y=5.4; flange x=4.85, y=6.3; proud=1.8; clearances/radii inherited | widen perpendicular to button row, avoid neighbour collision; reduce row-axis lip from .4 to .325; rectangular post cannot enter turned 90 degrees |
+| D5-USB | selected shell stand-off=2.41 (A1_USB-A1_PCB); clearance .35 each side; outer cable recess height6.0, width12.5 unchanged | V1 photo shows socket above hole; choose higher of conflicting recorded placements, not a fabricated caliper update. Centre .42 higher than R4, .84 higher than P15-only model; shell aperture now 9.57×3.71. P15 still governs conservative floor depth. Actual cable fit needs print test. |
