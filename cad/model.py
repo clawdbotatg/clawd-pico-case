@@ -128,9 +128,17 @@ def lid():
     gx, gy = GLASS_C
     w = P.WINDOW_CLEAR
     l -= rbox(gx - P.S2 / 2 - w, gx + P.S2 / 2 + w, gy - P.S1 / 2 - w, gy + P.S1 / 2 + w, -1, Z_LID_TOP + 1, 0.8)
-    # button holes
+    # button pocket: the caps' flanges live under the plate, above the plungers
+    pocket_top = P.B5 + P.CAP_FLANGE_T + P.CAP_POCKET_CLEAR
+    bx0 = min(b[0] for b in BUTTONS) - P.CAP_FLANGE_W / 2 - 0.3
+    bx1 = max(b[0] for b in BUTTONS) + P.CAP_FLANGE_W / 2 + 0.3
+    by0 = BUTTONS[0][1] - P.CAP_FLANGE_W / 2 - 0.3
+    by1 = BUTTONS[0][1] + P.CAP_FLANGE_W / 2 + 0.3
+    l -= rbox(bx0, bx1, by0, by1, -1, pocket_top, 0.8)
+    # button holes: square, a web of lid between each
+    hw = P.CAP_W + 2 * P.CAP_HOLE_CLEAR
     for bx, by in BUTTONS:
-        l -= Pos(bx, by, Z_LID_TOP / 2) * Cylinder((P.CAP_D + 2 * P.CAP_HOLE_CLEAR) / 2, Z_LID_TOP + 2)
+        l -= rbox(bx - hw / 2, bx + hw / 2, by - hw / 2, by + hw / 2, pocket_top - 1, Z_LID_TOP + 1, P.CAP_R + P.CAP_HOLE_CLEAR)
     # joystick hole
     jx, jy = JOY_C
     l -= Pos(jx, jy, Z_LID_TOP / 2) * Cylinder(P.JOY_HOLE_D / 2, Z_LID_TOP + 2)
@@ -138,12 +146,14 @@ def lid():
 
 
 def button_caps():
-    """A cap per button: a disc that sits proud of the lid, a stem down to the plunger."""
+    """A cap per button: a square post through the lid hole, a flange underneath
+    that rests on the plunger and stops the cap coming out the top."""
     caps = None
-    stem_h = Z_LID_TOP - P.B5          # from the plunger top up to the lid top
     for bx, by in BUTTONS:
-        c = Pos(bx, by, P.B5 + stem_h / 2) * Cylinder(P.CAP_D / 2, stem_h)          # body through the hole
-        c += Pos(bx, by, Z_LID_TOP + 0.6) * Cylinder(P.CAP_D / 2 + 0.6, 1.2)         # head, 0.6 over the hole edge
+        c = rbox(bx - P.CAP_FLANGE_W / 2, bx + P.CAP_FLANGE_W / 2, by - P.CAP_FLANGE_W / 2, by + P.CAP_FLANGE_W / 2,
+                 P.B5, P.B5 + P.CAP_FLANGE_T, P.CAP_R)
+        c += rbox(bx - P.CAP_W / 2, bx + P.CAP_W / 2, by - P.CAP_W / 2, by + P.CAP_W / 2,
+                  P.B5 + P.CAP_FLANGE_T - 0.01, Z_LID_TOP + P.CAP_PROUD, P.CAP_R)
         caps = c if caps is None else caps + c
     return caps
 
