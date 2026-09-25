@@ -116,7 +116,8 @@ enclosure needs a clearance feature.
 
 ## Print and assembly
 
-R4 exports are local and **not sent to a printer**. Test 2 was sent according
+R4 exports were **submitted to the print inbox**; print start is unconfirmed.
+See the test-3 log for exact drop IDs and requested settings. Test 2 was sent according
 to its historical log; the result remains blank. R4 base/lid are a matched
 pair; do not mix them with test 2.
 

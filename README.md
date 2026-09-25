@@ -57,8 +57,9 @@ no third-party case models used. The current target is the measured pink
 USB-C board, not an official Pico W/Pico 2 W.
 
 See [preview](renders/r4-preview.png), [interactive assembly](renders/viewer.html),
-and [critical review / assembly instructions](REPORT.md). R4 has not been
-printed. Earlier test 2 was sent to print but has no recorded fit result.
+and [critical review / assembly instructions](REPORT.md). R4 was submitted
+to the print inbox; start and physical result are unconfirmed. Earlier test 2
+was sent to print but has no recorded fit result.
 CAD validation is not physical validation; remaining measurements are in the report.
 
 ## Build

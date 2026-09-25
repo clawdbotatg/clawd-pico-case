@@ -17,7 +17,7 @@ version's history with a corrected version or describe a queued job as printed.
 | `f3eb689` | Thicker tongue, Ø10.5 joystick opening | Intermediate lid revision; see historical REPORT.md |
 | `29e74e1` | Working snap windows/wedges, corner and documentation audit | Intermediate corrected geometry |
 | `4010773` | Test 2: Ø12 joystick opening, neck/disc cap, USB envelope/recess, two pads | Request logged at `28f6932`; fit result pending |
-| `prototype-r4` tag | R4: mating gap/flexible bands, USB insertion channel/fin, sloped shelves, four pads, cap clearance fixes, 171 geometric checks | Test 3 prepared; printer delivery/start recorded in its log |
+| `prototype-r4` tag | R4: mating gap/flexible bands, USB insertion channel/fin, sloped shelves, four pads, cap clearance fixes, 171 geometric checks | Test 3 submitted to HTTP inbox; IDs and pending result in its log |
 
 Setup, measurement and report commits are also preserved in the full git
 history. This register identifies meaningful design states; it does not imply

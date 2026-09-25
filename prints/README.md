@@ -3,4 +3,4 @@ and photos. A planned test is not evidence of a successful print.
 
 - Test 1: historical lid/caps request, superseded; no fit result.
 - Test 2: historical full-case request, sent; no fit result.
-- Test 3 / R4: prepared locally, not sent or printed; see its checklist.
+- Test 3 / R4: submitted to HTTP print inbox; print start/result unconfirmed.
