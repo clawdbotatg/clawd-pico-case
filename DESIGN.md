@@ -1,5 +1,9 @@
 # Current: V3 fitted shells
 
+J2 socket-first trial: preserve J1 exterior; roundØ3×1 deep then existing
+2.01 square×2 deep, exactly as Austin requests. Print cap only before lowering
+lid. Pending lowered-lid/hole-centre changes must not alter old print files.
+
 SUPERSEDED by V3-FLAT: whole outer face atz5.1, print FACE DOWN, no supports
 or raft. Austin explicitly allows greater screen depth for this trial.
 Builder cad/v3_flat.py; reuse button/joystick geometry; lid-only correction.

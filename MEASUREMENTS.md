@@ -264,6 +264,16 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### V3-FLAT correction — 2026-09-25
 
+### J2 stepped socket trial — 2026-09-25
+
+| ID | Value | Source / limitation |
+|---|---|---|
+| J2-COLLAR-H | less than1 mm | Austin's direct report after asking collar-only height; not PCB-to-collar height |
+| J2-SOCKET | Ø3.00 round opening depth1.00, then2.01 square depth2.00; total3.00 from cap underside | Austin's explicit trial dimensions; square width inherited J1. No extra clearance. IMG_0823 shows3.32 mm on caliper but feature unconfirmed; fit not guaranteed |
+| J2-OUTER | identical J1 exterior; blind roof becomes localz3.00 instead of1.90; possible1.10 deeper seating if collar/body allow | Original derived geometry, not measured achievable travel. Do not lower lid until fitted; print flange-down as J1 |
+
+### V3-FLAT parameters
+
 | ID | Choice | Basis |
 |---|---|---|
 | V3-FLAT | uniform outer facez5.1; underside joystick roof4.4 unchanged; face-down print, rotate180degrees aroundX then translate bedz0; no supports/raft | Austin explicitly approves whole-face raise to fix print orientation. Existing J1 clearance, not new hardware measurement. Screen depth3.05 mm accepted provisionally; unchanged V2 button protrusion1.3 mm, .92 at full press |

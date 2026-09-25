@@ -239,3 +239,17 @@ touched geometry, and what that session had seen.
 - Austin reports flat lid looks great and requests matching V3 base.
   Reused unchanged existing base mesh; no new measurements or geometry.
   User report confirms lid print, not yet assembled snap/joystick fit.
+
+## 2026-09-25. J2 stepped socket, Codex.
+
+- Austin supplies his hardware photos IMG_0822..IMG_0827, requesting lower
+  cap seating, eventually lower flat lid and a small hole-centre correction.
+  Photos show round stem collar below square shaft. Caliper display3.32 mm
+  is visible but feature identification remains unconfirmed, not substituted
+  for the explicitly requested trial diameter.
+- Austin reports collar height less than1 mm, explicitly specifies socket:
+  circleØ3 mm for first1 mm, existing square for next2 mm. Existing square
+  is2.01 mm across flats. No added diameter allowance silently applied.
+- Austin offers printing just the joystick first. Selected this scoped fit
+  trial: unchanged outer J1 cap, deeper stepped cavity, no lid/base edits.
+  All geometry original from this repository; no external cases consulted.

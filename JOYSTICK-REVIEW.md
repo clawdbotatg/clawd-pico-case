@@ -1,5 +1,29 @@
 # V3 shell and joystick review
 
+## CURRENT: J2 socket-first fit trial — 2026-09-25
+
+Austin requests deeper seating: roundØ3.00 opening for1.00 mm, followed by
+the existing2.01 square for another2.00 mm. Total cavity depth3.00 mm.
+Outer ball, shaft and lip remain exactly J1. Only the internal cavity changes.
+This is1.10 mm deeper than J1; achievable extra seating must be tested.
+
+Austin reports round collar less than1 mm tall and explicitly chooses this
+trial diameter. The photo caliper display3.32 mm has not been identified as
+the collar diameter; it is not silently substituted. Fit is not guaranteed.
+Test gently, do not force the stem if the collar binds.
+
+He offers printing only the joystick first; selected that approach. No new
+lid/base/buttons in this job. Lower flat lid and small hole-centre correction
+remain pending after seating test; photos are perspective views, not precise
+offset measurements. Face-down/no-support lid rule remains unchanged.
+
+Source `cad/joystick_j2.py`; print file
+`stl/joystick-j2/joystick-j2-stepped-socket.stl`; CAD STEP, exact cavity-volume
+and three cross-section checks in `renders/joystick-j2/`. One valid solid,
+closed STL, unchanged exterior bounds, closed blind roof. Print flange-down,
+round socket mouth at bed as exported, same orientation as successful J1.
+Review slicing of socket roof/round-to-square step; no supports or raft.
+
 ## Latest physical feedback and base request — 2026-09-25
 
 Austin reports the flat lid looks great. Assembled fit is not yet confirmed;

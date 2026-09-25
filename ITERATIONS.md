@@ -1,5 +1,11 @@
 # Design and print iteration register
 
+## J2 stepped joystick socket — 2026-09-25
+
+cap only, unchanged J1 exterior, deeper round-to-square bore per Austin.
+Source cad/joystick_j2.py; STL stl/joystick-j2; checks renders/joystick-j2.
+Physical seating trial precedes lowered lid/hole-centre adjustment.
+
 ## V3-FLAT — 2026-09-25
 
 Correct upright-print failure: uniform outer lid facez5.1, face-down STL,

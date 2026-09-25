@@ -1,0 +1,14 @@
+{
+  "revision": "joystick-j2",
+  "source_sha256": {
+    "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/joystick-j2/joystick-j2-stepped-socket.stl": "929c112efd3c55259868da8d52115902e15ce6fe5bad6dea9e933d9ce5ba0c19",
+    "renders/joystick-j2/joystick.step": "2c02e6d28cb2cccbf86fc9f8872d0428aa4895ae0daf6695e2d5d51b85cf23f0",
+    "renders/joystick-j2/validation.json": "3a3c8420497b95cfe6d072f403f90607199b3a2c1dae510eba61523cd4fe829a"
+  }
+}

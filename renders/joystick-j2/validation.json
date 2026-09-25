@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "one_valid_solid": true,
+    "exact_requested_cavity_volume": true,
+    "no_added_external_material": true,
+    "exterior_bounds_unchanged": true,
+    "round_contains_square_corners": true,
+    "section_at_depth_0.5": true,
+    "section_at_depth_1.5": true,
+    "section_at_depth_2.9": true,
+    "closed_roof": true
+  },
+  "cavity_volume_mm3": 15.148783470577087,
+  "round_diameter_mm": 3.0,
+  "round_depth_mm": 1.0,
+  "square_width_mm": 2.01,
+  "square_depth_mm": 2.0,
+  "total_depth_mm": 3.0,
+  "print_orientation": "flange down, socket opening at bed",
+  "limitations": [
+    "3.00mm is user-specified trial, not guaranteed clearance against unconfirmed3.32mm reading.",
+    "Possible1.10mm extra seating is not a hardware-fit result.",
+    "No lid lowering or hole shift yet; test cap first.",
+    "Physical seating/motion and slicer settings unverified."
+  ]
+}
