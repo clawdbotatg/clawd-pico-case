@@ -40,6 +40,24 @@ for name, (fn, color) in model.PARTS.items():
                   "bbox": [round(v, 2) for v in (bb.min.X, bb.min.Y, bb.min.Z, bb.max.X, bb.max.Y, bb.max.Z)]})
     print(f"{name:13} {os.path.getsize(path)//1024:5d} KB")
 
+# Print orientation: flat face on the plate, no supports. The lid and the
+# joystick cap print upside down (top face on the plate); everything else as
+# modelled. Written to stl/print/ with z-min at 0.
+from build123d import Rot, Pos
+PRINT_FLIP = {"lid", "joystick_cap"}
+os.makedirs(os.path.join(STL, "print"), exist_ok=True)
+for name, (fn, _) in model.PARTS.items():
+    if name in ("hat", "pico"):
+        continue
+    part = fn()
+    if name in PRINT_FLIP:
+        part = Rot(180, 0, 0) * part
+    bb = part.bounding_box()
+    part = Pos(-bb.min.X, -bb.min.Y, -bb.min.Z) * part
+    export_stl(part, os.path.join(STL, "print", f"{name}.stl"), tolerance=0.02, angular_tolerance=0.1)
+    bb = part.bounding_box()
+    print(f"print/{name:13} {bb.max.X:6.2f} x {bb.max.Y:6.2f} x {bb.max.Z:5.2f} mm, flat face down{' (flipped)' if name in PRINT_FLIP else ''}")
+
 import params as P
 info = {
     "commit": git_short(),
