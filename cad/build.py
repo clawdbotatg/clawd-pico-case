@@ -46,7 +46,6 @@ info = {
     "case_mm": [round(model.X1 - model.X0, 2), round(model.Y1 - model.Y0, 2), round(model.Z_LID_TOP - model.Z_BOTTOM, 2)],
     "split_z": model.Z_SPLIT,
     "assumptions": ["Pico centred under the hat (rows A3/L8 not measured)",
-                    f"USB-C at the {P.USB_END} end (the {'joystick' if P.USB_END == 'top' else 'button'} end)",
                     "LCD corner radius 1.5 and joystick body height 3.0 are guesses (L4, J3 unmeasured)",
                     "USB-C cutout fits the shell + 0.5; the cable plug's overmold is not measured"],
 }

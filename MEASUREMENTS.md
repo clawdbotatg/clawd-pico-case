@@ -181,7 +181,7 @@ One block per board tag. The hat is the same; the Pico under it changes.
 |---|---|---|---|---|
 | A1 | Total stack height, Pico bottom-most part to glass top | PINK: 19.95 (glass to USB-C shell); 17.54 glass to the Pico PCB back face | cal 2026-09-24 | Austin: 19.95 is "very close" — jaws not exactly opposite because the plug and glass are at different spots; take as ±0.2. So the USB-C shell stands ~2.4 above the Pico PCB. `measurements/2026-09-24-cal-PINK-A1-stack-glass-to-usbc-1.jpg`, `...-pcb-back-{1,2}.jpg` |
 | A2 | Gap between Pico PCB top and LCD PCB bottom | PINK: 12.29 | derived 2026-09-24 | 17.54 − S3 2.05 − L3 1.97 − PINK-P3 1.23. Socket is 8.69 of that; the male header plastic + standoff is the other 3.6 |
-| A3 | Pico USB position relative to LCD board edges | | cal | per tag |
+| A3 | Pico USB position relative to LCD board edges | joystick end, centred in x (assumed) | Austin 2026-09-24 | USB-C pokes out at the joystick end. x-centring not measured yet |
 | A4 | Anything sticking out past the LCD board outline | | look | per tag |
 
 ## T. Print tolerances, filled in during Phase 3

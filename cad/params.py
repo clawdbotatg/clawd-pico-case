@@ -58,7 +58,7 @@ A2 = 12.29    # A2 gap, LCD PCB back to Pico PCB top (the face toward the LCD), 
 # Pico placement under the hat. ASSUMPTIONS until measured (rows A3 / L8):
 PICO_CENTRED_X = True     # header rows symmetric about the hat's centreline
 PICO_CENTRED_Y = True     # 51.04 board centred on the 52.5 hat
-USB_END = "top"           # USB-C at the joystick end (+y) or the button end ("bottom") — ASK
+USB_END = "top"           # USB-C at the joystick end (+y). Austin, 2026-09-24, looking at the stack
 
 # ---- Case. Our choices (DESIGN.md), not measurements
 CLEAR = 0.30       # gap between any PCB edge and a wall
