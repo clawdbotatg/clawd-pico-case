@@ -49,6 +49,13 @@ What we do not copy is their files and their styling choices.
 
 ## Status
 
+**Latest: low-lid V3 review, with the lid 1 mm above the glass.**
+[Interactive model](renders/v3-low/viewer.html) · [Low-lid design and limitations](reports/2026-09-25-low-lid-experiments.md).
+Rear retaining tab replaces the failed side-tab experiment. Not print-approved.
+`stl/print/` still contains the OLD tall draft; do not print those files.
+
+### Superseded tall V3 review
+
 **V3 is ready for browser review only; not approved for printing.**
 [Interactive model](renders/viewer.html) · [V3 changes and limitations](reports/2026-09-25-v3-review.md).
 Flat lid (+4 mm uniformly), restored earlier joystick interface, internal lip,

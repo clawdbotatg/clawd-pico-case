@@ -1,22 +1,29 @@
-# V3 design decisions — review only
+# V3 low-lid revision — D7/D8
 
-2026-09-25. First-principles MIT geometry; D6 rows in MEASUREMENTS.md.
-User-approved design scope includes a modest uniform height increase, not
-V2's raised joystick collar or print supports. No print approval yet.
+Original MIT geometry from this repository's hardware measurements and
+Austin's feedback. No external case geometry. Review only, no print approval.
 
-- Raise flat lid from z4.6 to8.6; underside joystick relief ceiling7.4.
-  Entire face contacts bed when inverted; no local boss. Screen recess deepens.
-- Restore original full-case4010773 socket2.01, roof5.3, bottom3.4 and neck5.
-  Exact V1 print source remains uncertain; do not claim independent match.
-- Retain V2 ball diameter7 and centre11.4, with .8 top flat for printing.
-  Internal flange10.4×.6 atz5, tapered45 degrees into shaft above it.
-  Inverted printing grows the flange gradually, rather than adding supports.
-- Throat9.6 passes ball, captures lip; pocket13 clipped to preserve .4 wall
-  toward screen. Check thin-wall slicing. Actual joystick travel still unknown.
-- Restore closed USB port in base at V2 position; no lid fin or channel gaps.
-  Separate Pico USB-first insertion path sampled. Assemble hat afterward.
-- Retain rectangular cap footprint, .8 flange,1.8 protrusion; lengthen stems4.
-  Keep working pry notches and scan-positioned bottom access unchanged.
+Hard constraint: lid top is glass top +1 mm, z3.05. No joystick collar or
+uniform case raise. The rejected tall draft remains saved in v3-review-1.
 
-See reports/2026-09-25-v3-review.md for dimensions, checks, uncertainties,
-assembly constraints and the required browser approval before printing.
+D7 side retaining tabs cleared5 degrees but failed16 ten-degree lid cases;
+that unsuccessful experiment is saved in commit2587340.
+
+D8 uses one rear arm/heel on the joystick cap. The heel is behind the PCB
+edge, allowing downward tilt into a local interior pocket, without changing
+case height. Earlier full-case4010773 lower socket/neck remain unchanged.
+V2 ball diameter7 and small top print flat remain. The cap is still installed
+before the lid. The rear heel's thin sections need slicer and strength review.
+
+Button retaining wings now sit beside the switches, below the plunger tops.
+The central underside contacts each plunger at measured z2.61. Outside cap
+footprint and1.8 mm protrusion remain. Flat top-down printing is planned.
+
+Keep V2-aligned closed USB port, no external lid fin, successful pry notches
+and bottom access. Changes and all trial coordinates are recorded in
+MEASUREMENTS.md. Required motion scenarios include the full10 degrees,
+presses, both pivot assumptions and cap/base/PCB clearance. Inherited
+socket/neck versus guessed metal-body collisions remain disclosed.
+
+See reports/2026-09-25-low-lid-experiments.md. Browser review comes before
+printing, and no new print artifacts have been produced for this revision.

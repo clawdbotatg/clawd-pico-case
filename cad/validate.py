@@ -38,7 +38,7 @@ def run(output_path=None):
     for name in ('base', 'lid', 'button_caps', 'joystick_cap'):
         p = parts[name]
         check(name + ' valid solid count', p.is_valid and len(p.solids()) == (4 if name == 'button_caps' else 1), len(p.solids()))
-        oriented = Rot(180, 0, 0) * p if name in ('lid', 'joystick_cap') else p
+        oriented = Rot(180, 0, 0) * p if name in ('lid', 'joystick_cap', 'button_caps') else p
         zmin = oriented.bounding_box().min.Z
         # Every independent solid must have a real planar bed contact.
         for i, solid in enumerate(oriented.solids()):
@@ -129,15 +129,20 @@ def run(output_path=None):
 
     # Sensitivity only: actual joystick pivot, angular travel and click unknown.
     jx, jy = M.JOY_C
-    check('ball passes opening; side tabs retained', P.JOY_BALL_D < min(P.JOY_OPEN_X, P.JOY_OPEN_Y) and 2*P.JOY_TAB_OUT > P.JOY_OPEN_X)
-    check('joystick upward retention before socket disengagement', (Pos(0, 0, .95) * parts['joystick_cap'] & parts['lid']).volume > TOL)
+    check('ball passes opening; rear tab retained', P.JOY_BALL_D < min(P.JOY_OPEN_X, P.JOY_OPEN_Y) and max(y for y,z in P.JOY_ARM_PROFILE)>P.JOY_OPEN_DY+P.JOY_OPEN_Y/2)
+    check('joystick upward retention before socket disengagement', (Pos(0, 0, 1.5) * parts['joystick_cap'] & parts['lid']).volume > TOL)
     # Conservative continuous downward sweeps relative to the descending lid.
     sweep_bottom = M.Z_BOTTOM
     flange_top = P.JOY_FLANGE_Z + P.JOY_FLANGE_T
     ball_top = P.JOY_BALL_Z + P.JOY_BALL_D / 2
-    arm_x = max(x for x,z in P.JOY_ARM_PROFILE)
-    sweep = M.box(jx-arm_x, jx+arm_x, jy-P.JOY_BALL_D/2, jy+P.JOY_BALL_D/2, sweep_bottom, ball_top)
-    sweep += M.box(jx-P.JOY_TAB_OUT, jx+P.JOY_TAB_OUT, jy-P.JOY_ARM_HALF_Y, jy+P.JOY_ARM_HALF_Y, sweep_bottom, flange_top)
+    sweep = M.box(jx-P.JOY_BALL_D/2, jx+P.JOY_BALL_D/2, jy-P.JOY_BALL_D/2, jy+P.JOY_BALL_D/2, sweep_bottom, ball_top)
+    # Exact upper silhouette extruded downward: each edge of the rear arm
+    # contributes a quadrilateral to the continuous installation envelope.
+    for (ya,za),(yb,zb) in zip(P.JOY_ARM_PROFILE,P.JOY_ARM_PROFILE[1:]):
+        if abs(ya-yb)<TOL: continue
+        if ya>yb: ya,yb,za,zb=yb,ya,zb,za
+        swept_arm=M.wedge_x([(ya,sweep_bottom),(yb,sweep_bottom),(yb,zb),(ya,za)],-P.JOY_ARM_HALF_Y,P.JOY_ARM_HALF_Y)
+        sweep += Pos(jx,jy,0)*Rot(0,0,90)*swept_arm
     clear('continuous lid installation over mounted joystick', sweep, parts['lid'])
     for side, x0, x1 in [('left', M.X0 - .2, M.X0 + .7), ('right', M.X1 - .7, M.X1 + .2)]:
         tool = M.box(x0, x1, M.CY - 2, M.CY + 2, -P.TONGUE_H - .3, -P.TONGUE_H + .3)
@@ -146,13 +151,18 @@ def run(output_path=None):
     fixed_joy_hat = parts['hat'] - M.box(jx - P.J4 / 2, jx + P.J4 / 2,
                                         jy - P.J4 / 2, jy + P.J4 / 2, P.J3, P.J6 + P.EPS)
     hardware_sensitivity = []
+    rear_arm = M.joystick_rear_arm()
     for pivot, press in itertools.product((0, 3), (0, .3)):  # V5 scenarios, not measured
         for angle in (0, 5, 10):
             for direction in range(0, 360, 45):
-                cap = (Pos(jx, jy, pivot - press) * Rot(0, 0, direction)
+                transform = (Pos(jx, jy, pivot - press) * Rot(0, 0, direction)
                        * Rot(angle, 0, 0) * Rot(0, 0, -direction)
-                       * Pos(-jx, -jy, -pivot) * parts['joystick_cap'])
+                       * Pos(-jx, -jy, -pivot))
+                cap = transform * parts['joystick_cap']
                 clear(f'joystick scenario pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, parts['lid'])
+                clear(f'joystick/base pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, parts['base'])
+                clear(f'joystick/PCB pivot={pivot}, tilt={angle}, az={direction}, press={press}', cap, sharp)
+                clear(f'new rear arm/hardware pivot={pivot}, tilt={angle}, az={direction}, press={press}', transform * rear_arm, fixed_joy_hat)
                 # Restore user's working earlier interface, not geometry changed to
                 # clear an unmeasured guessed body in an assumed pivot scenario.
                 intersection = cap & fixed_joy_hat

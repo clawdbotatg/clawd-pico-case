@@ -1,18 +1,17 @@
-# V3 — browser review only
+# Current status: V3 low-lid browser review
 
-Current design: [V3 review and limitations](reports/2026-09-25-v3-review.md).
-[Interactive model](renders/viewer.html) · [CAD preview](renders/v3-preview.png).
+The lid now sits **1 mm above the screen**, not 6.55 mm. Rear joystick
+retaining tab replaces the failed side-tab experiment; earlier full-case
+socket and V2-sized ball are retained. Button retention is lowered beside
+switch bodies. Closed USB opening, pry access and bottom access remain.
 
-Flat lid4 mm taller overall, earlier full-case joystick socket restored,
-V2-sized ball with printing flat and internal tapered lip, no USB fin/tab.
-Longer rectangular caps maintain their protrusion. Successful bottom access
-and pry features retained. USB alignment retained with a closed base port.
+[Interactive model](renders/v3-low/viewer.html) ·
+[Design, experiments and limitations](reports/2026-09-25-low-lid-experiments.md).
 
-No printing before Austin reviews and approves. No V3 files sent to printer.
-Support-free design intent still needs slicer review and physical testing.
-Some joystick scenarios intersect the unmeasured hardware-body proxy; these
-remain explicit unresolved diagnostics, not passing physical-fit claims.
+No print approval or printer submission. No updated print files generated.
+The files in stl/print are the OLD tall draft; do not print them.
 
-Sources and results: MEASUREMENTS.md, PROVENANCE.md, renders/validation.json,
-stl/manifest.json. Earlier reports and tagged artifacts remain in Git history.
-V2 failed physically; see reports/2026-09-25-v2-review.md and its print log.
+Latest audit and source/output hashes are in renders/v3-low/. Earlier
+renders/validation.json and stl/manifest.json describe the tall draft only.
+Physical joystick travel, thin-tab strength and support-free slicing still
+need verification. CAD checks do not establish physical fit.

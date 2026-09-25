@@ -77,7 +77,7 @@ for name, (fn, color) in model.PARTS.items():
 # V3: flat lid face and small flat ball top down. Tapered lip avoids a
 # flange overhang. Support-free intent still needs slicer verification.
 from build123d import Rot, Pos
-PRINT_FLIP = {"lid", "joystick_cap"}
+PRINT_FLIP = {"lid", "joystick_cap", "button_caps"}
 os.makedirs(os.path.join(STL, "print"), exist_ok=True)
 for name, (fn, _) in model.PARTS.items():
     if name in ("hat", "pico", "fpc_tape"):
@@ -113,9 +113,9 @@ info = {
     "case_mm": [round(model.X1 - model.X0, 2), round(model.Y1 - model.Y0, 2), round(model.Z_COLLAR_TOP - model.Z_BOTTOM, 2)],
     "split_z": model.Z_SPLIT,
     "assumptions": ["V3 REVIEW ONLY — not approved for printing",
-                    "Flat lid raised uniformly 4.0 mm; no collar, no USB fin",
+                    "Flat lid exactly 1 mm above glass; no collar, no USB fin",
                     "Earlier full-case socket 2.01 mm restored; exact V1 cap source unconfirmed",
-                    "V2 ball with small print flat and tapered internal lip; no supports intended",
+                    "V2 ball with print flat and rear retaining tab; support-free intent unverified",
                     "Closed USB port: sampled separate-Pico USB-first path clears; bench test needed",
                     "Pico centring, stack datum and USB projection need confirmation",
                     "Joystick body 3.0 mm assumed; tilt/click and cap retention unmeasured",

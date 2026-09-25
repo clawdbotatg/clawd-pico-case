@@ -256,6 +256,27 @@ open. No new hardware dimensions supplied. Existing J rows still apply.
 
 ### V3 low-lid experiment — D7, 2026-09-25
 
+### D8 rear-tab experiment
+
+Original follow-up after side tabs failed10-degree tilt. No hardware values changed.
+
+| ID | Choice | Rationale |
+|---|---|---|
+| D8-JOY | single rear arm, width2.4, y/z relative profile [(1.8,8.7),(2.7,8.7),(6.3,5.1),(6.3,2.5),(7.8,1.0),(7.8,.7),(7.0,.7),(7.0,1.3),(6.0,2.1),(5.8,2.1),(5.8,4.8),(1.8,8.5)] | reaches behind PCB edge so low tab can tilt below PCB plane without entering board; original socket/neck unchanged |
+| D8-POCKET | opening x±6.4, y-6.1..+6.9, R.8; rear pocket x±2.5,y+5.5..+8.3, z-1.5..2.6 | clears rear arm and tab motion, retains tab in lid; extends into base inner end wall, leaves outer wall intact |
+
+D8 clearance refinement: opening rear edge+7.4 (centre+.65, length13.5),
+pocket ceiling2.45. Upper heel ramp passes (6.3,2.5),(7.3,1.0),(7.8,1.0);
+lower return passes (7.8,.7),(7.0,.7),(7.0,1.15),(6.6,1.7),(6.0,2.1).
+Adds clearance at the one full-tilt/press PCB contact found in the earlier
+trial. Heel capture tested at1.5 mm upward travel. Thin arm/heel junction
+must be inspected in slicing; strength is not established.
+
+V8 retains ALL 0/5/10-degree lid checks as required, adds base/PCB and
+rear-arm/fixed-hardware checks at all sampled poses; only inherited neck
+versus guessed body intersections remain diagnostic. Screen depth <=1 mm
+is a required assertion. Current cap retention pull-up check is1.5 mm.
+
 User requires lid no more than1 mm above glass. Previous uniform raise is
 rejected. These are original design trials, NOT new hardware measurements.
 

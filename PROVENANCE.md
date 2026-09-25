@@ -168,3 +168,25 @@ touched geometry, and what that session had seen.
   Measurements unchanged; these are trial constructions requiring checks.
 - Five-degree motion is a chosen trial, not established hardware travel;
   retain larger-angle failures explicitly. No print authorized or requested.
+
+- D7 side tabs failed16 ten-degree lid-motion cases; saved as failed
+  checkpoint. D8 tests one rear tab beyond PCB edge, using that available
+  space rather than adding lid height. Original profile/pocket recorded
+  before modelling. No new hardware measurements or outside designs.
+
+- D8 refinement shifts/reprofiles the rear heel and pocket, preserving the
+  original lower socket. A small PCB interference in one10-degree pressed
+  pose prompted extra relief at the heel's lower edge; full original
+  10-degree lid scenarios remain required, not weakened to get a pass.
+- Added cap/base, cap/PCB and new rear-arm/fixed-hardware motion checks.
+  Button wings are lowered beside switch bodies to retain the1 mm screen
+  recess; plunger contact height and outside rectangular shape retained.
+- Dedicated review builder updates browser files only; old print artifacts
+  are untouched and explicitly labelled obsolete for this geometry.
+
+- Final D8 review:495 required checks pass, including the full10-degree
+  lid/base/PCB scenarios and new-arm versus fixed hardware. Inherited48
+  guessed-body/neck intersections remain unresolved. Browser render and
+  interactions tested; source and listed output hashes verified. No print
+  artifacts generated, no printer action. Slicing, thin-junction strength
+  and actual hardware movement still need verification after review.

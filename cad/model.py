@@ -157,7 +157,14 @@ def base():
     b -= plug_recess()
     access = Pos(*ACCESS_C, (Z_BOTTOM + Z_FLOOR_TOP) / 2) * Cylinder(
         P.ACCESS_D / 2, P.FLOOR + 2 * P.TOOL_EXT)
-    return b - pry_notches() - access
+    return b - pry_notches() - access - joystick_rear_pocket()
+
+
+def joystick_rear_pocket():
+    jx, jy = JOY_C
+    return box(jx-P.JOY_REAR_POCKET_X, jx+P.JOY_REAR_POCKET_X,
+               jy+P.JOY_REAR_POCKET_Y0, jy+P.JOY_REAR_POCKET_Y1,
+               P.JOY_REAR_POCKET_Z0, P.JOY_POCKET_TOP)
 
 
 def lid():
@@ -208,11 +215,9 @@ def lid():
     # Large underside pocket clears silver body and moving flange. Smaller
     # throat above it admits the ball during assembly and captures the lip.
     jx, jy = JOY_C
-    l -= box(jx-P.JOY_TAB_POCKET_X, jx+P.JOY_TAB_POCKET_X,
-             jy-P.JOY_TAB_POCKET_Y, jy+P.JOY_TAB_POCKET_Y,
-             -P.TOOL_EXT, P.JOY_POCKET_TOP)
+    l -= joystick_rear_pocket()
     l -= rbox(jx-P.JOY_OPEN_X/2, jx+P.JOY_OPEN_X/2,
-              jy-P.JOY_OPEN_Y/2, jy+P.JOY_OPEN_Y/2,
+              jy+P.JOY_OPEN_DY-P.JOY_OPEN_Y/2, jy+P.JOY_OPEN_DY+P.JOY_OPEN_Y/2,
               -P.TOOL_EXT, Z_LID_TOP+P.TOOL_EXT, P.WINDOW_R)
     return l - pry_notches()
 
@@ -233,17 +238,18 @@ def button_caps():
     return caps
 
 
+def joystick_rear_arm():
+    jx, jy = JOY_C
+    return Pos(jx,jy,0) * Rot(0,0,90) * wedge_x(P.JOY_ARM_PROFILE,
+                                               -P.JOY_ARM_HALF_Y, P.JOY_ARM_HALF_Y)
+
+
 def joystick_cap(socket_clear=None):
     jx, jy = JOY_C
     bot = P.J6 - P.JOY_ENGAGE
     cap = Pos(jx, jy, (bot + P.JOY_BALL_Z) / 2) * Cylinder(
         P.JOY_NECK_D / 2, P.JOY_BALL_Z - bot)
-    for sign in (-1, 1):
-        cap += wedge_x([(jx+sign*x, z) for x,z in P.JOY_ARM_PROFILE],
-                       jy-P.JOY_ARM_HALF_Y, jy+P.JOY_ARM_HALF_Y)
-        xa, xb = sorted((jx+sign*P.JOY_TAB_IN, jx+sign*P.JOY_TAB_OUT))
-        cap += box(xa, xb, jy-P.JOY_ARM_HALF_Y, jy+P.JOY_ARM_HALF_Y,
-                   P.JOY_FLANGE_Z, P.JOY_FLANGE_Z+P.JOY_FLANGE_T)
+    cap += joystick_rear_arm()
     cap += Pos(jx, jy, P.JOY_BALL_Z) * Sphere(P.JOY_BALL_D / 2)
     top = P.JOY_BALL_Z + P.JOY_BALL_D / 2 - P.JOY_BALL_FLAT
     cap -= box(jx-P.JOY_BALL_D, jx+P.JOY_BALL_D,

@@ -34,17 +34,19 @@ commit = subprocess.check_output(['git','rev-parse','--short','HEAD'],cwd=ROOT,t
 info = dict(commit=commit+'-low-lid-draft', case_mm=[round(M.X1-M.X0,2),round(M.Y1-M.Y0,2),round(M.Z_LID_TOP-M.Z_BOTTOM,2)],split_z=0,
             assumptions=['LOW-LID EXPERIMENT — NOT PRINT READY',
                          'Lid exactly 1 mm above glass; no collar or USB tab',
-                         'Side retaining tabs: 5-degree lid motion clears, 10-degree motion FAILS',
-                         'Actual joystick travel is unmeasured. Do not assume the 5-degree trial is enough.',
+                         'Single rear retaining tab, not the failed side-tab experiment',
+                         'Actual joystick travel is unmeasured; 0/5/10-degree scenarios are design checks only',
                          'Earlier full-case 2.01 mm socket retained; same ball and top printing flat',
                          'Button side wings moved below plunger; support-free slicing not verified',
                          'Pry access, bottom hole and closed USB alignment retained',
                          'No print files generated or sent from this experimental review',
                          'Blue flag and unmeasured joystick body remain unresolved',
-                         str(len(failures))+' required checks failed; see validation.json beside this viewer'])
+                         str(len(failures))+' required checks failed; see /v3-low/validation.json',
+                         'Thin rear heel/arm strength and support-free slicing need verification'])
 html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(parts)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';')
-html=html.replace('V3 review · NOT APPROVED FOR PRINT','V3 low-lid experiment · MOTION CHECKS FAIL')
-html=html.replace('V3 Case Review — Not Approved for Print','V3 Low Lid — Motion Checks Fail')
+status='CHECKS FAILED' if failures else 'REVIEW ONLY — NOT PRINT APPROVED'
+html=html.replace('V3 review · NOT APPROVED FOR PRINT','V3 low lid · '+status)
+html=html.replace('V3 Case Review — Not Approved for Print','V3 Low Lid — '+status)
 (OUT/'viewer.html').write_text(html)
 # Update the existing browser URL, but leave old print artifacts untouched.
 (ROOT/'renders/viewer.html').write_text(html)

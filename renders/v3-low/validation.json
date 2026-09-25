@@ -1,11 +1,11 @@
 {
   "source_sha256": {
-    "cad/build.py": "df9d71747bf8f86ef5dbb504b157206a1d1f28a36f67132a4ae236cc5b244d9d",
-    "cad/model.py": "71306ff47a7d92435097a00e053cfd98bb1cbfb1d29bb0974d41213433694eb0",
-    "cad/params.py": "ff2b2fdeb8300f37ed75bd91b380d072d4f09eeabc7579bce22cf03a9c7eb085",
+    "cad/build.py": "81f6ebb845b7cc2ed05c3e94e2227d2917ab52f13eccfdfc82348890a13bd7c4",
+    "cad/model.py": "82ace867a4164d53ef50c94c8ccb591ac3ce2597973c994bd0706beca583f3f1",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a",
     "cad/render.py": "5e67f958b411b4dc6518ee7ee71d0e7643618b81941c930e69c538ac91af3493",
-    "cad/review.py": "6bcc85d34ec36416210cbaac0d2125d777f0a04ea7c1f6bb397e3a673d6fec1e",
-    "cad/validate.py": "f066e02a06a2316cb963945aedd4f39fe22512e9e099bdd5f3b6f1b4160f2496"
+    "cad/review.py": "03d7ae883e16d95abef994bd0efdae4847fd1bd304811975d2beaefa734a2f27",
+    "cad/validate.py": "453ee3bbdea787e7580700a43ccd44ce3eafe7efb1561842eb867d0533cf8423"
   },
   "checks": [
     {
@@ -26,12 +26,12 @@
     {
       "name": "lid[0] bed contact",
       "passed": true,
-      "value": 797.151
+      "value": 812.231
     },
     {
       "name": "lid broad flat face directly on bed",
       "passed": true,
-      "value": 797.151
+      "value": 812.231
     },
     {
       "name": "button_caps valid solid count",
@@ -41,22 +41,22 @@
     {
       "name": "button_caps[0] bed contact",
       "passed": true,
-      "value": 11.382
+      "value": 22.131
     },
     {
       "name": "button_caps[1] bed contact",
       "passed": true,
-      "value": 11.382
+      "value": 22.131
     },
     {
       "name": "button_caps[2] bed contact",
       "passed": true,
-      "value": 11.382
+      "value": 22.131
     },
     {
       "name": "button_caps[3] bed contact",
       "passed": true,
-      "value": 11.382
+      "value": 22.131
     },
     {
       "name": "joystick_cap valid solid count",
@@ -534,7 +534,7 @@
       "value": null
     },
     {
-      "name": "ball passes opening; side tabs retained",
+      "name": "ball passes opening; rear tab retained",
       "passed": true,
       "value": null
     },
@@ -569,7 +569,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -579,7 +609,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -589,7 +649,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -599,7 +689,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -609,7 +729,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -619,7 +769,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -629,7 +809,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -639,7 +849,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -649,19 +889,79 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=10, az=45, press=0",
-      "passed": false,
-      "value": 0.07313263
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=45, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=90, press=0",
-      "passed": false,
-      "value": 0.25470668
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=90, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=135, press=0",
-      "passed": false,
-      "value": 0.07313263
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=135, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=180, press=0",
@@ -669,22 +969,97 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=10, az=225, press=0",
-      "passed": false,
-      "value": 0.07313263
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=225, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=270, press=0",
-      "passed": false,
-      "value": 0.25470668
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=270, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=315, press=0",
-      "passed": false,
-      "value": 0.07313263
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=315, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=0, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -694,7 +1069,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=90, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -704,7 +1109,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=180, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -714,7 +1149,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=270, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -724,7 +1189,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=0, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -734,7 +1229,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=90, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -744,7 +1269,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=180, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -754,7 +1309,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=270, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -764,7 +1349,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=0, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -774,12 +1389,57 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=10, az=90, press=0.3",
-      "passed": false,
-      "value": 0.12522183
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=90, press=0.3",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -789,17 +1449,77 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=10, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
     {
+      "name": "joystick/base pivot=0, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=0, tilt=10, az=270, press=0.3",
-      "passed": false,
-      "value": 0.12522183
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=270, press=0.3",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=0, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=0, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=0, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=0, tilt=10, az=315, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -809,7 +1529,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -819,7 +1569,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -829,7 +1609,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -839,7 +1649,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -849,7 +1689,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=45, press=0",
       "passed": true,
       "value": 0
     },
@@ -859,7 +1729,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=135, press=0",
       "passed": true,
       "value": 0
     },
@@ -869,7 +1769,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=225, press=0",
       "passed": true,
       "value": 0
     },
@@ -879,7 +1809,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=315, press=0",
       "passed": true,
       "value": 0
     },
@@ -889,19 +1849,79 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=0, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=10, az=45, press=0",
-      "passed": false,
-      "value": 0.18239017
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=45, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=45, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=90, press=0",
-      "passed": false,
-      "value": 0.74973212
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=90, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=90, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=135, press=0",
-      "passed": false,
-      "value": 0.18239017
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=135, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=135, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=180, press=0",
@@ -909,22 +1929,97 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=180, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=10, az=225, press=0",
-      "passed": false,
-      "value": 0.18239017
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=225, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=225, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=270, press=0",
-      "passed": false,
-      "value": 0.74973212
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=270, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=270, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=315, press=0",
-      "passed": false,
-      "value": 0.18239017
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=315, press=0",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=315, press=0",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=0, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -934,7 +2029,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=90, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -944,7 +2069,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=180, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -954,7 +2109,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=270, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -964,7 +2149,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=0, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=0, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -974,7 +2189,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=90, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -984,7 +2229,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=180, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -994,7 +2269,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=270, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1004,7 +2309,37 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=5, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=0, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=0, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1014,12 +2349,57 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=45, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=10, az=90, press=0.3",
-      "passed": false,
-      "value": 0.3660624
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=90, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=90, press=0.3",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=135, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=135, press=0.3",
       "passed": true,
       "value": 0
     },
@@ -1029,17 +2409,77 @@
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=180, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=10, az=225, press=0.3",
       "passed": true,
       "value": 0
     },
     {
+      "name": "joystick/base pivot=3, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=225, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
       "name": "joystick scenario pivot=3, tilt=10, az=270, press=0.3",
-      "passed": false,
-      "value": 0.3660624
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=270, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=270, press=0.3",
+      "passed": true,
+      "value": 0
     },
     {
       "name": "joystick scenario pivot=3, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/base pivot=3, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "joystick/PCB pivot=3, tilt=10, az=315, press=0.3",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "name": "new rear arm/hardware pivot=3, tilt=10, az=315, press=0.3",
       "passed": true,
       "value": 0
     }
@@ -1058,21 +2498,21 @@
         "press": 0,
         "angle": 10,
         "direction": 45,
-        "mm3": 0.041749
+        "mm3": 0.035285
       },
       {
         "pivot": 0,
         "press": 0,
         "angle": 10,
         "direction": 90,
-        "mm3": 0.933783
+        "mm3": 0.035285
       },
       {
         "pivot": 0,
         "press": 0,
         "angle": 10,
         "direction": 135,
-        "mm3": 0.041749
+        "mm3": 0.035285
       },
       {
         "pivot": 0,
@@ -1086,21 +2526,21 @@
         "press": 0,
         "angle": 10,
         "direction": 225,
-        "mm3": 0.041749
+        "mm3": 0.035285
       },
       {
         "pivot": 0,
         "press": 0,
         "angle": 10,
         "direction": 270,
-        "mm3": 0.937488
+        "mm3": 0.035285
       },
       {
         "pivot": 0,
         "press": 0,
         "angle": 10,
         "direction": 315,
-        "mm3": 0.041784
+        "mm3": 0.035285
       },
       {
         "pivot": 0,
@@ -1170,21 +2610,21 @@
         "press": 0.3,
         "angle": 10,
         "direction": 45,
-        "mm3": 1.895745
+        "mm3": 1.301175
       },
       {
         "pivot": 0,
         "press": 0.3,
         "angle": 10,
         "direction": 90,
-        "mm3": 3.188516
+        "mm3": 1.29536
       },
       {
         "pivot": 0,
         "press": 0.3,
         "angle": 10,
         "direction": 135,
-        "mm3": 1.895745
+        "mm3": 1.301175
       },
       {
         "pivot": 0,
@@ -1198,21 +2638,21 @@
         "press": 0.3,
         "angle": 10,
         "direction": 225,
-        "mm3": 1.895745
+        "mm3": 1.301175
       },
       {
         "pivot": 0,
         "press": 0.3,
         "angle": 10,
         "direction": 270,
-        "mm3": 3.199187
+        "mm3": 1.29536
       },
       {
         "pivot": 0,
         "press": 0.3,
         "angle": 10,
         "direction": 315,
-        "mm3": 1.896347
+        "mm3": 1.301175
       },
       {
         "pivot": 3,
@@ -1226,21 +2666,21 @@
         "press": 0,
         "angle": 10,
         "direction": 45,
-        "mm3": 0.005965
+        "mm3": 0.005367
       },
       {
         "pivot": 3,
         "press": 0,
         "angle": 10,
         "direction": 90,
-        "mm3": 0.693545
+        "mm3": 0.005367
       },
       {
         "pivot": 3,
         "press": 0,
         "angle": 10,
         "direction": 135,
-        "mm3": 0.005965
+        "mm3": 0.005367
       },
       {
         "pivot": 3,
@@ -1254,21 +2694,21 @@
         "press": 0,
         "angle": 10,
         "direction": 225,
-        "mm3": 0.005965
+        "mm3": 0.005367
       },
       {
         "pivot": 3,
         "press": 0,
         "angle": 10,
         "direction": 270,
-        "mm3": 0.69026
+        "mm3": 0.005367
       },
       {
         "pivot": 3,
         "press": 0,
         "angle": 10,
         "direction": 315,
-        "mm3": 0.005965
+        "mm3": 0.005367
       },
       {
         "pivot": 3,
@@ -1338,21 +2778,21 @@
         "press": 0.3,
         "angle": 10,
         "direction": 45,
-        "mm3": 1.411117
+        "mm3": 0.988775
       },
       {
         "pivot": 3,
         "press": 0.3,
         "angle": 10,
         "direction": 90,
-        "mm3": 2.795724
+        "mm3": 0.990712
       },
       {
         "pivot": 3,
         "press": 0.3,
         "angle": 10,
         "direction": 135,
-        "mm3": 1.411117
+        "mm3": 0.988775
       },
       {
         "pivot": 3,
@@ -1366,21 +2806,21 @@
         "press": 0.3,
         "angle": 10,
         "direction": 225,
-        "mm3": 1.411117
+        "mm3": 0.988775
       },
       {
         "pivot": 3,
         "press": 0.3,
         "angle": 10,
         "direction": 270,
-        "mm3": 2.795011
+        "mm3": 0.990712
       },
       {
         "pivot": 3,
         "press": 0.3,
         "angle": 10,
         "direction": 315,
-        "mm3": 1.411117
+        "mm3": 0.988775
       }
     ],
     "closed_port_requires_USB_first_assembly": true,
@@ -1395,5 +2835,5 @@
       "slicer bridges, dimensional accuracy and physical fit"
     ]
   },
-  "passed": false
+  "passed": true
 }

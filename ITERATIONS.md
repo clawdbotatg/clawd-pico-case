@@ -59,6 +59,17 @@ No printer submission. Geometry/tag are a review checkpoint, not print success.
 
 ## Hash records (all revisions)
 
+## V3 low-lid revisions
+
+- `2587340`: D7 side-tab experiment. Screen recess1 mm;16 required
+  ten-degree lid-motion cases failed. Saved explicitly as failed, not printed.
+- `v3-review-2`: D8 rear retaining tab and internal rear-wall pocket. Keeps
+  screen recess1 mm and earlier socket; lowers button retaining wings.
+  Review viewer only: no replacement print files or printer request.
+  See `reports/2026-09-25-low-lid-experiments.md` and `renders/v3-low/`.
+
+The older tall `v3-review-1` and all failed versions remain in Git history.
+
 2026-09-25 physical result: Austin reports V2 joystick socket failure and
 support-related button-hole problems. Pry access, bottom access alignment
 and rectangular cap shape worked. `reports/2026-09-25-v2-review.md` records

@@ -26,7 +26,7 @@ async function evaluate(expression) {
 await call('Page.enable');
 await call('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
 await call('Page.addScriptToEvaluateOnNewDocument',{source:'window.viewerErrors=[];addEventListener("error",e=>viewerErrors.push(e.message));'});
-await call('Page.navigate',{url:'http://127.0.0.1:8765/viewer.html'});
+await call('Page.navigate',{url:process.env.VIEWER_URL || 'http://127.0.0.1:8793/viewer.html'});
 for(let attempt=0;attempt<30;attempt++) {
   if(await evaluate('!!document.querySelector("#p-lid")')) break;
   await new Promise(resolve=>setTimeout(resolve,500));
@@ -34,7 +34,7 @@ for(let attempt=0;attempt<30;attempt++) {
 console.log(await evaluate('JSON.stringify({errors:viewerErrors,parts:Object.keys(meshes),triangles:renderer.info.render.triangles,title:document.title})'));
 if(!await evaluate('viewerErrors.length===0 && Object.keys(meshes).length===7 && renderer.info.render.triangles>0')) throw Error('Viewer failed to render');
 let shot=await call('Page.captureScreenshot',{format:'png'});
-await writeFile('renders/v3-browser.png',Buffer.from(shot.data,'base64'));
+await writeFile(process.env.SCREENSHOT_PATH || 'renders/v3-browser.png',Buffer.from(shot.data,'base64'));
 await evaluate('document.querySelector("[data-v=usb]").click();document.querySelector("#explode").value=12;document.querySelector("#explode").dispatchEvent(new Event("input"));document.querySelector("#opacity").value=.4;document.querySelector("#opacity").dispatchEvent(new Event("input"));');
 if(!await evaluate('meshes.lid.position.z>0 && meshes.lid.material.opacity===.4'))throw Error('Viewer controls failed');
 await evaluate('document.querySelector("#p-lid").click()');
