@@ -1,6 +1,33 @@
 # V3 shell and joystick review
 
-## CURRENT: S1 full set approved for print
+## CURRENT: S2 tighter base + rounded buttons; KEEP S1 lid/J2
+
+Austin reports S1 base hangs roughly 0.25 mm when held by top, opens too
+easily, and buttons lack tactile separation. S2 prints only replacement base
+and four caps. Existing S1 lid verified byte-identical; all base geometry
+outside four catches stays unchanged, including rails/USB/reset/pry.
+
+Old triangular bumps allow axial drift and easy cam-out. New catches project
+0.50 mm instead of 0.35, have flat underside, 0.30 mm nose and insertion ramp.
+Underside sits 0.04 mm above existing lid-pocket lower edge. Nominal radial
+flex 0.30 mm, radial clearance at seated recess 0.05 mm. These are design
+targets, not printer tolerance guarantees. More secure release still needs
+physical testing; use pry notch gently. No lid reprint needed for this trial.
+
+Buttons keep centres, lower post, flange and switch-contact plane unchanged.
+Top rises from z6.40 to6.90, top edge rounding radius1.20. This narrows the
+upper contact surface and creates more tactile separation without moving
+switches or holes. Existing full 0.38 mm press and retention checked.
+
+Source cad/s2_tight_base.py. Five-part plate stl/s2-tight-base/
+s2-base-and-four-buttons.stl. Individual STLs, STEP, manifest and validation
+saved. 36 checks pass; physical fit/force/tactile feel still untested.
+Viewer port8793 /s2-tight-base/viewer.html. Print PLA0.16,4walls, no supports
+or raft, base floor down/buttons flange down. Operator must inspect short
+catch-underface overhang before printing. Keep lid and joystick unchanged.
+Dispatch: prints/2026-09-25-s2-base-buttons.md.
+
+## Historical: S1 full set approved for print
 
 Austin approves S1 rendering and requests immediate full set: matching top,
 base, exact J2 joystick, four V2 buttons. Seven parts. Approved shell geometry

@@ -171,3 +171,11 @@ geometry change. Package seven pieces with lid face down, base floor down,
 J2 and V2 buttons flange down. cad/s1_full_plate.py exports individual parts
 and one plate; byte-check shells/J2 against original reviewed exports.
 Print log prints/2026-09-25-s1-full-case.md. Preserve original review artifacts.
+## S2 — base-only closure fix and rounded buttons
+
+Physical S1 nearly works but drops roughly0.25mm and opens too easily. New
+base catch shape targets minimal axial play using existing S1 lid pockets.
+Four button caps have tops0.50mm taller, rounded radius1.20, same interfaces.
+Original isolated cad/s2_tight_base.py, stl/renders/s2-tight-base. 36 checks
+pass. Reuse S1 lid and J2; physical force and tactile test pending. IMG_0840
+archives assembled S1 baseline, duplicate uploads stored once with hashes.

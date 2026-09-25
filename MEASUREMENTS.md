@@ -392,3 +392,12 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | S1-PRY | One left long-side notch at seam, 6 wide, 1.6 high, 1 deep | Austin requests one opening notch; prior notch dimensions reused |
 | S1-FACE | L4/L1 z4.20, all control pockets unchanged; extend solid perimeter outward | Preserve fitted roof/controls; strengthen with continuous 3mm perimeter/deep walls, no local boss |
 | S1-PLATE | 5 mm minimum layout gap; 7 parts, no scaling | Original plate arrangement for approved S1 full-set print |
+### S2 base retention / tactile buttons — original trial choices
+
+| ID | Value | Source |
+|---|---|---|
+| S2-FEEDBACK | About 0.25 mm visible base drop; opens too easily; buttons indistinct | Austin's physical observation, approximate, not caliper reading |
+| S2-CATCH | Projection 0.50 vs S1 0.35; underside 0.04 above existing pocket bottom; vertical nose 0.30; ramp to original bump top | Original trial to reduce axial slack and improve holding; nominal socket flex 0.30, pocket radial spare 0.05 mm |
+| S2-BUTTON | Top z6.90 vs6.40, top-edge rounding radius1.20; unchanged4.2×5.4 post and4.85×6.3 flange | Original trial tactile profile, +0.50 mm height, narrower top contact surface |
+| S2-KEEP | Same S1 lid, shell body, rails, USB/reset/pry, J2 joystick, button centres/flanges/contact planes | Minimize reprints; no hardware datum changes |
+| S2-PLATE | 5mm spacing; base plus four buttons, floor/flanges down | Original plate arrangement; PLA0.16,4walls, no supports/raft |

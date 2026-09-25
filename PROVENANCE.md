@@ -328,3 +328,19 @@ Shows shells and five caps on printer bed; not a measurement or fit result.
 Codex consulted this repository and official general copyright/MIT/patent
 references only, not forbidden case sources or other case designs. Audit is
 an evidence assessment, not a comparative design review or legal clearance.
+## 2026-09-25 — S2 tighter base and rounded buttons
+
+Austin reports S1 nearly fits, but base hangs roughly 0.25 mm when held by
+lid and opens too easily. Buttons feel too close/indistinct. Requests stronger
+flush closure, preferably reprint only one half, and slightly taller rounded
+button tops, another print iteration in PLA before PETG/color experiments.
+Inputs are his physical test feedback, not new caliper measurements. Codex
+uses original S1 and V2 geometry only; no third-party cases. S2 changes base
+catches and button tops while preserving S1 lid and J2 joystick.
+## 2026-09-25 — assembled S1 album photo
+
+Austin supplies own IMG_0840 twice (56146ab1 and fed322ed upload prefixes).
+SHA256 confirms identical originals. Save one metadata-stripped public copy
+in prints/s1-photos with original/public hashes and unchanged pixel check.
+Image shows assembled case; no dimension derived. Records S1 physical
+baseline before tighter-base/rounded-button S2, not an S2 test result.

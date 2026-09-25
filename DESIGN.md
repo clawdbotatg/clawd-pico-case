@@ -98,3 +98,16 @@ wall shelf would otherwise belong to the upper shell and obstruct assembly.
 Retain USB port/reset location; extend outside cable recess to compensate for
 added wall thickness. L4 opening offset retained. New matching shell pair;
 does not fit old base. Interactive review requested; no printer dispatch.
+## S2 closure and tactile refinement
+
+S1 field feedback: loose vertical joint and indistinct button tops. Replace
+base only: preserve body/rails/ports, swap symmetric triangular detents for
+deeper catches with flat holding face, short vertical nose and insertion ramp.
+Use existing lid-pocket lower edge to reduce nominal axial travel to0.04 mm;
+projection0.50 consumes0.30mm socket flex and leaves0.05mm recess spare.
+No claimed FDM accuracy or tested retention force. Small catch overhang needs
+slice review. Keep existing lid/pry notch; no new exterior slots.
+
+Caps retain V2 interface, gain0.50mm height and1.20mm rolled top edges to
+separate finger contact areas. No change to button spacing or flange height.
+Print five parts in PLA; defer PETG/colors until fit iterations finish.

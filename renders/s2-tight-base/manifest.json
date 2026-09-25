@@ -1,0 +1,30 @@
+{
+  "revision": "S2",
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/s2_tight_base.py": "c3a6f34c56ddd312025ff83ea765120251f9aa98e3824f256e866e14ac7e1600",
+    "cad/s1_strong_shell.py": "b2e8064d8a25745baca52f0f9cd2e9942aa393767c25ffa00731161988991b5e",
+    "cad/l4_alignment.py": "b57c50ecdfb3a265eb6e3959c7dd246f9ba2f0a161c53996af5ceda9b3f9b447",
+    "cad/l3_shifted_hole.py": "cf029a21615aff6a0884b80379a8497dbcf7e8af55246fbc98bc1dbba61cd600",
+    "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
+    "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
+    "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/s2-tight-base/base-floor-down.stl": "a118aac53b557c724f8e5d3e221257a13203a0df8efb6e861da107b677caff80",
+    "stl/s2-tight-base/button-1.stl": "c5f2f4a37f8facaa3bd96ad248d94c85154113100936c166ac9365a7ae35d69a",
+    "stl/s2-tight-base/button-2.stl": "5a0dc03786ef0188b92067917c4b69e50306f64f267e7a0cf31b4cf0973073b3",
+    "stl/s2-tight-base/button-3.stl": "e3d8beb6043a2bcde912d5367c5a4c3edb402f84ec50e185fdeb6c412738516c",
+    "stl/s2-tight-base/button-4.stl": "3f53c26e76265e46575f66ac6a1cf8f83c6ee97e9faef8f5b1897f330fce4fab",
+    "stl/s2-tight-base/s2-base-and-four-buttons.stl": "044036e3313a87cc659227e269e47603cd21a9ca204dde046f40b6c65acd14ca",
+    "renders/s2-tight-base/assembly.step": "7477e33f287c70f713555262ae19be3db324b63bf1fafdb85921f68be755462a",
+    "renders/s2-tight-base/validation.json": "0c02a3fce381696808df397b1bb471df5709613524d959f9c92c819a64ab42e7",
+    "renders/s2-tight-base/viewer.html": "31eca9d5a0844884254c22b5e581518930c7dc86df96bab272055fe233b9e443"
+  }
+}
