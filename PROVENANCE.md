@@ -201,3 +201,11 @@ touched geometry, and what that session had seen.
 - Latest instruction: prepare CAD viewer, STL and review note for Claude Code.
   No printing in this turn. No outside geometry used; original MIT design.
 - J1 dimensions below are explicit design trials, not new measurements.
+
+## 2026-09-25. J1 physical feedback, Codex.
+
+- Austin supplies IMG_0814 showing his printed J1 cap/gauge on his board.
+  Reports full motion when hand-held, but gauge too flimsy for confidence.
+  No numerical measurement inferred from photo. Original user fit evidence.
+- Requests actual lid for existing printed base, retaining unchanged J1 cap.
+  Base revision unresolved; no outside designs consulted or geometry changed.

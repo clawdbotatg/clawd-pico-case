@@ -1,5 +1,19 @@
 # J1 joystick test: review before printing
 
+## Physical feedback — 2026-09-25, after printing
+
+Austin reports full joystick movement while holding the gauge on the board.
+The gauge is too flimsy to establish fit confidently. IMG_0814 shows the
+printed ball cap and gauge on his actual board stack. This is encouraging
+physical evidence, not proof of constrained movement under a latched lid;
+keep the earlier CAD scenario failures as historical diagnostics.
+
+Next request: a real complete lid fitting his already printed base. Reuse
+the unchanged J1 joystick; do not print another joystick unnecessarily.
+Base revision must be identified before committing the mating/USB geometry:
+V2 has a USB channel open to the rim, unlike the intended closed-port base.
+No replacement lid generated or submitted at this feedback checkpoint.
+
 ## Dispatch update — 2026-09-25
 
 Austin authorized the small experiment after being told of the10-degree
