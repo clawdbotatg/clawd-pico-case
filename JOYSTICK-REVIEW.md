@@ -1,5 +1,22 @@
 # J1 joystick test: review before printing
 
+## Dispatch update — 2026-09-25
+
+Austin authorized the small experiment after being told of the10-degree
+collision. Submitted unchanged source6bec71a, combined two-part STL, to the
+HTTP print inbox. Drop `20260925-100248-two-part-test`; server reports35.4 ×
+19.99 ×8.6 mm, fits bed, SHA-256 matches the build manifest. Print request
+sent explicitly; initial status `new`, NOT confirmed printing.
+
+Requested PLA, loaded colour acceptable,0.16 mm layers,3 walls, supports OFF,
+raft OFF, original orientations. Operator must inspect sliced thin lip,
+socket bridge, ball and feet before starting; HOLD if supports/raft would be
+needed. Camera-confirmed clear bed required; no interruption of another job.
+Actual slice settings, preview, start/completion and physical fit are pending.
+The manifest's `submitted:false` and viewer notices reflect build time;
+this dated dispatch update is the current status. Detailed log is in
+`prints/2026-09-25-joystick-j1.md`. Earlier review below is preserved.
+
 ## Conclusion and confidence
 
 The simple round-hole mechanism is worth testing. This draft is **not yet
