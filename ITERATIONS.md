@@ -151,3 +151,8 @@ Austin confirms L2 cannot close with caps installed. Revert height to L1 and
 move 8 mm opening 1.00 mm toward LCD using his new photos/direction. Pocket
 and all other L1 geometry unchanged. Lid only print. Isolated original source
 cad/l3_shifted_hole.py and stl/renders/l3-shifted-hole artifacts.
+## L4 — halfway back plus photo-up, not yet printed
+
+L3 feedback/photos show overshoot. Aperture moves +0.50 Y and +0.30 X from
+L3, leaving centre (13.4671,45.6292). Isolated source cad/l4_alignment.py,
+STL and viewer under l4-alignment. All prior versions preserved. No dispatch.

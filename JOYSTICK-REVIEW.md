@@ -1,6 +1,18 @@
 # V3 shell and joystick review
 
-## CURRENT: L3 restores L1 height, opening 1 mm toward LCD
+## CURRENT: L4 halfway back, slightly photo-up — prepared, not sent
+
+Austin reports L3 overshot. IMG_0832 is previous; IMG_0833 is latest.
+From L3, move hole 0.50 mm away from LCD and 0.30 mm photo-up (LCD on right).
+Photo-up maps to CAD positive X; away from LCD is positive Y. New centre
+(13.4671,45.6292). The 0.30 mm adjustment is a trial choice, not measured.
+Same 8 mm diameter, L1 height, existing lip pocket, base, buttons and J2.
+
+Source cad/l4_alignment.py; STL stl/l4-alignment/l4-lid-face-down.stl.
+Viewer port8793 /l4-alignment/viewer.html; STEP/validation beside viewer.
+Lid only, face down, no supports/raft. Prepared but no print request sent.
+
+## Historical: L3 restores L1 height, opening 1 mm toward LCD
 
 Physical result: Austin reports L2 does not close with buttons/joystick.
 Restore immediate previous L1 lid, face z4.20, joystick underside z3.50.

@@ -297,3 +297,10 @@ lid only. Own photos IMG_0831/0830/0829 (upload prefixes f4ab2501, 428b66fa,
 f0156714) inspected directly. Stem appears LCD-ward of opening centre.
 Use explicitly requested 1.00 mm, not a calibrated measurement from photos.
 Codex uses original repository CAD only; no third-party case access.
+## 2026-09-25 — L4 halfway-back alignment
+
+Austin identifies own IMG_0832 as previous and IMG_0833 as latest L3;
+latest opening overshoots, asks halfway back and slightly up. Photos inspected
+directly (upload prefixes d7fdddb0, f938ec3c). Choose +0.50 CAD Y from L3,
+and +0.30 CAD X (photo up with LCD on right). Lateral amount is an original
+trial choice, not a calibrated photo measurement. No third-party geometry.

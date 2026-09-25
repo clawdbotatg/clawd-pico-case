@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "valid_single_solid": true,
+    "height_unchanged": true,
+    "lower_geometry_unchanged": true,
+    "hole_clear": true,
+    "old_crescent_filled": true,
+    "only_aperture_changed": true,
+    "buttons_clear": true
+  },
+  "original_center": [
+    13.167100000000001,
+    46.1292
+  ],
+  "L3_center": [
+    13.167100000000001,
+    45.1292
+  ],
+  "L4_center": [
+    13.467100000000002,
+    45.6292
+  ],
+  "delta_from_L3": [
+    0.3,
+    0.5
+  ],
+  "diameter": 8.0,
+  "face_z": 4.2,
+  "physical_fit_confirmed": false,
+  "print_sent": false,
+  "notes": [
+    "Photo-up amount 0.30mm is a trial choice, not measured.",
+    "Only aperture changed. Hardware datum, pocket and J2 unchanged."
+  ]
+}

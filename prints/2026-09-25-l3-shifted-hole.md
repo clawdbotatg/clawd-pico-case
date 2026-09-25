@@ -15,3 +15,7 @@ Server confirms 31.44 × 57.50 × 7.20 mm, fits bed, matching SHA256
 Explicit GO accepted; initial status new. Print start unconfirmed.
 Nine geometry checks and browser interaction test passed. Austin notified
 by inbox. No physical fit result yet.
+## Physical feedback
+
+Austin reports 1 mm shift overshot; IMG_0833 latest versus IMG_0832 prior.
+Next trial should move halfway back and slightly photo-up.

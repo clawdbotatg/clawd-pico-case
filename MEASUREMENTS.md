@@ -373,3 +373,9 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 |---|---|---|
 | L3-HOLE | Shift opening 1.00 mm toward LCD (CAD Y minus 1.00); diameter remains 8.00 | Austin's physical fit instruction and own IMG_0831/0830/0829; direction confirmed, amount chosen from his request |
 | L3-KEEP | Restore L1 face z4.20, joystick underside z3.50; keep original pocket, button geometry and mating skirt | Austin requests previous height and hole-only correction; original construction choice leaves lip pocket unchanged |
+### L4 halfway-back correction
+
+| ID | Value | Source |
+|---|---|---|
+| L4-OFFSET | From original centre: X +0.30, Y -0.50 mm | Austin requests halfway back from L3 and slightly photo-up; +0.30 trial choice. Photo LCD-right maps up to positive CAD X |
+| L4-KEEP | L1 height, 8 mm aperture, existing pocket/skirt/buttons | User hole-only refinement; retain L3 non-aperture geometry |

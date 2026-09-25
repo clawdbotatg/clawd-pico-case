@@ -73,3 +73,9 @@ L2 failed physical closure. Restore L1 thickness/height/pockets and shift only
 round opening 1.00 mm toward LCD (CAD negative Y). Fill old throat crescent,
 recut at new centre; retain 8 mm diameter and existing lip cavity. No base,
 button or joystick changes. Print lid only, face down, supports/raft off.
+## L4 alignment refinement
+
+L3 physically overshot. New aperture centre is original X+0.30, Y-0.50:
+halfway back from L3 and slightly photo-up with LCD on right. Keep diameter,
+height and lip pocket unchanged. Photo-up magnitude is explicitly a trial
+choice, not a calibrated measurement. Prepared lid only, not dispatched.
