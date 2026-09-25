@@ -12,7 +12,7 @@ bench tools in the background and show no reading used anywhere.
 | File | SHA-256 (first 16) | What it shows |
 |---|---|---|
 | IMG_0814.jpg | a3c504e8cd4592d8 | J1 joystick cap on the bare stick of the LCD hat, with our flanged retainer/gauge ring (two clip legs) around it. Pink USB-C Pico clone underneath, headers and USB-C visible. No shell. |
-| IMG_0817.jpg | 5372915716ba1469 | The lineage in one frame: two earlier shells hand-marked in green (V1, V2), a loose retainer ring, and the V3-flat lid (sparkle yellow PLA, face-down print) fitted on the boards with the J1 cap through it. Screen and four button windows. |
+| IMG_0817.jpg | 5372915716ba146d | The lineage in one frame: two earlier shells hand-marked in green (V1, V2), a loose retainer ring, and the V3-flat lid (sparkle yellow PLA, face-down print) fitted on the boards with the J1 cap through it. Screen and four button windows. |
 | IMG_0822.jpg | 49c2db4e81e69b6f | Side view of the J1 cap on the stick: ball, neck, thin flange. Shows the stick's round collar under the cap's socket, the reason for the J2 stepped socket (`cad/joystick_j2.py`). |
 | IMG_0827.jpg | 28bce9e22e3e8e38 | Top view of the V3-flat lid on the board with the cap off: bare stick centred in the lid's joystick hole, screen window edge. |
 
