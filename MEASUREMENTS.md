@@ -391,3 +391,4 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | S1-SUPPORT | Side support rails floor to LCD-back, 0.25 gap from upper inner walls | Original base-carried rails replace old wall-supported shelves, retain PCB height and permit lid installation |
 | S1-PRY | One left long-side notch at seam, 6 wide, 1.6 high, 1 deep | Austin requests one opening notch; prior notch dimensions reused |
 | S1-FACE | L4/L1 z4.20, all control pockets unchanged; extend solid perimeter outward | Preserve fitted roof/controls; strengthen with continuous 3mm perimeter/deep walls, no local boss |
+| S1-PLATE | 5 mm minimum layout gap; 7 parts, no scaling | Original plate arrangement for approved S1 full-set print |

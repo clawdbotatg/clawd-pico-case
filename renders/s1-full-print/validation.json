@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "lid-face-down_one_solid": true,
+    "base-floor-down_one_solid": true,
+    "joystick-j2_one_solid": true,
+    "button-1_one_solid": true,
+    "button-2_one_solid": true,
+    "button-3_one_solid": true,
+    "button-4_one_solid": true,
+    "lid-face-down_byte_identical": true,
+    "base-floor-down_byte_identical": true,
+    "joystick-j2_byte_identical": true,
+    "seven_parts": true,
+    "no_part_overlap": true,
+    "all_on_bed": true,
+    "fits_256mm_bed": true
+  },
+  "size_mm": [
+    71.08000000000001,
+    74.5,
+    18.670000000000005
+  ],
+  "part_count": 7,
+  "orientation": "Lid exterior down; base floor down; joystick and buttons flange down",
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "physical_fit_confirmed": false
+}

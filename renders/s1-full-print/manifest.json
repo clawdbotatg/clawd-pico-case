@@ -1,0 +1,19 @@
+{
+  "source_sha256": {
+    "cad/s1_full_plate.py": "02c4c6462cce5e7ea55762562c2bf06827eb668c342fac332d3106dab0c55765",
+    "cad/s1_strong_shell.py": "b2e8064d8a25745baca52f0f9cd2e9942aa393767c25ffa00731161988991b5e",
+    "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac"
+  },
+  "files": {
+    "stl/s1-full-print/lid-face-down.stl": "3bc796881b9bdda543e9e3f99b57fe8abc18c79e1cb1afb59f64b404283bd1dc",
+    "stl/s1-full-print/base-floor-down.stl": "dae6164d0608e51d1ee89fd3007cf6cbe8071a624978e2fe1f867878458e1493",
+    "stl/s1-full-print/joystick-j2.stl": "929c112efd3c55259868da8d52115902e15ce6fe5bad6dea9e933d9ce5ba0c19",
+    "stl/s1-full-print/button-1.stl": "beda3f1cd84964ab3ae5e26518ae79d066fcc2e9cde56caa543153edfa9002fb",
+    "stl/s1-full-print/button-2.stl": "1bbddae734de42aa48ff7f41e734a98d6e4a1dd334c3cf2d22519356c9aa9418",
+    "stl/s1-full-print/button-3.stl": "28d638dee9966da9e18d8522c1bd276f396352c2c395bf8d6a64ce96c61a1c81",
+    "stl/s1-full-print/button-4.stl": "a23c15b269168bee92b396fb3df738c046031d8a225f73979221f794f8621fa4",
+    "stl/s1-full-print/s1-full-case-seven-parts.stl": "185554416fa7e59e3f17f83e36e086e3585ead93e732c9803bf214de4090b9d1",
+    "renders/s1-full-print/validation.json": "3bb92f0db757ec4e5825b58a01902db717af8cc769d2658951bb2dd155f9b0e5"
+  }
+}

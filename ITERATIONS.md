@@ -164,3 +164,10 @@ Artifacts stl/s1-strong-shell and renders/s1-strong-shell. 21 geometry checks
 and browser smoke test pass. Joint force/strength/physical assembly untested.
 New pair required; reuse J2/buttons. No printing until review. Full handoff in
 JOYSTICK-REVIEW.md, including internal rails and exact wall/joint dimensions.
+## S1 full-case print approval / packaging
+
+Austin approves reviewed S1 and requests joystick plus buttons too. No shell
+geometry change. Package seven pieces with lid face down, base floor down,
+J2 and V2 buttons flange down. cad/s1_full_plate.py exports individual parts
+and one plate; byte-check shells/J2 against original reviewed exports.
+Print log prints/2026-09-25-s1-full-case.md. Preserve original review artifacts.

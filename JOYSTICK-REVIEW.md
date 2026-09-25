@@ -1,6 +1,14 @@
 # V3 shell and joystick review
 
-## CURRENT: S1 stronger matching shells, lower seam — REVIEW ONLY
+## CURRENT: S1 full set approved for print
+
+Austin approves S1 rendering and requests immediate full set: matching top,
+base, exact J2 joystick, four V2 buttons. Seven parts. Approved shell geometry
+unchanged. Plate builder cad/s1_full_plate.py; individual and combined STLs
+in stl/s1-full-print/. Validation/manifests in renders/s1-full-print/.
+Dispatch details in prints/2026-09-25-s1-full-case.md.
+
+## S1 design review (approval supersedes review-only status below)
 
 Austin requests stronger walls/joint after print-plate removal bent the lid,
 no exterior clip slots/windows, one pry notch, top 2/3 and base 1/3. He asks

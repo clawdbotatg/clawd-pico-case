@@ -312,3 +312,9 @@ slots, exactly one pry notch, visible upper shell about two-thirds and base
 one-third. Retain latest L4 joystick alignment. Codex inspected own photo and
 original repository CAD only. New wall/joint dimensions are original design
 choices, not hardware measurements. No third-party geometry introduced.
+## 2026-09-25 — S1 full-set print approval
+
+Austin approves interactive S1 review and explicitly requests immediate full
+case print including joystick/buttons. Package unchanged S1 shells, exact J2
+joystick and existing V2 buttons: seven parts total. No geometry changes.
+Codex uses HTTP inbox skill; no credentials or private endpoints in repo.
