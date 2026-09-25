@@ -48,6 +48,12 @@ physical-fit certification. Older WIP remains saved under its own tag.
 
 ## Hash records
 
+2026-09-25 physical result: Austin reports V2 joystick socket failure and
+support-related button-hole problems. Pry access, bottom access alignment
+and rectangular cap shape worked. `reports/2026-09-25-v2-review.md` records
+the results and flat-lid, support-free correction goals. V2 tag unchanged;
+this is a documentation-only review, not a new printable revision.
+
 - Source and output SHA-256 hashes: `stl/manifest.json`.
 - Geometric checks and source hashes: `renders/validation.json`.
 - Reasoning and limitations: `DESIGN.md`, `REPORT.md`, `MEASUREMENTS.md`.

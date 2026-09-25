@@ -49,6 +49,10 @@ What we do not copy is their files and their styling choices.
 
 ## Status
 
+**V2 failed its physical fit test. Do not reprint unchanged.**
+[What worked, what failed, and correction goals](reports/2026-09-25-v2-review.md).
+The V2 description below records the submitted design, not a ready replacement.
+
 Saved designs and print history: [iteration register](ITERATIONS.md).
 
 V1 feedback is [saved with photos](prints/2026-09-24-v1-feedback.md).

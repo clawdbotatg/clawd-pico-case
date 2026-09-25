@@ -118,3 +118,17 @@ touched geometry, and what that session had seen.
   floor depth. Recorded original button/access/USB trial choices before CAD.
 - No third-party case geometry viewed or imported. V2 is the next physical
   print candidate; internal CAD revision remains R5 after its saved checkpoint.
+
+## 2026-09-25. V2 physical review, Codex.
+
+- Input: Austin's direct physical feedback. Pry feature, bottom board-button
+  hole alignment and rectangular cap shape worked. V2 joystick does not fit
+  PCB stick; raised collar and support layer caused problems at button holes.
+  Earlier joystick fit and movement were good.
+- Requested correction goals: preserve successful features and earlier
+  joystick interface/movement; add internal lip and ball passing through
+  opening; restore flat lid, no raised case or problematic supports.
+- Austin requested documentation first. Added review/handoff and status
+  notices only. No geometry changes, external case references, new hardware
+  dimensions or printer actions. Specific socket failure cause and actual
+  slicer support construction remain unverified.

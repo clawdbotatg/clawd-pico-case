@@ -1,5 +1,10 @@
 # V2 print candidate / R5 CAD — 2026-09-24
 
+**2026-09-25: V2 failed physical testing. Do not reprint unchanged.**
+See [results and next-version goals](reports/2026-09-25-v2-review.md).
+The candidate description below is retained as design history, not a claim
+of readiness. No replacement geometry has been made in this review.
+
 Original MIT case for the measured pink USB-C RP2040 board and LCD hat.
 [V1 feedback and photos](prints/2026-09-24-v1-feedback.md) drove five changes:
 
