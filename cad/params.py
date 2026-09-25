@@ -62,7 +62,7 @@ USB_END = "top"           # USB-C at the joystick end (+y). Austin, 2026-09-24, 
 
 # ---- Case. Our choices (DESIGN.md), not measurements
 CLEAR = 0.30       # gap between any PCB edge and a wall
-WALL = 1.60        # side walls, 4 perimeters at 0.4
+WALL = 2.00        # side walls; minus SKIRT leaves a 1.2 tongue at the top (0.4 would be one perimeter — found 2026-09-24)
 FLOOR = 1.60       # base floor
 LID_TOP = 2.25     # lid plate over the glass (thick enough that the button pocket leaves 1.1 above the flanges)
 GLASS_CLEAR = 0.30 # air above the glass
@@ -70,7 +70,7 @@ CORNER_R = 3.0     # outside vertical corner radius
 SNAP_H = 0.50      # snap bump height
 SNAP_LEN = 8.0     # snap bump length along the wall
 TONGUE_H = 3.0     # how far the lid skirt overlaps the base
-SKIRT = 1.20       # lid skirt thickness (the base wall steps in by this much)
+SKIRT = 0.80       # lid skirt thickness (the base wall steps in by this much)
 WINDOW_CLEAR = 0.40  # screen window past the glass, each side
 CAP_W = 4.2        # button cap, square, through the lid hole (pitch is 5.70, B8p)
 CAP_R = 0.8        # cap corner radius
@@ -79,5 +79,5 @@ CAP_FLANGE_W = 5.3 # flange under the lid so the cap cannot come out the top; 0.
 CAP_FLANGE_T = 0.8 # flange thickness; rests on the plunger top (B5)
 CAP_PROUD = 1.0    # how far the cap stands above the lid
 CAP_POCKET_CLEAR = 0.15  # air above the flange inside the lid
-JOY_HOLE_D = 9.0   # joystick opening; the stem tilts, the base is 8.81 across
+JOY_HOLE_D = 10.5  # joystick opening; the silver base is 8.81 across and its height (J3) is unmeasured
 USB_CLEAR = 0.50   # USB-C cutout past the shell, each side
