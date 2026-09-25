@@ -253,3 +253,15 @@ touched geometry, and what that session had seen.
 - Austin offers printing just the joystick first. Selected this scoped fit
   trial: unchanged outer J1 cap, deeper stepped cavity, no lid/base edits.
   All geometry original from this repository; no external cases consulted.
+
+## 2026-09-25. V3 record photos, Claude (Opus 5.5).
+
+- Austin supplies IMG_0814, IMG_0817, IMG_0822, IMG_0827 "for the record
+  books" while working on V3, and asks that the whole process be documented
+  from first principles so the design ships MIT with no non-commercial
+  licence entanglement.
+- Saved byte-identical to `prints/v3-photos/` with hashes and a per-photo
+  description. Austin's own photos of this repo's own prints and his own
+  boards; MIT with the repo. No third-party design in any frame.
+- Record only: no dimension taken from these photos; nothing in `cad/`
+  changed. This session opened no forbidden source and no picowallet file.
