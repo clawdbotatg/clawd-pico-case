@@ -425,3 +425,7 @@ hard to hit. He asked for a ball that is flat on top. cad/joystick_j4.py cuts
 a 5 mm flat pad into J2's ball and softens its rim; the socket and ball
 centre are unchanged. Original geometry; there are no outside inputs. It is
 shown in the v1.4 viewer and has not been printed.
+J4 review 2 (same day): Austin liked the flat and asked for it bigger, with "a
+little hat". The ball now narrows to a 5.5 mm waist, flares out at 45° to a
+7 mm disc, and ends in a flat top of about 6 mm. The height is back to J2's.
+Original geometry.

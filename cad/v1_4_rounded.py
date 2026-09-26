@@ -77,7 +77,7 @@ def main():
     J.export(Pos(0,0,-J.BOTTOM)*cap,STL/'joystick.stl')  # flange down, as J2
     J.export(printed,STL/'lid-face-down.stl')
     report=dict(revision=REV,checks=checks,passed=all(checks.values()),top_edge_radius=TOP_R,window_in_each_side=WINDOW_IN,window_over_glass_each_side=WINDOW_IN-P.WINDOW_CLEAR,window_edge_radius=WINDOW_EDGE_R,
-        base='unchanged v1.3 (stl/current/base.stl)',caps='buttons unchanged; joystick J4 (flat-top)',joystick_flat_d=J4.FLAT_D,joystick_top_drop_mm=round(J.BALL_Z+J.BALL/2-J4.FLAT_Z,2),physical_fit_confirmed=False,print_sent=False,
+        base='unchanged v1.3 (stl/current/base.stl)',caps='buttons unchanged; joystick J4 (flat-top)',joystick_hat_d=J4.HAT_D,joystick_waist_d=J4.WAIST_D,joystick_top_z=round(J4.TOP_Z,2),physical_fit_confirmed=False,print_sent=False,
         notes=['Look trial for review; not printed.','Lid prints face down, so both roundings start at the bed: the first layers overhang. Needs a slice check; a 45 degree chamfer is the fallback.'])
     (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
     if not report['passed']:raise SystemExit('Validation failed')
@@ -88,7 +88,7 @@ def main():
         for name,s in view.items():
             path=Path(tmp)/(name+'.stl');J.export(s,path);bb=s.bounding_box()
             packed.append(dict(name=name,color=V.V.PARTS[name][1],stl=base64.b64encode(path.read_bytes()).decode(),bbox=[*tuple(bb.min),*tuple(bb.max)]))
-    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Window 1mm smaller each side, covers glass border.','Joystick J4: ball with 5mm flat top for the press-in click.','Look trial, not printed.'])
+    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Window 1mm smaller each side, covers glass border.','Joystick J4: ball with a flat 7mm hat for the press-in click.','Look trial, not printed.'])
     html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(packed)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';').replace('V3 review · NOT APPROVED FOR PRINT','V1.4 · ROUNDED EDGES · REVIEW').replace('V3 Case Review — Not Approved for Print','V1.4 rounded edges')
     (OUT/'viewer.html').write_text(html);(ROOT/'renders/viewer.html').write_text(html)
     sources=[Path(__file__),*[ROOT/'cad'/n for n in ('v1_3_short_end.py','v1_production.py','s2_tight_base.py','s1_strong_shell.py','l4_alignment.py','l3_shifted_hole.py','j3_low_lid.py','joystick_j2.py','joystick_j4.py','v3_flat.py','v3_fit.py','joystick_test.py','model.py','params.py')]]

@@ -226,3 +226,5 @@ the glass border) with a rounded bezel 0.3 mm above the glass. Base unchanged.
 J4 joystick (v1.4): J2 with a 5 mm flat top, so pressing in is easier. It is
 1.05 mm shorter, and the socket and tilt are unchanged. File:
 stl/v1.4/joystick.stl. Not printed.
+J4 review 2: the flat top becomes a hat (5.5 mm waist, 45° flare, 7 mm disc,
+about 6 mm flat), at the same height as J2. Not printed.

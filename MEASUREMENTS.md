@@ -448,3 +448,6 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J4-FEEDBACK | The fully round ball makes the joystick's press-in click hard to hit. Keep a ball, flat on top | Austin, 2026-09-26 |
 | J4-FLAT | 5.0 mm flat pad cut from the J2 7.0 mm ball, 1.05 mm below the old top. Ball centre, neck, flange and socket unchanged | Original choice |
 | J4-RIM | 0.6 mm fillet around the pad | Original choice, for comfort |
+| J4-WAIST | The ball is cut where it has narrowed to 5.5 mm (J4 review 2; replaces J4-FLAT) | Austin: "a little hat ... comes to a top, then comes back out, then goes flat" |
+| J4-HAT | A 45° flare from 5.5 to 7.0 mm, then a 0.6 mm disc edge; the top is 12.02, the same height as J2 (12.00) | Original. 45° prints flange-down with no support; 7.0 mm = ball width, under the 8 mm lid hole |
+| J4-RIM-2 | 0.5 mm top edge; flat pad about 6 mm (was about 3.8) | Austin: "make it a little bigger" |
