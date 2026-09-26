@@ -228,3 +228,6 @@ J4 joystick (v1.4): J2 with a 5 mm flat top, so pressing in is easier. It is
 stl/v1.4/joystick.stl. Not printed.
 J4 review 2: the flat top becomes a hat (5.5 mm waist, 45° flare, 7 mm disc,
 about 6 mm flat), at the same height as J2. Not printed.
+J4 review 3: a 7.4 mm half ball with a flat top all the way across (the hat
+version was dropped). It passes the 8 mm hole with 0.3 mm each side, and no
+new tilt contact versus J2. Not printed.

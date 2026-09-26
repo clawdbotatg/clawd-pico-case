@@ -429,3 +429,9 @@ J4 review 2 (same day): Austin liked the flat and asked for it bigger, with "a
 little hat". The ball now narrows to a 5.5 mm waist, flares out at 45° to a
 7 mm disc, and ends in a flat top of about 6 mm. The height is back to J2's.
 Original geometry.
+J4 review 3 (same day): Austin preferred the plain ball and asked for it cut
+flat at its widest point, then bigger, "just barely" through the lid hole,
+and flat all the way across. The ball is now 7.4 mm, cut through its centre,
+with a 0.3 mm edge break. A new check reruns the J1-CHECK tilt scenarios
+against the v1.4 lid and fails on any contact J2 did not have. That ruled out
+7.6 and 7.5 mm. Original geometry.
