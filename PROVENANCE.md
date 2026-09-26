@@ -410,3 +410,10 @@ cad/v1_4_rounded.py fillets the v1.3 lid's top perimeter (1.5 mm) and the LCD
 window edge (0.7 mm). It only removes material, and the base and caps are
 unchanged. The radii are original choices; there are no outside inputs. The
 lid has not been printed.
+Same day, review 4: Austin said the screen's black border can be covered, and
+asked for the opening to come in "a little bit all the way around". The
+window is 1.0 mm smaller per side, a bezel ring sits 0.3 mm above the glass,
+and the edge is re-rounded 1.2 mm. These are original choices; the border
+width is not measured. A screenshot review caught a 0.15 mm skin that closed
+the window in one intermediate build. It was fixed, and a
+"window_open_down_to_glass" check now guards it.

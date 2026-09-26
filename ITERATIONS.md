@@ -221,3 +221,5 @@ checks passing and the viewer tested. Not printed. Face-down printing puts
 both roundings at the bed, so a slice check is needed.
 V1.4 review 3: the top edge is rounded 3.0 mm and the window 1.2 mm (review 1:
 1.5 and 0.7). Base check: byte-identical to the v1.3 base.
+V1.4 review 4: the window is 1.0 mm smaller on each side (covering 0.6 mm of
+the glass border) with a rounded bezel 0.3 mm above the glass. Base unchanged.

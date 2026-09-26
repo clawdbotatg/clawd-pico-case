@@ -439,3 +439,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.4-TOP-R | 1.5 mm fillet on the lid's top outer perimeter | Original choice; under the 3.8 vertical corner radius |
 | V1.4-WINDOW-R | 0.7 mm fillet on the LCD window's top edge | Original choice; under the 0.8 window corner radius |
 | V1.4-R-REV3 | Top perimeter 3.0 mm (= wall thickness), LCD window 1.2 mm. They replace the 1.5 and 0.7 above | Austin: "round it a little bit more ... more rounded". A larger window radius fails, because the window step is only 0.7 mm tall |
+| V1.4-WINDOW-IN | LCD window 1.0 mm smaller on every side: it was 0.4 mm past the glass edge and now covers 0.6 mm of the glass border | Austin: "the screen has some black, so we can encroach a little bit ... all the way around". The amount is an original choice; the border width is not measured |
+| V1.4-GLASS-GAP | The bezel ring reaches down to 0.3 mm above the glass top (S3) | Original; gives the 1.2 mm rounding enough depth and cuts parallax at an angle |
