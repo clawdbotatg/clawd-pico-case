@@ -212,3 +212,10 @@ v1.3 passed Austin's test: nothing rattles, and everything clicks.
 `cad/current.py` copies it to `stl/current/` (lid, base, joystick, button,
 full-set plate) at stable paths, and it is tagged v1.3. For future winners,
 update CURRENT/PARTS and rerun.
+## V1.4 — rounded top and LCD window edges (review only)
+
+v1.3 with a 1.5 mm top-perimeter fillet and a 0.7 mm LCD-window fillet on the
+lid. The fit is unchanged, and the base and caps are the same as v1.3.
+Source: cad/v1_4_rounded.py. Outputs: stl/v1.4 and renders/v1.4, with 8
+checks passing and the viewer tested. Not printed. Face-down printing puts
+both roundings at the bed, so a slice check is needed.

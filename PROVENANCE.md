@@ -402,3 +402,11 @@ nothing rattles, everything clicks." He named it the best version so far and
 asked for a stable reference the print Mac can use for batches.
 stl/current/ holds byte copies of the tested v1.3 lid and base, the v1.0 J2
 joystick and a button, plus a full-set plate. There is no new geometry.
+## 2026-09-26 — v1.4 rounded-edge look trial
+
+Austin asked for a v1.4 with the edges around the LCD and around the top
+rounded, and for a 3D render to review before printing.
+cad/v1_4_rounded.py fillets the v1.3 lid's top perimeter (1.5 mm) and the LCD
+window edge (0.7 mm). It only removes material, and the base and caps are
+unchanged. The radii are original choices; there are no outside inputs. The
+lid has not been printed.
