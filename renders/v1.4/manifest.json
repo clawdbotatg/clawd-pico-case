@@ -3,7 +3,7 @@
   "print_sent": false,
   "slice_verified": false,
   "source_sha256": {
-    "cad/v1_4_rounded.py": "03f8a328f6ac21fc7505c7615ffa448000ed25919d1fb4a4e288e2450216639e",
+    "cad/v1_4_rounded.py": "f998137bdf4f8b5c9380dfa840a42d33b50191f20b6abd135049ba983f837d13",
     "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
     "cad/v1_production.py": "07ca8d2b39c4b1682ea915a12931246cd0eccca64c4cfdbca7e61eb557c5ae0c",
     "cad/s2_tight_base.py": "c3a6f34c56ddd312025ff83ea765120251f9aa98e3824f256e866e14ac7e1600",
@@ -12,6 +12,7 @@
     "cad/l3_shifted_hole.py": "cf029a21615aff6a0884b80379a8497dbcf7e8af55246fbc98bc1dbba61cd600",
     "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
     "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/joystick_j4.py": "2420af3e7cb78235a9a2450aede943a49c6b796812f39f6ad82e7d05417d4887",
     "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
     "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
     "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
@@ -19,9 +20,10 @@
     "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
   },
   "files": {
+    "stl/v1.4/joystick.stl": "7cad29b926b4f28b795a17c4669d548ada4ab43a59fe7476aad732e729448757",
     "stl/v1.4/lid-face-down.stl": "3059615094d122bf546c889ccafbb685b5574a490b64245cd719f1f88cdb2aa0",
-    "renders/v1.4/assembly.step": "3fc3d2bf6f3607a67845a5226258e20aecb1e606671dcd3952219522979b8d34",
-    "renders/v1.4/validation.json": "b5867ac52c9c27de028724f9126f58bf0f663d12f63983a41b2aea2fbaaafc8a",
-    "renders/v1.4/viewer.html": "cc07be7ed3bad7eb3899412f25c8baea02a3b852c727a65ac203b044e34a8333"
+    "renders/v1.4/assembly.step": "fc37af7bbee78beb3a1ab8f9b47f569046ef0cf516543dca2acef00b6d753362",
+    "renders/v1.4/validation.json": "af4701dc04a7424a0dea60f16c6eb10d2523f4237be0ebc5119f743a0d2056a6",
+    "renders/v1.4/viewer.html": "b99464e79d8420d4b174d6be4ca09facc17cffa1b02d8b9e3ab64dd5224f8a5e"
   }
 }

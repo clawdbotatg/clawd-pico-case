@@ -8,6 +8,7 @@ import tempfile
 from pathlib import Path
 from build123d import Pos, Rot, Compound, fillet, export_step
 import v1_3_short_end as W
+import joystick_j4 as J4
 V,T,S=W.V,W.T,W.S
 M,P,J,L1=W.M,W.P,W.J,W.L1
 ROOT=W.ROOT
@@ -48,7 +49,7 @@ def main():
     l,narrowed=lid();b,*_=V.base();caps=T.buttons()
     old,_=V.lid();_,ring=narrow_window(old)
     gx,gy=M.GLASS_C;bb=window_wire(top_face(narrowed)).bounding_box()
-    cap,_=V.L3.J2.cap();placed_cap=Pos(*M.JOY_C,L1.LIP_TOP-J.BOTTOM-J.FLANGE_T)*cap
+    cap,jchecks=J4.checks();placed_cap=Pos(*M.JOY_C,L1.LIP_TOP-J.BOTTOM-J.FLANGE_T)*cap
     checks={}
     def check(name,ok):checks[name]=bool(ok)
     check('lid_valid_single_solid',l.is_valid and len(l.solids())==1)
@@ -71,10 +72,12 @@ def main():
     check('buttons_clear_lid',J.overlap(caps,l)<1e-5)
     check('joystick_cap_clear_at_rest',J.overlap(l,placed_cap)<1e-5)
     check('joystick_cap_retained_on_pull',J.overlap(Pos(0,0,L1.UNDER-L1.LIP_TOP+.1)*placed_cap,l)>1e-5)
+    checks.update(jchecks)
     printed=V.origin(Rot(180,0,0)*l)
+    J.export(Pos(0,0,-J.BOTTOM)*cap,STL/'joystick.stl')  # flange down, as J2
     J.export(printed,STL/'lid-face-down.stl')
     report=dict(revision=REV,checks=checks,passed=all(checks.values()),top_edge_radius=TOP_R,window_in_each_side=WINDOW_IN,window_over_glass_each_side=WINDOW_IN-P.WINDOW_CLEAR,window_edge_radius=WINDOW_EDGE_R,
-        base='unchanged v1.3 (stl/current/base.stl)',caps='unchanged',physical_fit_confirmed=False,print_sent=False,
+        base='unchanged v1.3 (stl/current/base.stl)',caps='buttons unchanged; joystick J4 (flat-top)',joystick_flat_d=J4.FLAT_D,joystick_top_drop_mm=round(J.BALL_Z+J.BALL/2-J4.FLAT_Z,2),physical_fit_confirmed=False,print_sent=False,
         notes=['Look trial for review; not printed.','Lid prints face down, so both roundings start at the bed: the first layers overhang. Needs a slice check; a 45 degree chamfer is the fallback.'])
     (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
     if not report['passed']:raise SystemExit('Validation failed')
@@ -85,10 +88,10 @@ def main():
         for name,s in view.items():
             path=Path(tmp)/(name+'.stl');J.export(s,path);bb=s.bounding_box()
             packed.append(dict(name=name,color=V.V.PARTS[name][1],stl=base64.b64encode(path.read_bytes()).decode(),bbox=[*tuple(bb.min),*tuple(bb.max)]))
-    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Window 1mm smaller each side, covers glass border.','Look trial, not printed.'])
+    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Window 1mm smaller each side, covers glass border.','Joystick J4: ball with 5mm flat top for the press-in click.','Look trial, not printed.'])
     html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(packed)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';').replace('V3 review · NOT APPROVED FOR PRINT','V1.4 · ROUNDED EDGES · REVIEW').replace('V3 Case Review — Not Approved for Print','V1.4 rounded edges')
     (OUT/'viewer.html').write_text(html);(ROOT/'renders/viewer.html').write_text(html)
-    sources=[Path(__file__),*[ROOT/'cad'/n for n in ('v1_3_short_end.py','v1_production.py','s2_tight_base.py','s1_strong_shell.py','l4_alignment.py','l3_shifted_hole.py','j3_low_lid.py','joystick_j2.py','v3_flat.py','v3_fit.py','joystick_test.py','model.py','params.py')]]
+    sources=[Path(__file__),*[ROOT/'cad'/n for n in ('v1_3_short_end.py','v1_production.py','s2_tight_base.py','s1_strong_shell.py','l4_alignment.py','l3_shifted_hole.py','j3_low_lid.py','joystick_j2.py','joystick_j4.py','v3_flat.py','v3_fit.py','joystick_test.py','model.py','params.py')]]
     outputs=[*sorted(STL.glob('*.stl')),OUT/'assembly.step',OUT/'validation.json',OUT/'viewer.html']
     (OUT/'manifest.json').write_text(json.dumps(dict(revision=REV,print_sent=False,slice_verified=False,source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},files={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}),indent=2)+'\n')
 

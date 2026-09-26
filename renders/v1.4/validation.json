@@ -13,7 +13,12 @@
     "fully_closed_no_shell_overlap": true,
     "buttons_clear_lid": true,
     "joystick_cap_clear_at_rest": true,
-    "joystick_cap_retained_on_pull": true
+    "joystick_cap_retained_on_pull": true,
+    "joystick_valid_single_solid": true,
+    "joystick_only_removes_material": true,
+    "joystick_unchanged_below_pad": true,
+    "joystick_has_flat_pad": true,
+    "joystick_height_drop_mm_is": true
   },
   "passed": true,
   "top_edge_radius": 3.0,
@@ -21,7 +26,9 @@
   "window_over_glass_each_side": 0.6,
   "window_edge_radius": 1.2,
   "base": "unchanged v1.3 (stl/current/base.stl)",
-  "caps": "unchanged",
+  "caps": "buttons unchanged; joystick J4 (flat-top)",
+  "joystick_flat_d": 5.0,
+  "joystick_top_drop_mm": 1.05,
   "physical_fit_confirmed": false,
   "print_sent": false,
   "notes": [

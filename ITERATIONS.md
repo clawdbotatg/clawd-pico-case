@@ -223,3 +223,6 @@ V1.4 review 3: the top edge is rounded 3.0 mm and the window 1.2 mm (review 1:
 1.5 and 0.7). Base check: byte-identical to the v1.3 base.
 V1.4 review 4: the window is 1.0 mm smaller on each side (covering 0.6 mm of
 the glass border) with a rounded bezel 0.3 mm above the glass. Base unchanged.
+J4 joystick (v1.4): J2 with a 5 mm flat top, so pressing in is easier. It is
+1.05 mm shorter, and the socket and tilt are unchanged. File:
+stl/v1.4/joystick.stl. Not printed.

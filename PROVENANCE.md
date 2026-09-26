@@ -417,3 +417,11 @@ and the edge is re-rounded 1.2 mm. These are original choices; the border
 width is not measured. A screenshot review caught a 0.15 mm skin that closed
 the window in one intermediate build. It was fixed, and a
 "window_open_down_to_glass" check now guards it.
+## 2026-09-26 — J4 flat-top joystick, v1.4 lid saved
+
+Austin confirmed the v1.4 lid is the direction and asked to save it, then
+explained that the joystick has a press-in click that the round ball makes
+hard to hit. He asked for a ball that is flat on top. cad/joystick_j4.py cuts
+a 5 mm flat pad into J2's ball and softens its rim; the socket and ball
+centre are unchanged. Original geometry; there are no outside inputs. It is
+shown in the v1.4 viewer and has not been printed.
