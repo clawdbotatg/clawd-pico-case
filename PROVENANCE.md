@@ -380,3 +380,10 @@ only 0.6 mm of play; the design follows his physical reading and records the
 difference. The spacer is 1.0 mm, so 0.2 mm stays free. The geometry is
 original (cad/v1_1_spacer.py), with no outside inputs and no forbidden
 sources opened.
+## 2026-09-25 — v1.2 half spacer
+
+Austin found that the v1.1 lid spacer is in the right place but too big: the
+screen board will not sit flush. He asked for half as much, 0.5 mm.
+cad/v1_1_spacer.py gained configure(rev, spacer); the v1.1 STLs regenerate
+byte-identical. cad/v1_2_half_spacer.py builds v1.2 with 0.5 mm. There are no
+new outside inputs.

@@ -1,5 +1,5 @@
 {
-  "revision": "v1.1",
+  "revision": "v1.2",
   "checks": {
     "lid_valid_single_solid": true,
     "base_valid_single_solid": true,
@@ -19,8 +19,8 @@
     "plate_parts_separate": true
   },
   "passed": true,
-  "spacer_mm": 1.0,
-  "stop_face_y": 51.8,
+  "spacer_mm": 0.5,
+  "stop_face_y": 52.3,
   "lip": {
     "x": [
       2.7600000000000007,
@@ -30,7 +30,7 @@
       -1.97,
       0
     ],
-    "chamfer_to_z": 1.0
+    "chamfer_to_z": 0.5
   },
   "rail_stops": {
     "z": [
@@ -46,7 +46,7 @@
   "physical_fit_confirmed": false,
   "notes": [
     "Austin felt ~1.2 mm play; CAD model shows 0.6. His reading is used.",
-    "1.0 mm spacer.",
+    "0.5 mm spacer.",
     "Joystick/button/USB/reset openings unchanged from v1.0."
   ]
 }

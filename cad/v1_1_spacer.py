@@ -14,6 +14,7 @@ import v1_production as V
 T,S=V.T,V.S
 M,P,J,L1=V.M,V.P,V.J,V.L1
 ROOT=V.ROOT
+REV='v1.1'
 OUT=ROOT/'renders/v1.1'
 STL=ROOT/'stl/v1.1'
 SPACER=1.0  # V1.1-SPACER: 1.2 felt, 0.2 left so the rigid PCB cannot bind
@@ -22,6 +23,12 @@ RAIL_TOP=M.Z_LCD_BACK-P.SHELF_GAP
 LEFT,RIGHT=M.PICO_CX-P.P2/2-P.CLEAR,M.PICO_CX+P.P2/2+P.CLEAR  # rail inner edges, as S1
 STOP_TOP=-.3  # V1.1-STOP: below the LCD PCB front face (z0)
 CHAMFER=SPACER  # V1.1-LIP: 45 degree roof so the face-down lid prints unsupported
+
+def configure(rev,spacer):
+    """Later revisions (v1.2+) reuse this build with a different spacer."""
+    global REV,OUT,STL,SPACER,FACE,CHAMFER
+    REV,SPACER=rev,spacer;OUT,STL=ROOT/'renders'/rev,ROOT/'stl'/rev
+    FACE=M.IY1-SPACER;CHAMFER=SPACER
 GAP=5.0  # V1-PLATE
 
 def wedge_y(pts_yz,x0,x1):
@@ -50,7 +57,7 @@ def main():
     check('base_valid_single_solid',b.is_valid and len(b.solids())==1)
     check('lid_only_adds_lip',V.volume(l-oldlid-k)<1e-5 and V.volume(oldlid-l)<1e-5 and V.volume(k-oldlid)>1)
     check('base_only_adds_stops',V.volume(b-oldbase-st)<1e-5 and V.volume(oldbase-b)<1e-5 and V.volume(st-oldbase)>1)
-    check('spacer_face_at_1mm',abs(k.bounding_box().min.Y-FACE)<1e-6 and all(abs(s.bounding_box().min.Y-FACE)<1e-6 for s in st.solids()))
+    check('spacer_face_at_setting',abs(k.bounding_box().min.Y-FACE)<1e-6 and all(abs(s.bounding_box().min.Y-FACE)<1e-6 for s in st.solids()))
     check('fully_closed_no_shell_overlap',J.overlap(b,l)<1e-5)
     check('lid_lowers_past_base_stops',J.overlap(l,Compound(children=[column(s,M.Z_BOTTOM-P.TOOL_EXT,STOP_TOP) for s in st.solids()]))<1e-5)
     check('lip_lowers_past_base',J.overlap(b,column(k))<1e-5)
@@ -74,13 +81,13 @@ def main():
     plate=Compound(children=placed)
     check('plate_two_parts_on_bed',len(plate.solids())==2 and all(abs(p.bounding_box().min.Z)<1e-5 for p in placed))
     check('plate_parts_separate',J.overlap(*placed)<1e-5)
-    report=dict(revision='v1.1',checks=checks,passed=all(checks.values()),spacer_mm=SPACER,stop_face_y=FACE,
+    report=dict(revision=REV,checks=checks,passed=all(checks.values()),spacer_mm=SPACER,stop_face_y=FACE,
         lip=dict(x=[LEFT+S.RAIL_GAP,RIGHT-S.RAIL_GAP],z=[RAIL_TOP,0],chamfer_to_z=CHAMFER),
         rail_stops=dict(z=[RAIL_TOP,STOP_TOP]),plate_mm=list(plate.bounding_box().size),physical_fit_confirmed=False,
-        notes=['Austin felt ~1.2 mm play; CAD model shows 0.6. His reading is used.','1.0 mm spacer leaves ~0.2 mm so the board cannot jam.','Joystick/button/USB/reset openings unchanged from v1.0.'])
+        notes=['Austin felt ~1.2 mm play; CAD model shows 0.6. His reading is used.',str(SPACER)+' mm spacer.','Joystick/button/USB/reset openings unchanged from v1.0.'])
     (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
     if not report['passed']:raise SystemExit('Validation failed')
-    J.export(plate,STL/'v1.1-lid-and-base.stl')
+    J.export(plate,STL/(REV+'-lid-and-base.stl'))
     view={n:fn() for n,(fn,color) in V.V.PARTS.items()};view['base']=b;view['lid']=l;view['button_caps']=caps
     view['joystick_cap']=Pos(*M.JOY_C,L1.LIP_TOP-J.BOTTOM-J.FLANGE_T)*cap
     export_step(Compound(children=list(view.values())),str(OUT/'assembly.step'))
@@ -89,11 +96,11 @@ def main():
         for name,s in view.items():
             path=Path(tmp)/(name+'.stl');J.export(s,path);bb=s.bounding_box()
             packed.append(dict(name=name,color=V.V.PARTS[name][1],stl=base64.b64encode(path.read_bytes()).decode(),bbox=[*tuple(bb.min),*tuple(bb.max)]))
-    info=dict(commit='v1.1 USB-end spacer',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.0 plus 1.0mm USB-end spacer.','Lid lip between rails, base stops on rails.','Stops board sliding toward USB-C.','Not printed yet.'])
-    html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(packed)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';').replace('V3 review · NOT APPROVED FOR PRINT','V1.1 · USB-END SPACER').replace('V3 Case Review — Not Approved for Print','V1.1 spacer case')
+    info=dict(commit=REV+' USB-end spacer',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.0 plus '+str(SPACER)+'mm USB-end spacer.','Lid lip between rails, base stops on rails.','Stops board sliding toward USB-C.','Not printed yet.'])
+    html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(packed)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';').replace('V3 review · NOT APPROVED FOR PRINT',REV.upper()+' · USB-END SPACER').replace('V3 Case Review — Not Approved for Print',REV.upper()+' spacer case')
     (OUT/'viewer.html').write_text(html);(ROOT/'renders/viewer.html').write_text(html)
     sources=[Path(__file__),*[ROOT/'cad'/n for n in ('v1_production.py','s2_tight_base.py','s1_strong_shell.py','l4_alignment.py','l3_shifted_hole.py','j3_low_lid.py','joystick_j2.py','v3_flat.py','v3_fit.py','joystick_test.py','model.py','params.py')]]
     outputs=[*sorted(STL.glob('*.stl')),OUT/'assembly.step',OUT/'validation.json',OUT/'viewer.html']
-    (OUT/'manifest.json').write_text(json.dumps(dict(revision='v1.1',supports=False,raft=False,slice_verified=False,source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},files={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}),indent=2)+'\n')
+    (OUT/'manifest.json').write_text(json.dumps(dict(revision=REV,supports=False,raft=False,slice_verified=False,source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},files={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in outputs}),indent=2)+'\n')
 
 if __name__=='__main__':main()

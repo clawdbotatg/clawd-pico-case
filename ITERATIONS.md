@@ -195,3 +195,8 @@ V1.1 = v1.0 plus a 1.0 mm stop at the USB end: a lid lip between the rails
 and base stops on the rails. The openings are unchanged. Source:
 cad/v1_1_spacer.py. Outputs: stl/v1.1 and renders/v1.1, with 16 checks
 passing and the viewer tested. The caps are unchanged; reuse the v1.0 caps.
+## V1.2 — half spacer
+
+The v1.1 1.0 mm spacer was too big (the board would not sit flush). V1.2 is
+the same design with 0.5 mm. Source: cad/v1_2_half_spacer.py. Outputs:
+stl/v1.2 and renders/v1.2. All checks pass.

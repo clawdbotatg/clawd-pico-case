@@ -1,5 +1,5 @@
 {
-  "revision": "v1.1",
+  "revision": "v1.2",
   "supports": false,
   "raft": false,
   "slice_verified": false,
@@ -19,11 +19,11 @@
     "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
   },
   "files": {
-    "stl/v1.1/base-floor-down.stl": "0e3683f0ea0cdc54a15284d3276b2ea02231a642810b9b950b6caa1d64ac587f",
-    "stl/v1.1/lid-face-down.stl": "ff261f9b66ad2356734524644bf6b8f7ca9224067e2acfdd572cedc7b0f36b27",
-    "stl/v1.1/v1.1-lid-and-base.stl": "32bea031f0df6babdb6645b644b77a3e26ac78addec0802f06e9d6855bb3419c",
-    "renders/v1.1/assembly.step": "e4d3eeb3729c1160016c570020cf62514c8f4ab998fc972849edc7a5a65c26ce",
-    "renders/v1.1/validation.json": "f5d67a6bb4f72b8dc1d29ead2e75728645d8c046ba9a6adb3ba9eac2baf8f8cd",
-    "renders/v1.1/viewer.html": "52c3fa3d9f5aab18f534e0818efd204e8a0fd433657b7b8721502be13fd67c19"
+    "stl/v1.2/base-floor-down.stl": "90292d5a689055428e2f0d8621f43f47abc28acb56e9cbe122e9e2db77628274",
+    "stl/v1.2/lid-face-down.stl": "6c08adc4c819d2d9cdc602a9c1148da7641bbc1fef5fcd1e4a6de2f97f0eebd4",
+    "stl/v1.2/v1.2-lid-and-base.stl": "217d9d7e4b22578b43e1006f5156df53adaa4b3d2b15933af90dd209899e8b21",
+    "renders/v1.2/assembly.step": "2b04caa59a8a4d31066627a0b289b9dfaa06023ca757bdd0b8170f6a8b701811",
+    "renders/v1.2/validation.json": "7074c0ac736904faaf425ab1998bcee60002cadf55cd83ac957944b99851b063",
+    "renders/v1.2/viewer.html": "b0a33a299490afe3436127a9cdc43a56ab0e7eeff9c76fc940830854d9b7e0e5"
   }
 }

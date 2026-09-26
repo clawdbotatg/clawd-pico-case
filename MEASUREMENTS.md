@@ -419,3 +419,9 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.1-SPACER | Stop face 1.0 mm in from the USB-end inner wall (y 52.80 → 51.80) | His 1.2 mm, minus 0.2 mm left free so the rigid PCB cannot jam |
 | V1.1-LIP | Lid lip between the rails, x 2.76–23.68, z -1.97 to 0 at the face, 45° chamfer to z 1.0 at the wall | Original; catches the LCD PCB edge, and the chamfer prints face-down with no support |
 | V1.1-STOP | Base rail end stops, y 51.80–52.55, z -1.97 to -0.30 | Original; locates the board before the lid goes on, stays under the PCB front face |
+### V1.2 half spacer
+
+| ID | Value | Source |
+|---|---|---|
+| V1.2-FEEDBACK | The v1.1 spacer is in the right place but too big: the screen board no longer fits flush | Austin, 2026-09-25, v1.1 white PETG lid on the v1.0 base |
+| V1.2-SPACER | 0.5 mm (half of v1.1); stop face at y 52.30; lip chamfer 0.5 | Austin: "let's try a half a millimeter" |
