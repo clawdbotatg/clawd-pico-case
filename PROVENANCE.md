@@ -435,3 +435,8 @@ and flat all the way across. The ball is now 7.4 mm, cut through its centre,
 with a 0.3 mm edge break. A new check reruns the J1-CHECK tilt scenarios
 against the v1.4 lid and fails on any contact J2 did not have. That ruled out
 7.6 and 7.5 mm. Original geometry.
+Austin approved J4 and sent it to print (gray PETG, drop
+20260926-112324-joystick). He also supplied a screenshot of the v1.4 viewer
+for the record. It is saved as renders/v1.4/screenshot-2026-09-26.png with
+the metadata removed and the pixels unchanged. It is a render of our own
+model, not a design input.

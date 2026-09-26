@@ -2,7 +2,9 @@
 
 **Current best: v1.3 — print from [`stl/current/`](stl/current/README.md).**
 That folder always holds the version that last passed a physical test. v1.3
-is [v1.0](RELEASE-v1.0.md) with the USB-C end wall 0.5 mm in. Everything else
+is [v1.0](RELEASE-v1.0.md) with the USB-C end wall 0.5 mm in.
+Next up, in review: [v1.4](renders/v1.4/README.md), with a rounded lid, a
+smaller screen window and a flat-top joystick (the base is unchanged). Everything else
 in `stl/`, `renders/` and `prints/` is development history, kept on purpose
 as the design record.
 

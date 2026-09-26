@@ -1,0 +1,18 @@
+{
+  "original_filename": "paste-b80088ef-image.png",
+  "original_sha256": "563f33168d48e9563cfebf960f0ac8145aef2e80fed46ce0f4414d7ac720e86d",
+  "public_filename": "screenshot-2026-09-26.png",
+  "public_sha256": "b0f95e03f31df101e52be92e9058cd32925c9a092fe316360357fc985d0bb49e",
+  "removed_chunks": [
+    "icc_profile",
+    "exif",
+    "dpi",
+    "xmp",
+    "XML:com.adobe.xmp"
+  ],
+  "decoded_pixels_identical": true,
+  "size": [
+    1742,
+    1410
+  ]
+}
