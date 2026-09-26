@@ -204,5 +204,5 @@ stl/v1.2 and renders/v1.2. All checks pass.
 
 This replaces the V1.1/V1.2 spacer trials. It is v1.0 with the USB-C end wall
 0.5 mm inward on the lid and base; the case is 58.60 mm long. Source:
-cad/v1_3_short_end.py. Outputs: stl/v1.3 and renders/v1.3, with 23 checks
+cad/v1_3_short_end.py. Outputs: stl/v1.3 and renders/v1.3, with 19 checks
 passing. The caps are unchanged.
