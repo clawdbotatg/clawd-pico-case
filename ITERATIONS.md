@@ -235,3 +235,6 @@ J5 (v1.4 joystick): J4's outside with the socket narrowing sooner, so the cap
 rides higher and leaves room to press in. Test pair:
 stl/v1.4/joystick-j5-lift-0.3.stl (viewer default) and -lift-0.5.stl. Not
 printed.
+J6 (v1.4 joystick test set): a tighter socket (A 1.95, B 1.90) and a thumb
+dish (C), so pressing in gives a clean centre click. The flange notches 1/2/3
+mark A/B/C. The plate is stl/v1.4/joystick-j6/joystick-j6-abc-plate.stl.

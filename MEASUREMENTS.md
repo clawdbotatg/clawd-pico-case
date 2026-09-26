@@ -459,3 +459,13 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J5-FEEDBACK | With the cap off, the stick's press-in click works. With the cap on it barely moves; up/down/left/right are fine. Make the socket narrow sooner so the cap rides higher | Austin, 2026-09-26 |
 | J5-LIFT | Round mouth 1.0 → 0.7 mm (cap rides 0.3 higher); square 2.0 unchanged. The outside is identical to J4 | Original choice; press travel J9 still not measured |
 | J5-VARIANTS | Test pair: lift 0.3 and 0.5 | In the J1-CHECK tilt scenarios the flange rim meets the roof underside at the hole: 0.5 is clear to ~6°, 0.3 to ~9°, 0.2 to 10°. The pair trades press room against tilt room |
+### J6 — clean centre press test set
+
+| ID | Value | Source |
+|---|---|---|
+| J6-FEEDBACK | With the cap on, pressing in gives centre plus up, right or left; the bare stem gives a clean centre. Neither J5 variant fixed it. "Maybe it needs to be tighter" | Austin, 2026-09-26 |
+| J6-A | Square socket 1.95 (J2 2.01) on the 1.86 stem; flat top; 1 notch | Original trial: less rocking on the stem |
+| J6-B | Square socket 1.90; flat top; 2 notches | Original trial; may press-fit once PETG prints undersize |
+| J6-C | Square socket 1.95 plus a 0.4 deep, 5.0 mm thumb dish; 3 notches | Original trial: centres the push, less leverage off-axis |
+| J6-KEEP | J5 lift 0.3, round mouth 0.7, square depth 2.0, 7.4 half ball | Unchanged from J5 |
+| J6-NOTCH | 0.6 wide × 0.5 deep flange rim notches; the flange stays ≥ 9.4 > 8 mm hole | Original, for identification |

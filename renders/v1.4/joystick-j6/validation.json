@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "a_valid_single_solid": true,
+    "a_socket_volume_exact": true,
+    "a_square_grips_stem": true,
+    "a_ball_and_neck_same_as_J5": true,
+    "a_flange_still_retains": true,
+    "b_valid_single_solid": true,
+    "b_socket_volume_exact": true,
+    "b_square_grips_stem": true,
+    "b_ball_and_neck_same_as_J5": true,
+    "b_flange_still_retains": true,
+    "c_valid_single_solid": true,
+    "c_socket_volume_exact": true,
+    "c_square_grips_stem": true,
+    "c_ball_and_neck_same_as_J5": true,
+    "c_flange_still_retains": true,
+    "c_dish_centre_open": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "lift": 0.3,
+  "variants": {
+    "a": {
+      "square": 1.95,
+      "dish": 0,
+      "notches": 1
+    },
+    "b": {
+      "square": 1.9,
+      "dish": 0,
+      "notches": 2
+    },
+    "c": {
+      "square": 1.95,
+      "dish": 0.4,
+      "notches": 3
+    }
+  },
+  "stem_across_flats": 1.86,
+  "notes": [
+    "A/B/C = 1/2/3 notches on the flange rim.",
+    "Square clearance on the 1.86 stem: A/C 0.09, B 0.04 total (J2 was 0.15).",
+    "PETG small holes print undersize; B may be a press fit.",
+    "Physical press/tilt test pending."
+  ]
+}

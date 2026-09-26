@@ -454,3 +454,11 @@ grip; the outside is identical to J4. The tilt checks showed that raising the
 cap brings the flange closer to the lid, which costs tilt room, so two test
 caps are provided (lift 0.3 and 0.5). The fixed J4 file (as sent) is kept as
 stl/v1.4/joystick-j4-fixed.stl. Original geometry.
+## 2026-09-26 — J6 clean-press test set
+
+Austin: with the cap on, the centre press also triggers a direction, and J5
+did not fix it. Claude's reading is that the cap rocks on the stem (2.01
+socket on a 1.86 stem) and that off-centre pushes on the wide flat tip the
+stick. cad/joystick_j6.py makes three variants: A (1.95 socket), B (1.90) and
+C (1.95 plus a thumb dish), marked by 1/2/3 flange notches. Original
+geometry; there are no outside inputs.
