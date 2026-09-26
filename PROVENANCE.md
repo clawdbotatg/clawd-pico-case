@@ -440,3 +440,8 @@ Austin approved J4 and sent it to print (gray PETG, drop
 for the record. It is saved as renders/v1.4/screenshot-2026-09-26.png with
 the metadata removed and the pixels unchanged. It is a render of our own
 model, not a design input.
+J4 socket bug (2026-09-26): Austin's photos showed a messy, non-working J4
+socket. Claude found that the bigger ball filled the top 1.5 mm of the square
+socket; that was Claude's CAD error, not a print fault. It is fixed by
+re-cutting the J2 socket, with a new check that the socket void is identical
+to J2. Photos are archived in prints/v1.4-photos.

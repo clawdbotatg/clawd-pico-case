@@ -1,0 +1,16 @@
+{
+  "original_filename": "paste-0e08457b-IMG_0881.jpg",
+  "original_sha256": "fc14d025d645dc38eb45e0ddcc3272d6087982ca91ab03d66a3116d03748637b",
+  "public_filename": "IMG_0881.jpg",
+  "public_sha256": "75df500c105c61c8faf0c0b4dc70f4b26d62a3cbfcae3cd1957f78025143a5b6",
+  "removed_marker_types": [
+    "0xe1",
+    "0xed"
+  ],
+  "decoded_pixels_identical": true,
+  "size": [
+    2000,
+    1500
+  ],
+  "note": "Metadata-stripped public copy; original upload unchanged and not committed."
+}

@@ -15,6 +15,7 @@
     "joystick_cap_clear_at_rest": true,
     "joystick_cap_retained_on_pull": true,
     "joystick_valid_single_solid": true,
+    "joystick_socket_void_identical_to_J2": true,
     "joystick_unchanged_below_ball": true,
     "joystick_flat_top_near_full_ball": true,
     "joystick_ball_passes_lid_hole": true,
