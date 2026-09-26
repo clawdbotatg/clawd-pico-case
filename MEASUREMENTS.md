@@ -469,3 +469,10 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J6-C | Square socket 1.95 plus a 0.4 deep, 5.0 mm thumb dish; 3 notches | Original trial: centres the push, less leverage off-axis |
 | J6-KEEP | J5 lift 0.3, round mouth 0.7, square depth 2.0, 7.4 half ball | Unchanged from J5 |
 | J6-NOTCH | 0.6 wide × 0.5 deep flange rim notches; the flange stays ≥ 9.4 > 8 mm hole | Original, for identification |
+### J7 — printable socket
+
+| ID | Value | Source |
+|---|---|---|
+| J7-FEEDBACK | The J6 socket was full of PETG strings (IMG_0887) | Austin, 2026-09-26; cause: flat ledge and flat roof over air when printed flange down |
+| J7-SOCKET | Round Ø3.0 for 0.7 (clears the 2.94 lip, J4b), a round-to-square loft funnel (flats at 45°), square grip to z +2.7, then a 45° pyramid roof. The straight grip is 1.475 long (was 2.0) | Original. Uses J4 (1.86 stem) and J4b (2.94 lip); the stem is wider at its base (J5), so the top of the grip carries it |
+| J7-VARIANTS | A 1.95 / B 1.90 / C 1.95 with dish; notches 1/2/3; the outside is identical to J6 | As J6 |

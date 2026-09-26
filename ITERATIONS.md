@@ -238,3 +238,6 @@ printed.
 J6 (v1.4 joystick test set): a tighter socket (A 1.95, B 1.90) and a thumb
 dish (C), so pressing in gives a clean centre click. The flange notches 1/2/3
 mark A/B/C. The plate is stl/v1.4/joystick-j6/joystick-j6-abc-plate.stl.
+J7 (v1.4 joystick test set): J6 A/B/C with a self-supporting socket, so no
+bridges or ledges inside. The plate is
+stl/v1.4/joystick-j7/joystick-j7-abc-plate.stl.

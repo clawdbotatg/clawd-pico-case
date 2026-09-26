@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "a_valid_single_solid": true,
+    "a_no_flat_overhang_in_socket": true,
+    "a_stem_square_fits": true,
+    "a_grip_walls_kept": true,
+    "a_base_lip_clears": true,
+    "a_outside_same_as_J6": true,
+    "a_roof_left_under_top": true,
+    "b_valid_single_solid": true,
+    "b_no_flat_overhang_in_socket": true,
+    "b_stem_square_fits": true,
+    "b_grip_walls_kept": true,
+    "b_base_lip_clears": true,
+    "b_outside_same_as_J6": true,
+    "b_roof_left_under_top": true,
+    "c_valid_single_solid": true,
+    "c_no_flat_overhang_in_socket": true,
+    "c_stem_square_fits": true,
+    "c_grip_walls_kept": true,
+    "c_base_lip_clears": true,
+    "c_outside_same_as_J6": true,
+    "c_roof_left_under_top": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "socket": {
+    "round_d": 3.0,
+    "round_depth": 0.7,
+    "funnel": "45 deg",
+    "grip_depth": 2.0,
+    "roof": "45 deg pyramid"
+  },
+  "variants": {
+    "a": {
+      "square": 1.95,
+      "dish": 0,
+      "notches": 1
+    },
+    "b": {
+      "square": 1.9,
+      "dish": 0,
+      "notches": 2
+    },
+    "c": {
+      "square": 1.95,
+      "dish": 0.4,
+      "notches": 3
+    }
+  },
+  "overhangs": {
+    "a": [],
+    "b": [],
+    "c": []
+  },
+  "notes": [
+    "A/B/C = 1/2/3 flange notches, as J6.",
+    "Socket prints flange-down with no flat overhang.",
+    "Press/tilt test pending."
+  ]
+}

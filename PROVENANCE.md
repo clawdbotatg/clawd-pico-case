@@ -462,3 +462,11 @@ socket on a 1.86 stem) and that off-centre pushes on the wide flat tip the
 stick. cad/joystick_j6.py makes three variants: A (1.95 socket), B (1.90) and
 C (1.95 plus a thumb dish), marked by 1/2/3 flange notches. Original
 geometry; there are no outside inputs.
+## 2026-09-26 — J7 printable socket
+
+After the J6 stringing photo, Austin pointed out that his stick measurements
+were already in the repo (J4 1.86 stem, J4b 2.94 lip, J6 5.00 tip height).
+Claude had not looked first. cad/joystick_j7.py rebuilds the J6 A/B/C sockets
+with no flat overhang, a round-to-square 45° funnel and a pyramid roof, and a
+check that finds no downward face steeper than 45° inside the socket.
+Original geometry.
