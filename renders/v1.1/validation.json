@@ -1,0 +1,52 @@
+{
+  "revision": "v1.1",
+  "checks": {
+    "lid_valid_single_solid": true,
+    "base_valid_single_solid": true,
+    "lid_only_adds_lip": true,
+    "base_only_adds_stops": true,
+    "spacer_face_at_1mm": true,
+    "fully_closed_no_shell_overlap": true,
+    "lid_lowers_past_base_stops": true,
+    "lip_lowers_past_base": true,
+    "catches_hold_after_0_06mm_lift": true,
+    "held_stack_clears_spacer": true,
+    "spacer_stops_stack": true,
+    "held_stack_clears_usb_end_of_case": true,
+    "held_joystick_cap_clears_lip": true,
+    "buttons_clear_lid": true,
+    "plate_two_parts_on_bed": true,
+    "plate_parts_separate": true
+  },
+  "passed": true,
+  "spacer_mm": 1.0,
+  "stop_face_y": 51.8,
+  "lip": {
+    "x": [
+      2.7600000000000007,
+      23.680000000000003
+    ],
+    "z": [
+      -1.97,
+      0
+    ],
+    "chamfer_to_z": 1.0
+  },
+  "rail_stops": {
+    "z": [
+      -1.97,
+      -0.3
+    ]
+  },
+  "plate_mm": [
+    71.08000000000001,
+    59.099999999999994,
+    20.340000000000003
+  ],
+  "physical_fit_confirmed": false,
+  "notes": [
+    "Austin felt ~1.2 mm play; CAD model shows 0.6. His reading is used.",
+    "1.0 mm spacer leaves ~0.2 mm so the board cannot jam.",
+    "Joystick/button/USB/reset openings unchanged from v1.0."
+  ]
+}

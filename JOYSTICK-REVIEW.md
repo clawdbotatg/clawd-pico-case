@@ -1,6 +1,15 @@
 # V3 shell and joystick review
 
-## CURRENT: V1.0 production — S2 + three 0.25 mm nudges. NOT printed.
+## CURRENT: V1.1 — v1.0 + 1.0 mm USB-end spacer (lid and base)
+
+PETG v1.0 works well, but the boards slide about 1.2 mm along the case
+(Austin). V1.1 adds a stop 1.0 mm inside the USB-end wall: a chamfered lid
+lip between the rails, plus base stops on the rails. The openings and caps
+are unchanged. The CAD model predicts only 0.6 mm of play; the design follows
+Austin's felt 1.2 mm. Source cad/v1_1_spacer.py, stl/v1.1/, viewer port 8793
+/v1.1/viewer.html. 16 checks pass.
+
+## Historical: V1.0 production — S2 + three 0.25 mm nudges. NOT printed.
 
 S2 works (Austin, 2026-09-25). V1.0 = S1 lid + S2 base + S2 buttons + J2
 with three nudges: the joystick hole moves 0.25 toward USB-C (away from the

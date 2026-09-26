@@ -125,3 +125,16 @@ inside the original wall or floor before it is recut, and a check shows
 nothing else changed. The buttons and J2 are byte-identical to the tested
 parts. PETG shrinks differently from PLA, so the first PETG set is also a
 fit check.
+## V1.1 USB-end spacer
+
+The v1.0 PETG test showed the stack sliding along the case, and it lines up
+best pushed toward the buttons. The holes are therefore right for that
+position, so the fix holds the board there and leaves every opening alone.
+The USB-end stop face moves 1.0 mm inward: Austin felt about 1.2 mm of play,
+and 0.2 mm is kept free so a rigid PCB cannot bind. The model predicts 0.6 mm
+of play, so the real board or print differs from the model; his hands win.
+The rails would block a full-width lid wall, so the stop is split in two. The
+lid gets a lip between the rails that catches the LCD PCB edge; its 45° top
+prints face-down with no support. The base gets end stops on top of the rails,
+so the board is located before the lid goes on. The USB plug already works
+with the board pushed this way, so the plug recess is unchanged.

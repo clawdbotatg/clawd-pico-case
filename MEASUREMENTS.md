@@ -411,3 +411,11 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1-USB | USB-C aperture and outer plug recess +0.25 z (toward lid); size unchanged. Aperture z -18.00 to -14.22 | Austin's feedback + photo IMG_0844: receptacle touches top edge. Bottom clearance to modelled shell drops 0.35 → 0.10 |
 | V1-RESET | Base reset hole -0.25 y (away from USB-C end, toward centre). Centre now (16.5068, 39.4370) | Austin's feedback |
 | V1-PLATE | 5 mm gap; 7 parts: lid face down, base floor down, J2 + four S2 caps flange down | Same arrangement as S1-PLATE |
+### V1.1 USB-end spacer — Austin's PETG v1.0 test
+
+| ID | Value | Source |
+|---|---|---|
+| V1.1-FEEDBACK | The board stack slides along the case. It lines up best pushed fully toward the buttons, with about 1.2 mm of play ("more than a millimeter") | Austin, 2026-09-25, hands-on test of the PETG v1.0 print; estimate, not a caliper reading. The CAD model shows only 0.6 mm of play (2 × CLEAR); his reading is used |
+| V1.1-SPACER | Stop face 1.0 mm in from the USB-end inner wall (y 52.80 → 51.80) | His 1.2 mm, minus 0.2 mm left free so the rigid PCB cannot jam |
+| V1.1-LIP | Lid lip between the rails, x 2.76–23.68, z -1.97 to 0 at the face, 45° chamfer to z 1.0 at the wall | Original; catches the LCD PCB edge, and the chamfer prints face-down with no support |
+| V1.1-STOP | Base rail end stops, y 51.80–52.55, z -1.97 to -0.30 | Original; locates the board before the lid goes on, stays under the PCB front face |

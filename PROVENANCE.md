@@ -368,3 +368,15 @@ repository's files and his photos. Claude did not open any forbidden source,
 any other case design, or anything in ~/picowallet. There is no new
 third-party geometry. cad/v1_production.py builds on the S2 and S1 sources
 in this repository.
+## 2026-09-25 — v1.1 USB-end spacer
+
+Austin tested the PETG v1.0 prints (black base, white lid, gray caps). His
+words: it "works really well", but the board stack slides left and right
+inside the case, and it lines up best pushed fully to the right. He estimates
+the play at more than 1 mm, about 1.2 mm, and asked for about 1.2 mm to be
+taken out on the joystick's left, in both the base and the lid. Claude asked
+which wall he meant, and he chose the USB-C end wall. The CAD model predicts
+only 0.6 mm of play; the design follows his physical reading and records the
+difference. The spacer is 1.0 mm, so 0.2 mm stays free. The geometry is
+original (cad/v1_1_spacer.py), with no outside inputs and no forbidden
+sources opened.

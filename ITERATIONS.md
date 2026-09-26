@@ -188,3 +188,10 @@ up, and the reset hole moves toward the centre. Source: cad/v1_production.py.
 Outputs: stl/v1.0 and renders/v1.0, with 35 checks passing and the browser
 viewer tested. Not printed in PLA, at Austin's request; the next prints are in
 PETG. Photos: prints/v1.0-photos. Tag: v1.0.
+## V1.1 — USB-end spacer
+
+PETG v1.0 works well, but the board slides about 1.2 mm along the case.
+V1.1 = v1.0 plus a 1.0 mm stop at the USB end: a lid lip between the rails
+and base stops on the rails. The openings are unchanged. Source:
+cad/v1_1_spacer.py. Outputs: stl/v1.1 and renders/v1.1, with 16 checks
+passing and the viewer tested. The caps are unchanged; reuse the v1.0 caps.
