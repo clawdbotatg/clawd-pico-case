@@ -452,3 +452,10 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J4-HAT | A 45° flare from 5.5 to 7.0 mm, then a 0.6 mm disc edge; the top is 12.02, the same height as J2 (12.00) | Original. 45° prints flange-down with no support; 7.0 mm = ball width, under the 8 mm lid hole |
 | J4-RIM-2 | 0.5 mm top edge; flat pad about 6 mm (was about 3.8) | Austin: "make it a little bigger" |
 | J4-BALL | Ball 7.4 mm (J2: 7.0), cut flat through its centre: a half ball with a flat top all the way across. 0.3 mm rim edge break. The top is 3.7 mm below J2's | Austin: "make the ball a little bit bigger ... just barely fits through the hole ... at the widest part make it flat all the way across". Largest size without new lid contact in the J1-CHECK tilt scenarios: 7.6 and 7.5 graze the 8 mm hole at 10°/pivot z0; 7.4 leaves 0.3 mm each side |
+### J5 — press-in room (v1.4 joystick)
+
+| ID | Value | Source |
+|---|---|---|
+| J5-FEEDBACK | With the cap off, the stick's press-in click works. With the cap on it barely moves; up/down/left/right are fine. Make the socket narrow sooner so the cap rides higher | Austin, 2026-09-26 |
+| J5-LIFT | Round mouth 1.0 → 0.7 mm (cap rides 0.3 higher); square 2.0 unchanged. The outside is identical to J4 | Original choice; press travel J9 still not measured |
+| J5-VARIANTS | Test pair: lift 0.3 and 0.5 | In the J1-CHECK tilt scenarios the flange rim meets the roof underside at the hole: 0.5 is clear to ~6°, 0.3 to ~9°, 0.2 to 10°. The pair trades press room against tilt room |

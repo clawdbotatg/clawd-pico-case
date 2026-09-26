@@ -445,3 +445,12 @@ socket. Claude found that the bigger ball filled the top 1.5 mm of the square
 socket; that was Claude's CAD error, not a print fault. It is fixed by
 re-cutting the J2 socket, with a new check that the socket void is identical
 to J2. Photos are archived in prints/v1.4-photos.
+## 2026-09-26 — J5 press-in room
+
+Austin found that the joystick's centre click works with the cap off but not
+with it on. He asked for the socket to narrow sooner so the cap rides higher.
+cad/joystick_j5.py shortens the round mouth by LIFT and keeps the 2.0 mm square
+grip; the outside is identical to J4. The tilt checks showed that raising the
+cap brings the flange closer to the lid, which costs tilt room, so two test
+caps are provided (lift 0.3 and 0.5). The fixed J4 file (as sent) is kept as
+stl/v1.4/joystick-j4-fixed.stl. Original geometry.

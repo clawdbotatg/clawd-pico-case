@@ -20,16 +20,145 @@
     "joystick_flat_top_near_full_ball": true,
     "joystick_ball_passes_lid_hole": true,
     "joystick_top_at_ball_centre": true,
-    "joystick_tilt_no_new_lid_contact_vs_J2": true
+    "joystick_socket_volume_exact": true,
+    "joystick_socket_shorter_by_lift_closed_above": true,
+    "joystick_outside_identical_to_J4": true,
+    "joystick_lift_within_round_mouth": true,
+    "joystick_tilt_to_8deg_no_new_lid_contact_vs_J2": true,
+    "joystick_valid_single_solid_lift_0.3": true,
+    "joystick_socket_volume_exact_lift_0.3": true,
+    "joystick_socket_shorter_by_lift_closed_above_lift_0.3": true,
+    "joystick_outside_identical_to_J4_lift_0.3": true,
+    "joystick_lift_within_round_mouth_lift_0.3": true,
+    "joystick_valid_single_solid_lift_0.5": true,
+    "joystick_socket_volume_exact_lift_0.5": true,
+    "joystick_socket_shorter_by_lift_closed_above_lift_0.5": true,
+    "joystick_outside_identical_to_J4_lift_0.5": true,
+    "joystick_lift_within_round_mouth_lift_0.5": true
   },
   "joystick_tilt_new_contact": [],
+  "joystick_tilt_10deg_contact": [
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 0,
+      "cap_mm3": 0.0982,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 45,
+      "cap_mm3": 0.0982,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 90,
+      "cap_mm3": 0.0982,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 135,
+      "cap_mm3": 0.0982,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 180,
+      "cap_mm3": 0.0909,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 225,
+      "cap_mm3": 0.0753,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 270,
+      "cap_mm3": 0.0865,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 0,
+      "dir": 315,
+      "cap_mm3": 0.0982,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 0,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 45,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 90,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 135,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 180,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 225,
+      "cap_mm3": 0.2293,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 270,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    },
+    {
+      "tilt": 10,
+      "pivot_z": 3,
+      "dir": 315,
+      "cap_mm3": 0.2304,
+      "j2_mm3": 0
+    }
+  ],
   "passed": true,
   "top_edge_radius": 3.0,
   "window_in_each_side": 1.0,
   "window_over_glass_each_side": 0.6,
   "window_edge_radius": 1.2,
   "base": "unchanged v1.3 (stl/current/base.stl)",
-  "caps": "buttons unchanged; joystick J4 (flat-top)",
+  "caps": "buttons unchanged; joystick J5 (J4 flat-top, socket 0.5 shallower)",
+  "joystick_lift_mm": 0.3,
   "joystick_ball_d": 7.4,
   "joystick_flat_d": 7.4,
   "joystick_rim_r": 0.3,

@@ -231,3 +231,7 @@ about 6 mm flat), at the same height as J2. Not printed.
 J4 review 3: a 7.4 mm half ball with a flat top all the way across (the hat
 version was dropped). It passes the 8 mm hole with 0.3 mm each side, and no
 new tilt contact versus J2. Not printed.
+J5 (v1.4 joystick): J4's outside with the socket narrowing sooner, so the cap
+rides higher and leaves room to press in. Test pair:
+stl/v1.4/joystick-j5-lift-0.3.stl (viewer default) and -lift-0.5.stl. Not
+printed.

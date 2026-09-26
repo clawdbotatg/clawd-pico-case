@@ -3,7 +3,7 @@
   "print_sent": false,
   "slice_verified": false,
   "source_sha256": {
-    "cad/v1_4_rounded.py": "c25a56d239e2a37d6b2dfde6a19bf38f62f9cf2fb82d1a6c172e0098781fb82b",
+    "cad/v1_4_rounded.py": "56fa0ffcbb14f404f46bd69a5130c336ca63d88b333f70d120e8e257fb321a45",
     "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
     "cad/v1_production.py": "07ca8d2b39c4b1682ea915a12931246cd0eccca64c4cfdbca7e61eb557c5ae0c",
     "cad/s2_tight_base.py": "c3a6f34c56ddd312025ff83ea765120251f9aa98e3824f256e866e14ac7e1600",
@@ -13,6 +13,7 @@
     "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
     "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
     "cad/joystick_j4.py": "383e419cc157d4fc46e92d7804208bb9ca1c120aeec395ee7265e32c9daf4d95",
+    "cad/joystick_j5.py": "2532eecb8519a779394e4fdbaf0f9f57177d851a75f807c2528a9946ad6aeda1",
     "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
     "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
     "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
@@ -20,10 +21,13 @@
     "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
   },
   "files": {
-    "stl/v1.4/joystick.stl": "b8290aae9c4e3f3a1d34156ae2c2e8b8ce44317bf4dc2e04f0218385a386a95c",
+    "stl/v1.4/joystick-j4-fixed.stl": "b8290aae9c4e3f3a1d34156ae2c2e8b8ce44317bf4dc2e04f0218385a386a95c",
+    "stl/v1.4/joystick-j5-lift-0.3.stl": "e344aae00ae803b8bcb927626976555e200b857604099f8d6984ba214df2d145",
+    "stl/v1.4/joystick-j5-lift-0.5.stl": "ddac21e79241514af47ac0e29fc37934777e8d087c4ccdec903e3c9aa95f4656",
+    "stl/v1.4/joystick.stl": "e344aae00ae803b8bcb927626976555e200b857604099f8d6984ba214df2d145",
     "stl/v1.4/lid-face-down.stl": "3059615094d122bf546c889ccafbb685b5574a490b64245cd719f1f88cdb2aa0",
-    "renders/v1.4/assembly.step": "f32de10dfe2360809e4bb1000ac845239097c67f6e67c3a96ba4e49d7242d2c9",
-    "renders/v1.4/validation.json": "574dcf85bef168f49d941c6ba362e45f83cc22f6812f741ef1fa08bb4143acac",
-    "renders/v1.4/viewer.html": "d346877854bac44da1c5d28c4beea794127e150f886504b74db307a15cfd26b3"
+    "renders/v1.4/assembly.step": "26aadc35959003c92fdbbb37fca8f37fd27fcc934b1af41bd56aa51efed7d008",
+    "renders/v1.4/validation.json": "9f5875f192450bb2b225fa60a4bf227259f6e3e09d1ea5ee8a80033f32e7271e",
+    "renders/v1.4/viewer.html": "4e86aceb9714f94cc904276adb6d7dc0b706d8520f15f864b985326a3465cd1b"
   }
 }
