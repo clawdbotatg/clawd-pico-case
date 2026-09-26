@@ -3,7 +3,7 @@
   "print_sent": false,
   "slice_verified": false,
   "source_sha256": {
-    "cad/v1_4_rounded.py": "d4093347e37a23478b5ffd50d2ff011742a9594a512649404cce2fa505505c8f",
+    "cad/v1_4_rounded.py": "e744d3eef6b453aa28513f466c3cf543779f3585ffd514156a7558464bbc6982",
     "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
     "cad/v1_production.py": "07ca8d2b39c4b1682ea915a12931246cd0eccca64c4cfdbca7e61eb557c5ae0c",
     "cad/s2_tight_base.py": "c3a6f34c56ddd312025ff83ea765120251f9aa98e3824f256e866e14ac7e1600",
@@ -19,9 +19,9 @@
     "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
   },
   "files": {
-    "stl/v1.4/lid-face-down.stl": "99bdf0c9533cbfe43c84001d68c47d076afe028c31feaf3caa5e19b8e9b45f70",
-    "renders/v1.4/assembly.step": "91b4d1a23c963a5326105ae14daca0a0fb58eb1425dcfe74c5d3df19f6e84b71",
-    "renders/v1.4/validation.json": "92d157ced3bfac643e53512a8ef8aedcaa57f642a9345a3788d1f96ce42dd99a",
-    "renders/v1.4/viewer.html": "2902227477af0ed972f6926ffb1bb6e73ae2c9d97cd2434a964b33d62213f9ed"
+    "stl/v1.4/lid-face-down.stl": "64cc3e62ae6ec73885c38caacdfcb3b63d72f5963866c3d8cf7ebd050959f636",
+    "renders/v1.4/assembly.step": "f38fe94b34f235f00f94b342ef42be5b35db794d1fff8ac53ff53b8c2a7291cf",
+    "renders/v1.4/validation.json": "682b7931eee660a0972fdd8187e519626e70c2b8ca7234d250dcf2945b39d6d1",
+    "renders/v1.4/viewer.html": "fcb08e48a952f0b6fc15b672e2784c2012bcde8f0c3d589ea7537638927c140a"
   }
 }

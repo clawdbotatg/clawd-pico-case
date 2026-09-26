@@ -14,8 +14,8 @@ ROOT=W.ROOT
 REV='v1.4'
 OUT=ROOT/'renders'/REV
 STL=ROOT/'stl'/REV
-TOP_R=1.5  # V1.4-TOP-R: outer top perimeter
-WINDOW_EDGE_R=.7  # V1.4-WINDOW-R: under the 0.8 window corner radius
+TOP_R=3.0  # V1.4-TOP-R: outer top perimeter = wall thickness (review 3; was 1.5, 2.5)
+WINDOW_EDGE_R=1.2  # V1.4-WINDOW-R (review 2 on; review 1 was 0.7; larger fails with TOP_R 3)
 
 def top_face(l):
     return max((f for f in l.faces() if abs(f.center().Z-S.TOP)<1e-6 and f.normal_at().Z>.9),key=lambda f:f.area)
@@ -43,6 +43,9 @@ def main():
     below=M.box(S.X0-1,S.X1+1,S.Y0-1,S.Y1+1,M.Z_BOTTOM-1,S.TOP-max(TOP_R,WINDOW_EDGE_R)-P.EPS)
     check('lid_unchanged_below_rounding',V.same(l & below,old & below))
     check('lid_height_unchanged',abs(l.bounding_box().max.Z-S.TOP)<1e-6)
+    with tempfile.TemporaryDirectory() as tmp:
+        path=Path(tmp)/'base.stl';J.export(V.origin(b),path)
+        check('base_byte_identical_to_v1_3',path.read_bytes()==(ROOT/'stl/current/base.stl').read_bytes())
     check('fully_closed_no_shell_overlap',J.overlap(b,l)<1e-5)
     check('buttons_clear_lid',J.overlap(caps,l)<1e-5)
     check('joystick_cap_clear_at_rest',J.overlap(l,placed_cap)<1e-5)
@@ -61,7 +64,7 @@ def main():
         for name,s in view.items():
             path=Path(tmp)/(name+'.stl');J.export(s,path);bb=s.bounding_box()
             packed.append(dict(name=name,color=V.V.PARTS[name][1],stl=base64.b64encode(path.read_bytes()).decode(),bbox=[*tuple(bb.min),*tuple(bb.max)]))
-    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded 1.5mm.','LCD window edge rounded 0.7mm.','Look trial, not printed.'])
+    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Look trial, not printed.'])
     html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(packed)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';').replace('V3 review · NOT APPROVED FOR PRINT','V1.4 · ROUNDED EDGES · REVIEW').replace('V3 Case Review — Not Approved for Print','V1.4 rounded edges')
     (OUT/'viewer.html').write_text(html);(ROOT/'renders/viewer.html').write_text(html)
     sources=[Path(__file__),*[ROOT/'cad'/n for n in ('v1_3_short_end.py','v1_production.py','s2_tight_base.py','s1_strong_shell.py','l4_alignment.py','l3_shifted_hole.py','j3_low_lid.py','joystick_j2.py','v3_flat.py','v3_fit.py','joystick_test.py','model.py','params.py')]]

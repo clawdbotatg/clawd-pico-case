@@ -438,3 +438,4 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.4-FEEDBACK | Round the edges around the LCD and around the top so it looks better | Austin, 2026-09-26 |
 | V1.4-TOP-R | 1.5 mm fillet on the lid's top outer perimeter | Original choice; under the 3.8 vertical corner radius |
 | V1.4-WINDOW-R | 0.7 mm fillet on the LCD window's top edge | Original choice; under the 0.8 window corner radius |
+| V1.4-R-REV3 | Top perimeter 3.0 mm (= wall thickness), LCD window 1.2 mm. They replace the 1.5 and 0.7 above | Austin: "round it a little bit more ... more rounded". A larger window radius fails, because the window step is only 0.7 mm tall |
