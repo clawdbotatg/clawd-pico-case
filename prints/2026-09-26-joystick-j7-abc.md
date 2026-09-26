@@ -11,3 +11,9 @@ PETG, 0.16 mm, 4 walls, no supports, no raft, flange down.
 
 Check: a clean socket with no strings, a clean centre click, a snug fit, and
 free tilt.
+
+## Result
+
+Austin prefers B (middle, 2 notches, 1.90 socket) and asked for one more to
+confirm. One J7-B was dropped with no colour or GO:
+`stl/v1.4/joystick-j7/joystick-j7-b.stl`, SHA256 `9642da2a7447b7ac1901510c7d582ceb871a685471a6db2d7a18548d0ecf6537`.
