@@ -1,0 +1,24 @@
+{
+  "revision": "v1.3",
+  "sources": {
+    "lid.stl": "stl/v1.3/lid-face-down.stl",
+    "base.stl": "stl/v1.3/base-floor-down.stl",
+    "joystick.stl": "stl/v1.0/joystick-j2.stl",
+    "button.stl": "stl/v1.0/button-1.stl"
+  },
+  "sha256": {
+    "base.stl": "c26d3ef5e49ccafc011539eb48be9c252d24a54c676e4136f60ca8a9ff83859e",
+    "button.stl": "c5f2f4a37f8facaa3bd96ad248d94c85154113100936c166ac9365a7ae35d69a",
+    "full-set.stl": "40aa07752033a3479a6d0804eb890a7453b72154b473bffeb2a64383309d9667",
+    "joystick.stl": "929c112efd3c55259868da8d52115902e15ce6fe5bad6dea9e933d9ce5ba0c19",
+    "lid.stl": "eddf98bfa6c56df3ee43523b8e432f1ef07ad944e9342fcf71011e93c7d7c223"
+  },
+  "print": {
+    "material": "PETG",
+    "layer_mm": 0.16,
+    "walls": 4,
+    "supports": false,
+    "raft": false,
+    "orientation": "lid face down, base floor down, joystick and buttons flange down"
+  }
+}

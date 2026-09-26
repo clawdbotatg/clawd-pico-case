@@ -395,3 +395,10 @@ move 0.5 mm inward on both halves, making the case shorter. cad/v1_3_short_end.p
 rebuilds v1.0 with the end datums (Y1, IY1) moved 0.5 mm. A check shows both
 parts are identical to v1.0 for y < 51. The v1.1 and v1.2 spacer designs are
 kept as history and are not used. There are no new outside inputs.
+## 2026-09-26 — v1.3 promoted to current best
+
+Austin tested the printed v1.3 lid and base: "holds the case just right,
+nothing rattles, everything clicks." He named it the best version so far and
+asked for a stable reference the print Mac can use for batches.
+stl/current/ holds byte copies of the tested v1.3 lid and base, the v1.0 J2
+joystick and a button, plus a full-set plate. There is no new geometry.

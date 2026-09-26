@@ -206,3 +206,9 @@ This replaces the V1.1/V1.2 spacer trials. It is v1.0 with the USB-C end wall
 0.5 mm inward on the lid and base; the case is 58.60 mm long. Source:
 cad/v1_3_short_end.py. Outputs: stl/v1.3 and renders/v1.3, with 19 checks
 passing. The caps are unchanged.
+## Current best: v1.3 (2026-09-26)
+
+v1.3 passed Austin's test: nothing rattles, and everything clicks.
+`cad/current.py` copies it to `stl/current/` (lid, base, joystick, button,
+full-set plate) at stable paths, and it is tagged v1.3. For future winners,
+update CURRENT/PARTS and rerun.
