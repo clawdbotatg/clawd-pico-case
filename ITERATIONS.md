@@ -200,3 +200,9 @@ passing and the viewer tested. The caps are unchanged; reuse the v1.0 caps.
 The v1.1 1.0 mm spacer was too big (the board would not sit flush). V1.2 is
 the same design with 0.5 mm. Source: cad/v1_2_half_spacer.py. Outputs:
 stl/v1.2 and renders/v1.2. All checks pass.
+## V1.3 — USB end wall 0.5 mm in, no spacer
+
+This replaces the V1.1/V1.2 spacer trials. It is v1.0 with the USB-C end wall
+0.5 mm inward on the lid and base; the case is 58.60 mm long. Source:
+cad/v1_3_short_end.py. Outputs: stl/v1.3 and renders/v1.3, with 23 checks
+passing. The caps are unchanged.

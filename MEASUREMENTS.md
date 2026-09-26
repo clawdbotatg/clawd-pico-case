@@ -425,3 +425,8 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 |---|---|---|
 | V1.2-FEEDBACK | The v1.1 spacer is in the right place but too big: the screen board no longer fits flush | Austin, 2026-09-25, v1.1 white PETG lid on the v1.0 base |
 | V1.2-SPACER | 0.5 mm (half of v1.1); stop face at y 52.30; lip chamfer 0.5 | Austin: "let's try a half a millimeter" |
+### V1.3 short USB end — replaces the V1.1/V1.2 spacers
+
+| ID | Value | Source |
+|---|---|---|
+| V1.3-SHORTEN | USB-C end wall moved 0.5 mm inward on lid and base (outer face 55.80 → 55.30, inner face 52.80 → 52.30); case 59.10 → 58.60 long. No lip, no spacer | Austin, 2026-09-25: "Take the wall in. A half millimeter. Get rid of the lip." Amount from the v1.1 test (1.0 mm too much) |

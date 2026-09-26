@@ -1,0 +1,29 @@
+{
+  "revision": "v1.3",
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
+    "cad/v1_production.py": "07ca8d2b39c4b1682ea915a12931246cd0eccca64c4cfdbca7e61eb557c5ae0c",
+    "cad/s2_tight_base.py": "c3a6f34c56ddd312025ff83ea765120251f9aa98e3824f256e866e14ac7e1600",
+    "cad/s1_strong_shell.py": "b2e8064d8a25745baca52f0f9cd2e9942aa393767c25ffa00731161988991b5e",
+    "cad/l4_alignment.py": "b57c50ecdfb3a265eb6e3959c7dd246f9ba2f0a161c53996af5ceda9b3f9b447",
+    "cad/l3_shifted_hole.py": "cf029a21615aff6a0884b80379a8497dbcf7e8af55246fbc98bc1dbba61cd600",
+    "cad/j3_low_lid.py": "07cdff4b09fdd25de5799330db60eff922acdc5c301acf5fa2aee0c69cce1c55",
+    "cad/joystick_j2.py": "453324bcfe80594fccb9d61af40383f4fac37bdde8c3e8732417dd3b64517af6",
+    "cad/v3_flat.py": "a900c2d1a61a5b1397c7b15c74423e629cd21ee2b37841fde63118ec3d2bab08",
+    "cad/v3_fit.py": "9513862561ee2299aaa4b2da5e12e6a4dfc385d6ef9ccfd614b946cab5ee79ac",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/v1.3/base-floor-down.stl": "c26d3ef5e49ccafc011539eb48be9c252d24a54c676e4136f60ca8a9ff83859e",
+    "stl/v1.3/lid-face-down.stl": "eddf98bfa6c56df3ee43523b8e432f1ef07ad944e9342fcf71011e93c7d7c223",
+    "stl/v1.3/v1.3-lid-and-base.stl": "a934294af3fb61abfb58a7c2180b5e7649c432cfaad5c3585d9731837b1f6abd",
+    "renders/v1.3/assembly.step": "5b1d755bda8fbab40dd08c96b01be4b892616439e9f747d48a3bb78577d3ee16",
+    "renders/v1.3/validation.json": "1acdc65e87a5923db8f1a22c8bdd08474cf68ba24fe57751de7bc8d8e65e8db6",
+    "renders/v1.3/viewer.html": "027e83b056a3cab1f872a9d8b927a61aeaf7880626954c3afe12227d0af254b0"
+  }
+}

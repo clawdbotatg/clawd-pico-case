@@ -138,3 +138,12 @@ lid gets a lip between the rails that catches the LCD PCB edge; its 45° top
 prints face-down with no support. The base gets end stops on top of the rails,
 so the board is located before the lid goes on. The USB plug already works
 with the board pushed this way, so the plug recess is unchanged.
+## V1.3 short USB end (replaces the V1.1/V1.2 spacers)
+
+The spacer added parts (a lid lip and base stops) and still needed both
+halves reprinted. Moving the end wall in does the same job with less: the case
+gets 0.5 mm shorter, there is no inner lip, and the USB plug sits 0.5 mm closer
+to the port. The whole end is rebuilt from the moved datums, so the corners,
+the tongue and socket, the rail ends (0.25 mm gap kept), the USB slot and the
+plug recess all follow. Everything else is unchanged from v1.0, and a check
+confirms that.

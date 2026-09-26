@@ -387,3 +387,11 @@ screen board will not sit flush. He asked for half as much, 0.5 mm.
 cad/v1_1_spacer.py gained configure(rev, spacer); the v1.1 STLs regenerate
 byte-identical. cad/v1_2_half_spacer.py builds v1.2 with 0.5 mm. There are no
 new outside inputs.
+## 2026-09-25 — v1.3 short USB end
+
+Austin rejected the spacer approach, because the lip and the base stops meant
+reprinting both halves anyway. He asked instead for the USB-C end wall to
+move 0.5 mm inward on both halves, making the case shorter. cad/v1_3_short_end.py
+rebuilds v1.0 with the end datums (Y1, IY1) moved 0.5 mm. A check shows both
+parts are identical to v1.0 for y < 51. The v1.1 and v1.2 spacer designs are
+kept as history and are not used. There are no new outside inputs.
