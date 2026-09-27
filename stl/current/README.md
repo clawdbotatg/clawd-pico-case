@@ -20,3 +20,9 @@ printed. Hashes and sources are in `current.json`.
 
 Stable links:
 `https://raw.githubusercontent.com/clawdbotatg/clawd-pico-case/main/stl/current/<file>`
+
+## On the print Mac
+
+v1.5 reference drops (2026-09-26, not printed): `20260926-213136-lid`, `20260926-213137-base`, `20260926-213137-joystick`, `20260926-213137-button`, `20260926-213138-full-set`.
+A message tells the print Claude to reprint them on request with `copies=N`,
+and that they replace the v1.3 CURRENT drops.
