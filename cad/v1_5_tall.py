@@ -12,7 +12,7 @@ import hashlib
 import json
 import tempfile
 from pathlib import Path
-from build123d import Pos, Rot, Compound, export_step, fillet
+from build123d import Pos, Rot, Compound, Cylinder, export_step, fillet
 import v1_4_rounded as R
 import joystick_j9 as J9
 W,V,T,S,M,P,J,L1=R.W,R.V,R.T,R.S,R.M,R.P,R.J,R.L1
@@ -37,6 +37,7 @@ def stretch(shape,z,dz,band=None):
     out=below+Pos(0,0,dz)*slab+Pos(0,0,dz)*above
     return out
 
+JOY_BEVEL=False  # v1.7 sets True
 JOY_EDGE_R=.6  # V1.5-JOY-EDGE: round the joystick hole top edge; the J9 ball grazed it at 10 deg
 
 def lid():
@@ -45,7 +46,14 @@ def lid():
     top=max((f for f in t.faces() if abs(f.center().Z-S.TOP-RAISE)<1e-6 and f.normal_at().Z>.9),key=lambda f:f.area)
     hx,hy=M.JOY_C[0]+L4.DX,M.JOY_C[1]+L4.DY+V.JOY_DY
     hole=min(top.inner_wires(),key=lambda w:(w.bounding_box().center().X-hx)**2+(w.bounding_box().center().Y-hy)**2)
-    return fillet(hole.edges(),JOY_EDGE_R),l
+    t=fillet(hole.edges(),JOY_EDGE_R)
+    if JOY_BEVEL:  # V1.7-HOLE-BEVEL: 45 deg fill under the fillet's flat start
+        from build123d import Cone
+        r0,rr=J.HOLE/2,JOY_EDGE_R;p45,leg=rr*(1-2**-.5),rr*(2-2**.5);top_z=S.TOP+RAISE
+        ring=Pos(hx,hy,top_z-p45/2)*Cylinder(r0+rr,p45)
+        cone=Pos(hx,hy,top_z-leg/2+P.EPS/2)*Cone(r0,r0+leg+P.EPS,leg+P.EPS)
+        t=t+(ring-cone)
+    return t,l
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True);STL.mkdir(parents=True,exist_ok=True)

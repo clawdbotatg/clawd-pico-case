@@ -66,7 +66,7 @@ def old_pockets():
     return Compound(children=[b for yc in LONG_Y for b in (M.box(f0-S.RECESS,f0,yc-e,yc+e,z0,z1),M.box(f1,f1+S.RECESS,yc-e,yc+e,z0,z1))])
 
 def lid():
-    R.TOP_BEVEL=True
+    R.TOP_BEVEL=True;R.HOLE_BEVEL=True;T5.JOY_BEVEL=True  # smooth window and joystick edges too
     l,_=T5.lid()  # v1.6 lid
     old=l
     l=l+old_pockets()
@@ -113,10 +113,25 @@ def main():
     check('lid_unchanged_above_joint',vol(diff(l & below,l16 & below))<1e-4 and vol(diff(l16 & below,l & below))<1e-4)
     check('lid_outer_skin_intact',vol(S.outer(S.SEAM+P.PRY_H,S.SEAM+S.LAP)-S.outer(S.SEAM-1,S.SEAM+S.LAP+1,S.SKIN-RECESS)-l)<1e-4)
     check('hardware_clear',J.overlap(b,M.hat()+M.pico())<1e-5)
+    import math
+    top=S.TOP+T5.RAISE;steep=[]
+    near=M.box(S.X0+R.TOP_R+.2,S.X1-R.TOP_R-.2,S.Y0+R.TOP_R+.2,S.Y1-R.TOP_R-.2,top-1.3,top+1)
+    for f in (l & near).faces():  # window + joystick + buttons edges, sampled
+        for u in (.02,.25,.5,.75,.98):
+            for w in (.02,.25,.5,.75,.98):
+                try:pt=f.position_at(u,w);n=f.normal_at(pt)
+                except Exception:continue
+                if abs(pt.Z-top)>1e-3 and n.Z>math.cos(math.radians(45))+1e-2:steep.append((round(pt.X,1),round(pt.Y,1),round(pt.Z,2)))
+    check('window_and_joystick_edges_max_45deg_overhang',not steep)
+    nar,_=R.narrow_window(V.lid()[0]);wb=R.window_wire(R.top_face(nar)).bounding_box()
+    sight=M.rbox(wb.min.X+.01,wb.max.X-.01,wb.min.Y+.01,wb.max.Y-.01,P.S3,top+1,P.WINDOW_R)
+    check('window_open_down_to_glass',J.overlap(l,sight)<1e-5)
+    hx,hy=M.JOY_C[0]+V.L4.DX,M.JOY_C[1]+V.L4.DY+V.JOY_DY
+    check('joystick_hole_open',J.overlap(l,Pos(hx,hy,top-.5)*__import__('build123d').Cylinder(J.HOLE/2-.01,1.2))<1e-5)
     check('usb_open',J.overlap(b+l,M.box(M.PICO_CX-M.USB_HALF_W,M.PICO_CX+M.USB_HALF_W,M.IY1,S.Y1,M.USB_Z0+V.USB_DZ,M.USB_Z1+V.USB_DZ))<1e-5)
     check('joystick_clear',J.overlap(placed,l)<1e-5)
     check('buttons_clear',J.overlap(caps,l)<1e-5)
-    report=dict(revision=REV,checks=checks,passed=all(checks.values()),hook_mm=HOOK,catches=6,skin_at_pocket=round(S.SKIN-RECESS,2),
+    report=dict(revision=REV,checks=checks,steep_top_edges=steep,passed=all(checks.values()),hook_mm=HOOK,catches=6,skin_at_pocket=round(S.SKIN-RECESS,2),
         ramp_deg_from_vertical=round(__import__('math').degrees(__import__('math').atan(PROJ/(Z_RAMP_TOP-Z_HOLD-NOSE))),1),
         closing_flex_mm=HOOK,physical_fit_confirmed=False,
         notes=['New base AND lid: v1.7 lid does not fit v1.3 bases (deeper catches).','Open with a thumbnail or small tool at the base slot.','Catch underside overhang 0.7 on the base: check slice.'])

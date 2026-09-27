@@ -518,3 +518,4 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.7-ENDS | One more 6 mm catch centred on each short end (6 total); lid pockets to match | Original; clear of the ribs and USB |
 | V1.7-PRY | The lid's half of the pry notch is filled; the base keeps its 6 × 0.8 × 1.0 slot | Original; open with a thumbnail or small tool |
 | V1.7-NOTE | The v1.4–v1.6 lids' two button-end ribs sit at x 5.4/19.4, not 6/20 (a wedge_y winding bug, found in v1.7). Harmless, clear of all catches | Found 2026-09-27 |
+| V1.7-HOLE-BEVEL | The LCD window edge (1.2 fillet) and joystick hole edge (0.6 fillet) get the same 45° tangent fill as V1.6-BEVEL; the openings are unchanged below the fill | Austin, 2026-09-27: a rough edge on the button side of the LCD opening (v1.5/v1.6 lid). The sampled check finds 50 steep spots on the v1.6 lid (13 on the button side) and 0 on v1.7 |

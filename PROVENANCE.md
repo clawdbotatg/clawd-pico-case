@@ -518,3 +518,7 @@ whole case. cad/v1_7_lock.py makes 0.5 mm hooks with a gentler ramp, adds two
 end catches (6 total) and keeps only the base half of the pry slot. The lid
 is v1.6 with new pockets. The base is v1.3 with new catches. J9 and the
 buttons are unchanged. Original geometry; there are no outside inputs.
+Same day: Austin reported a rough edge on the button side of the LCD opening.
+It is the same face-down overhang as the outer edge. The v1.7 lid now fills
+the window and joystick fillet starts to 45° (R.HOLE_BEVEL, T5.JOY_BEVEL).
+The v1.7 lid was re-dropped; the base is unchanged. Original geometry.

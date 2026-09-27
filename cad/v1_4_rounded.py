@@ -57,6 +57,17 @@ def ribs():
     return Compound(children=out)
 
 TOP_BEVEL=False  # V1.6-BEVEL: v1.6 sets True; v1.4/v1.5 keep the plain fillet
+HOLE_BEVEL=False  # V1.7-HOLE-BEVEL: same 45 deg fill for the window edge; v1.7 sets True
+
+def hole_bevel_fill(x0,x1,y0,y1,corner,r,top):
+    """Material under the flat start of a hole's top-edge fillet (radius r),
+    up to a 45 deg countersink tangent at the fillet's 45 deg point."""
+    from build123d import loft, Plane, RectangleRounded
+    p45,leg=r*(1-2**-.5),r*(2-2**.5)
+    cx,cy,w,h=(x0+x1)/2,(y0+y1)/2,x1-x0,y1-y0
+    cutter=loft([Plane.XY.offset(top-leg)*RectangleRounded(w,h,corner),Plane.XY.offset(top+P.EPS)*RectangleRounded(w+2*leg+2*P.EPS,h+2*leg+2*P.EPS,corner+leg+P.EPS)])
+    ring=M.rbox(x0-r,x1+r,y0-r,y1+r,top-p45,top,corner+r)
+    return ring-Pos(cx,cy,0)*cutter
 
 def top_bevel_block():
     """Outer block with a 45 deg top chamfer tangent to the TOP_R fillet at its
@@ -81,7 +92,9 @@ def lid(with_ribs=True):
         ring=M.box(S.X0-1,S.X1+1,S.Y0-1,S.Y1+1,S.TOP-p45,S.TOP)-M.rbox(S.X0+TOP_R,S.X1-TOP_R,S.Y0+TOP_R,S.Y1-TOP_R,S.TOP-TOP_R-1,S.TOP+1,max(S.R-TOP_R,.5))
         l=l+(top_bevel_block() & ring)
     f=top_face(l)
+    wb=window_wire(f).bounding_box()
     l=fillet(window_wire(f).edges(),WINDOW_EDGE_R)
+    if HOLE_BEVEL:l=l+hole_bevel_fill(wb.min.X,wb.max.X,wb.min.Y,wb.max.Y,P.WINDOW_R,WINDOW_EDGE_R,S.TOP)
     if with_ribs:
         for r in ribs().solids():l+=r
     return l,old

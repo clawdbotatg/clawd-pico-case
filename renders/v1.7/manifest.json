@@ -4,9 +4,9 @@
   "raft": false,
   "slice_verified": false,
   "source_sha256": {
-    "cad/v1_7_lock.py": "e8795895ce270eff9f9f18cf804977cb380d96cbaf244cb7a6f550361391d9aa",
-    "cad/v1_5_tall.py": "b75dd7149585da20e64756e179ce2c3a4f8814d692d0e8ef80173798e9b6b8b7",
-    "cad/v1_4_rounded.py": "26f23a97111304cec8d111314a36eb80b07d44bc2ef414952a5beabf6dc79d5a",
+    "cad/v1_7_lock.py": "b2b0b930b51aa504fa46465a58fb9aad952d7581d27cb292a28a122285fdffe5",
+    "cad/v1_5_tall.py": "b122595881f525bdb214991a86be8c47f94d4bf1aa90bb05569ee87d0a4112c7",
+    "cad/v1_4_rounded.py": "3b81e00448b0e85946275a9c4e52c74a3415987ebe4b90be1ff67762eca0b736",
     "cad/v1_1_spacer.py": "5b331f3e2d5ceb20f8e917ac7ad05199031b1fdf529f6405570d3e672caaccc1",
     "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
     "cad/v1_production.py": "07ca8d2b39c4b1682ea915a12931246cd0eccca64c4cfdbca7e61eb557c5ae0c",
@@ -17,9 +17,9 @@
   },
   "files": {
     "stl/v1.7/base-floor-down.stl": "8b57fa0594fdab7f7bf01c5c8fc0d289bceda05da821e47d727440e18381530d",
-    "stl/v1.7/lid-face-down.stl": "3545719d59f4f3d9e22816413f280d5eeea3309813795c2f23a0cffae91a70df",
-    "renders/v1.7/assembly.step": "2c2641b9655e049ff3f44d9e06be78f42caddebd3fcb7b40b9a289716bce00a3",
-    "renders/v1.7/validation.json": "1453fc86bca55dd36ec4b82fdf25dc88d5adfd6194c9c0cb765c600f3dddf668",
-    "renders/v1.7/viewer.html": "09c037e5798310746ac93e8d3be36f6898179c4c0d71522116cd9e6d9f2e3bc5"
+    "stl/v1.7/lid-face-down.stl": "0e5f2114bfcb509517f89357d5d75bd8e0ac02ec1e038387c751a685b5f3004c",
+    "renders/v1.7/assembly.step": "a8ba5e85b91f120e2faab0ddf6c9f9561133c87af1dbf46c6931288a7391b841",
+    "renders/v1.7/validation.json": "0565b267eaa5d358faef205a03e8205cd3cdcbf7191319a401425c40618556ee",
+    "renders/v1.7/viewer.html": "a37f4f931892092de1112857fa71be734355d086541eedf2b4bd124a8c8dbd10"
   }
 }
