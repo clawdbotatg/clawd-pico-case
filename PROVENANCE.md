@@ -496,3 +496,10 @@ flange reaching the roof underside. cad/v1_5_tall.py stretches the ribbed
 v1.4 lid 0.5 mm above the board hold-down. It also thickens the button cap
 flanges by 0.5 and rounds the joystick hole edge by 0.6. Austin stopped the
 queued ribbed v1.4 lid before it printed. Original geometry; base unchanged.
+## 2026-09-26 — v1.5 promoted to current best
+
+Austin tested the v1.5 lid with the printed v1.3 base, J9 and the original
+buttons, and said everything works. He asked for this set to be saved as the
+latest. The v1.5 button variant was removed (the original S2 caps are used).
+stl/current/ holds byte copies of the tested files; cad/current.py checks
+each one against its source. Tagged v1.5. There is no new geometry.

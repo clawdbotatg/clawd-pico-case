@@ -1,30 +1,31 @@
 """Promote the best tested version to stl/current/ (stable paths for printing).
 CURRENT names the revision; parts are byte-copied from their tested exports
 and a full seven-part set plate is built from the same source.
+History: v1.3 (2026-09-26 morning), v1.5 (2026-09-26 evening).
 """
 import hashlib
 import json
 import shutil
-from build123d import Pos, Compound
-import v1_3_short_end as W
-V,J=W.V,W.J
-ROOT=W.ROOT
-CURRENT='v1.3'  # Austin, 2026-09-26: "the best version we got right now"
+from build123d import Pos, Rot, Compound
+import v1_5_tall as T5
+W,V,J=T5.W,T5.V,T5.J
+ROOT=T5.ROOT
+CURRENT='v1.5'  # Austin, 2026-09-26: "this is the latest version"
 DIR=ROOT/'stl/current'
 GAP=5.0  # V1-PLATE
-PARTS={'lid.stl':'stl/v1.3/lid-face-down.stl','base.stl':'stl/v1.3/base-floor-down.stl',
-       'joystick.stl':'stl/v1.0/joystick-j2.stl','button.stl':'stl/v1.0/button-1.stl'}
+# v1.5 lid, v1.3 base (already printed), J9 joystick, original S2 buttons.
+PARTS={'lid.stl':'stl/v1.5/lid-face-down.stl','base.stl':'stl/v1.3/base-floor-down.stl',
+       'joystick.stl':'stl/v1.5/joystick-j9.stl','button.stl':'stl/v1.0/button-1.stl'}
 
 def main():
     DIR.mkdir(parents=True,exist_ok=True)
     for name,src in PARTS.items():shutil.copyfile(ROOT/src,DIR/name)
     W.shorten()
-    l,_=V.lid();b,*_=V.base()
-    from build123d import Rot
+    l,_=T5.lid();b,*_=V.base()
     lid,base=V.origin(Rot(180,0,0)*l),V.origin(b)
-    cap,_=V.L3.J2.cap();cap=Pos(0,0,-J.BOTTOM)*cap
+    cap=Pos(0,0,-J.BOTTOM)*T5.J9.cap()
     caps=[V.origin(c) for c in V.T.buttons().solids()]
-    for shape,name in ((lid,'lid.stl'),(base,'base.stl')):
+    for shape,name in ((lid,'lid.stl'),(base,'base.stl'),(cap,'joystick.stl'),(caps[0],'button.stl')):
         tmp=DIR/('check-'+name);J.export(shape,tmp)
         assert tmp.read_bytes()==(DIR/name).read_bytes(),name+' differs from tested export'
         tmp.unlink()

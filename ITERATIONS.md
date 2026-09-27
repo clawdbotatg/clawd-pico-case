@@ -249,3 +249,7 @@ The joystick flange gets room to tip without the roof pressing the centre
 click. Taller button caps come with it. Base unchanged. Source:
 cad/v1_5_tall.py. Outputs: stl/v1.5 (lid, button, J9) and renders/v1.5,
 with all checks passing. Not printed.
+## Current best: v1.5 (2026-09-26)
+
+v1.5 lid + v1.3 base + J9 joystick + original S2 buttons, in stl/current/,
+tagged v1.5.

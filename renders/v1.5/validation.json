@@ -15,7 +15,6 @@
     "joystick_clear_at_rest": true,
     "joystick_retained_on_pull": true,
     "buttons_valid": true,
-    "buttons_0_5_taller": true,
     "buttons_clear_lid": true,
     "button_retained_0": true,
     "button_retained_1": true,
@@ -40,7 +39,7 @@
   "physical_fit_confirmed": false,
   "notes": [
     "Lid 0.5 taller inside above the board hold-down; base unchanged.",
-    "New button caps (flange +0.5) must be used with this lid.",
+    "Original S2 buttons; Austin tested them in this lid: fine.",
     "Joystick sits 0.5 lower relative to the lid top."
   ]
 }

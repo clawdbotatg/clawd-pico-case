@@ -1,17 +1,17 @@
 {
-  "revision": "v1.3",
+  "revision": "v1.5",
   "sources": {
-    "lid.stl": "stl/v1.3/lid-face-down.stl",
+    "lid.stl": "stl/v1.5/lid-face-down.stl",
     "base.stl": "stl/v1.3/base-floor-down.stl",
-    "joystick.stl": "stl/v1.0/joystick-j2.stl",
+    "joystick.stl": "stl/v1.5/joystick-j9.stl",
     "button.stl": "stl/v1.0/button-1.stl"
   },
   "sha256": {
     "base.stl": "c26d3ef5e49ccafc011539eb48be9c252d24a54c676e4136f60ca8a9ff83859e",
     "button.stl": "c5f2f4a37f8facaa3bd96ad248d94c85154113100936c166ac9365a7ae35d69a",
-    "full-set.stl": "40aa07752033a3479a6d0804eb890a7453b72154b473bffeb2a64383309d9667",
-    "joystick.stl": "929c112efd3c55259868da8d52115902e15ce6fe5bad6dea9e933d9ce5ba0c19",
-    "lid.stl": "eddf98bfa6c56df3ee43523b8e432f1ef07ad944e9342fcf71011e93c7d7c223"
+    "full-set.stl": "7d6f68c32b15fa4b1145f233b50cf3b79d3ae3be946a674a504d69e314e89b41",
+    "joystick.stl": "8244979877362cfb7588a9f663dbcd35ba35dad203c182e96bb0e96ea0bc9318",
+    "lid.stl": "f8743db2c8019651ddb68d7c2174963481f8f13406bbe0492ac7425e3b2d8b23"
   },
   "print": {
     "material": "PETG",
