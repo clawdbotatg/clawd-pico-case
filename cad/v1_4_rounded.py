@@ -56,11 +56,30 @@ def ribs():
             out.append(SP.wedge_y(pts,x-RIB_W/2,x+RIB_W/2))
     return Compound(children=out)
 
+TOP_BEVEL=False  # V1.6-BEVEL: v1.6 sets True; v1.4/v1.5 keep the plain fillet
+
+def top_bevel_block():
+    """Outer block with a 45 deg top chamfer tangent to the TOP_R fillet at its
+    45 deg point; its material over the fillet's flat start is added back."""
+    from build123d import chamfer
+    leg=TOP_R*(2-2**.5)  # 45 deg tangent line meets the top at this inset
+    blk=M.rbox(S.X0,S.X1,S.Y0,S.Y1,M.Z_BOTTOM-P.TOOL_EXT,S.TOP,S.R)
+    top=max((f for f in blk.faces() if abs(f.center().Z-S.TOP)<1e-6),key=lambda f:f.area)
+    return chamfer(top.outer_wire().edges(),leg)
+
 def lid(with_ribs=True):
     old,_=V.lid()
     old,_=narrow_window(old)
     f=top_face(old)
     l=fillet(f.outer_wire().edges(),TOP_R)
+    if TOP_BEVEL:
+        # Fill the fillet's flat start up to the 45 deg tangent line, only in
+        # the perimeter ring (inside the 3 mm wall), so nothing overhangs >45.
+        # Fillet circle: centre TOP_R in and TOP_R down. Its 45 deg point P is
+        # TOP_R*(1-1/sqrt2) in and down; fill only above P, across the fillet.
+        p45=TOP_R*(1-2**-.5)
+        ring=M.box(S.X0-1,S.X1+1,S.Y0-1,S.Y1+1,S.TOP-p45,S.TOP)-M.rbox(S.X0+TOP_R,S.X1-TOP_R,S.Y0+TOP_R,S.Y1-TOP_R,S.TOP-TOP_R-1,S.TOP+1,max(S.R-TOP_R,.5))
+        l=l+(top_bevel_block() & ring)
     f=top_face(l)
     l=fillet(window_wire(f).edges(),WINDOW_EDGE_R)
     if with_ribs:

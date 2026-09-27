@@ -503,3 +503,11 @@ buttons, and said everything works. He asked for this set to be saved as the
 latest. The v1.5 button variant was removed (the original S2 caps are used).
 stl/current/ holds byte copies of the tested files; cad/current.py checks
 each one against its source. Tagged v1.5. There is no new geometry.
+## 2026-09-26 — v1.6 smooth top edge
+
+Austin found a rough line at the v1.5 lid's top edge. The cause is Claude's
+design: printed face down, the 3 mm fillet starts flat at the bed. v1.6
+fills that start to a 45° tangent band (cad/v1_4_rounded.py TOP_BEVEL, built
+by cad/v1_6_bevel.py). The rest is v1.5. Two geometry slips (a cut that
+removed nothing, and a fill that was too narrow and too deep) were caught by
+the checks before any file left. Original geometry.

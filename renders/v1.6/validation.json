@@ -1,0 +1,25 @@
+{
+  "revision": "v1.6",
+  "checks": {
+    "lid_valid_single_solid": true,
+    "only_fills_top_perimeter": true,
+    "same_height": true,
+    "outer_top_edge_max_45deg_overhang": true,
+    "fits_same_base": true,
+    "joystick_clear": true,
+    "buttons_clear": true
+  },
+  "passed": true,
+  "bevel_leg_mm": 1.757,
+  "steep_faces": [],
+  "print": {
+    "orientation": "face down",
+    "supports": false,
+    "raft": false,
+    "elephant_foot_compensation_mm": 0.15
+  },
+  "notes": [
+    "v1.5 lid with a 45 deg tangent band at the top edge; nothing else changed.",
+    "Ask the slicer for 0.15 elephant-foot compensation."
+  ]
+}

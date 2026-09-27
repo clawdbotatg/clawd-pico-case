@@ -501,3 +501,10 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.5-STRETCH | Stretched at z 1.0 above the LCD PCB front, in the lid's prismatic band 0.2–1.2 (checked). The board hold-down below is unchanged | Original |
 | V1.5-BUTTON | S2 caps with the flange 0.8 → 1.3 thick; the post is raised 0.5, so protrusion and retention match v1.4 | Original |
 | V1.5-JOY-EDGE | Joystick hole top edge rounded 0.6; the raised edge grazed the J9 ball at 10°/pivot 0 | Original; J9 now clears the J1-CHECK tilts to 10° |
+### V1.6 smooth top edge
+
+| ID | Value | Source |
+|---|---|---|
+| V1.6-FEEDBACK | A rough line on the v1.5 lid where the flat top meets the rounded edge. "No raft or anything I have to remove" | Austin, 2026-09-26 |
+| V1.6-BEVEL | Material fills the 3 mm top fillet's flat start up to a 45° line tangent at its 45° point (0.88 in, 0.88 down); flat top → 45° band → curve. Nothing near the outer top edge overhangs >45° face-down (checked by sampling; v1.5 failed the same test) | Original. No supports or raft |
+| V1.6-EFC | Slicer elephant-foot compensation 0.15 mm (print note) | Common slicer setting; removes the first-layer lip at that edge |

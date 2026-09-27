@@ -253,3 +253,8 @@ with all checks passing. Not printed.
 
 v1.5 lid + v1.3 base + J9 joystick + original S2 buttons, in stl/current/,
 tagged v1.5.
+## V1.6 — v1.5 with a print-friendly top edge
+
+A 45° band starts the top curve so the face-down print has no droop line.
+Lid only. Source: cad/v1_6_bevel.py. Output: stl/v1.6/lid-face-down.stl.
+Not printed; current stays v1.5 until it is tested.

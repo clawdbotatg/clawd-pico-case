@@ -1,0 +1,21 @@
+{
+  "revision": "v1.6",
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/v1_6_bevel.py": "8bb84c7655d9d0167db761c15d8a7fc1954e144c4132a79d0bfcb16cdffa4da5",
+    "cad/v1_5_tall.py": "b75dd7149585da20e64756e179ce2c3a4f8814d692d0e8ef80173798e9b6b8b7",
+    "cad/v1_4_rounded.py": "26f23a97111304cec8d111314a36eb80b07d44bc2ef414952a5beabf6dc79d5a",
+    "cad/joystick_j9.py": "ec01c38ac9f1637c0135d5a8c32ca5da6d473bd8d1d4c7420a927d4d257280d1",
+    "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/v1.6/lid-face-down.stl": "9bb5ca1e823b298ff9e16dfed54fd51728e78861857eed8baee7eef13e5bd165",
+    "renders/v1.6/assembly.step": "9fa7cff29c01ade9aefa4b7e88334e61cdebaf6c1713314d3c8012a3acdde19e",
+    "renders/v1.6/validation.json": "be39825b3eea8efe637fde139199a7a077abae6ebc6b428af3a76d9cce545b19",
+    "renders/v1.6/viewer.html": "dc8c7956dd9f8ef9726a8946ea928d3a6c0e42034907bec885c4967746dc8b01"
+  }
+}
