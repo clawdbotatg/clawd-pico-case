@@ -479,3 +479,12 @@ rounder top edge. Original geometry.
 J9 (2026-09-26): Austin liked J8-3's round edge and B's hole. Claude checked
 that they have identical sockets, and made J9 (J8-3 without notches) to print
 in triplicate to separate print variation from design. Original geometry.
+## 2026-09-26 — v1.4 lid crush ribs
+
+Austin wanted the lid and base to hold together better without reprinting
+the bases. Claude proposed crush ribs, and Austin said to take the best guess
+and print one lid. There are 12 ribs, 0.15 mm interference, in the lid skirt
+only (cad/v1_4_rounded.py). The checks show contact with the base only at the
+ribs, and the ribs clear the catches and the pry notch. The earlier no-rib
+v1.4 lid STL (SHA 30596150…, printed 2026-09-26) stays in git history at
+c2425d0. Original geometry.

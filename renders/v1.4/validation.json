@@ -10,7 +10,10 @@
     "lid_unchanged_below_rounding": true,
     "lid_height_unchanged": true,
     "base_byte_identical_to_v1_3": true,
-    "fully_closed_no_shell_overlap": true,
+    "lid_valid_with_ribs": true,
+    "closed_contact_only_at_ribs": true,
+    "ribs_squeeze_tongue_0_15": true,
+    "ribs_clear_catches_and_pry": true,
     "buttons_clear_lid": true,
     "joystick_cap_clear_at_rest": true,
     "joystick_cap_retained_on_pull": true,
@@ -35,6 +38,12 @@
     "joystick_socket_shorter_by_lift_closed_above_lift_0.5": true,
     "joystick_outside_identical_to_J4_lift_0.5": true,
     "joystick_lift_within_round_mouth_lift_0.5": true
+  },
+  "ribs": {
+    "count": 12,
+    "width": 0.6,
+    "interference": 0.15,
+    "lead_in": 1.0
   },
   "joystick_tilt_new_contact": [],
   "joystick_tilt_10deg_contact": [

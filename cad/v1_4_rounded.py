@@ -36,18 +36,41 @@ def narrow_window(old):
         bb.min.X+WINDOW_IN,bb.max.X-WINDOW_IN,bb.min.Y+WINDOW_IN,bb.max.Y-WINDOW_IN,P.S3+GLASS_GAP-P.TOOL_EXT,S.TOP+P.TOOL_EXT,P.WINDOW_R)
     return old+ring,ring
 
-def lid():
+RIB_W,RIB_IN,RIB_LEAD=.6,.15,1.0  # V1.4-RIB: one line wide, 0.15 into the tongue, 1 mm lead-in
+RIB_Y=(3.5,20.0,32.5,48.0)  # V1.4-RIB: long sides, clear of catches (9.8-16.4, 36.1-42.7) and pry (23.3-29.3)
+RIB_X=(6.0,20.0)  # V1.4-RIB: ends, on the straight part of the socket wall
+
+def ribs():
+    """Crush ribs on the lid socket's inner wall, pressing the base tongue."""
+    import v1_1_spacer as SP
+    face,depth=S.SKIN,S.GAP+RIB_IN  # socket wall inset; reach past the 0.2 gap
+    z0,z1=S.SEAM,S.SEAM+S.LAP-.2
+    out=[]
+    for y in RIB_Y:
+        for xw,sgn in ((S.X0+face,1),(S.X1-face,-1)):
+            pts=[(xw-sgn*P.EPS,z0),(xw-sgn*P.EPS,z1),(xw+sgn*depth,z1),(xw+sgn*depth,z0+RIB_LEAD),(xw,z0)]
+            out.append(M.wedge_x(pts,y-RIB_W/2,y+RIB_W/2))
+    for x in RIB_X:
+        for yw,sgn in ((S.Y0+face,1),(S.Y1-face,-1)):
+            pts=[(yw-sgn*P.EPS,z0),(yw-sgn*P.EPS,z1),(yw+sgn*depth,z1),(yw+sgn*depth,z0+RIB_LEAD),(yw,z0)]
+            out.append(SP.wedge_y(pts,x-RIB_W/2,x+RIB_W/2))
+    return Compound(children=out)
+
+def lid(with_ribs=True):
     old,_=V.lid()
     old,_=narrow_window(old)
     f=top_face(old)
     l=fillet(f.outer_wire().edges(),TOP_R)
     f=top_face(l)
-    return fillet(window_wire(f).edges(),WINDOW_EDGE_R),old
+    l=fillet(window_wire(f).edges(),WINDOW_EDGE_R)
+    if with_ribs:
+        for r in ribs().solids():l+=r
+    return l,old
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True);STL.mkdir(parents=True,exist_ok=True)
     W.shorten()
-    l,narrowed=lid();b,*_=V.base();caps=T.buttons()
+    l,narrowed=lid();plain,_=lid(False);b,*_=V.base();caps=T.buttons()
     old,_=V.lid();_,ring=narrow_window(old)
     gx,gy=M.GLASS_C;bb=window_wire(top_face(narrowed)).bounding_box()
     _,jchecks=J4.checks();cap,j5checks=J5.checks();jchecks.update(j5checks)
@@ -56,8 +79,8 @@ def main():
     checks={}
     def check(name,ok):checks[name]=bool(ok)
     check('lid_valid_single_solid',l.is_valid and len(l.solids())==1)
-    check('only_adds_window_ring',V.volume(l-old-ring)<1e-5 and V.volume(ring)>1)
-    check('rounding_only_removes_material',V.volume(l-narrowed)<1e-5 and V.volume(narrowed-l)>1)
+    check('only_adds_window_ring',V.volume(plain-old-ring)<1e-5 and V.volume(ring)>1)
+    check('rounding_only_removes_material',V.volume(plain-narrowed)<1e-5 and V.volume(narrowed-plain)>1)
     over=[gx-P.S2/2-bb.min.X,bb.max.X-(gx+P.S2/2),gy-P.S1/2-bb.min.Y,bb.max.Y-(gy+P.S1/2)]
     check('window_covers_glass_edge_0_6_each_side',all(abs(v+(WINDOW_IN-P.WINDOW_CLEAR))<1e-3 for v in over))
     # v1.3's short USB end already disagrees with the model board datum, so
@@ -66,12 +89,17 @@ def main():
     check('window_open_down_to_glass',J.overlap(l,sight)<1e-5 and bb.size.X>20 and bb.size.Y>20)
     check('ring_clears_glass_and_hat',J.overlap(ring,M.hat())<1e-5 and J.overlap(ring,Pos(0,M.IY1-P.L1-.02,0)*M.hat())<1e-5)
     below=M.box(S.X0-1,S.X1+1,S.Y0-1,S.Y1+1,M.Z_BOTTOM-1,S.TOP-max(TOP_R,WINDOW_EDGE_R)-P.EPS)
-    check('lid_unchanged_below_rounding',V.same(l & below,old & below))
+    check('lid_unchanged_below_rounding',V.same(plain & below,old & below))
     check('lid_height_unchanged',abs(l.bounding_box().max.Z-S.TOP)<1e-6)
     with tempfile.TemporaryDirectory() as tmp:
         path=Path(tmp)/'base.stl';J.export(V.origin(b),path)
         check('base_byte_identical_to_v1_3',path.read_bytes()==(ROOT/'stl/current/base.stl').read_bytes())
-    check('fully_closed_no_shell_overlap',J.overlap(b,l)<1e-5)
+    rb=ribs()
+    check('lid_valid_with_ribs',l.is_valid and len(l.solids())==1)
+    check('closed_contact_only_at_ribs',J.overlap(b,l-rb)<1e-5)
+    squeeze=J.overlap(b,rb);full=len(rb.solids())*RIB_IN*RIB_W*(S.LAP-.2-RIB_LEAD)
+    check('ribs_squeeze_tongue_0_15',full*.9<squeeze<full*1.4)
+    check('ribs_clear_catches_and_pry',J.overlap(rb,S.pry())<1e-6 and all(abs(y-c)>S.SNAP_W/2+S.END_CLEAR+RIB_W for y in RIB_Y for c in (M.CY-P.L1/4,M.CY+P.L1/4)))
     check('buttons_clear_lid',J.overlap(caps,l)<1e-5)
     check('joystick_cap_clear_at_rest',J.overlap(l,placed_cap)<1e-5)
     check('joystick_cap_retained_on_pull',J.overlap(Pos(0,0,L1.UNDER-L1.LIP_TOP-J5.LIFT+.1)*placed_cap,l)>1e-5)
@@ -99,7 +127,7 @@ def main():
         J.export(Pos(0,0,-J.BOTTOM)*J5.cap(lift)[0],STL/('joystick-j5-lift-'+str(lift)+'.stl'))
         checks.update({k+'_lift_'+str(lift):v for k,v in J5.checks(lift)[1].items()})
     J.export(printed,STL/'lid-face-down.stl')
-    report=dict(revision=REV,checks=checks,joystick_tilt_new_contact=new_contact,joystick_tilt_10deg_contact=tilt_info,passed=all(checks.values()),top_edge_radius=TOP_R,window_in_each_side=WINDOW_IN,window_over_glass_each_side=WINDOW_IN-P.WINDOW_CLEAR,window_edge_radius=WINDOW_EDGE_R,
+    report=dict(revision=REV,checks=checks,ribs=dict(count=len(RIB_Y)*2+len(RIB_X)*2,width=RIB_W,interference=RIB_IN,lead_in=RIB_LEAD),joystick_tilt_new_contact=new_contact,joystick_tilt_10deg_contact=tilt_info,passed=all(checks.values()),top_edge_radius=TOP_R,window_in_each_side=WINDOW_IN,window_over_glass_each_side=WINDOW_IN-P.WINDOW_CLEAR,window_edge_radius=WINDOW_EDGE_R,
         base='unchanged v1.3 (stl/current/base.stl)',caps='buttons unchanged; joystick J5 (J4 flat-top, socket 0.5 shallower)',joystick_lift_mm=J5.LIFT,joystick_ball_d=J4.BALL_D,joystick_flat_d=J4.BALL_D,joystick_rim_r=J4.RIM_R,physical_fit_confirmed=False,print_sent=False,
         notes=['Look trial for review; not printed.','Lid prints face down, so both roundings start at the bed: the first layers overhang. Needs a slice check; a 45 degree chamfer is the fallback.'])
     (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
@@ -111,7 +139,7 @@ def main():
         for name,s in view.items():
             path=Path(tmp)/(name+'.stl');J.export(s,path);bb=s.bounding_box()
             packed.append(dict(name=name,color=V.V.PARTS[name][1],stl=base64.b64encode(path.read_bytes()).decode(),bbox=[*tuple(bb.min),*tuple(bb.max)]))
-    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Window 1mm smaller each side, covers glass border.','Joystick J5: '+str(J4.BALL_D)+'mm half ball, flat top; rides '+str(J5.LIFT)+'mm higher for press-in.','Look trial, not printed.'])
+    info=dict(commit=REV+' rounded edges',case_mm=[round(S.X1-S.X0,2),round(S.Y1-S.Y0,2),round(S.TOP-M.Z_BOTTOM,2)],split_z=S.SEAM,assumptions=['v1.3 fit, unchanged.','Top outer edge rounded '+str(TOP_R)+'mm.','LCD window edge rounded '+str(WINDOW_EDGE_R)+'mm.','Window 1mm smaller each side, covers glass border.','12 crush ribs in the lid skirt, 0.15mm grip on the base.','Joystick J5: '+str(J4.BALL_D)+'mm half ball, flat top; rides '+str(J5.LIFT)+'mm higher for press-in.','Look trial, not printed.'])
     html=(ROOT/'cad/viewer_template.html').read_text().replace('/*__PARTS__*/','const PARTS = '+json.dumps(packed)+';').replace('/*__INFO__*/','const INFO = '+json.dumps(info)+';').replace('V3 review · NOT APPROVED FOR PRINT','V1.4 · ROUNDED EDGES · REVIEW').replace('V3 Case Review — Not Approved for Print','V1.4 rounded edges')
     (OUT/'viewer.html').write_text(html);(ROOT/'renders/viewer.html').write_text(html)
     sources=[Path(__file__),*[ROOT/'cad'/n for n in ('v1_3_short_end.py','v1_production.py','s2_tight_base.py','s1_strong_shell.py','l4_alignment.py','l3_shifted_hole.py','j3_low_lid.py','joystick_j2.py','joystick_j4.py','joystick_j5.py','v3_flat.py','v3_fit.py','joystick_test.py','model.py','params.py')]]

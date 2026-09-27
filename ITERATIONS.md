@@ -241,3 +241,5 @@ mark A/B/C. The plate is stl/v1.4/joystick-j6/joystick-j6-abc-plate.stl.
 J7 (v1.4 joystick test set): J6 A/B/C with a self-supporting socket, so no
 bridges or ledges inside. The plate is
 stl/v1.4/joystick-j7/joystick-j7-abc-plate.stl.
+V1.4 lid + crush ribs: 12 vertical ribs grip the existing v1.3/v1.4 base by
+0.15 mm, so no rattle and a firmer hold. Lid only.

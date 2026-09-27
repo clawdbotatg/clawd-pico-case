@@ -486,3 +486,9 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J8-3 | B + top rim edge 0.3 → 1.2 (3 notches) | Original: the thumb rolls off sideways rather than pressing down |
 | J8-KEEP | J7 printable socket 1.90, 7.4 flat-top half ball | Unchanged |
 | J9 | J8-3 without notches: J7-B's 1.90 printable socket (void identical, checked), 10.4 flange, lift 0.3, 1.2 round top edge | Austin, 2026-09-26: "b has the best hole, three has the best surface". J8-3 clicked centre + up every time despite an identical socket; three copies test for print variation |
+### V1.4 lid crush ribs
+
+| ID | Value | Source |
+|---|---|---|
+| V1.4-RIB-FEEDBACK | Lid and base should hold together a little better. The bases are already printed, so change the lid only | Austin, 2026-09-26; he chose Claude's crush-rib option and said "take our best guess" |
+| V1.4-RIB | 12 vertical ribs on the lid socket's inner wall (4 per long side at y 3.5/20/32.5/48, 2 per end at x 6/20); 0.6 wide; reach 0.35 from the wall = 0.15 into the tongue past the 0.2 gap; 1.0 mm lead-in at the seam; z seam to seam + 2.8 | Original best guess. Clear of the catches and the pry notch; physical fit untested |
