@@ -1,0 +1,35 @@
+{
+  "revision": "v1.7",
+  "checks": {
+    "lid_valid_single_solid": true,
+    "base_valid_single_solid": true,
+    "six_catches": true,
+    "catches_where_intended": true,
+    "closed_contact_only_at_ribs": true,
+    "ribs_clear_new_pockets": true,
+    "catch_tip_hooks_0_5_into_skirt": true,
+    "catches_seated_clear": true,
+    "pocket_spare_0_05": true,
+    "lid_pry_half_filled": true,
+    "base_pry_slot_kept": true,
+    "base_changes_only_at_catches": true,
+    "lid_unchanged_above_joint": true,
+    "lid_outer_skin_intact": true,
+    "hardware_clear": true,
+    "usb_open": true,
+    "joystick_clear": true,
+    "buttons_clear": true
+  },
+  "passed": true,
+  "hook_mm": 0.5,
+  "catches": 6,
+  "skin_at_pocket": 0.85,
+  "ramp_deg_from_vertical": 28.1,
+  "closing_flex_mm": 0.5,
+  "physical_fit_confirmed": false,
+  "notes": [
+    "New base AND lid: v1.7 lid does not fit v1.3 bases (deeper catches).",
+    "Open with a thumbnail or small tool at the base slot.",
+    "Catch underside overhang 0.7 on the base: check slice."
+  ]
+}

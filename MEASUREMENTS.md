@@ -508,3 +508,13 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.6-FEEDBACK | A rough line on the v1.5 lid where the flat top meets the rounded edge. "No raft or anything I have to remove" | Austin, 2026-09-26 |
 | V1.6-BEVEL | Material fills the 3 mm top fillet's flat start up to a 45° line tangent at its 45° point (0.88 in, 0.88 down); flat top → 45° band → curve. Nothing near the outer top edge overhangs >45° face-down (checked by sampling; v1.5 failed the same test) | Original. No supports or raft |
 | V1.6-EFC | Slicer elephant-foot compensation 0.15 mm (print note) | Common slicer setting; removes the first-layer lip at that edge |
+### V1.7 locking case
+
+| ID | Value | Source |
+|---|---|---|
+| V1.7-FEEDBACK | It opens too easily and buttons spill out. PETG may relax over time. It should never pop open by accident, can be opened on purpose, and must still close | Austin, 2026-09-27: "do all three" |
+| V1.7-HOOK | Catch tip 0.5 past the skirt face (was 0.3); projection 0.7 from the tongue; lid pocket 0.55 deep, skin 0.85 | Original. The hold comes from the hook shape, not friction |
+| V1.7-RAMP | Flat hold at the S2 height (0.04 play), 0.3 nose, ramp up to seam + 2.4: ~28° from vertical | Original; keeps closing easy |
+| V1.7-ENDS | One more 6 mm catch centred on each short end (6 total); lid pockets to match | Original; clear of the ribs and USB |
+| V1.7-PRY | The lid's half of the pry notch is filled; the base keeps its 6 × 0.8 × 1.0 slot | Original; open with a thumbnail or small tool |
+| V1.7-NOTE | The v1.4–v1.6 lids' two button-end ribs sit at x 5.4/19.4, not 6/20 (a wedge_y winding bug, found in v1.7). Harmless, clear of all catches | Found 2026-09-27 |

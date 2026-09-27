@@ -511,3 +511,10 @@ fills that start to a 45° tangent band (cad/v1_4_rounded.py TOP_BEVEL, built
 by cad/v1_6_bevel.py). The rest is v1.5. Two geometry slips (a cut that
 removed nothing, and a fill that was too narrow and too deep) were caught by
 the checks before any file left. Original geometry.
+## 2026-09-27 — v1.7 locking case
+
+Austin: the case opens too easily, so do all three proposals and redesign the
+whole case. cad/v1_7_lock.py makes 0.5 mm hooks with a gentler ramp, adds two
+end catches (6 total) and keeps only the base half of the pry slot. The lid
+is v1.6 with new pockets. The base is v1.3 with new catches. J9 and the
+buttons are unchanged. Original geometry; there are no outside inputs.

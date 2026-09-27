@@ -258,3 +258,9 @@ tagged v1.5.
 A 45° band starts the top curve so the face-down print has no droop line.
 Lid only. Source: cad/v1_6_bevel.py. Output: stl/v1.6/lid-face-down.stl.
 Not printed; current stays v1.5 until it is tested.
+## V1.7 — locking case (new base + lid)
+
+6 catches hooking 0.5 mm, a gentle closing ramp, and a tool/thumbnail slot
+only in the base. The v1.7 lid does not fit older bases, and v1.7 bases do
+not fit older lids. Source: cad/v1_7_lock.py. Outputs: stl/v1.7 and
+renders/v1.7. Not printed.

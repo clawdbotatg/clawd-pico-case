@@ -1,0 +1,25 @@
+{
+  "revision": "v1.7",
+  "supports": false,
+  "raft": false,
+  "slice_verified": false,
+  "source_sha256": {
+    "cad/v1_7_lock.py": "e8795895ce270eff9f9f18cf804977cb380d96cbaf244cb7a6f550361391d9aa",
+    "cad/v1_5_tall.py": "b75dd7149585da20e64756e179ce2c3a4f8814d692d0e8ef80173798e9b6b8b7",
+    "cad/v1_4_rounded.py": "26f23a97111304cec8d111314a36eb80b07d44bc2ef414952a5beabf6dc79d5a",
+    "cad/v1_1_spacer.py": "5b331f3e2d5ceb20f8e917ac7ad05199031b1fdf529f6405570d3e672caaccc1",
+    "cad/v1_3_short_end.py": "6f87fb36396822133ed0356fa9ce6195f914d12fc2d481fd4d5fb67bf54e64f3",
+    "cad/v1_production.py": "07ca8d2b39c4b1682ea915a12931246cd0eccca64c4cfdbca7e61eb557c5ae0c",
+    "cad/s2_tight_base.py": "c3a6f34c56ddd312025ff83ea765120251f9aa98e3824f256e866e14ac7e1600",
+    "cad/s1_strong_shell.py": "b2e8064d8a25745baca52f0f9cd2e9942aa393767c25ffa00731161988991b5e",
+    "cad/model.py": "6d401e401560ab3a3c339794c0e94cb95c5f186c2cfae068bea420f36719c149",
+    "cad/params.py": "e8f8c4500abf3de1b84acd75225e8dc90a7562a858533c53c64b1c730db51b6a"
+  },
+  "files": {
+    "stl/v1.7/base-floor-down.stl": "8b57fa0594fdab7f7bf01c5c8fc0d289bceda05da821e47d727440e18381530d",
+    "stl/v1.7/lid-face-down.stl": "3545719d59f4f3d9e22816413f280d5eeea3309813795c2f23a0cffae91a70df",
+    "renders/v1.7/assembly.step": "2c2641b9655e049ff3f44d9e06be78f42caddebd3fcb7b40b9a289716bce00a3",
+    "renders/v1.7/validation.json": "1453fc86bca55dd36ec4b82fdf25dc88d5adfd6194c9c0cb765c600f3dddf668",
+    "renders/v1.7/viewer.html": "09c037e5798310746ac93e8d3be36f6898179c4c0d71522116cd9e6d9f2e3bc5"
+  }
+}
