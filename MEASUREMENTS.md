@@ -476,3 +476,12 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J7-FEEDBACK | The J6 socket was full of PETG strings (IMG_0887) | Austin, 2026-09-26; cause: flat ledge and flat roof over air when printed flange down |
 | J7-SOCKET | Round Ø3.0 for 0.7 (clears the 2.94 lip, J4b), a round-to-square loft funnel (flats at 45°), square grip to z +2.7, then a 45° pyramid roof. The straight grip is 1.475 long (was 2.0) | Original. Uses J4 (1.86 stem) and J4b (2.94 lip); the stem is wider at its base (J5), so the top of the grip carries it |
 | J7-VARIANTS | A 1.95 / B 1.90 / C 1.95 with dish; notches 1/2/3; the outside is identical to J6 | As J6 |
+### J8 — variations on J7-B
+
+| ID | Value | Source |
+|---|---|---|
+| J8-FEEDBACK | B (1.90) fits best but a direction push sometimes also clicks the centre; A is worse; B's confirm print "not it" was a single-copy check | Austin, 2026-09-26 |
+| J8-1 | B + flange 10.4 → 9.2 (1 notch) | Original: less rim dip when tilted |
+| J8-2 | B + flange 9.2 + lift 0.5 (2 notches) | Original: more room under the rim; may catch the lid at full tilt (J5-VARIANTS) |
+| J8-3 | B + top rim edge 0.3 → 1.2 (3 notches) | Original: the thumb rolls off sideways rather than pressing down |
+| J8-KEEP | J7 printable socket 1.90, 7.4 flat-top half ball | Unchanged |

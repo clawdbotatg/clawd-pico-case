@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "baseline_matches_J7B_above_flange": true,
+    "1_valid_single_solid": true,
+    "1_no_flat_overhang_in_socket": true,
+    "1_stem_fits": true,
+    "1_base_lip_clears": true,
+    "1_flange_retains_at_notch": true,
+    "2_valid_single_solid": true,
+    "2_no_flat_overhang_in_socket": true,
+    "2_stem_fits": true,
+    "2_base_lip_clears": true,
+    "2_flange_retains_at_notch": true,
+    "3_valid_single_solid": true,
+    "3_no_flat_overhang_in_socket": true,
+    "3_stem_fits": true,
+    "3_base_lip_clears": true,
+    "3_flange_retains_at_notch": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "square": 1.9,
+  "variants": {
+    "1": {
+      "flange": 9.2,
+      "lift": 0.3,
+      "rim": 0.3,
+      "notches": 1
+    },
+    "2": {
+      "flange": 9.2,
+      "lift": 0.5,
+      "rim": 0.3,
+      "notches": 2
+    },
+    "3": {
+      "flange": 10.4,
+      "lift": 0.3,
+      "rim": 1.2,
+      "notches": 3
+    }
+  },
+  "rim_dip_past_lift_at_10deg": {
+    "1": 0.5,
+    "2": 0.3,
+    "3": 0.6,
+    "J7-B": 0.6
+  },
+  "notes": [
+    "1/2/3 flange notches = J8-1/2/3.",
+    "Dip is geometry only; the body top height (J3) is not measured.",
+    "Press/tilt test pending."
+  ]
+}

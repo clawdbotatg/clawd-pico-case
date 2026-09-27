@@ -470,3 +470,9 @@ Claude had not looked first. cad/joystick_j7.py rebuilds the J6 A/B/C sockets
 with no flat overhang, a round-to-square 45° funnel and a pyramid roof, and a
 check that finds no downward face steeper than 45° inside the socket.
 Original geometry.
+## 2026-09-26 — J8 variations on J7-B
+
+Austin: B fits best, A is worse, and with B a direction push sometimes also
+clicks the centre. He asked for three more like B. cad/joystick_j8.py changes
+one thing each: a smaller flange, a smaller flange plus riding higher, or a
+rounder top edge. Original geometry.
