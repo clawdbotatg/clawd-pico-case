@@ -485,3 +485,4 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J8-2 | B + flange 9.2 + lift 0.5 (2 notches) | Original: more room under the rim; may catch the lid at full tilt (J5-VARIANTS) |
 | J8-3 | B + top rim edge 0.3 → 1.2 (3 notches) | Original: the thumb rolls off sideways rather than pressing down |
 | J8-KEEP | J7 printable socket 1.90, 7.4 flat-top half ball | Unchanged |
+| J9 | J8-3 without notches: J7-B's 1.90 printable socket (void identical, checked), 10.4 flange, lift 0.3, 1.2 round top edge | Austin, 2026-09-26: "b has the best hole, three has the best surface". J8-3 clicked centre + up every time despite an identical socket; three copies test for print variation |

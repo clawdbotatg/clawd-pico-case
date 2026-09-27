@@ -476,3 +476,6 @@ Austin: B fits best, A is worse, and with B a direction push sometimes also
 clicks the centre. He asked for three more like B. cad/joystick_j8.py changes
 one thing each: a smaller flange, a smaller flange plus riding higher, or a
 rounder top edge. Original geometry.
+J9 (2026-09-26): Austin liked J8-3's round edge and B's hole. Claude checked
+that they have identical sockets, and made J9 (J8-3 without notches) to print
+in triplicate to separate print variation from design. Original geometry.
