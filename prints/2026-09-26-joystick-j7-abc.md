@@ -17,3 +17,7 @@ free tilt.
 Austin prefers B (middle, 2 notches, 1.90 socket) and asked for one more to
 confirm. One J7-B was dropped with no colour or GO:
 `stl/v1.4/joystick-j7/joystick-j7-b.stl`, SHA256 `9642da2a7447b7ac1901510c7d582ceb871a685471a6db2d7a18548d0ecf6537`.
+
+J7-B confirm print: "not it" (Austin). Next he tries A (1 notch, 1.95). One
+J7-A was dropped with no colour or GO:
+`stl/v1.4/joystick-j7/joystick-j7-a.stl`, SHA256 `415547294c60e96cb868cd29aebd14e2ab6f8aef42f885c0c7b33f409e5f0cd4`.
