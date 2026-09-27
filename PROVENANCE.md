@@ -488,3 +488,11 @@ only (cad/v1_4_rounded.py). The checks show contact with the base only at the
 ribs, and the ribs clear the catches and the pry notch. The earlier no-rib
 v1.4 lid STL (SHA 30596150…, printed 2026-09-26) stays in git history at
 c2425d0. Original geometry.
+## 2026-09-26 — v1.5 taller lid
+
+Austin found that J9 clicks the centre on direction pushes only when the lid
+is on, and asked for a slightly taller lid. The CAD tilt check showed the J9
+flange reaching the roof underside. cad/v1_5_tall.py stretches the ribbed
+v1.4 lid 0.5 mm above the board hold-down. It also thickens the button cap
+flanges by 0.5 and rounds the joystick hole edge by 0.6. Austin stopped the
+queued ribbed v1.4 lid before it printed. Original geometry; base unchanged.

@@ -492,3 +492,12 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 |---|---|---|
 | V1.4-RIB-FEEDBACK | Lid and base should hold together a little better. The bases are already printed, so change the lid only | Austin, 2026-09-26; he chose Claude's crush-rib option and said "take our best guess" |
 | V1.4-RIB | 12 vertical ribs on the lid socket's inner wall (4 per long side at y 3.5/20/32.5/48, 2 per end at x 6/20); 0.6 wide; reach 0.35 from the wall = 0.15 into the tongue past the 0.2 gap; 1.0 mm lead-in at the seam; z seam to seam + 2.8 | Original best guess. Clear of the catches and the pry notch; physical fit untested |
+### V1.5 taller lid
+
+| ID | Value | Source |
+|---|---|---|
+| V1.5-FEEDBACK | With J9, direction pushes also click the centre, but only with the lid on; with the lid off the stick is clean. "Make the lid just a little taller so there is more room for the joystick" | Austin, 2026-09-26 |
+| V1.5-RAISE | 0.5 mm | Original; the case is 25.34 tall (was 24.84) |
+| V1.5-STRETCH | Stretched at z 1.0 above the LCD PCB front, in the lid's prismatic band 0.2–1.2 (checked). The board hold-down below is unchanged | Original |
+| V1.5-BUTTON | S2 caps with the flange 0.8 → 1.3 thick; the post is raised 0.5, so protrusion and retention match v1.4 | Original |
+| V1.5-JOY-EDGE | Joystick hole top edge rounded 0.6; the raised edge grazed the J9 ball at 10°/pivot 0 | Original; J9 now clears the J1-CHECK tilts to 10° |

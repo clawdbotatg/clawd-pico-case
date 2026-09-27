@@ -243,3 +243,9 @@ bridges or ledges inside. The plate is
 stl/v1.4/joystick-j7/joystick-j7-abc-plate.stl.
 V1.4 lid + crush ribs: 12 vertical ribs grip the existing v1.3/v1.4 base by
 0.15 mm, so no rattle and a firmer hold. Lid only.
+## V1.5 — lid 0.5 mm taller (v1.4 + ribs + J9)
+
+The joystick flange gets room to tip without the roof pressing the centre
+click. Taller button caps come with it. Base unchanged. Source:
+cad/v1_5_tall.py. Outputs: stl/v1.5 (lid, button, J9) and renders/v1.5,
+with all checks passing. Not printed.

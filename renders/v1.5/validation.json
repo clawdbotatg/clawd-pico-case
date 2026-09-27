@@ -1,0 +1,46 @@
+{
+  "revision": "v1.5",
+  "checks": {
+    "stretch_band_is_prismatic": true,
+    "lid_valid_single_solid": true,
+    "lid_0_5_taller": true,
+    "lid_below_stretch_unchanged": true,
+    "lid_above_stretch_raised_intact": true,
+    "joystick_edge_rounding_only_removes": true,
+    "fits_same_base": true,
+    "ribs_still_grip": true,
+    "catches_hold": true,
+    "hardware_clear_at_board_hold_down": true,
+    "joystick_tilts_10deg_clear_of_roof": true,
+    "joystick_clear_at_rest": true,
+    "joystick_retained_on_pull": true,
+    "buttons_valid": true,
+    "buttons_0_5_taller": true,
+    "buttons_clear_lid": true,
+    "button_retained_0": true,
+    "button_retained_1": true,
+    "button_retained_2": true,
+    "button_retained_3": true,
+    "button_travel_0": true,
+    "button_travel_2": true,
+    "button_travel_4": true,
+    "button_travel_6": true,
+    "button_travel_8": true
+  },
+  "passed": true,
+  "raise_mm": 0.5,
+  "stretch_z": 1.0,
+  "joystick": "J9 unchanged",
+  "worst_tilt_contact_mm3": 0,
+  "case_mm": [
+    33.04,
+    58.599999999999994,
+    25.340000000000003
+  ],
+  "physical_fit_confirmed": false,
+  "notes": [
+    "Lid 0.5 taller inside above the board hold-down; base unchanged.",
+    "New button caps (flange +0.5) must be used with this lid.",
+    "Joystick sits 0.5 lower relative to the lid top."
+  ]
+}
