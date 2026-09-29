@@ -486,6 +486,18 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J8-3 | B + top rim edge 0.3 → 1.2 (3 notches) | Original: the thumb rolls off sideways rather than pressing down |
 | J8-KEEP | J7 printable socket 1.90, 7.4 flat-top half ball | Unchanged |
 | J9 | J8-3 without notches: J7-B's 1.90 printable socket (void identical, checked), 10.4 flange, lift 0.3, 1.2 round top edge | Austin, 2026-09-26: "b has the best hole, three has the best surface". J8-3 clicked centre + up every time despite an identical socket; three copies test for print variation |
+### J10 — flange that cannot lift into the lid
+
+| ID | Value | Source |
+|---|---|---|
+| J10-FEEDBACK | On some devices a direction push clicks twice: once for the direction, then a little farther the centre too. The flange edge behind the push rises into the lid underside, pivots there and drives the stem down | Austin, 2026-09-29: "I can hear it click once, and then if I push a little farther, I can hear it click in" |
+| J10-TAB | Four tabs replace the 10.4 disc: 1.6 wide, tips at radius 4.6 (0.6 past the 8 mm hole edge, as J8-1's 9.2 flange), 0.4 thick as the disc | Original. A tab off the push axis rises less than the disc rim behind the push |
+| J10-I / II | I: tabs on the diagonals of the socket square. II: tabs in line with the socket flats | Original. Which way the stem square is turned on the board is not measured, so the pair covers both; the one that works also tells us |
+| J10-LOWER | III: J9 disc, IV: tabs as I, both riding 0.2 lower (lift 0.3 → 0.1) | Original. More room under the lid, but J5 raised the cap for press room, so the press may get stiff |
+| J10-MARK | Roman numeral I–IV engraved on the flat top: grooves 0.6 wide, 0.4 deep, 2.6 tall | Austin, 2026-09-29: "write the number on the top of each one ... like Roman numerals" |
+| J10-KEEP | J9 socket (1.90 printable, void identical for I/II, checked), 7.4 flat-top half ball, 1.2 round top edge | Unchanged |
+| J10-TILT | Model tilt before any lid contact (cad/j10_tilt.py, v1.7 lid, cap centred in the hole). Pivot 3: J9 14.2°, I 16.2–17.4°, II 16.2–17.1°, III/IV 15.5–16.1°. Pivot 0: the neck meets the hole wall first, sideways (no push down), at 11.5° (J9, I, II) and 10.4° (III, IV) | Comparison only: the true tilt (J7) and seating height (J3-LIP) are not measured, and the real part clicks before these angles |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

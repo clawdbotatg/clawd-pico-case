@@ -147,3 +147,17 @@ to the port. The whole end is rebuilt from the moved datums, so the corners,
 the tongue and socket, the rail ends (0.25 mm gap kept), the USB slot and the
 plug recess all follow. Everything else is unchanged from v1.0, and a check
 confirms that.
+## J10 joystick set — 2026-09-29
+
+A direction push on some devices clicks twice. The flange edge behind the push
+rises into the lid underside, pivots there and drives the stem down into the
+centre switch. Austin wants a joystick-only fix, so the lid is unchanged.
+Four caps, numbered I-IV on top, each keep J9's socket and top and change only
+what sits under the lid. I and II swap the full disc for four tabs. A tab off
+the push axis rises less than the disc rim directly behind the push. I puts
+them on the socket diagonals, II on the flats; the stem's turn on the board
+is not measured, so one of the two lands on the diagonals. III and IV ride
+0.2 lower for more room under the lid, at the risk of a stiffer press (why
+J5 raised it). The model gives the tabs 2-3 degrees more tilt before the lid
+is touched; the true tilt and seating are unmeasured, so the print decides.
+Numerals are engraved, not raised, so the top still feels flat.

@@ -522,3 +522,7 @@ Same day: Austin reported a rough edge on the button side of the LCD opening.
 It is the same face-down overhang as the outer edge. The v1.7 lid now fills
 the window and joystick fillet starts to 45° (R.HOLE_BEVEL, T5.JOY_BEVEL).
 The v1.7 lid was re-dropped; the base is unchanged. Original geometry.
+2026-09-29 J10 joystick set (cad/joystick_j10.py, cad/j10_tilt.py): four
+variants on J9 with tabs or a lower ride, Roman numerals engraved on top.
+Original geometry from J9 and Austin's report of a double click; no outside
+inputs.

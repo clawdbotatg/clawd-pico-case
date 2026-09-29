@@ -1,0 +1,59 @@
+{
+  "checks": {
+    "I_valid_single_solid": true,
+    "I_no_flat_overhang_in_socket": true,
+    "I_stem_fits": true,
+    "I_base_lip_clears": true,
+    "I_retains_past_hole": true,
+    "I_mark_cut": true,
+    "I_socket_identical_to_J9": true,
+    "II_valid_single_solid": true,
+    "II_no_flat_overhang_in_socket": true,
+    "II_stem_fits": true,
+    "II_base_lip_clears": true,
+    "II_retains_past_hole": true,
+    "II_mark_cut": true,
+    "II_socket_identical_to_J9": true,
+    "III_valid_single_solid": true,
+    "III_no_flat_overhang_in_socket": true,
+    "III_stem_fits": true,
+    "III_base_lip_clears": true,
+    "III_retains_past_hole": true,
+    "III_mark_cut": true,
+    "IV_valid_single_solid": true,
+    "IV_no_flat_overhang_in_socket": true,
+    "IV_stem_fits": true,
+    "IV_base_lip_clears": true,
+    "IV_retains_past_hole": true,
+    "IV_mark_cut": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "variants": {
+    "I": {
+      "tabs": 45,
+      "lift": 0.3
+    },
+    "II": {
+      "tabs": 0,
+      "lift": 0.3
+    },
+    "III": {
+      "tabs": null,
+      "lift": 0.09999999999999998
+    },
+    "IV": {
+      "tabs": 45,
+      "lift": 0.09999999999999998
+    }
+  },
+  "tab": {
+    "width": 1.6,
+    "tip_radius": 4.6
+  },
+  "notes": [
+    "Numerals I-IV engraved on the flat top.",
+    "Tilt contact vs the v1.7 lid: tools/j10_tilt.py.",
+    "Press/tilt test pending."
+  ]
+}
