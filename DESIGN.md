@@ -161,3 +161,14 @@ is not measured, so one of the two lands on the diagonals. III and IV ride
 J5 raised it). The model gives the tabs 2-3 degrees more tilt before the lid
 is touched; the true tilt and seating are unmeasured, so the print decides.
 Numerals are engraved, not raised, so the top still feels flat.
+## J11 square flange — 2026-09-30
+
+J10 failed: tabs reaching 0.6 past the hole slip through it. Austin's
+direction: keep J9 and make its flange a square, thin toward the four push
+directions with the corners on the diagonals. The edge behind a push is then a
+flat side, which rises less than the old disc rim; the corners sit off the
+push axes and still hold the cap in the hole. Two sizes (8.0 and 7.2 across the
+flats) and both turns against the socket, because the stem square's turn on
+the board is not measured. The pair whose flats face up/down/left/right is the
+right turn. A flange that drops lower past the switch body is deferred: it
+needs the body height, and it would stop the underside printing flat.

@@ -1,0 +1,19 @@
+{
+  "revision": "J11",
+  "source_sha256": {
+    "cad/joystick_j11.py": "23795ac826a4ca7f41acb92f91f6d41d0370b7ce3063f413e80af83262241b9d",
+    "cad/j10_tilt.py": "90adce1ef659ab094b1140b20df21fae01cbd1074900511435ed943461f370da",
+    "cad/joystick_j10.py": "1fc18e40b6d0d9d78dd2a57139f898135ec34d7740fcdcdfba80a7207d80657b",
+    "cad/joystick_j9.py": "ec01c38ac9f1637c0135d5a8c32ca5da6d473bd8d1d4c7420a927d4d257280d1",
+    "cad/joystick_j8.py": "f991e5bc0d9afd334ca7dabd2be633c3e5975d80c32915f9c13d11e1eb4e787a",
+    "cad/joystick_j7.py": "2de36b1432acf371c5e72e8b42ead407b85ddd9bbaa4d4263a969802a3e3a4e2",
+    "cad/joystick_test.py": "1f1a57e0709506ef2c86f8bf65bf69b90b61f5a370a6bb5227118f91f9955b78"
+  },
+  "files": {
+    "stl/v1.4/joystick-j11/joystick-j11-I.stl": "230f0194a1bb7af2ad79b225c7294012129f1f7bbd7e29686b8ae331eaf4aa88",
+    "stl/v1.4/joystick-j11/joystick-j11-II.stl": "0b497e3bbaf4d49db4ed390c22dcdff9dea34726c164ea851d0d76501c5b4be3",
+    "stl/v1.4/joystick-j11/joystick-j11-III.stl": "873b35b2791c916214522c8bdf478671fadd2b882464eaf9fa2d6c60a3226a1c",
+    "stl/v1.4/joystick-j11/joystick-j11-IV.stl": "fe60bfc47e7abe362adf677dce23bf1516f21fbde4ed0a15cc0bc956cc324d25",
+    "stl/v1.4/joystick-j11/joystick-j11-plate.stl": "6de819b06ec61e5ef790f2d5ea0f2c7281e1700debff67e541dcf9cfc53eaf8c"
+  }
+}

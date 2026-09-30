@@ -526,3 +526,7 @@ The v1.7 lid was re-dropped; the base is unchanged. Original geometry.
 variants on J9 with tabs or a lower ride, Roman numerals engraved on top.
 Original geometry from J9 and Austin's report of a double click; no outside
 inputs.
+2026-09-30 J11 joystick set (cad/joystick_j11.py): J9 with a square flange
+(8.0 or 7.2 across the flats, two turns), numerals I-IV. Austin's design
+direction; original geometry from J9; no outside inputs. j10_tilt.py now
+exposes tilt() for reuse.

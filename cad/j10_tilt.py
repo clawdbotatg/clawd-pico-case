@@ -14,13 +14,12 @@ import joystick_j9 as J9
 import joystick_j10 as X
 M,J,L1,V,T5=L7.M,L7.J,L7.L1,L7.V,L7.T5
 
-def main():
+def tilt(caps):
+    """caps: {name: (cap, lift)} -> per-cap contact angles (also used by J11)."""
     L7.W.shorten()
     lid,_=L7.lid()
     hx,hy=M.JOY_C[0]+V.L4.DX,M.JOY_C[1]+V.L4.DY+V.JOY_DY
     local=lid & M.box(hx-9,hx+9,hy-9,hy+9,-5,20)
-    caps={'J9':(J9.cap(),.3)}
-    for n,v in X.VARIANTS.items():caps[n]=(X.cap(v['tabs'],v['lift'],n),v['lift'])
     out={}
     for name,(c,lift) in caps.items():
         dz=L1.LIP_TOP+lift-J.BOTTOM-J.FLANGE_T
@@ -43,6 +42,11 @@ def main():
         out[name]=dict(touches_at_rest=rest,worst_any=min(num) if num else '>25',
             worst_push=min(a for a in cardinal if a!='>25') if any(a!='>25' for a in cardinal) else '>25',angles=res)
         print(name,out[name]['worst_push'],out[name]['worst_any'],flush=True)
-    (X.OUT/'tilt.json').write_text(json.dumps(dict(note=__doc__.strip().splitlines()[0],hole_centre=[hx,hy],caps=out),indent=2)+'\n')
+    return dict(note=__doc__.strip().splitlines()[0],hole_centre=[hx,hy],caps=out)
+
+def main():
+    caps={'J9':(J9.cap(),.3)}
+    for n,v in X.VARIANTS.items():caps[n]=(X.cap(v['tabs'],v['lift'],n),v['lift'])
+    (X.OUT/'tilt.json').write_text(json.dumps(tilt(caps),indent=2)+'\n')
 
 if __name__=='__main__':main()

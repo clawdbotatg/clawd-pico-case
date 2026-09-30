@@ -498,6 +498,17 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J10-KEEP | J9 socket (1.90 printable, void identical for I/II, checked), 7.4 flat-top half ball, 1.2 round top edge | Unchanged |
 | J10-TILT | Model tilt before any lid contact (cad/j10_tilt.py, v1.7 lid, cap centred in the hole). Pivot 3: J9 14.2°, I 16.2–17.4°, II 16.2–17.1°, III/IV 15.5–16.1°. Pivot 0: the neck meets the hole wall first, sideways (no push down), at 11.5° (J9, I, II) and 10.4° (III, IV) | Comparison only: the true tilt (J7) and seating height (J3-LIP) are not measured, and the real part clicks before these angles |
 
+### J11 — square flange, corners on the diagonals
+
+| ID | Value | Source |
+|---|---|---|
+| J11-FEEDBACK | J10's caps fall through the lid hole and don't stay on the stick; the tabs are "stupid". Keep the cap that sat on the stick and make the flange a square: thin toward up/down/left/right, corners toward NE/NW/SE/SW, smaller than the round pad but bigger than the hole | Austin, 2026-09-30 |
+| J11-SQUARE | Flange square 8.0 (I, II) or 7.2 (III, IV) across the flats, 0.4 thick as J9; corners clipped to an 11.0 circle (only the 8.0 square reaches it). Corners 1.1–1.5 past the 8 mm hole edge | Original. The flats set how far the edge behind a push rises: 4.0 or 3.6 × sin(tilt), against J9's 5.2 |
+| J11-ORIENT | I/III: square in line with the socket square. II/IV: turned 45° | The stem square's turn on the board is not measured; the pair whose flats face up/down/left/right on the device is the right one |
+| J11-KEEP | Everything else is J9: socket void identical (checked), ride height, 7.4 half ball, 1.2 top edge; numerals engraved as J10-MARK | Unchanged |
+| J11-TILT | Model, pivot 3, push along the board axes: J9 14.2°, I and III 17.1–17.4°, II 13.4°, IV 14.6° (II and IV are the right ones only if the stem is turned 45°). Pivot 0: the neck meets the hole wall at 11.5° for all | cad/joystick_j11.py via j10_tilt.tilt; comparison only |
+| J11-DROP | Not built: a flange that drops lower outside the switch body (Austin's idea). It needs the body height above the PCB (J3, never measured; the model's 3.0 is a render guess) and would put the corners, not the flat underside, on the bed | Open |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |
