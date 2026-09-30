@@ -1,0 +1,297 @@
+{
+  "checks": {
+    "H_valid_single_solid": true,
+    "H_no_flat_overhang_in_socket": true,
+    "H_stem_fits": true,
+    "H_base_lip_clears": true,
+    "H_mark_inside_flat_top": true,
+    "H_mark_cut": true,
+    "H_flange_full_under_lid": true,
+    "H_flange_bottom_flat_on_bed": true,
+    "T_valid_single_solid": true,
+    "T_no_flat_overhang_in_socket": true,
+    "T_stem_fits": true,
+    "T_base_lip_clears": true,
+    "T_mark_inside_flat_top": true,
+    "T_mark_cut": true,
+    "T_flange_thinned_under_lid": true,
+    "T_flange_bottom_flat_on_bed": true,
+    "L_valid_single_solid": true,
+    "L_no_flat_overhang_in_socket": true,
+    "L_stem_fits": true,
+    "L_base_lip_clears": true,
+    "L_mark_inside_flat_top": true,
+    "L_mark_cut": true,
+    "L_flange_thinned_under_lid": true,
+    "L_flange_bottom_flat_on_bed": true,
+    "X_valid_single_solid": true,
+    "X_no_flat_overhang_in_socket": true,
+    "X_stem_fits": true,
+    "X_base_lip_clears": true,
+    "X_mark_inside_flat_top": true,
+    "X_mark_cut": true,
+    "X_flange_thinned_under_lid": true,
+    "X_flange_bottom_flat_on_bed": true,
+    "O_valid_single_solid": true,
+    "O_no_flat_overhang_in_socket": true,
+    "O_stem_fits": true,
+    "O_base_lip_clears": true,
+    "O_mark_inside_flat_top": true,
+    "O_mark_cut": true,
+    "O_flange_thinned_under_lid": true,
+    "O_disc_past_hole": true,
+    "O_flange_bottom_flat_on_bed": true,
+    "E_valid_single_solid": true,
+    "E_no_flat_overhang_in_socket": true,
+    "E_stem_fits": true,
+    "E_base_lip_clears": true,
+    "E_mark_inside_flat_top": true,
+    "E_mark_cut": true,
+    "E_flange_thinned_under_lid": true,
+    "E_disc_past_hole": true,
+    "E_flange_bottom_flat_on_bed": true,
+    "plate_separate": true,
+    "J13-H_clear_of_lid_at_rest": true,
+    "J13-T_clear_of_lid_at_rest": true,
+    "J13-L_clear_of_lid_at_rest": true,
+    "J13-X_clear_of_lid_at_rest": true,
+    "J13-O_clear_of_lid_at_rest": true,
+    "J13-E_clear_of_lid_at_rest": true
+  },
+  "passed": true,
+  "flats": 7.2,
+  "edge_t": 0.24,
+  "taper": [
+    3.4,
+    4.0
+  ],
+  "variants": {
+    "H": [
+      0.55,
+      false,
+      null
+    ],
+    "T": [
+      0.6,
+      true,
+      null
+    ],
+    "L": [
+      0.65,
+      true,
+      null
+    ],
+    "X": [
+      0.7,
+      true,
+      null
+    ],
+    "O": [
+      0.6,
+      true,
+      8.6
+    ],
+    "E": [
+      0.6,
+      true,
+      8.8
+    ]
+  },
+  "tilt": {
+    "note": "How far each joystick cap tips before it touches the v1.7 lid (J10 vs J9).",
+    "hole_centre": [
+      13.467100000000002,
+      45.8792
+    ],
+    "caps": {
+      "J12-VI": {
+        "touches_at_rest": false,
+        "worst_any": 12.2,
+        "worst_push": 12.7,
+        "angles": {
+          "p0_az0": 12.7,
+          "p0_az45": 12.7,
+          "p0_az90": 12.7,
+          "p0_az135": 12.7,
+          "p0_az180": 12.7,
+          "p0_az225": 12.7,
+          "p0_az270": 12.7,
+          "p0_az315": 12.7,
+          "p3_az0": 17.6,
+          "p3_az45": 12.2,
+          "p3_az90": 17.6,
+          "p3_az135": 12.2,
+          "p3_az180": 17.6,
+          "p3_az225": 12.2,
+          "p3_az270": 17.6,
+          "p3_az315": 12.2
+        }
+      },
+      "J12-VII": {
+        "touches_at_rest": false,
+        "worst_any": 11.0,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 11.8,
+          "p0_az90": 13.3,
+          "p0_az135": 11.8,
+          "p0_az180": 13.3,
+          "p0_az225": 11.8,
+          "p0_az270": 13.3,
+          "p0_az315": 11.8,
+          "p3_az0": 15.8,
+          "p3_az45": 11.0,
+          "p3_az90": 15.8,
+          "p3_az135": 11.0,
+          "p3_az180": 15.8,
+          "p3_az225": 11.0,
+          "p3_az270": 15.8,
+          "p3_az315": 11.0
+        }
+      },
+      "J13-H": {
+        "touches_at_rest": false,
+        "worst_any": 11.6,
+        "worst_push": 13.0,
+        "angles": {
+          "p0_az0": 13.0,
+          "p0_az45": 12.5,
+          "p0_az90": 13.0,
+          "p0_az135": 12.5,
+          "p0_az180": 13.0,
+          "p0_az225": 12.5,
+          "p0_az270": 13.0,
+          "p0_az315": 12.5,
+          "p3_az0": 16.7,
+          "p3_az45": 11.6,
+          "p3_az90": 16.7,
+          "p3_az135": 11.6,
+          "p3_az180": 16.7,
+          "p3_az225": 11.6,
+          "p3_az270": 16.7,
+          "p3_az315": 11.6
+        }
+      },
+      "J13-T": {
+        "touches_at_rest": false,
+        "worst_any": 12.9,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 18.5,
+          "p3_az45": 12.9,
+          "p3_az90": 18.5,
+          "p3_az135": 12.9,
+          "p3_az180": 18.5,
+          "p3_az225": 12.9,
+          "p3_az270": 18.5,
+          "p3_az315": 12.9
+        }
+      },
+      "J13-L": {
+        "touches_at_rest": false,
+        "worst_any": 12.3,
+        "worst_push": 13.6,
+        "angles": {
+          "p0_az0": 13.6,
+          "p0_az45": 13.2,
+          "p0_az90": 13.6,
+          "p0_az135": 13.2,
+          "p0_az180": 13.6,
+          "p0_az225": ">25",
+          "p0_az270": 13.6,
+          "p0_az315": ">25",
+          "p3_az0": 17.6,
+          "p3_az45": 12.3,
+          "p3_az90": 17.6,
+          "p3_az135": 12.3,
+          "p3_az180": 17.6,
+          "p3_az225": 12.3,
+          "p3_az270": 17.6,
+          "p3_az315": 12.3
+        }
+      },
+      "J13-X": {
+        "touches_at_rest": false,
+        "worst_any": 11.7,
+        "worst_push": 14.0,
+        "angles": {
+          "p0_az0": 14.0,
+          "p0_az45": 12.5,
+          "p0_az90": 14.0,
+          "p0_az135": 12.5,
+          "p0_az180": 14.0,
+          "p0_az225": 12.5,
+          "p0_az270": 14.0,
+          "p0_az315": 12.5,
+          "p3_az0": 16.7,
+          "p3_az45": 11.7,
+          "p3_az90": 16.7,
+          "p3_az135": 11.7,
+          "p3_az180": 16.7,
+          "p3_az225": 11.7,
+          "p3_az270": 16.7,
+          "p3_az315": 11.7
+        }
+      },
+      "J13-O": {
+        "touches_at_rest": false,
+        "worst_any": 13.3,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 19.9,
+          "p3_az45": 19.7,
+          "p3_az90": 19.7,
+          "p3_az135": 20.3,
+          "p3_az180": 19.9,
+          "p3_az225": 19.7,
+          "p3_az270": 19.7,
+          "p3_az315": 19.7
+        }
+      },
+      "J13-E": {
+        "touches_at_rest": false,
+        "worst_any": 13.3,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 14.9,
+          "p3_az45": 14.9,
+          "p3_az90": 14.9,
+          "p3_az135": 14.9,
+          "p3_az180": 14.9,
+          "p3_az225": 14.9,
+          "p3_az270": 14.9,
+          "p3_az315": 14.9
+        }
+      }
+    }
+  },
+  "notes": [
+    "Press room follows lift; lid room follows the flange top (lift minus 0.16 where thinned).",
+    "Thinned corners are 0.24 thick: retention only, check they survive removal from the bed."
+  ]
+}

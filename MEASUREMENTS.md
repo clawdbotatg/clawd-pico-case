@@ -519,6 +519,17 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J12-MARK | Numerals V–VIII, continuing J11's I–IV; strokes 0.5 wide, 2.2 tall, 0.4 deep so VIII fits inside the 5 mm flat | Austin, 2026-09-29 (numbers on top) |
 | J12-TILT | Model, pivot 3, push along the board axes: III 17.1°, V 18.0°, VI 17.6°, VII 15.8°, VIII 14.1° (J9 14.2°, which double-clicked). Diagonal pushes: 14.6 → 13.4 / 12.2 / 11.0 / 9.8 | Riding higher brings the flange toward the lid; VIII gives back the room J11 gained. Comparison only |
 
+### J13 — ride height and flange top, square and round
+
+| ID | Value | Source |
+|---|---|---|
+| J13-FEEDBACK | VI: directions clean, centre press doesn't quite click. VII: centre clicks every time, some directions click it too. The answer is between VI and VII. Letters, not Roman numerals (they printed as "weird holes"). Also try round: through the hole you can see past the square's flats into the case | Austin, 2026-09-30 |
+| J13-LIFT | H 0.55; T 0.60; L 0.65; X 0.70; O and E 0.60 | Between/above VI (0.5) and VII (0.6) |
+| J13-THIN | T, L, X, O, E: flange 0.24 thick from the hole edge (r 4) out, full 0.4 inside r 3.4, 11° taper between. The underside stays flat on the bed | Original. Lowers the flange top 0.16 where the lid can reach it, without moving the underside that sets press room |
+| J13-ROUND | O: 8.6 disc (0.3 past the hole); E: 8.8 disc (0.4 past) | Original. Model at VII height: 8.6 19.7°, 8.8 14.9°, 9.0 14.6° (VII 15.8°). O may be loose in the hole |
+| J13-MARK | One bold letter per cap: strokes 0.9 wide, 3.2 × 2.6, 0.5 deep | Austin, 2026-09-30 |
+| J13-TILT | Model, pivot 3, board-axis push: VI 17.6°, VII 15.8°; H 16.7°, T 18.5°, L 17.6°, X 16.7°, O 19.7°, E 14.9° | cad/joystick_j13.py; comparison only |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

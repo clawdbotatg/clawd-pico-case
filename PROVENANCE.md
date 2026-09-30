@@ -534,3 +534,6 @@ exposes tilt() for reuse.
 0.4-0.7, numerals V-VIII. J10.strokes/mark and J11.cap take optional size and
 lift arguments; J10 and J11 STLs rebuild byte-identical. Original geometry,
 no outside inputs.
+2026-09-30 J13 joystick set (cad/joystick_j13.py): J11-III square at lift
+0.55-0.70 with the flange thinned under the lid, and two thinned round discs
+(8.6, 8.8); bold letters H T L X O E. Original geometry, no outside inputs.

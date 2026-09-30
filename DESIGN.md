@@ -180,3 +180,14 @@ shallower round mouth, in four 0.1 steps (V-VIII). Riding higher gives the
 press room but lifts the flange toward the lid again, so the set spans both
 ends: VIII is back near J9's lid clearance in the model. Austin picks the
 lowest one whose centre press is clean.
+## J13 split press room from lid room — 2026-09-30
+
+Ride height alone trades press room against lid room, and the working window
+sits between VI and VII. The underside of the cap sets press room; the flange
+top, where it sits under the lid, sets lid room. J13 thins the flange only
+under the lid (0.24 from the hole edge out), so a cap can ride VII-high with
+more lid room, and the underside still prints flat on the bed. A smaller square
+can't help: its corners must reach past the hole. Round discs just past the
+hole close the see-through gap the square leaves; in the model only the 8.6
+disc beats VII, and it overlaps the hole by 0.3, so it may be loose. Letters
+replace numerals.
