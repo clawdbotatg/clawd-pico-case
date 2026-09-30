@@ -539,6 +539,12 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J14-KEEP | J13-O outside unchanged: 8.6 disc thinned under the lid, lift 0.6 (checked, so lid clearance equals O) | Unchanged |
 | J14-MARK | 1–3 engraved dots on top, Ø1.0 × 0.5 deep, 1.5 apart | Replaces letters, which printed messy |
 
+### J15 — production joystick
+
+| ID | Value | Source |
+|---|---|---|
+| J15 | J14-2 with the dots filled: plain flat top. Everything else identical (checked) | Austin, 2026-09-30: "we kinda just want it to be flat on top" |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

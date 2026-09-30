@@ -1,4 +1,4 @@
-# Current best version: v1.7 + J14-2 joystick
+# Current best version: v1.7 + J15 joystick
 
 Print from this folder. These paths never change: when a newer version wins
 a physical test, `cad/current.py` replaces the files and `current.json`.
@@ -7,7 +7,7 @@ a physical test, `cad/current.py` replaces the files and `current.json`.
 |---|---|---|---|
 | `lid.stl` | Lid, face down: rounded, taller inside, crush ribs, smooth edges, locking pockets | v1.7 | 1 |
 | `base.stl` | Base, floor down: 6 locking catches, pry slot | v1.7 | 1 |
-| `joystick.stl` | J14-2 joystick (two dots on top): J9's flat-top ball on an 8.6 round flange, thinned under the lid, riding 0.3 higher, 1.90 grip | J14 | 1 |
+| `joystick.stl` | J15 joystick = J14-2 with a plain flat top: J9's flat-top ball on an 8.6 round flange, thinned under the lid, riding 0.3 higher, 1.90 grip | J15 | 1 |
 | `button.stl` | Button cap, flange down | v1.0/S2 | 4 |
 | `full-set.stl` | All seven on one plate | — | — |
 
@@ -36,4 +36,4 @@ v1.5 reference drops (2026-09-26, not printed): `20260926-213136-lid`, `20260926
 A message tells the print Claude to reprint them on request with `copies=N`,
 and that they replace the v1.3 CURRENT drops.
 
-J14-2 joystick drop (2026-09-30, no raft, copies on request): `20260930-115222-joystick`.
+J15 joystick drop (2026-09-30, no raft, copies on request): `20260930-122840-joystick` (replaces the two-dot J14-2 drop `20260930-115222-joystick`).
