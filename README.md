@@ -1,9 +1,9 @@
 # clawd-pico-case
 
-**Current best: v1.5 — print from [`stl/current/`](stl/current/README.md).**
+**Current best: v1.5 + J14-2 joystick — print from [`stl/current/`](stl/current/README.md).**
 That folder always holds the set that last passed a physical test: the v1.5
-lid (rounded, taller inside, crush ribs), the v1.3 base, the J9 joystick and
-the original buttons. Everything else in `stl/`, `renders/` and `prints/` is
+lid (rounded, taller inside, crush ribs), the v1.3 base, the J14-2 joystick
+and the original buttons. Everything else in `stl/`, `renders/` and `prints/` is
 development history, kept on purpose as the design record.
 
 An MIT-licensed 3D-printed case for a USB-C RP2040 Pico clone (the pink board) plugged into a

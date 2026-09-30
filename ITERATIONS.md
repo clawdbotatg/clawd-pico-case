@@ -264,3 +264,14 @@ Not printed; current stays v1.5 until it is tested.
 only in the base. The v1.7 lid does not fit older bases, and v1.7 bases do
 not fit older lids. Source: cad/v1_7_lock.py. Outputs: stl/v1.7 and
 renders/v1.7. Not printed.
+## J10-J14 — joystick double click (2026-09-29/30)
+
+Direction pushes also clicked the centre: the flange edge behind the push rose
+into the lid. J10 tabs fell through the hole; J11 square flange cured the
+double click; J12 found the ride height between VI and VII; J13 thinned the
+flange under the lid (O, round 8.6, won); J14 tried three grips on O.
+## Current best: v1.5 + J14-2 (2026-09-30)
+
+v1.5 lid + v1.3 base + J14-2 joystick + original S2 buttons, in stl/current/.
+Austin: J14-2 "is the one ... stays on the thing the best ... you push the
+button down the best".
