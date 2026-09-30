@@ -1,0 +1,72 @@
+{
+  "checks": {
+    "valid_single_solid": true,
+    "socket_square_all_the_way": true,
+    "lip_cannot_enter": true,
+    "mouth_chamfer_under_lip": true,
+    "roof_where_J15_has_it": true,
+    "same_as_J15_outside_socket_above_flange": true,
+    "stem_fits": true,
+    "no_flat_overhang_in_socket": true,
+    "flares_past_hole": true,
+    "flat_on_bed": true,
+    "clear_of_lid_at_rest": true
+  },
+  "passed": true,
+  "sha256": "0e9698a90a066485e349bb1dc3483cee9b52f28d669afd65910322f1af5ec127",
+  "tilt": {
+    "note": "How far each joystick cap tips before it touches the v1.7 lid (J10 vs J9).",
+    "hole_centre": [
+      13.467100000000002,
+      45.8792
+    ],
+    "caps": {
+      "J15": {
+        "touches_at_rest": false,
+        "worst_any": 13.3,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 19.9,
+          "p3_az45": 19.7,
+          "p3_az90": 19.7,
+          "p3_az135": 20.3,
+          "p3_az180": 19.9,
+          "p3_az225": 19.7,
+          "p3_az270": 19.7,
+          "p3_az315": 19.7
+        }
+      },
+      "J16": {
+        "touches_at_rest": false,
+        "worst_any": 13.3,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 17.6,
+          "p3_az45": 13.6,
+          "p3_az90": 17.6,
+          "p3_az135": 13.6,
+          "p3_az180": 17.6,
+          "p3_az225": 13.6,
+          "p3_az270": 17.6,
+          "p3_az315": 13.6
+        }
+      }
+    }
+  }
+}

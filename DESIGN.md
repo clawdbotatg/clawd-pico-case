@@ -197,3 +197,12 @@ O won J13 on a rough print. J14 prints it clean in three grip sizes around
 its 1.90 square (1.85 / 1.90 / 1.95), everything else identical, so the next
 test shows both whether O repeats and which grip holds best. Dots replace
 letters because small engraved letters print as blobs.
+## J16 hard stop and pull-out flares — 2026-09-30
+
+J15's round mouth let the cap slide over the stem's base lip when pushed hard,
+and its 0.3 overlap let a hard pull take it out of the lid. J16 cuts the square
+grip all the way to the bed face, so the lip stops the cap, and adds four
+narrow thin flares on the diagonals. The flares must stay short and thin:
+material far out under the lid is what gets caught when the cap tips (the
+8.6 disc edge slides into the hole instead), so the chosen flares keep VI's
+lid room in the model while reaching 0.8 past the hole.

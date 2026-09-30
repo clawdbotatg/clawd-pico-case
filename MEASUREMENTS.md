@@ -545,6 +545,15 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 |---|---|---|
 | J15 | J14-2 with the dots filled: plain flat top. Everything else identical (checked) | Austin, 2026-09-30: "we kinda just want it to be flat on top" |
 
+### J16 — square-only socket, diagonal flares
+
+| ID | Value | Source |
+|---|---|---|
+| J16-FEEDBACK | After 12 J15: pushed hard, the cap's round mouth slides down over the stem's thick base and the centre press stops working; pulled hard, the cap comes out through the lid. Want a square hole all the way down, and NE/NW/SE/SW flares on the round flange | Austin, 2026-09-30 |
+| J16-SOCKET | 1.90 square from the bed face to J15's roof (same ride height); 0.25 × 45° mouth chamfer (2.40 < the 2.94 lip, J4b) against elephant foot | Original. The 2.94 lip can no longer enter; it stops the cap |
+| J16-FLARE | Four flares on the socket diagonals: 1.2 wide, rounded tips at r 4.8 (0.8 past the hole; the disc is 0.3), 0.24 thick past the hole edge like the disc | Original. Model lid room at VII height 17.6° = VI (tested clean). 2.4-wide full-thickness flares gave 12.3°, 1.4×5.2×0.32 gave 14.8° |
+| J16-KEEP | J15 otherwise: 8.6 disc thinned under the lid, lift 0.6 roof, flat top (checked) | Unchanged |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |
