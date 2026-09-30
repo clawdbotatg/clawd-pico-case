@@ -537,3 +537,5 @@ no outside inputs.
 2026-09-30 J13 joystick set (cad/joystick_j13.py): J11-III square at lift
 0.55-0.70 with the flange thinned under the lid, and two thinned round discs
 (8.6, 8.8); bold letters H T L X O E. Original geometry, no outside inputs.
+2026-09-30 J14 joystick set (cad/joystick_j14.py): J13-O with square grip
+1.85/1.90/1.95, marked 1-3 dots. Original geometry, no outside inputs.

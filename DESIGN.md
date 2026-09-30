@@ -191,3 +191,9 @@ can't help: its corners must reach past the hole. Round discs just past the
 hole close the see-through gap the square leaves; in the model only the 8.6
 disc beats VII, and it overlaps the hole by 0.3, so it may be loose. Letters
 replace numerals.
+## J14 stick fit on J13-O — 2026-09-30
+
+O won J13 on a rough print. J14 prints it clean in three grip sizes around
+its 1.90 square (1.85 / 1.90 / 1.95), everything else identical, so the next
+test shows both whether O repeats and which grip holds best. Dots replace
+letters because small engraved letters print as blobs.

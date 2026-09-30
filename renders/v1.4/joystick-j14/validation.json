@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "1_valid_single_solid": true,
+    "1_no_flat_overhang_in_socket": true,
+    "1_base_lip_clears": true,
+    "1_stem_interferes": true,
+    "1_socket_is_this_fit": true,
+    "1_outside_same_as_O": true,
+    "1_dots_inside_flat_top": true,
+    "2_valid_single_solid": true,
+    "2_no_flat_overhang_in_socket": true,
+    "2_base_lip_clears": true,
+    "2_stem_fits": true,
+    "2_socket_is_this_fit": true,
+    "2_same_as_O_below_marks": true,
+    "2_dots_inside_flat_top": true,
+    "3_valid_single_solid": true,
+    "3_no_flat_overhang_in_socket": true,
+    "3_base_lip_clears": true,
+    "3_stem_fits": true,
+    "3_socket_is_this_fit": true,
+    "3_outside_same_as_O": true,
+    "3_dots_inside_flat_top": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "base": "J13-O",
+  "lift": 0.6,
+  "disc": 8.6,
+  "fits": {
+    "1": 1.85,
+    "2": 1.9,
+    "3": 1.95
+  },
+  "notes": [
+    "1 = 1.85 (tighter), 2 = 1.90 (= O), 3 = 1.95 (looser); dots on top.",
+    "Lid clearance identical to O (outside unchanged)."
+  ]
+}

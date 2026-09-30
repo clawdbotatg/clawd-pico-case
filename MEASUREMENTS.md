@@ -530,6 +530,15 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J13-MARK | One bold letter per cap: strokes 0.9 wide, 3.2 × 2.6, 0.5 deep | Austin, 2026-09-30 |
 | J13-TILT | Model, pivot 3, board-axis push: VI 17.6°, VII 15.8°; H 16.7°, T 18.5°, L 17.6°, X 16.7°, O 19.7°, E 14.9° | cad/joystick_j13.py; comparison only |
 
+### J14 — J13-O in three stick fits
+
+| ID | Value | Source |
+|---|---|---|
+| J14-FEEDBACK | J13-O is the best of J13 (rough print). Print clean copies, one step tighter and one step looser on the stick, named one, two, three | Austin, 2026-09-30 |
+| J14-FIT | Square grip 1.85 (1) / 1.90 (2, = O) / 1.95 (3); stem 1.86 (J4) | Step 0.05 as J6/J7. 1 is 0.01 under the stem: a press fit before print shrink |
+| J14-KEEP | J13-O outside unchanged: 8.6 disc thinned under the lid, lift 0.6 (checked, so lid clearance equals O) | Unchanged |
+| J14-MARK | 1–3 engraved dots on top, Ø1.0 × 0.5 deep, 1.5 apart | Replaces letters, which printed messy |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |
