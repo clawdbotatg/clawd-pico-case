@@ -530,3 +530,7 @@ inputs.
 (8.0 or 7.2 across the flats, two turns), numerals I-IV. Austin's design
 direction; original geometry from J9; no outside inputs. j10_tilt.py now
 exposes tilt() for reuse.
+2026-09-30 J12 joystick set (cad/joystick_j12.py): J11-III with lift
+0.4-0.7, numerals V-VIII. J10.strokes/mark and J11.cap take optional size and
+lift arguments; J10 and J11 STLs rebuild byte-identical. Original geometry,
+no outside inputs.

@@ -509,6 +509,16 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J11-TILT | Model, pivot 3, push along the board axes: J9 14.2°, I and III 17.1–17.4°, II 13.4°, IV 14.6° (II and IV are the right ones only if the stem is turned 45°). Pivot 0: the neck meets the hole wall at 11.5° for all | cad/joystick_j11.py via j10_tilt.tilt; comparison only |
 | J11-DROP | Not built: a flange that drops lower outside the switch body (Austin's idea). It needs the body height above the PCB (J3, never measured; the model's 3.0 is a render guess) and would put the corners, not the flat underside, on the bed | Open |
 
+### J12 — J11-III riding higher
+
+| ID | Value | Source |
+|---|---|---|
+| J12-FEEDBACK | J11-III: up/down/left/right no longer click the centre. The centre press is hard to get without a direction; the cap sits too low, so make the hole for the stick less deep, four versions of III | Austin, 2026-09-30 |
+| J12-LIFT | Lift 0.4 / 0.5 / 0.6 / 0.7 (V / VI / VII / VIII): the round mouth is 0.6 / 0.5 / 0.4 / 0.3 deep, so the cap rides 0.1–0.4 higher than III. Square grip, funnel and roof unchanged, moved down in the cap | J5-LIFT method; values are Austin's "different depths", spaced 0.1 |
+| J12-KEEP | J11-III flange (7.2 square, in line with the socket), J9 ball and top edge | Unchanged (checked) |
+| J12-MARK | Numerals V–VIII, continuing J11's I–IV; strokes 0.5 wide, 2.2 tall, 0.4 deep so VIII fits inside the 5 mm flat | Austin, 2026-09-29 (numbers on top) |
+| J12-TILT | Model, pivot 3, push along the board axes: III 17.1°, V 18.0°, VI 17.6°, VII 15.8°, VIII 14.1° (J9 14.2°, which double-clicked). Diagonal pushes: 14.6 → 13.4 / 12.2 / 11.0 / 9.8 | Riding higher brings the flange toward the lid; VIII gives back the room J11 gained. Comparison only |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

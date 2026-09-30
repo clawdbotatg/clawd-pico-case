@@ -1,0 +1,174 @@
+{
+  "checks": {
+    "V_valid_single_solid": true,
+    "V_no_flat_overhang_in_socket": true,
+    "V_stem_fits": true,
+    "V_base_lip_clears": true,
+    "V_socket_is_III_moved_down": true,
+    "V_mark_inside_flat_top": true,
+    "V_flange_same_as_III": true,
+    "VI_valid_single_solid": true,
+    "VI_no_flat_overhang_in_socket": true,
+    "VI_stem_fits": true,
+    "VI_base_lip_clears": true,
+    "VI_socket_is_III_moved_down": true,
+    "VI_mark_inside_flat_top": true,
+    "VI_flange_same_as_III": true,
+    "VII_valid_single_solid": true,
+    "VII_no_flat_overhang_in_socket": true,
+    "VII_stem_fits": true,
+    "VII_base_lip_clears": true,
+    "VII_socket_is_III_moved_down": true,
+    "VII_mark_inside_flat_top": true,
+    "VII_flange_same_as_III": true,
+    "VIII_valid_single_solid": true,
+    "VIII_no_flat_overhang_in_socket": true,
+    "VIII_stem_fits": true,
+    "VIII_base_lip_clears": true,
+    "VIII_socket_is_III_moved_down": true,
+    "VIII_mark_inside_flat_top": true,
+    "VIII_flange_same_as_III": true,
+    "plate_separate": true,
+    "J12-V_clear_of_lid_at_rest": true,
+    "J12-VI_clear_of_lid_at_rest": true,
+    "J12-VII_clear_of_lid_at_rest": true,
+    "J12-VIII_clear_of_lid_at_rest": true
+  },
+  "passed": true,
+  "flats": 7.2,
+  "turn": 0,
+  "lifts": {
+    "V": 0.4,
+    "VI": 0.5,
+    "VII": 0.6,
+    "VIII": 0.7
+  },
+  "tilt": {
+    "note": "How far each joystick cap tips before it touches the v1.7 lid (J10 vs J9).",
+    "hole_centre": [
+      13.467100000000002,
+      45.8792
+    ],
+    "caps": {
+      "J11-III": {
+        "touches_at_rest": false,
+        "worst_any": 11.5,
+        "worst_push": 11.5,
+        "angles": {
+          "p0_az0": 11.5,
+          "p0_az45": 11.5,
+          "p0_az90": 11.5,
+          "p0_az135": 11.5,
+          "p0_az180": 11.5,
+          "p0_az225": 11.5,
+          "p0_az270": 11.5,
+          "p0_az315": 11.5,
+          "p3_az0": 17.4,
+          "p3_az45": 14.6,
+          "p3_az90": 17.1,
+          "p3_az135": 14.6,
+          "p3_az180": 17.4,
+          "p3_az225": 14.6,
+          "p3_az270": 17.1,
+          "p3_az315": 14.6
+        }
+      },
+      "J12-V": {
+        "touches_at_rest": false,
+        "worst_any": 12.1,
+        "worst_push": 12.1,
+        "angles": {
+          "p0_az0": 12.1,
+          "p0_az45": 12.1,
+          "p0_az90": 12.1,
+          "p0_az135": 12.1,
+          "p0_az180": 12.1,
+          "p0_az225": 12.1,
+          "p0_az270": 12.1,
+          "p0_az315": 12.1,
+          "p3_az0": 18.3,
+          "p3_az45": 13.4,
+          "p3_az90": 18.0,
+          "p3_az135": 13.4,
+          "p3_az180": 18.3,
+          "p3_az225": 13.4,
+          "p3_az270": 18.0,
+          "p3_az315": 13.4
+        }
+      },
+      "J12-VI": {
+        "touches_at_rest": false,
+        "worst_any": 12.2,
+        "worst_push": 12.7,
+        "angles": {
+          "p0_az0": 12.7,
+          "p0_az45": 12.7,
+          "p0_az90": 12.7,
+          "p0_az135": 12.7,
+          "p0_az180": 12.7,
+          "p0_az225": 12.7,
+          "p0_az270": 12.7,
+          "p0_az315": 12.7,
+          "p3_az0": 17.6,
+          "p3_az45": 12.2,
+          "p3_az90": 17.6,
+          "p3_az135": 12.2,
+          "p3_az180": 17.6,
+          "p3_az225": 12.2,
+          "p3_az270": 17.6,
+          "p3_az315": 12.2
+        }
+      },
+      "J12-VII": {
+        "touches_at_rest": false,
+        "worst_any": 11.0,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 11.8,
+          "p0_az90": 13.3,
+          "p0_az135": 11.8,
+          "p0_az180": 13.3,
+          "p0_az225": 11.8,
+          "p0_az270": 13.3,
+          "p0_az315": 11.8,
+          "p3_az0": 15.8,
+          "p3_az45": 11.0,
+          "p3_az90": 15.8,
+          "p3_az135": 11.0,
+          "p3_az180": 15.8,
+          "p3_az225": 11.0,
+          "p3_az270": 15.8,
+          "p3_az315": 11.0
+        }
+      },
+      "J12-VIII": {
+        "touches_at_rest": false,
+        "worst_any": 9.8,
+        "worst_push": 14.0,
+        "angles": {
+          "p0_az0": 14.0,
+          "p0_az45": 10.4,
+          "p0_az90": 14.0,
+          "p0_az135": 10.4,
+          "p0_az180": 14.0,
+          "p0_az225": 10.4,
+          "p0_az270": 14.0,
+          "p0_az315": 10.4,
+          "p3_az0": 14.1,
+          "p3_az45": 9.8,
+          "p3_az90": 14.1,
+          "p3_az135": 9.8,
+          "p3_az180": 14.1,
+          "p3_az225": 9.8,
+          "p3_az270": 14.1,
+          "p3_az315": 9.8
+        }
+      }
+    }
+  },
+  "notes": [
+    "V-VIII ride 0.1/0.2/0.3/0.4 higher than J11-III.",
+    "Riding higher also brings the flange closer to the lid; the tilt table compares that."
+  ]
+}

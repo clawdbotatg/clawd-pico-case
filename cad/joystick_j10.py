@@ -37,21 +37,22 @@ VARIANTS={'I':dict(tabs=45,lift=.3),
           'IV':dict(tabs=45,lift=.3-LOWER)}
 MARK_W,MARK_D,MARK_H,MARK_GAP=.6,.4,2.6,.6  # J10-MARK: groove width/depth, numeral height, stroke gap
 
-def strokes(numeral):
-    """2D stroke polygons for I/V numerals, centred on the origin."""
-    out=[];x=0;h=MARK_H/2;w=MARK_W/2;vw=1.8
+def strokes(numeral,sw=MARK_W,height=MARK_H,gap=MARK_GAP,vw=1.8,apex=1.):
+    """2D stroke polygons for I/V numerals, centred on the origin.
+    sw stroke width, vw V width, apex = height of the V's inner point (J12 passes smaller ones)."""
+    out=[];x=0;h=height/2;w=sw/2
     for ch in numeral:
         if ch=='I':
-            out.append([(x,-h),(x+MARK_W,-h),(x+MARK_W,h),(x,h)]);x+=MARK_W+MARK_GAP
+            out.append([(x,-h),(x+sw,-h),(x+sw,h),(x,h)]);x+=sw+gap
         else:  # V: one outline, so the two strokes leave no sliver where they meet
             m=x+vw/2
-            out.append([(x,h),(x+MARK_W,h),(m,-h+1.),(x+vw-MARK_W,h),(x+vw,h),(m+w,-h),(m-w,-h)]);x+=vw+MARK_GAP
-    x-=MARK_GAP
+            out.append([(x,h),(x+sw,h),(m,-h+apex),(x+vw-sw,h),(x+vw,h),(m+w,-h),(m-w,-h)]);x+=vw+gap
+    x-=gap
     return [[(px-x/2,py) for px,py in p] for p in out]
 
-def mark(numeral):
+def mark(numeral,**size):
     top=J4.FLAT_Z
-    return Compound(children=[extrude(Plane.XY.offset(top-MARK_D)*Polygon(*p,align=None),MARK_D+J.P.TOOL_EXT,dir=(0,0,1)) for p in strokes(numeral)])
+    return Compound(children=[extrude(Plane.XY.offset(top-MARK_D)*Polygon(*p,align=None),MARK_D+J.P.TOOL_EXT,dir=(0,0,1)) for p in strokes(numeral,**size)])
 
 def tabs(angle):
     out=[]

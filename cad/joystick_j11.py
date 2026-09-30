@@ -35,12 +35,12 @@ VARIANTS={'I':(8.0,0),'II':(8.0,45),'III':(7.2,0),'IV':(7.2,45)}  # J11-SQUARE /
 LIFT=.3       # J9's ride height (J5-LIFT)
 GAP=4.0       # plate spacing
 
-def cap(flats,turn,numeral):
-    c=J8.cap(flange=J.NECK,lift=LIFT,rim=1.2,notches=0)  # J9 without its disc
+def cap(flats,turn,numeral,lift=LIFT,mark={}):
+    c=J8.cap(flange=J.NECK,lift=lift,rim=1.2,notches=0)  # J9 without its disc
     h=flats/2
     square=Rot(0,0,turn)*J.M.box(-h,h,-h,h,J.BOTTOM,J.BOTTOM+J.FLANGE_T) & J.cylinder(CORNER_D,J.BOTTOM-1,J.BOTTOM+1)
-    c=c+square-J8.cavity(J8.SQUARE,LIFT)  # re-open the socket mouth under the square
-    for s in J10.mark(numeral).solids():c-=s
+    c=c+square-J8.cavity(J8.SQUARE,lift)  # re-open the socket mouth under the square
+    for s in J10.mark(numeral,**mark).solids():c-=s
     return c
 
 def main():

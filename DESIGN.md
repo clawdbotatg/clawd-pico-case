@@ -172,3 +172,11 @@ flats) and both turns against the socket, because the stem square's turn on
 the board is not measured. The pair whose flats face up/down/left/right is the
 right turn. A flange that drops lower past the switch body is deferred: it
 needs the body height, and it would stop the underside printing flat.
+## J12 ride height on J11-III — 2026-09-30
+
+J11-III cured the double click, but the centre press is hard to get without a
+direction: the cap sits too low on the stick. J12 raises it the J5 way, with a
+shallower round mouth, in four 0.1 steps (V-VIII). Riding higher gives the
+press room but lifts the flange toward the lid again, so the set spans both
+ends: VIII is back near J9's lid clearance in the model. Austin picks the
+lowest one whose centre press is clean.

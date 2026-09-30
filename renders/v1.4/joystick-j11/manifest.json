@@ -1,9 +1,9 @@
 {
   "revision": "J11",
   "source_sha256": {
-    "cad/joystick_j11.py": "23795ac826a4ca7f41acb92f91f6d41d0370b7ce3063f413e80af83262241b9d",
+    "cad/joystick_j11.py": "403f38dec893b6c1559e391a2e1c27ccee2abe55d2d2f628303ca7c055558805",
     "cad/j10_tilt.py": "90adce1ef659ab094b1140b20df21fae01cbd1074900511435ed943461f370da",
-    "cad/joystick_j10.py": "1fc18e40b6d0d9d78dd2a57139f898135ec34d7740fcdcdfba80a7207d80657b",
+    "cad/joystick_j10.py": "9fb6c26a55c3a2aa67d7fdd4533ceebf9a729b7b860bbb8249b71e36d8ceae43",
     "cad/joystick_j9.py": "ec01c38ac9f1637c0135d5a8c32ca5da6d473bd8d1d4c7420a927d4d257280d1",
     "cad/joystick_j8.py": "f991e5bc0d9afd334ca7dabd2be633c3e5975d80c32915f9c13d11e1eb4e787a",
     "cad/joystick_j7.py": "2de36b1432acf371c5e72e8b42ead407b85ddd9bbaa4d4263a969802a3e3a4e2",
