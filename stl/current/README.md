@@ -1,23 +1,30 @@
-# Current best version: v1.5 + J14-2 joystick
+# Current best version: v1.7 + J14-2 joystick
 
 Print from this folder. These paths never change: when a newer version wins
 a physical test, `cad/current.py` replaces the files and `current.json`.
 
 | File | Part | From | Per case |
 |---|---|---|---|
-| `lid.stl` | Lid, face down: rounded, 0.5 mm taller inside, crush ribs | v1.5 | 1 |
-| `base.stl` | Base, floor down | v1.3 | 1 |
+| `lid.stl` | Lid, face down: rounded, taller inside, crush ribs, smooth edges, locking pockets | v1.7 | 1 |
+| `base.stl` | Base, floor down: 6 locking catches, pry slot | v1.7 | 1 |
 | `joystick.stl` | J14-2 joystick (two dots on top): J9's flat-top ball on an 8.6 round flange, thinned under the lid, riding 0.3 higher, 1.90 grip | J14 | 1 |
 | `button.stl` | Button cap, flange down | v1.0/S2 | 4 |
 | `full-set.stl` | All seven on one plate | — | — |
 
-PETG, 0.16 mm, 4 walls, no supports, no raft. For N copies, use the slicer's
+PETG, 0.16 mm, 4 walls, no supports, no raft, no brim (caps can't be removed
+from a brim or raft). Lid: elephant-foot compensation 0.15. For N copies, use the slicer's
 copies setting (or `copies=N` on the print inbox).
 
 Austin tested this set on 2026-09-26 and said "everything works fine". The
 v1.5 lid is the only new part. On 2026-09-30 the joystick became J14-2: no
 centre click on direction pushes, the cleanest centre press, and it stays on
-the stick best. It fits the v1.5-v1.7 lids (same roof under the joystick). The bases and buttons are the ones already
+the stick best. It fits the v1.5-v1.7 lids (same roof under the joystick).
+
+The v1.7 lid and base are what Austin batch-prints (print Mac, 2026-09-30):
+lid drop `20260927-115641-lid-face-down`, 24 in white PETG; base drop
+`20260927-112055-base-floor-down`, 24 (12 black, 12 grey); four plates of six
+each, 2026-09-27 to 29. The v1.5 lid / v1.3 base listed here until today
+were stale: v1.7 was never written back after it passed. The bases and buttons are the ones already
 printed. Hashes and sources are in `current.json`.
 
 Stable links:

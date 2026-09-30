@@ -2,7 +2,8 @@
 CURRENT names the revision; parts are byte-copied from their tested exports
 and a full seven-part set plate is built from the same source.
 History: v1.3 (2026-09-26 morning), v1.5 (2026-09-26 evening), v1.5 + J14-2
-joystick (2026-09-30).
+joystick (2026-09-30), v1.7 lid + base + J14-2 (2026-09-30: v1.7 is what Austin
+batch-prints, 'lid v1.7 x6').
 """
 import hashlib
 import json
@@ -10,20 +11,21 @@ import shutil
 from build123d import Pos, Rot, Compound
 import v1_5_tall as T5
 import joystick_j14 as J14
+import v1_7_lock as L7
 W,V,J=T5.W,T5.V,T5.J
 ROOT=T5.ROOT
-CURRENT='v1.5+J14-2'  # Austin, 2026-09-26: "this is the latest version"; 2026-09-30: J14-2 "is the new joystick"
+CURRENT='v1.7+J14-2'  # Austin, 2026-09-26: "this is the latest version"; 2026-09-30: J14-2 "is the new joystick"
 DIR=ROOT/'stl/current'
 GAP=5.0  # V1-PLATE
-# v1.5 lid, v1.3 base (already printed), J14-2 joystick, original S2 buttons.
-PARTS={'lid.stl':'stl/v1.5/lid-face-down.stl','base.stl':'stl/v1.3/base-floor-down.stl',
+# v1.7 lid and base (the batch-printed pair), J14-2 joystick, original S2 buttons.
+PARTS={'lid.stl':'stl/v1.7/lid-face-down.stl','base.stl':'stl/v1.7/base-floor-down.stl',
        'joystick.stl':'stl/v1.4/joystick-j14/joystick-j14-2.stl','button.stl':'stl/v1.0/button-1.stl'}
 
 def main():
     DIR.mkdir(parents=True,exist_ok=True)
     for name,src in PARTS.items():shutil.copyfile(ROOT/src,DIR/name)
     W.shorten()
-    l,_=T5.lid();b,*_=V.base()
+    l,_=L7.lid();b,_=L7.base()
     lid,base=V.origin(Rot(180,0,0)*l),V.origin(b)
     cap=Pos(0,0,-J.BOTTOM)*J14.cap(J14.VARIANTS['2'],2)
     caps=[V.origin(c) for c in V.T.buttons().solids()]

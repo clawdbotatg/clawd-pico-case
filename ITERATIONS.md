@@ -275,3 +275,8 @@ flange under the lid (O, round 8.6, won); J14 tried three grips on O.
 v1.5 lid + v1.3 base + J14-2 joystick + original S2 buttons, in stl/current/.
 Austin: J14-2 "is the one ... stays on the thing the best ... you push the
 button down the best".
+## Current best: v1.7 + J14-2 (2026-09-30)
+
+v1.7 lid + v1.7 base + J14-2 joystick + original S2 buttons, in stl/current/.
+The v1.7 pair passed on 2026-09-27 and Austin batch-printed 24 of each
+(print Mac log); the repo never recorded it, so current said v1.5 until now.

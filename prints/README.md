@@ -10,3 +10,6 @@ Placement (Austin, 2026-09-29): parts printed in the middle of the bed are
 very hard to get off. Every drop's notes ask for the parts to be placed away
 from the bed centre. The slicer on the print Mac may re-centre a part, so the
 request goes in the notes, not only in the STL's coordinates.
+
+Caps (Austin, via the print Mac, 2026-09-30): never a brim or raft on
+joystick or button caps; they can't be removed from it.
