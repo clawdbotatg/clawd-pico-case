@@ -206,3 +206,10 @@ narrow thin flares on the diagonals. The flares must stay short and thin:
 material far out under the lid is what gets caught when the cap tips (the
 8.6 disc edge slides into the hole instead), so the chosen flares keep VI's
 lid room in the model while reaching 0.8 past the hole.
+## J17 gradient on J16 — 2026-09-30
+
+Bigger tabs hold the cap in the lid but get caught under the lid when it tips;
+a shallower hole gives a better centre press but lifts the flange toward the
+lid. Both push the same way, so J17 walks one path from J16 (tested clean) to
+a cap the model is sure double-clicks, in five steps. Austin picks the step
+with the best hold and press that still clicks clean.

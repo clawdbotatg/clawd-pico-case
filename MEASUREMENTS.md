@@ -554,6 +554,15 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J16-FLARE | Four flares on the socket diagonals: 1.2 wide, rounded tips at r 4.8 (0.8 past the hole; the disc is 0.3), 0.24 thick past the hole edge like the disc | Original. Model lid room at VII height 17.6° = VI (tested clean). 2.4-wide full-thickness flares gave 12.3°, 1.4×5.2×0.32 gave 14.8° |
 | J16-KEEP | J15 otherwise: 8.6 disc thinned under the lid, lift 0.6 roof, flat top (checked) | Unchanged |
 
+### J17 — J16 gradient A–E: bigger tabs, shallower hole
+
+| ID | Value | Source |
+|---|---|---|
+| J17-FEEDBACK | J16 does not double-click, but the hole should be shallower and the tabs 2–3× bigger. Start from J16 with bigger tabs (A), go to where the model is sure it double-clicks (E), gradient between | Austin, 2026-09-30 |
+| J17-STEP | Hole shallower 0 / 0.05 / 0.10 / 0.15 / 0.20 (A–E); tab scale 1.3 / 1.55 / 1.8 / 2.05 / 2.3 × J16's (width 1.56–2.76, tip r 4.95–5.45); 0.24 thick past the hole edge | Original gradient. At 2–3× tabs the model puts every cap below VII |
+| J17-TILT | Model, pivot 3, push: J16 17.6°, A 16.6°, B 15.1°, C 13.7°, D 12.5°, E 11.4° (VI 17.6° clean, VII 15.8° double-clicked) | cad/joystick_j17.py; comparison only |
+| J17-MARK | Dice dots on top: A 1 … E 5, Ø0.9 × 0.5 deep | As J14 dots, which printed clean |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

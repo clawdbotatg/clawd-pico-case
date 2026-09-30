@@ -541,3 +541,4 @@ no outside inputs.
 1.85/1.90/1.95, marked 1-3 dots. Original geometry, no outside inputs.
 2026-09-30 J15 (cad/joystick_j15.py): J14-2 without dots; now stl/current/joystick.stl. Original geometry.
 2026-09-30 J16 (cad/joystick_j16.py): J15 with a square-only socket and four diagonal flares. Original geometry, no outside inputs.
+2026-09-30 J17 (cad/joystick_j17.py): five J16 variants, tabs 1.3-2.3x and hole 0-0.2 shallower, dice-dot marks. Original geometry, no outside inputs.

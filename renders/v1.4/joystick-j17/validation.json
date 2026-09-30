@@ -1,0 +1,234 @@
+{
+  "checks": {
+    "A_valid_single_solid": true,
+    "A_no_flat_overhang_in_socket": true,
+    "A_socket_square_to_roof": true,
+    "A_roof_lower_by_step": true,
+    "A_lip_stop_kept": true,
+    "A_pips_inside_flat_top": true,
+    "A_hole_not_deeper_than_J16": true,
+    "A_tabs_bigger_than_J16": true,
+    "B_valid_single_solid": true,
+    "B_no_flat_overhang_in_socket": true,
+    "B_socket_square_to_roof": true,
+    "B_roof_lower_by_step": true,
+    "B_lip_stop_kept": true,
+    "B_pips_inside_flat_top": true,
+    "B_hole_not_deeper_than_J16": true,
+    "B_tabs_bigger_than_J16": true,
+    "C_valid_single_solid": true,
+    "C_no_flat_overhang_in_socket": true,
+    "C_socket_square_to_roof": true,
+    "C_roof_lower_by_step": true,
+    "C_lip_stop_kept": true,
+    "C_pips_inside_flat_top": true,
+    "C_hole_not_deeper_than_J16": true,
+    "C_tabs_bigger_than_J16": true,
+    "D_valid_single_solid": true,
+    "D_no_flat_overhang_in_socket": true,
+    "D_socket_square_to_roof": true,
+    "D_roof_lower_by_step": true,
+    "D_lip_stop_kept": true,
+    "D_pips_inside_flat_top": true,
+    "D_hole_not_deeper_than_J16": true,
+    "D_tabs_bigger_than_J16": true,
+    "E_valid_single_solid": true,
+    "E_no_flat_overhang_in_socket": true,
+    "E_socket_square_to_roof": true,
+    "E_roof_lower_by_step": true,
+    "E_lip_stop_kept": true,
+    "E_pips_inside_flat_top": true,
+    "E_hole_not_deeper_than_J16": true,
+    "E_tabs_bigger_than_J16": true,
+    "plate_separate": true,
+    "J17-A_clear_of_lid_at_rest": true,
+    "J17-B_clear_of_lid_at_rest": true,
+    "J17-C_clear_of_lid_at_rest": true,
+    "J17-D_clear_of_lid_at_rest": true,
+    "J17-E_clear_of_lid_at_rest": true
+  },
+  "passed": true,
+  "variants": {
+    "A": {
+      "shallower": 0.0,
+      "tab_scale": 1.3,
+      "tab_width": 1.56,
+      "tab_tip_r": 4.95
+    },
+    "B": {
+      "shallower": 0.05,
+      "tab_scale": 1.55,
+      "tab_width": 1.86,
+      "tab_tip_r": 5.08
+    },
+    "C": {
+      "shallower": 0.1,
+      "tab_scale": 1.8,
+      "tab_width": 2.16,
+      "tab_tip_r": 5.2
+    },
+    "D": {
+      "shallower": 0.15,
+      "tab_scale": 2.05,
+      "tab_width": 2.46,
+      "tab_tip_r": 5.32
+    },
+    "E": {
+      "shallower": 0.2,
+      "tab_scale": 2.3,
+      "tab_width": 2.76,
+      "tab_tip_r": 5.45
+    }
+  },
+  "tilt": {
+    "note": "How far each joystick cap tips before it touches the v1.7 lid (J10 vs J9).",
+    "hole_centre": [
+      13.467100000000002,
+      45.8792
+    ],
+    "caps": {
+      "J16": {
+        "touches_at_rest": false,
+        "worst_any": 13.3,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 17.6,
+          "p3_az45": 13.6,
+          "p3_az90": 17.6,
+          "p3_az135": 13.6,
+          "p3_az180": 17.6,
+          "p3_az225": 13.6,
+          "p3_az270": 17.6,
+          "p3_az315": 13.6
+        }
+      },
+      "J17-A": {
+        "touches_at_rest": false,
+        "worst_any": 13.2,
+        "worst_push": 13.3,
+        "angles": {
+          "p0_az0": 13.3,
+          "p0_az45": 13.3,
+          "p0_az90": 13.3,
+          "p0_az135": 13.3,
+          "p0_az180": 13.3,
+          "p0_az225": 13.3,
+          "p0_az270": 13.3,
+          "p0_az315": 13.3,
+          "p3_az0": 16.6,
+          "p3_az45": 13.2,
+          "p3_az90": 16.6,
+          "p3_az135": 13.2,
+          "p3_az180": 16.6,
+          "p3_az225": 13.2,
+          "p3_az270": 16.6,
+          "p3_az315": 13.2
+        }
+      },
+      "J17-B": {
+        "touches_at_rest": false,
+        "worst_any": 12.3,
+        "worst_push": 13.6,
+        "angles": {
+          "p0_az0": 13.6,
+          "p0_az45": 13.2,
+          "p0_az90": 13.6,
+          "p0_az135": 13.2,
+          "p0_az180": 13.6,
+          "p0_az225": ">25",
+          "p0_az270": 13.6,
+          "p0_az315": ">25",
+          "p3_az0": 15.1,
+          "p3_az45": 12.3,
+          "p3_az90": 15.1,
+          "p3_az135": 12.3,
+          "p3_az180": 15.1,
+          "p3_az225": 12.3,
+          "p3_az270": 15.1,
+          "p3_az315": 12.3
+        }
+      },
+      "J17-C": {
+        "touches_at_rest": false,
+        "worst_any": 11.3,
+        "worst_push": 13.7,
+        "angles": {
+          "p0_az0": 14.0,
+          "p0_az45": 12.1,
+          "p0_az90": 14.0,
+          "p0_az135": 12.1,
+          "p0_az180": 14.0,
+          "p0_az225": 12.1,
+          "p0_az270": 14.0,
+          "p0_az315": 12.1,
+          "p3_az0": 13.7,
+          "p3_az45": 11.3,
+          "p3_az90": 13.7,
+          "p3_az135": 11.3,
+          "p3_az180": 13.7,
+          "p3_az225": 11.3,
+          "p3_az270": 13.7,
+          "p3_az315": 11.3
+        }
+      },
+      "J17-D": {
+        "touches_at_rest": false,
+        "worst_any": 10.5,
+        "worst_push": 12.5,
+        "angles": {
+          "p0_az0": 13.7,
+          "p0_az45": 11.1,
+          "p0_az90": 13.7,
+          "p0_az135": 11.1,
+          "p0_az180": 13.7,
+          "p0_az225": 11.1,
+          "p0_az270": 13.7,
+          "p0_az315": 11.1,
+          "p3_az0": 12.5,
+          "p3_az45": 10.5,
+          "p3_az90": 12.5,
+          "p3_az135": 10.5,
+          "p3_az180": 12.5,
+          "p3_az225": 10.5,
+          "p3_az270": 12.5,
+          "p3_az315": 10.5
+        }
+      },
+      "J17-E": {
+        "touches_at_rest": false,
+        "worst_any": 9.7,
+        "worst_push": 11.4,
+        "angles": {
+          "p0_az0": 12.3,
+          "p0_az45": 10.3,
+          "p0_az90": 12.3,
+          "p0_az135": 10.3,
+          "p0_az180": 12.3,
+          "p0_az225": 10.3,
+          "p0_az270": 12.3,
+          "p0_az315": 10.3,
+          "p3_az0": 11.4,
+          "p3_az45": 9.7,
+          "p3_az90": 11.4,
+          "p3_az135": 9.7,
+          "p3_az180": 11.4,
+          "p3_az225": 9.7,
+          "p3_az270": 11.4,
+          "p3_az315": 9.7
+        }
+      }
+    }
+  },
+  "notes": [
+    "Dice dots: A 1 ... E 5.",
+    "Shallower and bigger both bring the flange/tabs toward the lid: see tilt."
+  ]
+}
