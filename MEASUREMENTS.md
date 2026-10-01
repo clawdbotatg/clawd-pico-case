@@ -573,6 +573,14 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J18-TAB | J17-B tabs (1.55× J16: 1.86 wide, tip r 5.08) on all six | Austin: "the flange you had on the two dot" |
 | J18-TILT | If the stick tip sits on the roof, a shallower hole rides higher. Model, pivot 3, push: J17-B 15.1°, 1 12.5°, 2 11.0°, 3 9.6°, 4 8.3°, 5 6.9°, 6 5.5° (VI 17.6° clean, VII 15.8° double-click) | cad/joystick_j18.py; comparison only |
 
+### J19 — shallower still
+
+| ID | Value | Source |
+|---|---|---|
+| J19-FEEDBACK | Even J18-6 (1.7) presses all five switches | Austin, 2026-09-30 |
+| J19-DEPTH | Hole 1.6 / 1.5 / 1.4 / 1.3 / 1.2 (dice dots 1–5), J17-B tabs. 1.2 leaves 0.95 of straight grip | Austin's values |
+| J19-TILT | Model, if the stick tip seats on the roof: 4.2° / 2.8° / 1.5° / 0.1° / touching at rest. Austin's J18 result (1.7 still reaches the collar) suggests the tip doesn't seat on the roof, so the model's ride height is likely wrong here | Comparison only |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

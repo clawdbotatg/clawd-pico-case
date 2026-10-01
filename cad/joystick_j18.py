@@ -30,31 +30,31 @@ DEPTHS=[2.2,2.1,2.0,1.9,1.8,1.7]  # J18-DEPTH, dots 1..6
 def cap(depth,n):
     return J17.cap(J16_DEPTH-depth,TAB_SCALE,n)
 
-def main():
-    STL.mkdir(parents=True,exist_ok=True);OUT.mkdir(parents=True,exist_ok=True)
+def main(depths=DEPTHS,stl=STL,out=OUT,rev='J18'):  # J19 reuses this with shallower depths
+    stl.mkdir(parents=True,exist_ok=True);out.mkdir(parents=True,exist_ok=True)
     def vol(s):return sum(x.volume for x in s.solids())
     checks={};parts={};caps={};h=J16.SQUARE/2
-    for i,depth in enumerate(DEPTHS):
+    for i,depth in enumerate(depths):
         n=i+1;name=str(n);c=cap(depth,n);roof=J.BOTTOM+depth
         checks[name+'_valid_single_solid']=c.is_valid and len(c.solids())==1
         checks[name+'_no_flat_overhang_in_socket']=not J7.overhangs(c)
         checks[name+'_depth_is_'+str(depth)]=vol(c & J.M.box(-h,h,-h,h,J.BOTTOM,roof-.01))<1e-6 and vol(c & J.M.box(-.05,.05,-.05,.05,roof+h+.05,roof+h+.15))>0
         checks[name+'_pips_inside_flat_top']=J17.PIP_STEP*2**.5+J17.PIP_D/2<2.5
-        parts[name]=Pos(0,0,-J.BOTTOM)*c;caps['J18-'+name]=(c,J16.LIFT+J16_DEPTH-depth)
-        J.export(parts[name],STL/('joystick-j18-'+name+'.stl'))
+        parts[name]=Pos(0,0,-J.BOTTOM)*c;caps[rev+'-'+name]=(c,J16.LIFT+J16_DEPTH-depth)
+        J.export(parts[name],stl/('joystick-'+rev.lower()+'-'+name+'.stl'))
     step=2*J17.tab(TAB_SCALE)[1]+J14.GAP
     placed=[Pos((i%3)*step,(i//3)*step,0)*p for i,p in enumerate(parts.values())]  # 3 x 2
     checks['plate_separate']=all(J.overlap(a,x)<1e-6 for a,x in itertools.combinations(placed,2))
-    J.export(Compound(children=placed),STL/'joystick-j18-plate.stl')
+    J.export(Compound(children=placed),stl/('joystick-'+rev.lower()+'-plate.stl'))
     tilt=TILT.tilt({'J17-B':(J17.cap(*J17.VARIANTS['B'],2),J16.LIFT+J17.VARIANTS['B'][0]),**caps})
-    for n in caps:checks[n+'_clear_of_lid_at_rest']=not tilt['caps'][n]['touches_at_rest']
-    report=dict(checks=checks,passed=all(checks.values()),depths={str(i+1):d for i,d in enumerate(DEPTHS)},tab_scale=TAB_SCALE,tilt=tilt,
+    warnings=[n+' touches the lid at rest in the model (if the stick tip seats on the roof)' for n in caps if tilt['caps'][n]['touches_at_rest']]  # reported, not fatal: Austin picks depths by hand
+    report=dict(checks=checks,passed=all(checks.values()),warnings=warnings,depths={str(i+1):d for i,d in enumerate(depths)},tab_scale=TAB_SCALE,tilt=tilt,
         notes=['Depth = cap bottom to the flat roof the stick tip sits on (J16 2.4).','If the roof is what stops the cap, shallower also rides higher: see tilt.'])
-    (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
-    files=sorted(STL.glob('*.stl'))
+    (out/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
+    files=sorted(stl.glob('*.stl'))
     src=[Path(__file__),*(ROOT/'cad'/n for n in ('joystick_j17.py','joystick_j16.py','joystick_j15.py','joystick_test.py'))]
-    (OUT/'manifest.json').write_text(json.dumps(dict(revision='J18',source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in src},files={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}),indent=2)+'\n')
-    print(json.dumps(dict(checks=checks,passed=report['passed']),indent=2))
+    (out/'manifest.json').write_text(json.dumps(dict(revision=rev,source_sha256={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in src},files={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}),indent=2)+'\n')
+    print(json.dumps(dict(checks=checks,passed=report['passed'],warnings=warnings),indent=2))
     if not report['passed']:raise SystemExit('Validation failed')
 
 if __name__=='__main__':main()

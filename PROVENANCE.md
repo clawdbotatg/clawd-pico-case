@@ -543,3 +543,4 @@ no outside inputs.
 2026-09-30 J16 (cad/joystick_j16.py): J15 with a square-only socket and four diagonal flares. Original geometry, no outside inputs.
 2026-09-30 J17 (cad/joystick_j17.py): five J16 variants, tabs 1.3-2.3x and hole 0-0.2 shallower, dice-dot marks. Original geometry, no outside inputs.
 2026-09-30 J18 (cad/joystick_j18.py): J17-B tabs, hole depth 2.2-1.7, dots 1-6; J4c = Austin's ~2 mm tip-to-collar estimate. Original geometry.
+2026-09-30 J19 (cad/joystick_j19.py): J18 at depths 1.6-1.2. Original geometry.
