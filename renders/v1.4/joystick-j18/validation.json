@@ -1,0 +1,219 @@
+{
+  "checks": {
+    "1_valid_single_solid": true,
+    "1_no_flat_overhang_in_socket": true,
+    "1_depth_is_2.2": true,
+    "1_pips_inside_flat_top": true,
+    "2_valid_single_solid": true,
+    "2_no_flat_overhang_in_socket": true,
+    "2_depth_is_2.1": true,
+    "2_pips_inside_flat_top": true,
+    "3_valid_single_solid": true,
+    "3_no_flat_overhang_in_socket": true,
+    "3_depth_is_2.0": true,
+    "3_pips_inside_flat_top": true,
+    "4_valid_single_solid": true,
+    "4_no_flat_overhang_in_socket": true,
+    "4_depth_is_1.9": true,
+    "4_pips_inside_flat_top": true,
+    "5_valid_single_solid": true,
+    "5_no_flat_overhang_in_socket": true,
+    "5_depth_is_1.8": true,
+    "5_pips_inside_flat_top": true,
+    "6_valid_single_solid": true,
+    "6_no_flat_overhang_in_socket": true,
+    "6_depth_is_1.7": true,
+    "6_pips_inside_flat_top": true,
+    "plate_separate": true,
+    "J18-1_clear_of_lid_at_rest": true,
+    "J18-2_clear_of_lid_at_rest": true,
+    "J18-3_clear_of_lid_at_rest": true,
+    "J18-4_clear_of_lid_at_rest": true,
+    "J18-5_clear_of_lid_at_rest": true,
+    "J18-6_clear_of_lid_at_rest": true
+  },
+  "passed": true,
+  "depths": {
+    "1": 2.2,
+    "2": 2.1,
+    "3": 2.0,
+    "4": 1.9,
+    "5": 1.8,
+    "6": 1.7
+  },
+  "tab_scale": 1.55,
+  "tilt": {
+    "note": "How far each joystick cap tips before it touches the v1.7 lid (J10 vs J9).",
+    "hole_centre": [
+      13.467100000000002,
+      45.8792
+    ],
+    "caps": {
+      "J17-B": {
+        "touches_at_rest": false,
+        "worst_any": 12.3,
+        "worst_push": 13.6,
+        "angles": {
+          "p0_az0": 13.6,
+          "p0_az45": 13.2,
+          "p0_az90": 13.6,
+          "p0_az135": 13.2,
+          "p0_az180": 13.6,
+          "p0_az225": ">25",
+          "p0_az270": 13.6,
+          "p0_az315": ">25",
+          "p3_az0": 15.1,
+          "p3_az45": 12.3,
+          "p3_az90": 15.1,
+          "p3_az135": 12.3,
+          "p3_az180": 15.1,
+          "p3_az225": 12.3,
+          "p3_az270": 15.1,
+          "p3_az315": 12.3
+        }
+      },
+      "J18-1": {
+        "touches_at_rest": false,
+        "worst_any": 10.4,
+        "worst_push": 12.5,
+        "angles": {
+          "p0_az0": 14.3,
+          "p0_az45": 11.1,
+          "p0_az90": 14.3,
+          "p0_az135": 11.1,
+          "p0_az180": 14.3,
+          "p0_az225": 11.1,
+          "p0_az270": 14.3,
+          "p0_az315": 11.1,
+          "p3_az0": 12.5,
+          "p3_az45": 10.4,
+          "p3_az90": 12.5,
+          "p3_az135": 10.4,
+          "p3_az180": 12.5,
+          "p3_az225": 10.4,
+          "p3_az270": 12.5,
+          "p3_az315": 10.4
+        }
+      },
+      "J18-2": {
+        "touches_at_rest": false,
+        "worst_any": 9.3,
+        "worst_push": 11.0,
+        "angles": {
+          "p0_az0": 12.5,
+          "p0_az45": 9.8,
+          "p0_az90": 12.5,
+          "p0_az135": 9.8,
+          "p0_az180": 12.5,
+          "p0_az225": ">25",
+          "p0_az270": 12.5,
+          "p0_az315": ">25",
+          "p3_az0": 11.0,
+          "p3_az45": 9.3,
+          "p3_az90": 11.0,
+          "p3_az135": 9.3,
+          "p3_az180": 11.0,
+          "p3_az225": 9.3,
+          "p3_az270": 11.0,
+          "p3_az315": 9.3
+        }
+      },
+      "J18-3": {
+        "touches_at_rest": false,
+        "worst_any": 8.1,
+        "worst_push": 9.6,
+        "angles": {
+          "p0_az0": 10.7,
+          "p0_az45": 8.5,
+          "p0_az90": 10.7,
+          "p0_az135": 8.5,
+          "p0_az180": 10.7,
+          "p0_az225": 8.5,
+          "p0_az270": 10.7,
+          "p0_az315": 8.5,
+          "p3_az0": 9.6,
+          "p3_az45": 8.1,
+          "p3_az90": 9.6,
+          "p3_az135": 8.1,
+          "p3_az180": 9.6,
+          "p3_az225": 8.1,
+          "p3_az270": 9.6,
+          "p3_az315": 8.1
+        }
+      },
+      "J18-4": {
+        "touches_at_rest": false,
+        "worst_any": 7.0,
+        "worst_push": 8.3,
+        "angles": {
+          "p0_az0": 9.1,
+          "p0_az45": 7.2,
+          "p0_az90": 9.1,
+          "p0_az135": 7.2,
+          "p0_az180": 9.1,
+          "p0_az225": 7.2,
+          "p0_az270": 9.1,
+          "p0_az315": 7.2,
+          "p3_az0": 8.3,
+          "p3_az45": 7.0,
+          "p3_az90": 8.3,
+          "p3_az135": 7.0,
+          "p3_az180": 8.3,
+          "p3_az225": 7.0,
+          "p3_az270": 8.3,
+          "p3_az315": 7.0
+        }
+      },
+      "J18-5": {
+        "touches_at_rest": false,
+        "worst_any": 5.8,
+        "worst_push": 6.9,
+        "angles": {
+          "p0_az0": 7.5,
+          "p0_az45": 6.0,
+          "p0_az90": 7.5,
+          "p0_az135": 6.0,
+          "p0_az180": 7.5,
+          "p0_az225": 6.0,
+          "p0_az270": 7.5,
+          "p0_az315": 6.0,
+          "p3_az0": 6.9,
+          "p3_az45": 5.8,
+          "p3_az90": 6.9,
+          "p3_az135": 5.8,
+          "p3_az180": 6.9,
+          "p3_az225": 5.8,
+          "p3_az270": 6.9,
+          "p3_az315": 5.8
+        }
+      },
+      "J18-6": {
+        "touches_at_rest": false,
+        "worst_any": 4.6,
+        "worst_push": 5.5,
+        "angles": {
+          "p0_az0": 6.0,
+          "p0_az45": 4.8,
+          "p0_az90": 6.0,
+          "p0_az135": 4.8,
+          "p0_az180": 6.0,
+          "p0_az225": 4.8,
+          "p0_az270": 6.0,
+          "p0_az315": 4.8,
+          "p3_az0": 5.5,
+          "p3_az45": 4.6,
+          "p3_az90": 5.5,
+          "p3_az135": 4.6,
+          "p3_az180": 5.5,
+          "p3_az225": 4.6,
+          "p3_az270": 5.5,
+          "p3_az315": 4.6
+        }
+      }
+    }
+  },
+  "notes": [
+    "Depth = cap bottom to the flat roof the stick tip sits on (J16 2.4).",
+    "If the roof is what stops the cap, shallower also rides higher: see tilt."
+  ]
+}

@@ -563,6 +563,16 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J17-TILT | Model, pivot 3, push: J16 17.6°, A 16.6°, B 15.1°, C 13.7°, D 12.5°, E 11.4° (VI 17.6° clean, VII 15.8° double-clicked) | cad/joystick_j17.py; comparison only |
 | J17-MARK | Dice dots on top: A 1 … E 5, Ø0.9 × 0.5 deep | As J14 dots, which printed clean |
 
+### J18 — hole depth sweep
+
+| ID | Value | Source |
+|---|---|---|
+| J18-FEEDBACK | Pressing a J16/J17 cap clicks all five switches; the bare stick clicks only the centre. The hole isn't shallow enough | Austin, 2026-09-30 |
+| J4c | Stick tip to the top of the wider collar at its base: about 2 mm | Austin's estimate, 2026-09-30 ("about 2 millimeters, I think"); not a caliper reading |
+| J18-DEPTH | Cap bottom to the square's flat roof: 2.2 / 2.1 / 2.0 / 1.9 / 1.8 / 1.7 (dice dots 1–6); J16/J17-A 2.4 | Austin's values, bracketing J4c |
+| J18-TAB | J17-B tabs (1.55× J16: 1.86 wide, tip r 5.08) on all six | Austin: "the flange you had on the two dot" |
+| J18-TILT | If the stick tip sits on the roof, a shallower hole rides higher. Model, pivot 3, push: J17-B 15.1°, 1 12.5°, 2 11.0°, 3 9.6°, 4 8.3°, 5 6.9°, 6 5.5° (VI 17.6° clean, VII 15.8° double-click) | cad/joystick_j18.py; comparison only |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |
