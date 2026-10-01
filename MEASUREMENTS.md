@@ -581,6 +581,14 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J19-DEPTH | Hole 1.6 / 1.5 / 1.4 / 1.3 / 1.2 (dice dots 1–5), J17-B tabs. 1.2 leaves 0.95 of straight grip | Austin's values |
 | J19-TILT | Model, if the stick tip seats on the roof: 4.2° / 2.8° / 1.5° / 0.1° / touching at rest. Austin's J18 result (1.7 still reaches the collar) suggests the tip doesn't seat on the roof, so the model's ride height is likely wrong here | Comparison only |
 
+### J20 — 1.5 deep with a wide mouth
+
+| ID | Value | Source |
+|---|---|---|
+| J20-FEEDBACK | J19 "still not quite right". Take J19-2 (1.5 total depth) and make the first 0.5 a wide round opening that fits over the stick's base, as earlier caps had | Austin, 2026-09-30 |
+| J20-MOUTH | Round Ø3.2 for 0.5 (0.13 per side over the 2.94 collar, J4b), then J7's 45° round-to-square funnel (0.65), 1.90 square to the flat roof at 1.5 (0.35 straight), pyramid roof | Original sizes on Austin's depths. The funnel avoids a flat ledge over air |
+| J20-KEEP | J19-2 outside the socket (J17-B tabs, 8.6 disc, thinned), flat top | Checked |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

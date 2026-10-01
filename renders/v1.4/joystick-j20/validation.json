@@ -1,0 +1,48 @@
+{
+  "checks": {
+    "valid_single_solid": true,
+    "mouth_clears_collar": true,
+    "mouth_wider_than_collar": true,
+    "roof_at_1_5": true,
+    "square_grip_above_funnel": true,
+    "stem_fits": true,
+    "no_flat_overhang_in_socket": true,
+    "same_as_J19_2_outside_socket": true,
+    "flat_top": true
+  },
+  "passed": true,
+  "straight_grip": 0.35,
+  "sha256": "5fe0c83564ae6fea942f657a5800858632e8dc73e1a2830dd94581fbbd17d996",
+  "tilt": {
+    "note": "How far each joystick cap tips before it touches the v1.7 lid (J10 vs J9).",
+    "hole_centre": [
+      13.467100000000002,
+      45.8792
+    ],
+    "caps": {
+      "J20": {
+        "touches_at_rest": false,
+        "worst_any": 2.3,
+        "worst_push": 2.8,
+        "angles": {
+          "p0_az0": 2.8,
+          "p0_az45": 2.4,
+          "p0_az90": 2.8,
+          "p0_az135": 2.4,
+          "p0_az180": 2.8,
+          "p0_az225": 2.4,
+          "p0_az270": 2.8,
+          "p0_az315": 2.4,
+          "p3_az0": 2.8,
+          "p3_az45": 2.3,
+          "p3_az90": 2.8,
+          "p3_az135": 2.3,
+          "p3_az180": 2.8,
+          "p3_az225": 2.3,
+          "p3_az270": 2.8,
+          "p3_az315": 2.3
+        }
+      }
+    }
+  }
+}

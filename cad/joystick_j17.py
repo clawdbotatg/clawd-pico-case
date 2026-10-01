@@ -37,7 +37,7 @@ PIP_D,PIP_STEP=.9,1.2  # J17-MARK: dice dots, 0.5 deep (J14 dot depth)
 
 def pips(n):
     s=PIP_STEP
-    pos={1:[(0,0)],2:[(-s,-s),(s,s)],3:[(-s,-s),(0,0),(s,s)],4:[(-s,-s),(s,s),(-s,s),(s,-s)],5:[(-s,-s),(s,s),(-s,s),(s,-s),(0,0)],
+    pos={0:[],1:[(0,0)],2:[(-s,-s),(s,s)],3:[(-s,-s),(0,0),(s,s)],4:[(-s,-s),(s,s),(-s,s),(s,-s)],5:[(-s,-s),(s,s),(-s,s),(s,-s),(0,0)],
          6:[(-s,-s),(-s,0),(-s,s),(s,-s),(s,0),(s,s)]}[n]  # 6 used by J18
     return [Pos(x,y,0)*J.cylinder(PIP_D,J4.FLAT_Z-J14.DOT_DEPTH,J4.FLAT_Z+J.P.TOOL_EXT) for x,y in pos]
 
