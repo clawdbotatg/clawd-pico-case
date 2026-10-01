@@ -28,19 +28,21 @@ MOUTH_D,MOUTH_H=3.2,.5  # J20-MOUTH: 0.13 per side over the 2.94 collar; Austin'
 SQUARE=J16.SQUARE     # 1.90
 TAB_SCALE=J18.TAB_SCALE
 
-def cavity():
-    z1=J.BOTTOM+MOUTH_H;z2=z1+(MOUTH_D-SQUARE)/2;roof=J.BOTTOM+DEPTH;h=SQUARE/2
+def cavity(depth=DEPTH):
+    z1=J.BOTTOM+MOUTH_H;z2=z1+(MOUTH_D-SQUARE)/2;roof=J.BOTTOM+depth;h=SQUARE/2
     funnel=loft([Plane.XY.offset(z1)*Circle(MOUTH_D/2),Plane.XY.offset(z2)*Rectangle(SQUARE,SQUARE)])
     # The mouth ends exactly on the funnel's start circle: no sliver ledge.
     return (J.cylinder(MOUTH_D,J.BOTTOM-J.P.TOOL_EXT,z1)+funnel+J.M.box(-h,h,-h,h,z2-J.P.EPS,roof)
             +J7.frustum(SQUARE,0,roof,roof+h))
 
-def cap():
+def cap(depth=DEPTH,n=0):  # J21 passes deeper holes and dice dots
     w,tip=J17.tab(TAB_SCALE)
     c=J15.cap()+(J8.cavity(SQUARE,J16.LIFT) & J.cylinder(J.NECK,J.BOTTOM,J4.FLAT_Z))  # J15 with its socket filled
     fl=None
     for f in J16.flares(w,tip):fl=f if fl is None else fl+f
-    return c+(fl-J16.thin(J16.FLARE_T))-cavity()
+    c=c+(fl-J16.thin(J16.FLARE_T))-cavity(depth)
+    for p in J17.pips(n):c-=p
+    return c
 
 def main():
     STL.mkdir(parents=True,exist_ok=True);OUT.mkdir(parents=True,exist_ok=True)

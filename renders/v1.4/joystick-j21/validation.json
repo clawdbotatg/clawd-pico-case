@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "1_valid_single_solid": true,
+    "1_mouth_clears_collar": true,
+    "1_roof_at_1.9": true,
+    "1_stem_fits": true,
+    "1_no_flat_overhang_in_socket": true,
+    "1_same_as_J20_outside_socket": true,
+    "2_valid_single_solid": true,
+    "2_mouth_clears_collar": true,
+    "2_roof_at_2.0": true,
+    "2_stem_fits": true,
+    "2_no_flat_overhang_in_socket": true,
+    "2_same_as_J20_outside_socket": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "depths": {
+    "1": 1.9,
+    "2": 2.0
+  },
+  "straight_grip": {
+    "1": 0.75,
+    "2": 0.85
+  },
+  "sha256": {
+    "joystick-j21-1.stl": "702ab591d099d8bc3356e5ed573154bdf79746f455beabe8f3477a808df23074",
+    "joystick-j21-2.stl": "7fa10d9af17ca18b46d6126513b6371408760cb38f0ca67abb63a8d582145936",
+    "joystick-j21-plate.stl": "987ac2961bd4d0b7032ec7c5413e23ce34a2962f17bb30b262c07aecf1011ffa"
+  }
+}
