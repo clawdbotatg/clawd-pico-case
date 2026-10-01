@@ -596,6 +596,12 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J21-FEEDBACK | J20's 1.5 "is not nearly deep enough": try 1.9 and 2.0 with the same wide opening | Austin, 2026-09-30 |
 | J21-DEPTH | 1.9 (1 dot), 2.0 (2 dots); J20 mouth 3.2 × 0.5 + funnel; straight square 0.75 / 0.85 | Austin's values; J20 otherwise (checked) |
 
+### J22 — production joystick
+
+| ID | Value | Source |
+|---|---|---|
+| J22 | J21-1 (wide 3.2 × 0.5 mouth + funnel, 1.9 deep, J17-B tabs) with the dot filled: plain flat top. Identical otherwise (checked) | Austin, 2026-09-30: "Number one was the one ... smooth out the top" |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

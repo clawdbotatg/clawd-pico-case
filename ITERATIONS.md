@@ -280,3 +280,9 @@ button down the best".
 v1.7 lid + v1.7 base + J14-2 joystick + original S2 buttons, in stl/current/.
 The v1.7 pair passed on 2026-09-27 and Austin batch-printed 24 of each
 (print Mac log); the repo never recorded it, so current said v1.5 until now.
+## J15-J22 and current best: v1.7 + J22 (2026-09-30)
+
+J15 slid over the stick's collar and pulled out; J16 squared the hole and
+added tabs; J17 grew the tabs; J18-J19 swept the hole depth because the cap
+bottom pressed the collar (all five switches); J20-J21 brought back a wide
+mouth over the collar; J21-1 (1.9 deep) won and, with a flat top, is J22.
