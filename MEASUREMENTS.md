@@ -661,3 +661,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J3-PHOTO | Switch body top about 2.8 above the PCB | Austin's IMG_0811 (and 0810, 0812), bare stick at rest, scaled by the PCB edge (L3 1.97 = ~130 px). Photo estimate ±0.2, not a caliper reading. The same scale gives the stem tip 5.2 (J6 caliper 5.00), so read ~4% high |
 | J4c-PHOTO | Collar top about 3.35 above the PCB; square stem above the collar about 1.7 long | Same photos and scale. Agrees with Austin's "about 2" (J4c) and with J18: a 1.7 hole still reached the collar |
 | J5-PHOTO | The square stem looks straight from the collar to the tip; no visible taper | Same photos; resolution about 0.05 mm per px |
+| J9-FEEL | Centre press travel: less than 0.5 | Austin, 2026-10-02, by feel, cap on; not a caliper reading |
+| M1-FEEL | J22 top about 3.5 above the +0.3 lid top | Austin, 2026-10-02, by feel ("incredibly hard to measure"); model says 3.20 if the tip seats on the roof. Not used for design until clamped (case bottom to cap top, minus case bottom to lid top) |
