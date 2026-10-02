@@ -667,3 +667,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | M1-CAP | Base bottom to J22 cap top 29.20 at rest, 28.90 pressed fully | Austin, caliper clamp, 2026-10-02 |
 | M1 | J22 top 3.44 above the lid top (model 3.20 if the stem tip seats on the roof). Cap rides ~0.24 higher than tip-seated: cap bottom ~3.34 above the PCB, at the collar top (J4c-PHOTO ~3.35). Flange edge top to lid underside ~0.7 | Derived from M1-CASE, M1-CAP; ±0.1 (print height differences) |
 | J9 | Centre press travel 0.30 with the cap on | M1-CAP rest minus pressed |
+| J8 | Stick tip sideways travel at a hard push: about 0.3 | Austin, 2026-10-02, by eye ("insanely hard to measure"); not a caliper reading |
+| J7 | Tilt about 8° if the pivot is at the body top (tip 5.0 − body ~2.8 = 2.2 arm, J3-PHOTO); about 3.5° if it pivots at the PCB | Derived from J8; the pivot is not measured, so 8° is the worst case used |

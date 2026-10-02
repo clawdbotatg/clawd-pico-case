@@ -120,3 +120,13 @@ hard pull; cap upside down on a bare stick for 1 minute.
 - **Requirement 2: high** for pulls (stiff, round, 1.0 past the hole). Medium for very hard side pushes: it depends on the grip, and on the switch, which we can't change.
 - **Requirement 3: medium.** Crush ribs are the standard fix for FDM tolerance, which is why the plate varies only that.
 - **Risk.** If M3 shows tilt above ~22°, R grows past ~1.3. Then I'll propose the smaller-hole option instead and tell you before building.
+
+## Update after Austin's measurements (2026-10-02)
+
+- M1: J22 top 3.44 above the +0.3 lid; it rides 0.24 higher than tip-seated, cap bottom ~3.34 (collar top). Flange edge to lid underside ~0.7.
+- J9: press travel 0.30.
+- J8: tip travel ~0.3, so the tilt is at most ~8° (J7).
+- Rise at the hole edge at 8°: 4.0 × tan 8° = 0.56. The gap is 0.7, a 0.14 margin. That's the "sometimes" double click: print variation, a hard push flexing past the switch stop, or the hole a little off centre each eat 0.14.
+- So: **gap 1.3 (more than 2× the 0.56 rise)**. With J24's 0.5 flange (top ~3.84), the lid underside goes to ~5.15: lid **+1.15 over v1.7, +0.85 over the +0.3 lid**. The cap neck grows 0.85, so it still sticks up 3.44.
+- The R ≈ 1.0 estimate above was based on 17°. The real tilt is smaller, but the flange is thicker (0.5 vs 0.24), so R stays about the same.
+
