@@ -29,9 +29,9 @@ Every number that controls requirement 1 was never measured:
 
 | Row | What | Status |
 |---|---|---|
-| J3 | Switch body top height above PCB | never measured (model 3.0 is a render guess, J11-DROP) |
-| J4c | Stem tip to collar top | Austin's estimate "about 2 mm" |
-| J5 | How the stem widens from 1.86 tip to its base | "wider at the base", no numbers |
+| J3 | Switch body top height above PCB | now ~2.8 from photos (J3-PHOTO, ±0.2) |
+| J4c | Stem tip to collar top | now ~1.7 from photos (J4c-PHOTO); collar top ~3.35 |
+| J5 | Does the stem widen toward its base | photos show it straight (J5-PHOTO) |
 | J7 / J8 | Tilt angle and tip travel at full push | never measured |
 | J9 | Centre press travel | never measured |
 | — | Where the cap actually sits on the stick | **never measured** |
@@ -44,10 +44,10 @@ The last one is the worst. `j10_tilt` positions J22 two ways in our own code:
 Half a millimetre of ride height moves the answer 5°. The model can't rank
 designs until the ride height is measured.
 
-A likely cause of "sometimes": the stem widens toward its base (J5). A 1.90
-printed square may jam partway down instead of seating on the tip, so the
-ride height changes with each print's tolerance. That fits J9's note:
-identical sockets behaved differently.
+The side photos (J5-PHOTO) show a straight stem, so the tip most likely seats
+on the roof: J22's bottom at about 3.10, the collar (top ~3.35) inside the
+0.5 deep wide mouth, the body top (~2.8) 0.3 below. That fits J22 working and
+J18 (1.7 deep) reaching the collar. M1 confirms it in one reading.
 
 ## Design principle
 
@@ -100,7 +100,7 @@ keeps it centred.
 | M1 | J22 cap top height above the lid top, case closed, +0.3 lid (and v1.7 lid if one is handy) | caliper depth rod. Model: 3.20 if the tip seats, 2.75 if it rides lower |
 | M2 | Lid off, J22 on: cap top above the LCD PCB face. Bare stem tip above the PCB (recheck J6 5.00) | depth rod beside the switch |
 | M3 | Side photo, level with the PCB, caliper or ruler in frame: bare stick at rest, pushed hard N, pushed hard NE. Same with J22 on | Austin's photos of our board. I read tilt and pivot from them (J7/J8) |
-| M4 | Switch body top above PCB (J3); collar top above PCB, by caliper (J4c); stem width just above the collar (J5) | caliper, plus a close side photo of the bare stem |
+| M4 | Optional: caliper check of J3-PHOTO and J4c-PHOTO | caliper |
 | M5 | Centre press: cap top drop when pressed (J9) | depth rod at rest and pressed, or a photo |
 | M6 | Does J22 stay on upside down today? Was the +0.5 lid tried with J22? With the +0.3 lid, do the buttons rattle or sit low? Is the cap centred in the hole at rest (photo from above)? | answers |
 

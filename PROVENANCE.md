@@ -549,3 +549,11 @@ no outside inputs.
 2026-09-30 J22 (cad/joystick_j22.py): J21-1 without the dot; now stl/current/joystick.stl. Original geometry.
 2026-10-01 V1.8 TEST (cad/v1_8_test.py): v1.7 lid +0.3/+0.5, J23 caps with 2x tabs. Original geometry, no outside inputs. j10_tilt.tilt takes an optional lid.
 2026-10-01 V1.9 TEST (cad/v1_9_test.py): +0.3 lid with bezel fill and an inlaid briefs logo. The logo is an original drawing made in code from simple shapes; Austin's sticker image (paste-a5ba7a0c-sticker-1.webp) was viewed as the idea only and not traced or imported. No outside geometry.
+
+## 2026-10-02. Joystick side photos read for numbers, Claude Code.
+
+- Re-read Austin's own side photos IMG_0810, IMG_0811, IMG_0812 (his board,
+  bare stick at rest, supplied 2026-09-25) and scaled them by the PCB edge
+  (L3). Rows J3-PHOTO, J4c-PHOTO, J5-PHOTO, marked photo estimates ±0.2.
+  Earlier sessions used them only qualitatively. No outside geometry.
+
