@@ -1,13 +1,19 @@
-# Current best version: v1.7 + J22 joystick
+# Current best version: v1.9 lid + J24 joystick
 
-Print from this folder. These paths never change: when a newer version wins
+Print from this folder.
+
+2026-10-02: Austin tested J24-A in the V1.9 test lid (+0.3) with S2 buttons:
+holds against a hard pull, diagonals don't click centre, centre clicks
+cleanly, screen gap right: "everything is good". The v1.9 lid is that test
+lid without the logo. Base unchanged (v1.7). J24-A also seemed fine in an old
+v1.7 lid on a quick try; the v1.9 lid gives it 0.3 more room. These paths never change: when a newer version wins
 a physical test, `cad/current.py` replaces the files and `current.json`.
 
 | File | Part | From | Per case |
 |---|---|---|---|
-| `lid.stl` | Lid, face down: rounded, taller inside, crush ribs, smooth edges, locking pockets | v1.7 | 1 |
+| `lid.stl` | Lid, face down: v1.7 0.3 taller inside, bezel back down to 0.3 over the screen, no logo | v1.9 | 1 |
 | `base.stl` | Base, floor down: 6 locking catches, pry slot | v1.7 | 1 |
-| `joystick.stl` | J22 joystick: flat-top 7.4 ball, 8.6 round flange thinned under the lid with four diagonal tabs, hole 1.9 deep (wide 3.2 mouth for the first 0.5, then the 1.90 square) | J22 | 1 |
+| `joystick.stl` | J24-A joystick: J22's flat-top 7.4 ball, round 10.0 flange (thin 0.24 edge, no tabs), hole 1.9 deep: round 3.1 for 0.35, then the 1.90 square | J24-A | 1 |
 | `button.stl` | Button cap, flange down | v1.0/S2 | 4 |
 | `full-set.stl` | All seven on one plate | — | — |
 

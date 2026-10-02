@@ -1,4 +1,7 @@
-"""V2.0 TEST (not current): taller lid + J24 joystick + taller buttons, for
+"""NOT USED: Austin approved J24-A in the +0.3 lid (2026-10-02), so this taller
+lid was never needed or run. It also calls W.shorten() twice (lid() and main),
+which would shorten the case twice; fix that before any use.
+V2.0 TEST (not current): taller lid + J24 joystick + taller buttons, for
 Austin's three joystick requirements (JOYSTICK-PLAN-2026-10-02.md, FINAL).
  Lid: v1.7 stretched 1.15 taller (+0.85 over the +0.3 test lid), in two 0.575
    steps so each copied slab stays inside the prismatic band (V1.5-STRETCH;

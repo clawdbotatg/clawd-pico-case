@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "lid_valid_single_solid": true,
+    "lid_is_v1_9_test_without_logo": true,
+    "joystick_valid_single_solid": true,
+    "joystick_same_as_tested_J24_A": true
+  },
+  "passed": true,
+  "sha256": {
+    "joystick-j24.stl": "2bc4d60b955891fca8d6b2e5c0bfc6104262b3169d2bb681683fd92877c1b0c8",
+    "lid-face-down.stl": "02d230e03d0e9bf286bbe2aff5ff692b087cfaa627780887b3524e1ca8994b75"
+  }
+}
