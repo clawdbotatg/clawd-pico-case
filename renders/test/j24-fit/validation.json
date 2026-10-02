@@ -1,0 +1,39 @@
+{
+  "status": "TEST, not current",
+  "checks": {
+    "1_valid_single_solid": true,
+    "1_roof_at_1.9": true,
+    "1_stem_fits": true,
+    "1_square_solid_around": true,
+    "1_no_flat_overhang_in_socket": true,
+    "1_same_as_J22_outside_socket": true,
+    "1_socket_is_J22": true,
+    "2_valid_single_solid": true,
+    "2_roof_at_1.9": true,
+    "2_stem_fits": true,
+    "2_square_solid_around": true,
+    "2_no_flat_overhang_in_socket": true,
+    "2_same_as_J22_outside_socket": true,
+    "2_opening_clears_collar": true,
+    "3_valid_single_solid": true,
+    "3_roof_at_1.9": true,
+    "3_stem_fits": true,
+    "3_square_solid_around": true,
+    "3_no_flat_overhang_in_socket": true,
+    "3_same_as_J22_outside_socket": true,
+    "grip_longer_each_step": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "straight_grip": {
+    "1": 0.75,
+    "2": 0.95,
+    "3": 1.65
+  },
+  "sha256": {
+    "joystick-j24-fit-1.stl": "702ab591d099d8bc3356e5ed573154bdf79746f455beabe8f3477a808df23074",
+    "joystick-j24-fit-2.stl": "5d7560048ea9bae8b6fd8e58e0d88ca9d7feca93dbfb9aa80d831bb894538072",
+    "joystick-j24-fit-3.stl": "adeb626460e2d2cca0b4c6eeffc596fbdaa813fa18833b73a32c74e4b45edb9a",
+    "joystick-j24-fit-plate.stl": "f7ae9cd16da29d605313ec9dedb5d89609c1a0caa7c44c2071abd31ee64d96cf"
+  }
+}

@@ -670,4 +670,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J8 | Stick tip sideways travel at a hard push: about 0.3 | Austin, 2026-10-02, by eye ("insanely hard to measure"); not a caliper reading |
 | J7 | Tilt about 8° if the pivot is at the body top (tip 5.0 − body ~2.8 = 2.2 arm, J3-PHOTO); about 3.5° if it pivots at the PCB | Derived from J8; the pivot is not measured, so 8° is the worst case used |
 | J22-GRIP | J22 stays on the stick upside down, "but could be better": the stick doesn't reach the wide part of the hole, so that part doesn't grip. Wants the tight square further down, wide only at the very end | Austin, 2026-10-02 |
+| J24-FIT | Three J22 caps, 1.90 square, roof 1.9. Bottom opening: 1 dot J22's (0.75 grip); 2 dots round 3.1 × 0.35 + 45° funnel (0.95 grip, 0.08/side over the 2.94 collar, J4b); 3 dots J16's 0.25 chamfer (1.65 grip) | Austin's J22-GRIP idea; sizes original |
 
