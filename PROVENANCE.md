@@ -548,3 +548,4 @@ no outside inputs.
 2026-09-30 J21 (cad/joystick_j21.py): J20 at depth 1.9 / 2.0, dots 1/2; J20.cap takes depth and dots (J20 STL rebuilds identical). Original geometry.
 2026-09-30 J22 (cad/joystick_j22.py): J21-1 without the dot; now stl/current/joystick.stl. Original geometry.
 2026-10-01 V1.8 TEST (cad/v1_8_test.py): v1.7 lid +0.3/+0.5, J23 caps with 2x tabs. Original geometry, no outside inputs. j10_tilt.tilt takes an optional lid.
+2026-10-01 V1.9 TEST (cad/v1_9_test.py): +0.3 lid with bezel fill and an inlaid briefs logo. The logo is an original drawing made in code from simple shapes; Austin's sticker image (paste-a5ba7a0c-sticker-1.webp) was viewed as the idea only and not traced or imported. No outside geometry.

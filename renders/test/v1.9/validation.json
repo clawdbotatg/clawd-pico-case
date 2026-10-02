@@ -1,0 +1,23 @@
+{
+  "status": "TEST, not current",
+  "checks": {
+    "lid_valid_single_solid": true,
+    "bezel_was_raised": true,
+    "bezel_now_0_3_over_glass": true,
+    "window_still_clear": true,
+    "logo_parts_valid": true,
+    "logo_on_flat_top": true,
+    "logo_fills_its_pocket": true,
+    "only_bezel_and_logo_changed": true
+  },
+  "passed": true,
+  "bezel_underside_before": 3.15,
+  "bezel_underside_after": 2.35,
+  "glass_top": 2.05,
+  "logo_area_mm2": 38.53,
+  "inlay_depth": 0.32,
+  "sha256": {
+    "lid-v1.9-test-face-down.stl": "68807a744915080ad794cc7573edb22395dba09f37dd79fcf2c854e52fdc3df3",
+    "logo-inlay-face-down.stl": "38d461a587267faf0355b52cba9632065af9e26ea93e70a2e99a40861c8bb76b"
+  }
+}

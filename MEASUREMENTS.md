@@ -611,6 +611,15 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V1.8-TAB | J23 caps: J22 socket and disc, tabs 2.0× J16 (2.4 wide, tip r 5.3; J22 1.55×). 1 dot: tabs 0.24 thick past the hole edge; 2 dots: full 0.4 | Original |
 | V1.8-TILT | Model, pivot 3, push / diagonal. v1.7 lid: J22 15.8 / 12.8, J23-1 14.6 / 12.3, J23-2 12.5 / 10.5. +0.3 lid: J22 17.1 / 16.5, J23-1 17.1 / 15.7, J23-2 16.7 / 13.9. +0.5 lid: all 15.5 / 15.5 (the ball meets the hole edge first) | Comparison only |
 
+### V1.9 TEST — +0.3 lid, screen gap filled, logo inlay (not current)
+
+| ID | Value | Source |
+|---|---|---|
+| V1.8-RESULT | Lid +0.3 with the J22 joystick "works pretty darn well" | Austin, 2026-10-01 |
+| V1.9-FEEDBACK | Too much space between the case and the screen; want more filament there. Want the logo (underwear) under the joystick, one colour, as a test: "draw the underwear in filament and then do the layers over the top" since it prints face down | Austin, 2026-10-01 |
+| V1.9-BEZEL | Bezel ring underside back to 0.3 over the glass (V1.4-GLASS-GAP). The v1.5 (+0.5) and v1.8 (+0.3) stretches had lifted it to 1.1 | Original; fills 0.8 under the ring, window opening unchanged (checked) |
+| V1.9-LOGO | Original line drawing of briefs (waistband, 0.5 gap, body with curved leg openings), 9.0 × 6.8, inlaid 0.32 (2 layers) flush in the top face, centred x 4.6 at the joystick hole's y. Upright held landscape with the joystick on the left | Drawn in cad/v1_9_test.py; not traced from Austin's sticker image |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

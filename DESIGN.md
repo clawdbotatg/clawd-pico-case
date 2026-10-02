@@ -221,3 +221,11 @@ into the lid, and they are already too small to hold against a hard pull. The
 two needs conflict under the v1.7 roof, so the test gives the flange more room:
 lid only (bases unchanged), 0.3 and 0.5 taller, with two J23 caps that hold
 harder. A TEST: stl/current stays v1.7 + J22 until Austin picks.
+## V1.9 test: screen gap and logo inlay — 2026-10-01
+
+The +0.3 lid works with J22. Two leftovers: the bezel ring had ridden up with
+every lid stretch to 1.1 above the glass, so it is filled back to its designed
+0.3; and a logo is inlaid in the top face. Face-down printing makes an inlay
+natural: the logo is a separate flush part, the slicer prints its first two
+layers in a second filament and the lid closes over it. A raised logo would
+float the face; an engraving would print as blobs. Still a test.
