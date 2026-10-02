@@ -23,5 +23,6 @@ top dots printed unreadable; caps were told apart by the hole underneath.
 ## Result (Austin, 2026-10-02)
 
 3 (square almost to the bottom) is ruled out: pressing it also clicks other
-directions, so the in-press isn't clean. The wide end has to stay. 1 vs 2 is
-pending.
+directions, so the in-press isn't clean. The wide end has to stay. **2 wins** (3.1 × 0.35 opening, 0.95 grip): the centre press clicks only
+centre. The cap still rips out of the case: the flange is too small. Austin
+would also like the stick a little taller and the top grippier.

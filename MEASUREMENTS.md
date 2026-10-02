@@ -672,4 +672,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J22-GRIP | J22 stays on the stick upside down, "but could be better": the stick doesn't reach the wide part of the hole, so that part doesn't grip. Wants the tight square further down, wide only at the very end | Austin, 2026-10-02 |
 | J24-FIT | Three J22 caps, 1.90 square, roof 1.9. Bottom opening: 1 dot J22's (0.75 grip); 2 dots round 3.1 × 0.35 + 45° funnel (0.95 grip, 0.08/side over the 2.94 collar, J4b); 3 dots J16's 0.25 chamfer (1.65 grip) | Austin's J22-GRIP idea; sizes original |
 | J24-FIT-3-RESULT | J24-FIT 3 (0.25 chamfer, square almost to the bottom): pressing in clicks other directions too. Ruled out; the bottom needs the wide clearance | Austin, 2026-10-02 |
+| J24-FIT-RESULT | J24-FIT 2 is the best hole: the centre press clicks only centre. It still rips out of the case (flange too small). Maybe a taller stick; a grippier top later | Austin, 2026-10-02 |
 
