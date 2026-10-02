@@ -179,3 +179,27 @@ Reseating after a pull is only an assumption until this test.
 - Requirement 1: medium-high. Clears ~2× the estimated tilt, with no reliance on the old model.
 - Requirement 2: medium-high for pulls, medium for hard side pushes.
 - Requirement 3: medium. It depends on Austin's answer and the 3 squares.
+
+## Grip update (Austin, 2026-10-02)
+
+J22 does stay on upside down, "but could be better". Austin: much of the hole
+doesn't grip, because it's the wide part, and the stick doesn't go down that
+far. Grip tighter further down, and open up wide only right at the end.
+
+J22's socket from the bottom: round 3.2 for 0.5, a 45° funnel for 0.65, then
+1.90 square for only 0.75 to the roof at 1.9 (J20-MOUTH, J21-DEPTH). The
+funnel must stay 45° (J7: flat ledges string when printed flange-down), so
+the square can start lower only if the wide part gets shorter and narrower.
+
+The 3 caps vary the grip length, not the width (all 1.90 square, roof at 1.9
+as J22):
+
+| Cap | Bottom opening | Straight square grip |
+|---|---|---|
+| 1 dot | J22's: 3.2 × 0.5 + funnel | 0.75 |
+| 2 dots | 3.1 × 0.35 (clears the 2.94 collar if it reaches 0.2 in, J4c-PHOTO) + 45° funnel 0.6 | 0.95 |
+| 3 dots | J16's 0.25 × 45° chamfer only | 1.65 |
+
+- Risk for 3 dots: if the collar does reach the cap, the cap sits on the collar about 0.2 higher, and a press may hit the collar (J17/J18). The full test on each cap covers this, plus a height clamp.
+- This replaces the 1.90/1.87/1.84 width variants.
+
