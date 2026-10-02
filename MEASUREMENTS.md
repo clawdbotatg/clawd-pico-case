@@ -678,4 +678,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | V2.0-RAISE / V2.0-NECK / V2.0-FLANGE / V2.0-ENVELOPE | Lid +1.15 over v1.7 in two 0.575 steps; neck +0.85; flange 10.0 × 0.5; must clear 15° | JOYSTICK-PLAN FINAL; script cad/v2_0_test.py written, not run |
 | J24-A-RESULT | J24-A in the +0.3 lid: a hard push still forces it out of the case | Austin, 2026-10-02 |
 | J24-RESULT | J24-A in the V1.9 (+0.3) lid: holds against a hard pull, diagonals don't click centre, centre clicks cleanly. B is clunky. Lid, buttons (S2) and J24-A: "everything is good" | Austin, 2026-10-02 |
+| J24-V1.7 | J24-A in an old v1.7 lid: diagonals OK. Keep the printed v1.7 lids; print v1.9 from now on. Best set: v1.7 base, v1.9 lid, S2 buttons, J24-A | Austin, 2026-10-02 |
 
