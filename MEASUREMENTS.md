@@ -602,6 +602,15 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 |---|---|---|
 | J22 | J21-1 (wide 3.2 × 0.5 mouth + funnel, 1.9 deep, J17-B tabs) with the dot filled: plain flat top. Identical otherwise (checked) | Austin, 2026-09-30: "Number one was the one ... smooth out the top" |
 
+### V1.8 TEST — taller lid + stronger flange (not current)
+
+| ID | Value | Source |
+|---|---|---|
+| V1.8-FEEDBACK | J22 sometimes clicks N + W + centre on a NW push; a hard push or pull takes the cap out of the case. Don't shrink the tabs: the flange needs to be bigger. Maybe raise the lid. Mark it a test, not the latest | Austin, 2026-10-01 |
+| V1.8-RAISE | v1.7 lid stretched 0.3 and 0.5 taller at z 1.0 (V1.5-STRETCH band, prismatic, checked). Board hold, seam, catches unchanged (checked); base unchanged | Original |
+| V1.8-TAB | J23 caps: J22 socket and disc, tabs 2.0× J16 (2.4 wide, tip r 5.3; J22 1.55×). 1 dot: tabs 0.24 thick past the hole edge; 2 dots: full 0.4 | Original |
+| V1.8-TILT | Model, pivot 3, push / diagonal. v1.7 lid: J22 15.8 / 12.8, J23-1 14.6 / 12.3, J23-2 12.5 / 10.5. +0.3 lid: J22 17.1 / 16.5, J23-1 17.1 / 15.7, J23-2 16.7 / 13.9. +0.5 lid: all 15.5 / 15.5 (the ball meets the hole edge first) | Comparison only |
+
 ### V1.4 lid crush ribs
 
 | ID | Value | Source |

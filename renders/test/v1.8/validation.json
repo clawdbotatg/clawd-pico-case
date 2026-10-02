@@ -1,0 +1,82 @@
+{
+  "status": "TEST, not current",
+  "checks": {
+    "band_prismatic": true,
+    "lid_0.3_valid_single_solid": true,
+    "lid_0.3_taller_by_0.3": true,
+    "lid_0.3_board_hold_unchanged": true,
+    "lid_0.5_valid_single_solid": true,
+    "lid_0.5_taller_by_0.5": true,
+    "lid_0.5_board_hold_unchanged": true,
+    "cap_1_valid_single_solid": true,
+    "cap_1_tabs_bigger_than_J22": true,
+    "cap_2_valid_single_solid": true,
+    "cap_2_tabs_bigger_than_J22": true,
+    "J23-1_clear_of_lid_0.3_at_rest": true,
+    "J23-2_clear_of_lid_0.3_at_rest": true,
+    "J23-1_clear_of_lid_0.5_at_rest": true,
+    "J23-2_clear_of_lid_0.5_at_rest": true,
+    "plate_separate": true
+  },
+  "passed": true,
+  "raises": {
+    "0.3": 0.3,
+    "0.5": 0.5
+  },
+  "tab_scale": 2.0,
+  "caps": {
+    "1": 0.24,
+    "2": 0.4
+  },
+  "tilt_summary": {
+    "v1.7": {
+      "J22": {
+        "push": 15.8,
+        "diagonal": 12.8
+      },
+      "J23-1": {
+        "push": 14.6,
+        "diagonal": 12.3
+      },
+      "J23-2": {
+        "push": 12.5,
+        "diagonal": 10.5
+      }
+    },
+    "0.3": {
+      "J22": {
+        "push": 17.1,
+        "diagonal": 16.5
+      },
+      "J23-1": {
+        "push": 17.1,
+        "diagonal": 15.7
+      },
+      "J23-2": {
+        "push": 16.7,
+        "diagonal": 13.9
+      }
+    },
+    "0.5": {
+      "J22": {
+        "push": 15.5,
+        "diagonal": 15.5
+      },
+      "J23-1": {
+        "push": 15.5,
+        "diagonal": 15.5
+      },
+      "J23-2": {
+        "push": 15.5,
+        "diagonal": 15.5
+      }
+    }
+  },
+  "sha256": {
+    "joystick-j23-1.stl": "bf660b830064ce833c2aee2df9e4cdc8dca49916898ef1515d38481e02fa7380",
+    "joystick-j23-2.stl": "5c12ef80c4277ca32987e0886f7acb70371e00511bc3f07b69182d3c517daaa2",
+    "lid-0.3-taller-face-down.stl": "6019ac7cf97f83871fbc39585caff7dc1f23eec734c6c5ee9da6d55a307c1562",
+    "lid-0.5-taller-face-down.stl": "58b8b0f7135d32dd1b04668c7e098defef58e33d593b49812e3b0447e770aa0a",
+    "v1.8-test-plate.stl": "3cb74574f930d11dba1e3956975c03d9e37c328e89c978193be141e5fafdaaa7"
+  }
+}

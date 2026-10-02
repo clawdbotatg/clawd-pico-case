@@ -14,10 +14,11 @@ import joystick_j9 as J9
 import joystick_j10 as X
 M,J,L1,V,T5=L7.M,L7.J,L7.L1,L7.V,L7.T5
 
-def tilt(caps):
-    """caps: {name: (cap, lift)} -> per-cap contact angles (also used by J11)."""
+def tilt(caps,lid=None):
+    """caps: {name: (cap, lift)} -> per-cap contact angles (also used by J11).
+    lid: a test lid (v1.8); default the v1.7 lid."""
     L7.W.shorten()
-    lid,_=L7.lid()
+    if lid is None:lid,_=L7.lid()
     hx,hy=M.JOY_C[0]+V.L4.DX,M.JOY_C[1]+V.L4.DY+V.JOY_DY
     local=lid & M.box(hx-9,hx+9,hy-9,hy+9,-5,20)
     out={}

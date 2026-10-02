@@ -213,3 +213,11 @@ a shallower hole gives a better centre press but lifts the flange toward the
 lid. Both push the same way, so J17 walks one path from J16 (tested clean) to
 a cap the model is sure double-clicks, in five steps. Austin picks the step
 with the best hold and press that still clicks clean.
+## V1.8 test: more room for the flange — 2026-10-01
+
+The flange holds the cap in and also causes the centre click when it tips into
+the lid. J22's tabs sit on the diagonals, so a diagonal push lifts one straight
+into the lid, and they are already too small to hold against a hard pull. The
+two needs conflict under the v1.7 roof, so the test gives the flange more room:
+lid only (bases unchanged), 0.3 and 0.5 taller, with two J23 caps that hold
+harder. A TEST: stl/current stays v1.7 + J22 until Austin picks.
