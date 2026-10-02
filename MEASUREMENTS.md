@@ -673,4 +673,7 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J24-FIT | Three J22 caps, 1.90 square, roof 1.9. Bottom opening: 1 dot J22's (0.75 grip); 2 dots round 3.1 × 0.35 + 45° funnel (0.95 grip, 0.08/side over the 2.94 collar, J4b); 3 dots J16's 0.25 chamfer (1.65 grip) | Austin's J22-GRIP idea; sizes original |
 | J24-FIT-3-RESULT | J24-FIT 3 (0.25 chamfer, square almost to the bottom): pressing in clicks other directions too. Ruled out; the bottom needs the wide clearance | Austin, 2026-10-02 |
 | J24-FIT-RESULT | J24-FIT 2 is the best hole: the centre press clicks only centre. It still rips out of the case (flange too small). Maybe a taller stick; a grippier top later | Austin, 2026-10-02 |
+| J24-FLANGE | Round 10.0 flange, no tabs; A thinned edge 0.24 (J13-THIN), B 0.4 full; J24-FIT-2 hole; J22 height | Original; Austin asked to try a bigger flange in the +0.3 lid first |
+| J24-TILT | Model, PCB coords, V1.9 lid: J22 8.2° (seat 3.34); A 6.9–10.4°, B 5.1–8.2° over seats 3.22–3.46, pivots 0–2.8 | cad/joystick_j24.py; comparison against an ~8° estimated real tilt |
+| V2.0-RAISE / V2.0-NECK / V2.0-FLANGE / V2.0-ENVELOPE | Lid +1.15 over v1.7 in two 0.575 steps; neck +0.85; flange 10.0 × 0.5; must clear 15° | JOYSTICK-PLAN FINAL; script cad/v2_0_test.py written, not run |
 
