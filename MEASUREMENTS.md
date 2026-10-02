@@ -663,3 +663,7 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J5-PHOTO | The square stem looks straight from the collar to the tip; no visible taper | Same photos; resolution about 0.05 mm per px |
 | J9-FEEL | Centre press travel: less than 0.5 | Austin, 2026-10-02, by feel, cap on; not a caliper reading |
 | M1-FEEL | J22 top about 3.5 above the +0.3 lid top | Austin, 2026-10-02, by feel ("incredibly hard to measure"); model says 3.20 if the tip seats on the roof. Not used for design until clamped (case bottom to cap top, minus case bottom to lid top) |
+| M1-CASE | Closed case, +0.3 lid: base bottom to lid top 25.76 (model 25.64) | Austin, caliper clamp, 2026-10-02 |
+| M1-CAP | Base bottom to J22 cap top 29.20 at rest, 28.90 pressed fully | Austin, caliper clamp, 2026-10-02 |
+| M1 | J22 top 3.44 above the lid top (model 3.20 if the stem tip seats on the roof). Cap rides ~0.24 higher than tip-seated: cap bottom ~3.34 above the PCB, at the collar top (J4c-PHOTO ~3.35). Flange edge top to lid underside ~0.7 | Derived from M1-CASE, M1-CAP; ±0.1 (print height differences) |
+| J9 | Centre press travel 0.30 with the cap on | M1-CAP rest minus pressed |
