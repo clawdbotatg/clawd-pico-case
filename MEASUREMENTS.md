@@ -676,4 +676,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J24-FLANGE | Round 10.0 flange, no tabs; A thinned edge 0.24 (J13-THIN), B 0.4 full; J24-FIT-2 hole; J22 height | Original; Austin asked to try a bigger flange in the +0.3 lid first |
 | J24-TILT | Model, PCB coords, V1.9 lid: J22 8.2° (seat 3.34); A 6.9–10.4°, B 5.1–8.2° over seats 3.22–3.46, pivots 0–2.8 | cad/joystick_j24.py; comparison against an ~8° estimated real tilt |
 | V2.0-RAISE / V2.0-NECK / V2.0-FLANGE / V2.0-ENVELOPE | Lid +1.15 over v1.7 in two 0.575 steps; neck +0.85; flange 10.0 × 0.5; must clear 15° | JOYSTICK-PLAN FINAL; script cad/v2_0_test.py written, not run |
+| J24-A-RESULT | J24-A in the +0.3 lid: a hard push still forces it out of the case | Austin, 2026-10-02 |
 
