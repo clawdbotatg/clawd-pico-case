@@ -1,5 +1,7 @@
 # Joystick + lid plan, 2026-10-02 (for review before anything is printed)
 
+> **Read the FINAL section at the end first.** It supersedes the numbers, the socket design and the print plan below (revised after Codex review).
+
 Austin's three requirements:
 
 1. Each of the 8 directions clicks only its own switches; a centre press clicks only centre.
@@ -121,12 +123,59 @@ hard pull; cap upside down on a bare stick for 1 minute.
 - **Requirement 3: medium.** Crush ribs are the standard fix for FDM tolerance, which is why the plate varies only that.
 - **Risk.** If M3 shows tilt above ~22°, R grows past ~1.3. Then I'll propose the smaller-hole option instead and tell you before building.
 
-## Update after Austin's measurements (2026-10-02)
+## FINAL (revised after Codex review, 2026-10-02). Supersedes the numbers and the socket/print plan above.
 
-- M1: J22 top 3.44 above the +0.3 lid; it rides 0.24 higher than tip-seated, cap bottom ~3.34 (collar top). Flange edge to lid underside ~0.7.
-- J9: press travel 0.30.
-- J8: tip travel ~0.3, so the tilt is at most ~8° (J7).
-- Rise at the hole edge at 8°: 4.0 × tan 8° = 0.56. The gap is 0.7, a 0.14 margin. That's the "sometimes" double click: print variation, a hard push flexing past the switch stop, or the hole a little off centre each eat 0.14.
-- So: **gap 1.3 (more than 2× the 0.56 rise)**. With J24's 0.5 flange (top ~3.84), the lid underside goes to ~5.15: lid **+1.15 over v1.7, +0.85 over the +0.3 lid**. The cap neck grows 0.85, so it still sticks up 3.44.
-- The R ≈ 1.0 estimate above was based on 17°. The real tilt is smaller, but the flange is thicker (0.5 vs 0.24), so R stays about the same.
+**Measured** (MEASUREMENTS M1-CASE, M1-CAP, M1, J9, J8):
+- J22 sticks up 3.44 above the +0.3 lid (model said 3.20 if the tip seats).
+- Press travel is 0.30.
+- Tip side travel is ~0.3, by eye.
 
+**Seating.** J22's bottom is ~3.34 above the PCB, not the 3.10 a tip-seated cap would give. The real stop is unknown: friction, collar or tip, ±0.12, since the closed case measured 25.76 against the model's 25.64. Not resolved, and not needed (see Cap).
+
+**Tilt.** Not bounded. ~0.3 travel with the pivot at the body top (~2.8, photo) gives ~8°. That's an estimate, not a maximum. So the design is sized as an envelope: it must clear well past 8°.
+
+**Rise uses the flange's outer edge, not the hole edge.** The flange is under the roof out to its tip. At tilt θ the far edge rises ≈ R·sin θ.
+
+| Cap | Outer radius | Rise at 8° | Gap now (+0.3 lid) | Margin |
+|---|---|---|---|---|
+| J22 diagonal tab | 5.075 | 0.71 | 0.72 (4.30 − 3.34 − 0.24) | ~0 |
+| J22 disc (push N/S/E/W) | 4.3 | 0.60 | 0.72 | 0.12 |
+
+That fits what Austin sees: diagonals double-click, straight pushes mostly don't. It's consistent, but it rests on the 8° estimate, so it isn't proof.
+
+**Old model numbers.** Don't use the logged J22 tilt numbers (V1.8-TILT used lift 0.6). Codex reran `j10_tilt` with the bottom placed at 3.10 (13.1° / 11.0°) and at 3.34 (9.8° / 8.3°); I haven't re-checked these. `j10_tilt` rotates before it translates, so the pivot moves with the lift. The J24 build will place the cap and the pivot in PCB coordinates, separately.
+
+**Cap J24.**
+- J22's socket, unchanged. J24 sits on the stick exactly as J22 does, whatever the real stop is.
+- Flange: round Ø10.0 (R 5.0), 0.5 thick, no tabs. Bottom face the same as J22's.
+- Neck +0.85, matching the lid raise, so the top sticks up 3.44 either way.
+- The tip-seated hard stop and the crush ribs proposed above are **dropped**. They add untested changes to the ride height.
+
+**Gap and lid.**
+- Flange top ~3.84. Gap target 1.3, so the lid underside goes to ~5.14: **+0.85 over the +0.3 lid** (+1.15 over v1.7).
+- Clearance envelope: R·sin θ ≤ 1.3 holds up to **15° (≈2× the 8° estimate)**. The pivot height changes this only slightly at these angles. The J24 build reruns a PCB-referenced sweep at 8°, 12° and 15°, pivots 0 to 3, all 8 directions, cap at bottom 3.22 to 3.46. That covers the flange, neck and ball against the lid.
+
+**Lid stretch.**
+- One `T5.stretch(lid, 1.0, 1.15)` copies a slab below the prismatic band (Codex found a 4.0 mm³ omission). The build uses two 0.575 stretches instead, or a verified constant section, and checks the inserted wall against a safe reference by volume.
+- Bezel fill as V1.9. No logo.
+
+**Push side.** At 8° the near flange edge drops ~0.70, to ~2.64, near the switch body top (~2.8 ±0.2). J22's disc already drops to ~2.74. Contact on the push side makes a pivot that lifts the stem, not one that presses it, so it shouldn't cause a centre click. It's still unverified: a caliper reading of the switch body top (J3) would settle it.
+
+**Grip (requirement 3).** Still unanswered: does J22 stay on upside down today? 3 caps, square 1.90 (= J22) / 1.87 / 1.84, 1–3 dots. A tighter square may ride higher, so clamp each one's height (M1 method).
+
+**Buttons.** A new set, taller by +0.85 (V1.5-BUTTON method).
+
+**Acceptance: the FULL test on EVERY cap**, case closed:
+- 20 pushes in each of the 8 directions, no centre click
+- 20 centre presses, no direction click
+- hard push each way
+- hard pull, then check that the cap reseats and every switch still works
+- upside down on a bare stick for 1 minute
+- clamp the height
+
+Reseating after a pull is only an assumption until this test.
+
+**Confidence.**
+- Requirement 1: medium-high. Clears ~2× the estimated tilt, with no reliance on the old model.
+- Requirement 2: medium-high for pulls, medium for hard side pushes.
+- Requirement 3: medium. It depends on Austin's answer and the 3 squares.

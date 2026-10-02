@@ -40,4 +40,9 @@ J22 joystick drop (2026-09-30, no raft, copies on request): `20260930-211620-joy
 
 On 2026-09-30 evening the joystick became J22 (J21-1 with a flat top): the
 wide mouth clears the stick's collar so a press clicks only the centre, the
-tabs keep it in the lid, and 1.9 deep is the depth Austin picked.
+tabs are meant to keep it in the lid, and 1.9 deep is the depth Austin picked.
+
+Known limits (V1.8-FEEDBACK, 2026-10-01): J22 sometimes clicks N + W + centre
+on a NW push, and a hard push or pull can take it out of the case. The +0.3
+test lid is better but not fixed. It is current because it is the best tested,
+not because it meets these requirements. See `JOYSTICK-PLAN-2026-10-02.md`.
