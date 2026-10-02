@@ -52,3 +52,5 @@ Known limits (V1.8-FEEDBACK, 2026-10-01): J22 sometimes clicks N + W + centre
 on a NW push, and a hard push or pull can take it out of the case. The +0.3
 test lid is better but not fixed. It is current because it is the best tested,
 not because it meets these requirements. See `JOYSTICK-PLAN-2026-10-02.md`.
+
+v1.9 drops (2026-10-02, copies on request): lid `20261002-145626-lid`, joystick `20261002-145627-joystick` (J24-A; replaces J22's `20260930-211620-joystick`). Base stays v1.7 `20260927-112055-base-floor-down`.
