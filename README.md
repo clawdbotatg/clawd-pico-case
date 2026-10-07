@@ -1,10 +1,25 @@
 # clawd-pico-case
 
-**Current best: v1.7 + J22 joystick — print from [`stl/current/`](stl/current/README.md).**
-That folder always holds the set that last passed a physical test: the v1.7
-lid and base (locking catches; 24 of each batch-printed 2026-09-27..29), the
-J22 joystick and the original buttons. Everything else in `stl/`, `renders/` and `prints/` is
-development history, kept on purpose as the design record.
+## What to print (v1.9)
+
+Files are in [`stl/current/`](stl/current/README.md). One case:
+
+| File | Copies | Colour |
+|---|---|---|
+| [`lid.stl`](stl/current/lid.stl) | 1 | White |
+| [`base.stl`](stl/current/base.stl) | 1 | Black |
+| [`joystick.stl`](stl/current/joystick.stl) | 1 | Grey |
+| [`button.stl`](stl/current/button.stl) | 4 | 2 grey (middle two), 1 green (top right), 1 red (bottom right) |
+
+All PETG. 0.16 mm layers, 4 walls, no supports, no brim, no raft. Lid:
+elephant-foot compensation 0.15. Don't rotate the parts; they are already the
+right way up (lid face down, base floor down, caps flange down).
+
+`full-set.stl` is all seven parts on one plate, in one colour. Skip it for a
+coloured case.
+
+Everything else in `stl/`, `renders/` and `prints/` is old tests, kept as the
+design record. Don't print it.
 
 An MIT-licensed 3D-printed case for a USB-C RP2040 Pico clone (the pink board) plugged into a
 Waveshare Pico-LCD-1.3 (240x240 screen, joystick, four buttons). Buttons and

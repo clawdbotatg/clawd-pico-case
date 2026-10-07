@@ -1,3 +1,9 @@
+**To print a case, use [`current/`](current/README.md). Nothing else here.**
+
+Every other file and folder in `stl/` is an old test, kept as the design
+record. `print/` and the loose STLs in this folder are the first prototype
+(2026-09-25), not the current case.
+
 Built outputs only; run `.venv/bin/python cad/build.py` from repository root.
 Never hand-edit meshes. MIT, like the original source.
 

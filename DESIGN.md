@@ -229,3 +229,10 @@ every lid stretch to 1.1 above the glass, so it is filled back to its designed
 natural: the logo is a separate flush part, the slicer prints its first two
 layers in a second filament and the lid closes over it. A raised logo would
 float the face; an engraving would print as blobs. Still a test.
+
+## Colours (Austin, 2026-10-07)
+
+All PETG. Lid white, base black, joystick grey, middle two buttons grey, top
+right button green, bottom right button red. Written into the print table in
+`README.md` and `stl/current/README.md` so a printer outside the project can
+print the exact case without asking.
