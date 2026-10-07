@@ -25,6 +25,10 @@ An MIT-licensed 3D-printed case for a USB-C RP2040 Pico clone (the pink board) p
 Waveshare Pico-LCD-1.3 (240x240 screen, joystick, four buttons). Buttons and
 joystick get caps. Made to be printed and sold.
 
+A micro-USB Pico fits too: Austin tested one in the v1.9 case on 2026-10-07,
+and the cable and BOOTSEL both work
+([log](prints/2026-10-07-micro-usb-fit.md)).
+
 ## Why this repo exists
 
 The cases we used before are not ours to sell:
