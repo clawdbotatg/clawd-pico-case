@@ -557,3 +557,5 @@ no outside inputs.
   (L3). Rows J3-PHOTO, J4c-PHOTO, J5-PHOTO, marked photo estimates ±0.2.
   Earlier sessions used them only qualitatively. No outside geometry.
 
+
+2026-10-08 BAT1 (cad/bat1_base.py): v1.7 base minus a 5.0 × 1.0 slot in the non-USB end wall for the RP2040-Plus battery plug. Inputs: Austin's own caliper photo of his board (4.45, IMG_1189) and top photo (IMG_1188), and his spoken slot size. Original geometry, no outside files.

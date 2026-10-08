@@ -236,3 +236,14 @@ All PETG. Lid white, base black, joystick grey, middle two buttons grey, top
 right button green, bottom right button red. Written into the print table in
 `README.md` and `stl/current/README.md` so a printer outside the project can
 print the exact case without asking.
+
+## BAT1 battery base (Austin, 2026-10-08)
+
+The RP2040-Plus with a battery has a plug on the non-USB end, centred, and the
+wire runs down to the battery wedged under the Pico. The v1.7 base is too
+tight there. BAT1 is the v1.7 base with a slot cut 1.0 into the inner face of
+that end wall, 5.0 wide (plug 4.45 plus clearance), from the floor to the seam.
+It stops at the seam so the lid tongue and its end catch stay whole; the Pico
+PCB sits below the seam, so the plug is in the slot's height. 2.0 of wall is
+left behind the slot. Lid, joystick and buttons unchanged. Printed in red for
+the Atomic Wedgie.

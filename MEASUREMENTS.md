@@ -22,6 +22,7 @@ and files (`P2W-P11`, `measurements/P2W-P11-usb-overhang.jpg`).
 |---|---|---|---|---|---|
 | P2W | Raspberry Pi Pico 2 W, official | micro-USB | green | RP2350 | official Pico 2 STEP applies |
 | PINK | USB-C clone, pink | USB-C | pink | RP2040 | no CAD exists, measure everything |
+| RP2040PLUS | Waveshare RP2040-Plus, with a battery | USB-C | blue | RP2040 | battery plug on the non-USB end, bottom face, centred. Only the plug is measured (BAT1) |
 | | | | | | add more here |
 
 ## P. Pico-footprint board rows. One copy per board tag.
@@ -680,3 +681,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | J24-RESULT | J24-A in the V1.9 (+0.3) lid: holds against a hard pull, diagonals don't click centre, centre clicks cleanly. B is clunky. Lid, buttons (S2) and J24-A: "everything is good" | Austin, 2026-10-02 |
 | J24-V1.7 | J24-A in an old v1.7 lid: diagonals OK. Keep the printed v1.7 lids; print v1.9 from now on. Best set: v1.7 base, v1.9 lid, S2 buttons, J24-A | Austin, 2026-10-02 |
 
+| BAT1-PLUG-W | RP2040-Plus battery plug (with the wire in), width across the board: 4.45 | cal 2026-10-08, `measurements/2026-10-08-cal-RP2040PLUS-battery-plug-width-1.jpg`; position: centred on the non-USB end, bottom face, `measurements/2026-10-08-RP2040PLUS-battery-plug-top-1.jpg` |
+| BAT1-SLOT | Slot in the base end wall: about 4 wide, about 1 deep, centred, on the non-USB end, so the plug and wire fit; the wire runs down to the battery under the Pico. Current case is too tight there | Austin, 2026-10-08. Used 5.0 wide (BAT1-PLUG-W + ~0.27 a side), 1.0 deep, floor to seam |
