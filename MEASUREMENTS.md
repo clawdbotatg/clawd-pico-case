@@ -687,3 +687,7 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | RP2040PLUS-BTN-X | Bottom face up, USB at top: BOOT left of the board centre line, RESET right, each about 4.9 off centre. Switch body about 3.6 × 5.5 | photo estimate ±0.3, scaled by board width, `measurements/2026-10-08-RP2040PLUS-bottom-buttons-1.jpg`; confirm by caliper |
 | RP2040PLUS-BTN-USE | RESET gets a real printed button through the base. BOOT stays a pin hole | Austin, 2026-10-08 |
 | RP2040PLUS-BTN-EDGE | BOOT centre 6.0 from the left long edge, RESET centre 6.0 from the right (bottom face up, USB at top). Supersedes the BTN-X photo estimate | Austin, caliper, 2026-10-08 (number only, no photo) |
+| RP2040PLUS-SW-H | Switch top above the PCB: "like 2.2 or something", caliper won't reach. Side photos read about 1.7 casing / 2.5 plunger (scaled by the PCB edge) and the switch looks like the LCD's (B5 2.61) | Austin by eye 2026-10-08; photo estimate ±0.3, `measurements/2026-10-08-RP2040PLUS-reset-switch-side-{1,2}.jpg` |
+| AW1-SW-H | Plunger top used: 2.65 above the PCB, high end of the guesses. Too high only makes the cap rattle; too low would hold RESET down | Choice, from RP2040PLUS-SW-H and B5 |
+| AW1-RESET | RESET cap = stl/current/button.stl unchanged, flipped: flange 0.8 on the floor top, post 4.2 × 5.4 through a 4.7 × 5.9 floor hole; 0.10 slack at AW1-SW-H; post sticks out 1.79 below the base | cad/aw1_base.py |
+| AW1-BOOT | BOOT pin hole: same 4.0 hole as before, moved to the RP2040-Plus BOOT spot; old BOOTSEL hole filled | cad/aw1_base.py |

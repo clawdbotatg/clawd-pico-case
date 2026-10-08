@@ -247,3 +247,12 @@ It stops at the seam so the lid tongue and its end catch stay whole; the Pico
 PCB sits below the seam, so the plug is in the slot's height. 2.0 of wall is
 left behind the slot. Lid, joystick and buttons unchanged. Printed in red for
 the Atomic Wedgie.
+
+## AW1 Atomic Wedgie base v1 (Austin, 2026-10-08)
+
+BAT1 plus the RP2040-Plus buttons. BOOT stays a pin hole (moved). RESET gets a
+real button: the same cap as the lid buttons, dropped in from inside, flange
+on the floor, post out through the floor. The switch height can't be read with
+a caliper, so it's guessed high (2.65): too high only makes the cap rattle, too
+low would hold the board in reset. Same cap means it sticks out 1.79 under the
+base, so setting the case down on a table may press RESET. Fit test; iterate.
