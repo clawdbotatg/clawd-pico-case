@@ -686,3 +686,4 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | RP2040PLUS-BTN-Y | BOOT and RESET switch centres from the USB-end board edge: 22.02 (both, same row) | cal 2026-10-08, `measurements/2026-10-08-cal-RP2040PLUS-button-from-usb-end-1.jpg` |
 | RP2040PLUS-BTN-X | Bottom face up, USB at top: BOOT left of the board centre line, RESET right, each about 4.9 off centre. Switch body about 3.6 × 5.5 | photo estimate ±0.3, scaled by board width, `measurements/2026-10-08-RP2040PLUS-bottom-buttons-1.jpg`; confirm by caliper |
 | RP2040PLUS-BTN-USE | RESET gets a real printed button through the base. BOOT stays a pin hole | Austin, 2026-10-08 |
+| RP2040PLUS-BTN-EDGE | BOOT centre 6.0 from the left long edge, RESET centre 6.0 from the right (bottom face up, USB at top). Supersedes the BTN-X photo estimate | Austin, caliper, 2026-10-08 (number only, no photo) |
