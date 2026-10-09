@@ -563,3 +563,4 @@ no outside inputs.
 2026-10-08 AW2 (cad/aw2_base.py): AW1 with the slot to the top, the non-USB end catch removed, old hole fully filled. Austin's fit notes. Original geometry.
 2026-10-08 AW-R (cad/aw_reset_caps.py): three square RESET test caps. Original geometry.
 2026-10-08 RESET button v2 (cad/aw_reset_v2.py). Original geometry.
+2026-10-08 RESET v3 test (cad/aw_reset_v3_test.py). Original geometry.

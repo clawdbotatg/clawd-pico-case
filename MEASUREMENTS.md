@@ -698,3 +698,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | AW-R-PROUD | Square RESET caps, same plan size: total 3.7 / 3.3 / 2.9, sticking out 1.2 / 0.8 / 0.4 below the floor (at AW1-SW-H); 1 / 2 / 3 flange notches | cad/aw_reset_caps.py |
 | AW-R-RESULT | 1-notch cap (sticks out 1.2) is right: flush with the case, not hit when pushed on, easy to press. Square is right. Took some wiggling to get into the hole | Austin, 2026-10-08 |
 | AW-RESET-V2 | RESET button v2: 1-notch cap, post 0.05 smaller each side (4.10 × 5.30), post corners rounded 0.5 (sharp corners rubbed the hole's 1.05 corners by ~0.08), no notches | Austin asked for ~0.05 a side; corner fix from the model |
+| AW-RESET-V2-RESULT | v2 still too tall: when the Pico doesn't seat fully in the LCD board the button hangs out. Wants ~0.75 shorter | Austin, 2026-10-08 |
+| AW-RESET-V3-TEST | v2 cut 0.60 / 0.75 / 0.90 shorter (total 3.10 / 2.95 / 2.80); 1 / 2 / 3 notches | cad/aw_reset_v3_test.py |
