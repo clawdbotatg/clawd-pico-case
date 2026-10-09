@@ -691,3 +691,6 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | AW1-SW-H | Plunger top used: 2.65 above the PCB, high end of the guesses. Too high only makes the cap rattle; too low would hold RESET down | Choice, from RP2040PLUS-SW-H and B5 |
 | AW1-RESET | RESET cap = stl/current/button.stl unchanged, flipped: flange 0.8 on the floor top, post 4.2 × 5.4 through a 4.7 × 5.9 floor hole; 0.10 slack at AW1-SW-H; post sticks out 1.79 below the base | cad/aw1_base.py |
 | AW1-BOOT | BOOT pin hole: same 4.0 hole as before, moved to the RP2040-Plus BOOT spot; old BOOTSEL hole filled | cad/aw1_base.py |
+| AW1-RESULT | AW1 printed: holes about right. Battery slot must run all the way up so the plug slides in from the top (AW1 stopped at the seam). Old BOOTSEL hole not fully filled | Austin, 2026-10-08 |
+| AW2-SLOT / AW2-CATCH | Slot 5.0 × 1.0 from floor to tongue top (0.4 tongue left behind it); that end's catch removed, 5 catches, current lid fits | Austin's choice over two side catches + new lid, 2026-10-08 |
+| AW2-FILL | Old hole fill covers both the S1 spot and the v1.0 spot (RESET_DY −0.25) | AW1 filled only the S1 spot, leaving a 0.25 crescent |

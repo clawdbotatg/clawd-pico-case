@@ -256,3 +256,11 @@ on the floor, post out through the floor. The switch height can't be read with
 a caliper, so it's guessed high (2.65): too high only makes the cap rattle, too
 low would hold the board in reset. Same cap means it sticks out 1.79 under the
 base, so setting the case down on a table may press RESET. Fit test; iterate.
+
+## AW2 (Austin, 2026-10-08)
+
+The battery slot goes all the way up so the plug slides in from the top. That
+cuts through the tongue's end catch, so the catch is removed rather than split
+into two side catches: two side catches would need new pockets, so a new lid.
+Five catches, current lid. 0.4 of tongue is left behind the slot. AW1 filled
+the wrong old hole spot; AW2 fills both.

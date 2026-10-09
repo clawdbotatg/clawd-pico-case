@@ -560,3 +560,4 @@ no outside inputs.
 
 2026-10-08 BAT1 (cad/bat1_base.py): v1.7 base minus a 5.0 × 1.0 slot in the non-USB end wall for the RP2040-Plus battery plug. Inputs: Austin's own caliper photo of his board (4.45, IMG_1189) and top photo (IMG_1188), and his spoken slot size. Original geometry, no outside files.
 2026-10-08 AW1 Atomic Wedgie base v1 (cad/aw1_base.py): BAT1 + RESET cap hole + moved BOOT hole. Inputs: Austin's caliper numbers (22.02 from the USB end, 6.0 from each edge), his photos IMG_1192–1195 of his own board, his switch-height guess. Original geometry, no outside files.
+2026-10-08 AW2 (cad/aw2_base.py): AW1 with the slot to the top, the non-USB end catch removed, old hole fully filled. Austin's fit notes. Original geometry.
