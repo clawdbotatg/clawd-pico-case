@@ -694,3 +694,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | AW1-RESULT | AW1 printed: holes about right. Battery slot must run all the way up so the plug slides in from the top (AW1 stopped at the seam). Old BOOTSEL hole not fully filled | Austin, 2026-10-08 |
 | AW2-SLOT / AW2-CATCH | Slot 5.0 × 1.0 from floor to tongue top (0.4 tongue left behind it); that end's catch removed, 5 catches, current lid fits | Austin's choice over two side catches + new lid, 2026-10-08 |
 | AW2-FILL | Old hole fill covers both the S1 spot and the v1.0 spot (RESET_DY −0.25) | AW1 filled only the S1 spot, leaving a 0.25 crescent |
+| AW2-RESET-RESULT | Standard cap sticking out 1.79 gets hit when the case is laid down. Try ~85% height and shorter, square, 2–3 sizes | Austin, 2026-10-08 |
+| AW-R-PROUD | Square RESET caps, same plan size: total 3.7 / 3.3 / 2.9, sticking out 1.2 / 0.8 / 0.4 below the floor (at AW1-SW-H); 1 / 2 / 3 flange notches | cad/aw_reset_caps.py |
