@@ -15,6 +15,9 @@ All PETG. 0.16 mm layers, 4 walls, no supports, no brim, no raft. Lid:
 elephant-foot compensation 0.15. Don't rotate the parts; they are already the
 right way up (lid face down, base floor down, caps flange down).
 
+**Atomic Wedgie** (RP2040-Plus with a battery): red base with a battery
+channel and a black RESET button. See [`stl/atomic-wedgie/`](stl/atomic-wedgie/README.md).
+
 `full-set.stl` is all seven parts on one plate, in one colour. Skip it for a
 coloured case.
 

@@ -16,3 +16,5 @@ coloured case.
 
 Everything else in `stl/` is old test parts. Don't print it.
 Change log: [HISTORY.md](HISTORY.md).
+
+Atomic Wedgie (RP2040-Plus with a battery): different base, red, plus a RESET button. See `../atomic-wedgie/`.
