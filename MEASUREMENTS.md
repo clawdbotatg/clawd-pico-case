@@ -696,3 +696,5 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | AW2-FILL | Old hole fill covers both the S1 spot and the v1.0 spot (RESET_DY −0.25) | AW1 filled only the S1 spot, leaving a 0.25 crescent |
 | AW2-RESET-RESULT | Standard cap sticking out 1.79 gets hit when the case is laid down. Try ~85% height and shorter, square, 2–3 sizes | Austin, 2026-10-08 |
 | AW-R-PROUD | Square RESET caps, same plan size: total 3.7 / 3.3 / 2.9, sticking out 1.2 / 0.8 / 0.4 below the floor (at AW1-SW-H); 1 / 2 / 3 flange notches | cad/aw_reset_caps.py |
+| AW-R-RESULT | 1-notch cap (sticks out 1.2) is right: flush with the case, not hit when pushed on, easy to press. Square is right. Took some wiggling to get into the hole | Austin, 2026-10-08 |
+| AW-RESET-V2 | RESET button v2: 1-notch cap, post 0.05 smaller each side (4.10 × 5.30), post corners rounded 0.5 (sharp corners rubbed the hole's 1.05 corners by ~0.08), no notches | Austin asked for ~0.05 a side; corner fix from the model |
