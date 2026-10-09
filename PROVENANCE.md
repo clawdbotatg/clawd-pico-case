@@ -564,3 +564,4 @@ no outside inputs.
 2026-10-08 AW-R (cad/aw_reset_caps.py): three square RESET test caps. Original geometry.
 2026-10-08 RESET button v2 (cad/aw_reset_v2.py). Original geometry.
 2026-10-08 RESET v3 test (cad/aw_reset_v3_test.py). Original geometry.
+2026-10-09 RESET button v3 final (cad/aw_reset_v3.py). Original geometry.
