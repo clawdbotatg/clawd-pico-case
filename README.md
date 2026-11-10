@@ -2,13 +2,16 @@
 
 ## What to print (v1.9)
 
+> **⚠️ Printing the joystick cap? Use [these settings](stl/current/JOYSTICK-PRINT.md).**
+> On normal settings it comes out fragile and breaks.
+
 Files are in [`stl/current/`](stl/current/README.md). One case:
 
 | File | Copies | Colour |
 |---|---|---|
 | [`lid.stl`](stl/current/lid.stl) | 1 | White |
 | [`base.stl`](stl/current/base.stl) | 1 | Black |
-| [`joystick.stl`](stl/current/joystick.stl) | 6 or more (use 1, rest are spares) | Grey |
+| [`joystick.stl`](stl/current/joystick.stl) | 6 or more (use 1, rest are spares) | Grey. [Special settings](stl/current/JOYSTICK-PRINT.md) |
 | [`button.stl`](stl/current/button.stl) | 4 | 2 grey (middle two), 1 green (top right), 1 red (bottom right) |
 
 Button positions: hold the case sideways, screen facing you, joystick on
@@ -26,7 +29,9 @@ fragile. Read [JOYSTICK-PRINT.md](stl/current/JOYSTICK-PRINT.md) before printing
 **Atomic Wedgie** (RP2040-Plus with a battery): red base with a battery
 channel and a black RESET plunger. See [`stl/atomic-wedgie/`](stl/atomic-wedgie/README.md).
 
-`full-set.stl` is all seven parts on one plate, in one colour. Skip it for a
+`full-set.stl` is all seven parts on one plate, in one colour. Its one joystick cap
+prints on the case settings and comes out weak; print caps separately with
+[the joystick settings](stl/current/JOYSTICK-PRINT.md). Skip it for a
 coloured case.
 
 Everything else in `stl/`, `renders/` and `prints/` is old tests, kept as the
