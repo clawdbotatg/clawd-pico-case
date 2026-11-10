@@ -11,20 +11,23 @@ These settings came from Austin printing many of them.
 |---|---|
 | Material | PETG |
 | Nozzle | 0.4 mm |
-| Layer height | 0.16 mm |
+| Layer height | 0.16 mm (first layer 0.2 mm) |
 | Walls (perimeters) | 4 |
 | Top layers | 6 |
 | Bottom layers | 4 |
-| Infill | 15 % |
-| First layer speed | 20 mm/s |
+| Infill | 15 %, grid |
+| First layer | 20 mm/s, 0.42 mm line width, 0.95 flow |
+| Elephant-foot compensation | 0.2 mm |
 | Outer wall speed | 40 mm/s |
 | Inner wall speed | 60 mm/s |
 | Minimum layer time | 20 s |
-| Nozzle temperature | 235 °C |
-| Bed temperature | 60–70 °C |
+| Part cooling fan | 60–90 %, off for the first 3 layers |
+| Nozzle temperature | 240 °C first layer, then 235 °C |
+| Bed temperature | 70 °C first layer, then 60 °C |
+| Bed | Textured plate |
 | Supports | None |
 | Brim / raft | None |
-| Copies | **At least 6 on one plate** |
+| Copies | **6 or more on one plate** |
 
 Don't rotate it. The file is already the right way up: flange on the bed.
 
@@ -41,12 +44,14 @@ Don't rotate it. The file is already the right way up: flange on the bed.
 - **4 walls, 6 top, 4 bottom.** The cap is so small that this makes it
   almost solid plastic, which is what makes it strong. The 15 % infill
   hardly matters.
-- **Slow first layer and slow outer wall.** The stem socket is at the
-  bottom. A clean first layer and outer wall keep the socket the right size,
-  so the cap grips the joystick stem.
+- **Slow first layer, elephant-foot 0.2, slow outer wall.** The stem socket
+  is at the bottom. A squished first layer shrinks it. These keep the socket
+  the right size, so the cap grips the joystick stem.
+- **Fan off for the first 3 layers, hotter first layer.** Helps the caps
+  stick to the bed. After that the fan cools each layer so it sets.
 - **No brim.** A brim on a part this small is hard to take off cleanly, and
   what is left stops the flange sitting flat under the lid.
-- **Let them cool before you take them off.** PETG sticks hard to the bed
+- **Pull them cold.** PETG sticks hard to the bed
   when hot. Pulling a warm cap bends it or tears the bottom layers, and the
   socket stops fitting.
 
