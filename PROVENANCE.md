@@ -565,3 +565,4 @@ no outside inputs.
 2026-10-08 RESET button v2 (cad/aw_reset_v2.py). Original geometry.
 2026-10-08 RESET v3 test (cad/aw_reset_v3_test.py). Original geometry.
 2026-10-09 RESET button v3 final (cad/aw_reset_v3.py). Original geometry.
+2026-11-10 Wedgie v2 base / AW3 (cad/wedgie_v2_base.py): AW2 with wider, deeper catches and a stiffer long-side tongue. Austin's ask. Original geometry, no outside inputs.

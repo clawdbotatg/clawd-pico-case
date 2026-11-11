@@ -264,3 +264,14 @@ cuts through the tongue's end catch, so the catch is removed rather than split
 into two side catches: two side catches would need new pockets, so a new lid.
 Five catches, current lid. 0.4 of tongue is left behind the slot. AW1 filled
 the wrong old hole spot; AW2 fills both.
+
+## Wedgie v2 base (AW3, Austin, 2026-11-10)
+
+The Atomic Wedgie base in black, for the RP2040-Plus without a battery (USB-C
+to USB-C). Cases get easy to open after a while, so it should hold better,
+with the lids already printed. The lid pockets leave almost no room (0.05 a
+side, 0.05 deep), so the catches grow only into that: 6.5 wide, 0.54 hook. The
+bigger lever is stiffness: the long-side tongue is 0.8 thicker on the inside
+from the seam to 0.3 below the LCD board, so it bends less and the catches
+press harder. Ends left alone (the Pico goes in USB end first). Slot, RESET
+and BOOT as AW2. A test.
