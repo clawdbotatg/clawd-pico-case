@@ -265,7 +265,7 @@ into two side catches: two side catches would need new pockets, so a new lid.
 Five catches, current lid. 0.4 of tongue is left behind the slot. AW1 filled
 the wrong old hole spot; AW2 fills both.
 
-## Wedgie v2 base (AW3, Austin, 2026-11-10)
+## Wedgie Plus base (AW3, Austin, 2026-11-10)
 
 The Atomic Wedgie base in black, for the RP2040-Plus without a battery (USB-C
 to USB-C). Cases get easy to open after a while, so it should hold better,

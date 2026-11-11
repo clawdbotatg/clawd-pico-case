@@ -1,4 +1,4 @@
-"""Wedgie v2 base (AW3): Atomic Wedgie base, holds better (Austin, 2026-11-10). The AW2 base
+"""Wedgie Plus base (AW3): Atomic Wedgie base, holds better (Austin, 2026-11-10). The AW2 base
 (RESET plunger hole, BOOT pin hole, battery slot), printed black, for the
 RP2040-Plus without a battery. Same lid as now: printed lids must fit, so
 every change is on the base side of the joint:
@@ -8,7 +8,7 @@ every change is on the base side of the joint:
 (3) the tongue's lower part on the long sides is 0.8 thicker on the inside, so
     the tongue flexes less and the catches push harder. It stops 0.3 below the
     LCD board and stays clear of the Pico.
-Rows AW3-* in MEASUREMENTS. Run: .venv/bin/python cad/wedgie_v2_base.py
+Rows AW3-* in MEASUREMENTS. Run: .venv/bin/python cad/wedgie_plus_base.py
 """
 import hashlib
 import json
@@ -19,7 +19,7 @@ B,L,M,S,P,J,V=A.B,A.L,A.M,A.S,A.P,A.J,A.V
 import v1_1_spacer as SP
 
 ROOT=A.ROOT
-STL=ROOT/'stl/wedgie-v2'
+STL=ROOT/'stl/wedgie-plus'
 CATCH_W=6.5   # AW3-CATCH-W: lid pocket width 2*(SNAP_W/2+END_CLEAR)=6.6, 0.05 a side spare
 HOOK=.54      # AW3-HOOK: lid pocket depth L.RECESS 0.55, 0.01 spare
 PROJ=S.GAP+HOOK
@@ -99,7 +99,7 @@ def main():
         slot_open=J.overlap(b,slot())<1e-5,
         end_wall_left=round(M.IY0-SLOT_D-S.Y0,2)>=1.2,
         cap_clear_of_base=J.overlap(b,A.cap())<1e-5)
-    out=STL/'base-floor-down.stl'
+    out=STL/'wedgie-plus-base.stl'
     J.export(V.origin(b),out)
     report=dict(checks=checks,passed=all(checks.values()),catch_w=CATCH_W,hook=HOOK,
         stiffener=dict(inward=STIFF_IN,z=[round(S.SEAM,2),round(z_top,2)],height=round(z_top-S.SEAM,2)),

@@ -1,4 +1,4 @@
-# Wedgie v2 base (TEST)
+# Wedgie Plus base (TEST)
 
 **Test. Not in the print table yet.** Black. For the RP2040-Plus, no battery.
 
@@ -13,4 +13,4 @@ already printed:
 
 Use one black `../atomic-wedgie/aw-reset-plunger.stl` with it.
 
-Source: `cad/wedgie_v2_base.py`.
+Source: `cad/wedgie_plus_base.py`.
