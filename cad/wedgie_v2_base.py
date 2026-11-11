@@ -4,6 +4,7 @@ RP2040-Plus without a battery. Same lid as now: printed lids must fit, so
 every change is on the base side of the joint:
 (1) catches 6.5 wide instead of 6.0 (lid pockets are 6.6: 0.05 a side left);
 (2) hook 0.54 instead of 0.5 (lid pocket depth 0.55: 0.01 left);
+(4) the battery slot 1.8 deep instead of 1.0;
 (3) the tongue's lower part on the long sides is 0.8 thicker on the inside, so
     the tongue flexes less and the catches push harder. It stops 0.3 below the
     LCD board and stays clear of the Pico.
@@ -24,6 +25,11 @@ HOOK=.54      # AW3-HOOK: lid pocket depth L.RECESS 0.55, 0.01 spare
 PROJ=S.GAP+HOOK
 STIFF_IN=.8   # AW3-STIFF: inward thickening of the long-side tongue
 STIFF_TOP_GAP=.3  # AW3-STIFF: clearance under the LCD board
+SLOT_D=1.8    # AW3-SLOT: was 1.0 (BAT1-SLOT); leaves 1.2 of end wall below the seam
+
+def slot():
+    y=M.IY0  # AW2 slot, deeper: floor to tongue top; cuts through the tongue there (lid covers it)
+    return M.box(M.PICO_CX-B.SLOT_W/2,M.PICO_CX+B.SLOT_W/2,y-SLOT_D,y+P.EPS,M.Z_FLOOR_TOP-P.EPS,S.SEAM+S.LAP+P.TOOL_EXT)
 
 def profile(face,sgn):
     o=-sgn  # same shape as v1.7 L.hook_profile, deeper tip
@@ -65,7 +71,7 @@ def base():
     z_top=hat_bottom-STIFF_TOP_GAP
     for s in stiffeners(z_top).solids():b+=s
     # AW2 changes, unchanged
-    b-=A2.slot()
+    b-=slot()
     zf=(M.Z_BOTTOM+M.Z_FLOOR_TOP)/2
     x,y=M.ACCESS_C
     b+=Pos(x,y+V.RESET_DY/2,zf)*Cylinder(P.ACCESS_D/2+abs(V.RESET_DY)/2+.2,P.FLOOR)
@@ -90,7 +96,8 @@ def main():
         catches_hook_into_lid=all(J.overlap(Ps(0,0,L.T.FREE_PLAY+.02)*l,c)>1e-4 for c in cat.solids()),
         stiffeners_clear_board=J.overlap(b,M.hat()+M.pico())<1e-5,
         stiffeners_below_board=z_top>S.SEAM+.5,
-        slot_open=J.overlap(b,A2.slot())<1e-5,
+        slot_open=J.overlap(b,slot())<1e-5,
+        end_wall_left=round(M.IY0-SLOT_D-S.Y0,2)>=1.2,
         cap_clear_of_base=J.overlap(b,A.cap())<1e-5)
     out=STL/'base-floor-down.stl'
     J.export(V.origin(b),out)

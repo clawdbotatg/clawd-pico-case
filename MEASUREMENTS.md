@@ -704,3 +704,4 @@ Austin authorizes scan-based estimates and iteration (2026-09-24).
 | AW3-CATCH-W / AW3-HOOK | Wedgie v2 catches 6.5 wide, hook 0.54: fill the current lid pockets (6.6 wide, 0.55 deep) to 0.05 a side / 0.01 deep | Choice, from V1.7 lid pocket sizes in cad/v1_7_lock.py |
 | AW3-STIFF | Long-side tongue 0.8 thicker inside, seam up to 0.3 below the LCD board (1.4 tall); clear of board and Pico in the model | Choice, cad/wedgie_v2_base.py |
 | AW3-ASK | Black Atomic Wedgie base, RP2040-Plus, no battery; hold better with already printed lids; no new lid | Austin, 2026-11-10 |
+| AW3-SLOT | Wedgie v2 battery slot 1.8 deep (was 1.0), 1.2 end wall left below the seam; cuts through the tongue there, lid skin covers it | Austin asked a little deeper, 2026-11-10; depth a choice |

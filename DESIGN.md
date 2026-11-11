@@ -273,5 +273,5 @@ with the lids already printed. The lid pockets leave almost no room (0.05 a
 side, 0.05 deep), so the catches grow only into that: 6.5 wide, 0.54 hook. The
 bigger lever is stiffness: the long-side tongue is 0.8 thicker on the inside
 from the seam to 0.3 below the LCD board, so it bends less and the catches
-press harder. Ends left alone (the Pico goes in USB end first). Slot, RESET
+press harder. The wire slot goes 1.8 deep (was 1.0), leaving 1.2 of end wall. Ends left alone (the Pico goes in USB end first). Slot, RESET
 and BOOT as AW2. A test.
